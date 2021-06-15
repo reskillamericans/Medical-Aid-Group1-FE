@@ -4,15 +4,15 @@
 
 Please always follow the right format before making pull request.
 
-* Fork this repository into your remote repository( To have a copy of the repository on your github)
+* Fork this repository into your remote repository( to have a copy of the repository on your github.)
 
 * After forking the repository, clone the repository to your local computer. You can do this by typing in your terminal:  git clone [link-to-your-forked-version-of-the-repo]
 
-* Create a branch with the feature name you wish to work on example `git checkout -b <name_of_feature>`,  `git checkout -b contactpage` 
+* On your terminal , create a branch with the feature(page) name you wish to work on. Examples `git checkout -b <name_of_feature>`,  `git checkout -b contactpage` 
 
 * Work on your assigned page.
 
-* Create an upstream on your local machine to pull the latest code from the test branch of this repository `git remote add upstream test` 
+* After working on your page, create an upstream on your local machine to pull the latest code from the test branch of this repository `git remote add upstream test` 
 
 * And  REMEMBER TO PULL UPDATES - `git pull upstream test`
 
