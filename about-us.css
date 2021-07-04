@@ -1,0 +1,274 @@
+.logo{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 53px;
+    left: 813px;
+}
+
+.logotxt{
+    width: 245px;
+    height: 52px;
+    position: absolute;
+    left: 708px;
+    top: 83px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    color: #c3c7d2;
+}
+
+.title{
+    width: 514px;
+    height: 46px;
+    position: absolute;
+    top: 228px;
+    left: 573px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 28.6px;
+}
+
+.container{
+    display: flex;
+    width: 696px;
+    height: 317px;
+}
+
+.om{
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 326px;
+    left: 114px;
+}
+
+.omh{
+    width: 219px;
+    height: 113px;
+    position: absolute;
+    left: 100px;
+    top: 110px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.omt{
+    width: 219px;
+    height: 234px;
+    position: absolute;
+    left: 440px;
+    top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.of{
+    background-color: ivory;
+    position: absolute;
+    top: 691px;
+    left: 114px;
+}
+
+.ofh{
+    width: 219px;
+    height: 113px;
+    position: absolute;
+    left: 100px;
+    top: 110px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.oft{
+    width: 219px;
+    height: 234px;
+    position: absolute;
+    left: 440px;
+    top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.os{
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 1056px;
+    left: 114px;
+}
+
+.osh{
+    width: 219px;
+    height: 113px;
+    position: absolute;
+    left: 100px;
+    top: 110px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.osi{
+    width: 234px;
+    height: 192px;
+    position: absolute;
+    left: 410px;
+    top: 65px;
+    background-color: #BBBBBB;
+}
+
+.omi{
+    position: absolute;
+    top: 326px;
+    left: 850px;
+    background-color: #BBBBBB;
+}
+
+.ofi{
+
+    position: absolute;
+    top: 691px;
+    left: 850px;
+}
+
+.ofp{
+    width: 311px;
+    height: 311px;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    background-color: ivory;
+    border-radius: 400px;
+}
+
+.box{
+    width: 328px;
+    height: 312px;
+    background-color: #919090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ft-1{
+    position: absolute;
+    top: 1056px;
+    left: 850px;
+}
+
+.ft-2{
+    position: absolute;
+    top: 1056px;
+    left: 1218px;
+}
+
+.ft1t{
+    padding-left: 40px;
+}
+
+.ft1h{
+    font-size: 28px;
+}
+
+.ft1s{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ft2t{
+    padding-left: 40px;
+}
+
+.ft2h{
+    font-size: 28px;
+}
+
+.ft2s{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.foot{
+    width: 1432px;
+    height: 140px;
+    position: absolute;
+    left: 114px;
+    top: 1421px;
+    background-color: #514d57;
+}
+
+.foottxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    line-height: 28.6px;
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 153px;
+
+}
+
+.footsub{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.label{
+    position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 941px;
+    top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+}
+
+.field{
+    position: absolute;
+    width: 343px;
+    height: 40px;
+    left: 941px;
+    top: 42px;
+    background-color: #eeeeee;
+    border: 1px solid #c3c7d2;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.submit{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+    left: 941px;
+    right: 0px;
+    top: 90px;
+    background-color: #f3ea12;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
