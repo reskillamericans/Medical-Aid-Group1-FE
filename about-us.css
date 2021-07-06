@@ -1,0 +1,3829 @@
+@media only screen and (max-width: 280px){
+        .logo{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.logotxt{
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    color: #c3c7d2;
+}
+
+.title{
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 28.6px;
+}
+
+.container{
+    display: flex;
+    width: 696px;
+    height: 357px;
+}
+
+.om{
+    display: flex;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 326px;
+    left: 0%;
+    width: 110%;
+}
+
+.omh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 8%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.omt{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.of{
+    position: absolute;
+    top: 691px;
+    left: 0%;
+    border: #f3ea12;
+    width: 100%;
+}
+
+.ofh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.oft{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 53%;
+    top: -3%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.os{
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 1106px;
+    left: 0%;
+    width: 110%;
+}
+
+.osh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 35%;
+    top: 8%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.osi{
+    width: 38%;
+    height: 192px;
+    position: absolute;
+    left: 31%;
+    top: 53%;
+}
+
+.imageos{
+    width: 100%;
+}
+
+.omi{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 42%;
+}
+
+.imageom{
+    width: 100%;
+    height: 317px;
+}
+
+.ofi{
+    width: 42%;
+    position: absolute;
+    top: 140%;
+    left: 5%;
+}
+
+.ofp{
+    width: 42%;
+    height: 311px;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    background-color: ivory;
+    border-radius: 400px;
+}
+
+.imageof{
+    width: 100%;
+}
+
+.box{
+    width: 60%;
+    height: 312px;
+    background-color: #919090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ft-1{
+    position: absolute;
+    top: 224%;
+    left: 0%;
+}
+
+.ft-2{
+    position: absolute;
+    top: 224%;
+    left: 50%;
+}
+
+.ft1t{
+    padding-left: 20px;
+    width: 100%;
+}
+
+.ft1h{
+    font-size: 22px;
+    width: 100%;
+}
+
+.ft1s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.ft2t{
+    padding-left: 20px;
+    width: 100%;
+}
+
+.ft2h{
+    font-size: 22px;
+    width: 100%;
+}
+
+.ft2s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.foot{
+    width: 110%;
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    top: 270%;
+    background-color: #514d57;
+}
+
+.foottxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    line-height: 28.6px;
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 8%;
+
+}
+
+.footsub{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.label{
+    position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 33%;
+    top: 46%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+}
+
+.field{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    left: 8%;
+    top: 55%;
+    background-color: #eeeeee;
+    border: 1px solid #c3c7d2;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.submit{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+    left: 15%;
+    right: 0px;
+    top: 73%;
+    background-color: #f3ea12;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    height: 16%;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.logon{
+    width: 38px;
+    height: 22px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.logon:hover{
+    cursor: pointer;
+}
+
+.home{
+    width: 48px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 25%;
+    top: 24px;
+}
+
+.l1{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 46%;
+    top: 24px;
+}
+
+.l2{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 74%;
+    top: 24px;
+}
+
+.l3{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 30%;
+    top: 59%;
+}
+
+.l4{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 61%;
+    top: 59%;
+}
+
+.navbutton{
+    color: #180126;
+}
+
+.navbutton:hover{
+    color: #072ac8;
+}
+
+}
+
+@media only screen and (min-width: 320px){
+    .logo{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.logotxt{
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    color: #c3c7d2;
+}
+
+.title{
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 28.6px;
+}
+
+.container{
+    display: flex;
+    width: 696px;
+    height: 317px;
+}
+
+.om{
+    display: flex;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 326px;
+    left: 0%;
+    width: 110%;
+}
+
+.omh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.omt{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.of{
+    position: absolute;
+    top: 691px;
+    left: 0%;
+    border: #f3ea12;
+    width: 100%;
+}
+
+.ofh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.oft{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 53%;
+    top: 0%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.os{
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 1056px;
+    left: 0%;
+    width: 110%;
+}
+
+.osh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 35%;
+    top: 8%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.osi{
+    width: 38%;
+    height: 192px;
+    position: absolute;
+    left: 31%;
+    top: 53%;
+}
+
+.imageos{
+    width: 100%;
+}
+
+.omi{
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    width: 42%;
+}
+
+.imageom{
+    width: 100%;
+    height: 317px;
+}
+
+.ofi{
+    width: 42%;
+    position: absolute;
+    top: 150%;
+    left: 5%;
+}
+
+.ofp{
+    width: 42%;
+    height: 311px;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    background-color: ivory;
+    border-radius: 400px;
+}
+
+.imageof{
+    width: 100%;
+}
+
+.box{
+    width: 60%;
+    height: 312px;
+    background-color: #919090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ft-1{
+    position: absolute;
+    top: 241%;
+    left: 0%;
+}
+
+.ft-2{
+    position: absolute;
+    top: 241%;
+    left: 50%;
+}
+
+.ft1t{
+    padding-left: 20px;
+    width: 100%;
+}
+
+.ft1h{
+    font-size: 22px;
+    width: 100%;
+}
+
+.ft1s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.ft2t{
+    padding-left: 20px;
+    width: 100%;
+}
+
+.ft2h{
+    font-size: 22px;
+    width: 100%;
+}
+
+.ft2s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.foot{
+    width: 110%;
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    top: 296%;
+    background-color: #514d57;
+}
+
+.foottxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    line-height: 28.6px;
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 8%;
+
+}
+
+.footsub{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.label{
+    position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 38%;
+    top: 32%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+}
+
+.field{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    left: 10%;
+    top: 40%;
+    background-color: #eeeeee;
+    border: 1px solid #c3c7d2;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.submit{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+    left: 24%;
+    right: 0px;
+    top: 60%;
+    background-color: #f3ea12;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    height: 16%;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.logon{
+    width: 38px;
+    height: 22px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.logon:hover{
+    cursor: pointer;
+}
+
+.home{
+    width: 48px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 25%;
+    top: 24px;
+}
+
+.l1{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 43%;
+    top: 24px;
+}
+
+.l2{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 68%;
+    top: 24px;
+}
+
+.l3{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 30%;
+    top: 59%;
+}
+
+.l4{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 55%;
+    top: 59%;
+}
+
+.navbutton{
+    color: #180126;
+}
+
+.navbutton:hover{
+    color: #072ac8;
+}
+
+}
+
+@media only screen and (min-width: 360px){
+    .logo{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+}
+
+.logotxt{
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0px;
+    top: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    color: #c3c7d2;
+}
+
+.title{
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    top: 228px;
+    left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 28.6px;
+}
+
+.container{
+    display: flex;
+    width: 696px;
+    height: 317px;
+}
+
+.om{
+    display: flex;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 326px;
+    left: 0%;
+    width: 100%;
+}
+
+.omh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.omt{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.of{
+    position: absolute;
+    top: 691px;
+    left: 0%;
+    border: #f3ea12;
+    width: 100%;
+}
+
+.ofh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.oft{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.os{
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 1056px;
+    left: 0%;
+    width: 100%;
+}
+
+.osh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.osi{
+    width: 33%;
+    height: 192px;
+    position: absolute;
+    left: 35%;
+    top: 55%;
+}
+
+.imageos{
+    width: 100%;
+}
+
+.omi{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 42%;
+}
+
+.imageom{
+    width: 100%;
+    height: 317px;
+}
+
+.ofi{
+    width: 42%;
+    position: absolute;
+    top: 135%;
+    left: 5%;
+}
+
+.ofp{
+    width: 42%;
+    height: 311px;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    background-color: ivory;
+    border-radius: 400px;
+}
+
+.imageof{
+    width: 100%;
+}
+
+.box{
+    width: 50%;
+    height: 312px;
+    background-color: #919090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ft-1{
+    position: absolute;
+    top: 214%;
+    left: 0%;
+}
+
+.ft-2{
+    position: absolute;
+    top: 214%;
+    left: 50%;
+}
+
+.ft1t{
+    padding-left: 20px;
+    width: 100%;
+}
+
+.ft1h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft1s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.ft2t{
+    padding-left: 20px;
+    width: 100%;
+}
+
+.ft2h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft2s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.foot{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    top: 260%;
+    background-color: #514d57;
+}
+
+.foottxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    line-height: 28.6px;
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 11%;
+
+}
+
+.footsub{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.label{
+    position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 38%;
+    top: 30%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+}
+
+.field{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    left: 10%;
+    top: 40%;
+    background-color: #eeeeee;
+    border: 1px solid #c3c7d2;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.submit{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+    left: 24%;
+    right: 0px;
+    top: 60%;
+    background-color: #f3ea12;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    height: 15%;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.logon{
+    width: 38px;
+    height: 22px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.logon:hover{
+    cursor: pointer;
+}
+
+.home{
+    width: 48px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 25%;
+    top: 24px;
+}
+
+.l1{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 41%;
+    top: 24px;
+}
+
+.l2{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 64%;
+    top: 24px;
+}
+
+.l3{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 30%;
+    top: 59%;
+}
+
+.l4{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 55%;
+    top: 59%;
+}
+
+.navbutton{
+    color: #180126;
+}
+
+.navbutton:hover{
+    color: #072ac8;
+}
+
+}
+
+@media only screen and (min-width: 375px){
+    .logo{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+}
+
+.logotxt{
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0px;
+    top: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    color: #c3c7d2;
+}
+
+.title{
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    top: 228px;
+    left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 28.6px;
+}
+
+.container{
+    display: flex;
+    width: 696px;
+    height: 317px;
+}
+
+.om{
+    display: flex;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 326px;
+    left: 0%;
+    width: 100%;
+}
+
+.omh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.omt{
+    width: 49%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.of{
+    position: absolute;
+    top: 691px;
+    left: 0%;
+    border: #f3ea12;
+    width: 100%;
+}
+
+.ofh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.oft{
+    width: 49%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.os{
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 1056px;
+    left: 0%;
+    width: 100%;
+}
+
+.osh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.osi{
+    width: 33%;
+    height: 192px;
+    position: absolute;
+    left: 35%;
+    top: 55%;
+}
+
+.imageos{
+    width: 100%;
+}
+
+.omi{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    width: 42%;
+}
+
+.imageom{
+    width: 100%;
+    height: 317px;
+}
+
+.ofi{
+    width: 42%;
+    position: absolute;
+    top: 130%;
+    left: 5%;
+}
+
+.ofp{
+    width: 42%;
+    height: 311px;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    background-color: ivory;
+    border-radius: 400px;
+}
+
+.imageof{
+    width: 100%;
+}
+
+.box{
+    width: 50%;
+    height: 312px;
+    background-color: #919090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ft-1{
+    position: absolute;
+    top: 206%;
+    left: 0%;
+}
+
+.ft-2{
+    position: absolute;
+    top: 206%;
+    left: 50%;
+}
+
+.ft1t{
+    padding-left: 20px;
+    width: 100%;
+}
+
+.ft1h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft1s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.ft2t{
+    padding-left: 20px;
+    width: 100%;
+}
+
+.ft2h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft2s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.foot{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    top: 252%;
+    background-color: #514d57;
+}
+
+.foottxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    line-height: 28.6px;
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 11%;
+
+}
+
+.footsub{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.label{
+    position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 38%;
+    top: 30%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+}
+
+.field{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    left: 10%;
+    top: 40%;
+    background-color: #eeeeee;
+    border: 1px solid #c3c7d2;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.submit{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+    left: 24%;
+    right: 0px;
+    top: 60%;
+    background-color: #f3ea12;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    height: 15%;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.logon{
+    width: 38px;
+    height: 22px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.logon:hover{
+    cursor: pointer;
+}
+
+.home{
+    width: 48px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 25%;
+    top: 24px;
+}
+
+.l1{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 41%;
+    top: 24px;
+}
+
+.l2{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 64%;
+    top: 24px;
+}
+
+.l3{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 30%;
+    top: 59%;
+}
+
+.l4{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 55%;
+    top: 59%;
+}
+
+.navbutton{
+    color: #180126;
+}
+
+.navbutton:hover{
+    color: #072ac8;
+}
+
+}
+
+@media only screen and (min-width: 411px){
+    .logo{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+}
+
+.logotxt{
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0px;
+    top: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    color: #c3c7d2;
+}
+
+.title{
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    top: 228px;
+    left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 28.6px;
+}
+
+.container{
+    display: flex;
+    width: 696px;
+    height: 317px;
+}
+
+.om{
+    display: flex;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 326px;
+    left: 0%;
+    width: 100%;
+}
+
+.omh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.omt{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.of{
+    position: absolute;
+    top: 691px;
+    left: 0%;
+    border: #f3ea12;
+    width: 100%;
+}
+
+.ofh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.oft{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.os{
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 1056px;
+    left: 0%;
+    width: 100%;
+}
+
+.osh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.osi{
+    width: 33%;
+    height: 192px;
+    position: absolute;
+    left: 8%;
+    top: 60%;
+}
+
+.imageos{
+    width: 100%;
+}
+
+.omi{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 42%;
+}
+
+.imageom{
+    width: 100%;
+    height: 317px;
+}
+
+.ofi{
+    width: 42%;
+    position: absolute;
+    top: 117%;
+    left: 5%;
+}
+
+.ofp{
+    width: 42%;
+    height: 311px;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    background-color: ivory;
+    border-radius: 400px;
+}
+
+.imageof{
+    width: 100%;
+}
+
+.box{
+    width: 50%;
+    height: 312px;
+    background-color: #919090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ft-1{
+    position: absolute;
+    top: 188%;
+    left: 0%;
+}
+
+.ft-2{
+    position: absolute;
+    top: 188%;
+    left: 50%;
+}
+
+.ft1t{
+    padding-left: 25px;
+    width: 100%;
+}
+
+.ft1h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft1s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.ft2t{
+    padding-left: 25px;
+    width: 100%;
+}
+
+.ft2h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft2s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.foot{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    top: 230%;
+    background-color: #514d57;
+}
+
+.foottxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    line-height: 28.6px;
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 11%;
+
+}
+
+.footsub{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.label{
+    position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 38%;
+    top: 30%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+}
+
+.field{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    left: 10%;
+    top: 40%;
+    background-color: #eeeeee;
+    border: 1px solid #c3c7d2;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.submit{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+    left: 24%;
+    right: 0px;
+    top: 60%;
+    background-color: #f3ea12;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    height: 15%;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.logon{
+    width: 38px;
+    height: 22px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.logon:hover{
+    cursor: pointer;
+}
+
+.home{
+    width: 48px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 25%;
+    top: 24px;
+}
+
+.l1{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 41%;
+    top: 24px;
+}
+
+.l2{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 64%;
+    top: 24px;
+}
+
+.l3{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 30%;
+    top: 59%;
+}
+
+.l4{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 55%;
+    top: 59%;
+}
+
+.navbutton{
+    color: #180126;
+}
+
+.navbutton:hover{
+    color: #072ac8;
+}
+
+}
+
+@media only screen and (min-width: 414px){
+    .logo{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+}
+
+.logotxt{
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0px;
+    top: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    color: #c3c7d2;
+}
+
+.title{
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    top: 228px;
+    left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 28.6px;
+}
+
+.container{
+    display: flex;
+    width: 696px;
+    height: 317px;
+}
+
+.om{
+    display: flex;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 326px;
+    left: 0%;
+    width: 100%;
+}
+
+.omh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.omt{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.of{
+    position: absolute;
+    top: 691px;
+    left: 0%;
+    border: #f3ea12;
+    width: 100%;
+}
+
+.ofh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.oft{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.os{
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 1056px;
+    left: 0%;
+    width: 100%;
+}
+
+.osh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 35%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.osi{
+    width: 33%;
+    height: 192px;
+    position: absolute;
+    left: 35%;
+    top: 55%;
+}
+
+.imageos{
+    width: 100%;
+}
+
+.omi{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 42%;
+}
+
+.imageom{
+    width: 100%;
+    height: 317px;
+}
+
+.ofi{
+    width: 42%;
+    position: absolute;
+    top: 117%;
+    left: 5%;
+}
+
+.ofp{
+    width: 42%;
+    height: 311px;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    background-color: ivory;
+    border-radius: 400px;
+}
+
+.imageof{
+    width: 100%;
+}
+
+.box{
+    width: 50%;
+    height: 312px;
+    background-color: #919090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ft-1{
+    position: absolute;
+    top: 186%;
+    left: 0%;
+}
+
+.ft-2{
+    position: absolute;
+    top: 186%;
+    left: 50%;
+}
+
+.ft1t{
+    padding-left: 25px;
+    width: 100%;
+}
+
+.ft1h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft1s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.ft2t{
+    padding-left: 25px;
+    width: 100%;
+}
+
+.ft2h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft2s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.foot{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    top: 228%;
+    background-color: #514d57;
+}
+
+.foottxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    line-height: 28.6px;
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 11%;
+
+}
+
+.footsub{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.label{
+    position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 38%;
+    top: 30%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+}
+
+.field{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    left: 10%;
+    top: 40%;
+    background-color: #eeeeee;
+    border: 1px solid #c3c7d2;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.submit{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+    left: 24%;
+    right: 0px;
+    top: 60%;
+    background-color: #f3ea12;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    height: 15%;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.logon{
+    width: 38px;
+    height: 22px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.logon:hover{
+    cursor: pointer;
+}
+
+.home{
+    width: 48px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 25%;
+    top: 24px;
+}
+
+.l1{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 41%;
+    top: 24px;
+}
+
+.l2{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 64%;
+    top: 24px;
+}
+
+.l3{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 30%;
+    top: 59%;
+}
+
+.l4{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 55%;
+    top: 59%;
+}
+
+.navbutton{
+    color: #180126;
+}
+
+.navbutton:hover{
+    color: #072ac8;
+}
+
+}
+
+@media only screen and (min-width: 540px){
+    .logo{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 20%;
+    left: 0px;
+}
+
+.logotxt{
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0px;
+    top: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    color: #c3c7d2;
+}
+
+.title{
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    top: 228px;
+    left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 28.6px;
+}
+
+.container{
+    display: flex;
+    width: 696px;
+    height: 317px;
+}
+
+.om{
+    display: flex;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 326px;
+    left: 0%;
+    width: 100%;
+}
+
+.omh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.omt{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 13%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.of{
+    position: absolute;
+    top: 691px;
+    left: 0%;
+    border: #f3ea12;
+    width: 100%;
+}
+
+.ofh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.oft{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.os{
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 1056px;
+    left: 0%;
+    width: 100%;
+}
+
+.osh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.osi{
+    width: 33%;
+    height: 192px;
+    position: absolute;
+    left: 55%;
+    top: 25%;
+}
+
+.imageos{
+    width: 100%;
+}
+
+.omi{
+    position: absolute;
+    top: 55%;
+    left: 3.5%;
+    width: 42%;
+}
+
+.imageom{
+    width: 100%;
+    height: 317px;
+}
+
+.ofi{
+    width: 42%;
+    position: absolute;
+    top: 117%;
+    left: 5%;
+}
+
+.ofp{
+    width: 42%;
+    height: 311px;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    background-color: ivory;
+    border-radius: 400px;
+}
+
+.imageof{
+    width: 100%;
+}
+
+.box{
+    width: 50%;
+    height: 312px;
+    background-color: #919090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ft-1{
+    position: absolute;
+    top: 186%;
+    left: 0%;
+}
+
+.ft-2{
+    position: absolute;
+    top: 186%;
+    left: 50%;
+}
+
+.ft1t{
+    padding-left: 25px;
+    width: 100%;
+}
+
+.ft1h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft1s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.ft2t{
+    padding-left: 25px;
+    width: 100%;
+}
+
+.ft2h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft2s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.foot{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    top: 228%;
+    background-color: #514d57;
+}
+
+.foottxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    line-height: 28.6px;
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 24%;
+
+}
+
+.footsub{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.label{
+    position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 42%;
+    top: 30%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+}
+
+.field{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    left: 11%;
+    top: 40%;
+    background-color: #eeeeee;
+    border: 1px solid #c3c7d2;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.submit{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+    left: 32%;
+    right: 0px;
+    top: 60%;
+    background-color: #f3ea12;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    height: 15%;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.logon{
+    width: 38px;
+    height: 22px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.logon:hover{
+    cursor: pointer;
+}
+
+.home{
+    width: 48px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 25%;
+    top: 24px;
+}
+
+.l1{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 41%;
+    top: 24px;
+}
+
+.l2{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 64%;
+    top: 24px;
+}
+
+.l3{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 30%;
+    top: 59%;
+}
+
+.l4{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 55%;
+    top: 59%;
+}
+
+.navbutton{
+    color: #180126;
+}
+
+.navbutton:hover{
+    color: #072ac8;
+}
+
+}
+
+@media only screen and (min-width: 768px){
+    .logo{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 17%;
+    left: 3%;
+}
+
+.logotxt{
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 3%;
+    top: 18.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    color: #c3c7d2;
+}
+
+.title{
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    top: 228px;
+    left: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 28.6px;
+}
+
+.container{
+    display: flex;
+    width: 696px;
+    height: 317px;
+}
+
+.om{
+    display: flex;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 326px;
+    left: 0%;
+    width: 100%;
+}
+
+.omh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.omt{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.of{
+    position: absolute;
+    top: 691px;
+    left: 0%;
+    border: #f3ea12;
+    width: 100%;
+}
+
+.ofh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.oft{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.os{
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 1056px;
+    left: 0%;
+    width: 100%;
+}
+
+.osh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.osi{
+    width: 33%;
+    height: 192px;
+    position: absolute;
+    left: 55%;
+    top: 15%;
+}
+
+.imageos{
+    width: 100%;
+}
+
+.omi{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    width: 42%;
+}
+
+.imageom{
+    width: 100%;
+    height: 317px;
+}
+
+.ofi{
+    width: 42%;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+}
+
+.ofp{
+    width: 42%;
+    height: 311px;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    background-color: ivory;
+    border-radius: 400px;
+}
+
+.imageof{
+    width: 100%;
+}
+
+.box{
+    width: 50%;
+    height: 312px;
+    background-color: #919090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ft-1{
+    position: absolute;
+    top: 134%;
+    left: 0%;
+}
+
+.ft-2{
+    position: absolute;
+    top: 134%;
+    left: 50%;
+}
+
+.ft1t{
+    padding-left: 25px;
+    width: 100%;
+}
+
+.ft1h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft1s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.ft2t{
+    padding-left: 25px;
+    width: 100%;
+}
+
+.ft2h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft2s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.foot{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    top: 164%;
+    background-color: #514d57;
+}
+
+.foottxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    line-height: 28.6px;
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 30%;
+
+}
+
+.footsub{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.label{
+    position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 43%;
+    top: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+}
+
+.field{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    left: 10%;
+    top: 35%;
+    background-color: #eeeeee;
+    border: 1px solid #c3c7d2;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.submit{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+    left: 36%;
+    right: 0px;
+    top: 55%;
+    background-color: #f3ea12;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    height: 15%;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.logon{
+    width: 38px;
+    height: 22px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.logon:hover{
+    cursor: pointer;
+}
+
+.home{
+    width: 48px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 30%;
+    top: 24px;
+}
+
+.l1{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 46%;
+    top: 24px;
+}
+
+.l2{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 69%;
+    top: 24px;
+}
+
+.l3{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 35%;
+    top: 59%;
+}
+
+.l4{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 60%;
+    top: 59%;
+}
+
+.navbutton{
+    color: #180126;
+}
+
+.navbutton:hover{
+    color: #072ac8;
+}
+
+}
+
+@media only screen and (min-width: 1024px){
+    .logo{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 12%;
+    left: 3%;
+}
+
+.logotxt{
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 3%;
+    top: 13.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    color: #c3c7d2;
+}
+
+.title{
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    top: 228px;
+    left: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 28.6px;
+}
+
+.container{
+    display: flex;
+    width: 696px;
+    height: 317px;
+}
+
+.om{
+    display: flex;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 326px;
+    left: 0%;
+    width: 100%;
+}
+
+.omh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 4%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.omt{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 49%;
+    top: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.of{
+    position: absolute;
+    top: 691px;
+    left: 0%;
+    border: #f3ea12;
+    width: 100%;
+}
+
+.ofh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.oft{
+    width: 50%;
+    height: 234px;
+    position: absolute;
+    left: 49%;
+    top: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.os{
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 1056px;
+    left: 0%;
+    width: 100%;
+}
+
+.osh{
+    width: 30%;
+    height: 113px;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.osi{
+    width: 33%;
+    height: 192px;
+    position: absolute;
+    left: 55%;
+    top: 6%;
+}
+
+.imageos{
+    width: 100%;
+}
+
+.omi{
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    width: 42%;
+}
+
+.imageom{
+    width: 100%;
+    height: 317px;
+}
+
+.ofi{
+    width: 42%;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+
+.ofp{
+    width: 42%;
+    height: 311px;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    background-color: ivory;
+    border-radius: 400px;
+}
+
+.imageof{
+    width: 100%;
+}
+
+.box{
+    width: 50%;
+    height: 312px;
+    background-color: #919090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ft-1{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+
+.ft-2{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+.ft1t{
+    padding-left: 25px;
+    width: 100%;
+}
+
+.ft1h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft1s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.ft2t{
+    padding-left: 25px;
+    width: 100%;
+}
+
+.ft2h{
+    font-size: 25px;
+    width: 100%;
+}
+
+.ft2s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.foot{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    left: 0%;
+    top: 123%;
+    background-color: #514d57;
+}
+
+.foottxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    line-height: 28.6px;
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 33%;
+
+}
+
+.footsub{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.label{
+    position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 43%;
+    top: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+}
+
+.field{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    left: 10%;
+    top: 35%;
+    background-color: #eeeeee;
+    border: 1px solid #c3c7d2;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.submit{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+    left: 38%;
+    right: 0px;
+    top: 55%;
+    background-color: #f3ea12;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    height: 10%;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.logon{
+    width: 38px;
+    height: 22px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.logon:hover{
+    cursor: pointer;
+}
+
+.home{
+    width: 48px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 30%;
+    top: 24px;
+}
+
+.l1{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 46%;
+    top: 24px;
+}
+
+.l2{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 69%;
+    top: 24px;
+}
+
+.l3{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 35%;
+    top: 59%;
+}
+
+.l4{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 60%;
+    top: 59%;
+}
+
+.navbutton{
+    color: #180126;
+}
+
+.navbutton:hover{
+    color: #072ac8;
+}
+
+}
+
+@media only screen and (min-width: 1660px){
+.logo{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    top: 93px;
+    left: 0px;
+}
+
+.logotxt{
+    width: 100%;
+    height: 52px;
+    position: absolute;
+    left: 0px;
+    top: 123px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    line-height: 38px;
+    color: #c3c7d2;
+}
+
+.title{
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    top: 228px;
+    left: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    line-height: 28.6px;
+}
+
+.container{
+    display: flex;
+    width: 696px;
+    height: 317px;
+}
+
+.om{
+    display: flex;
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 326px;
+    left: 7%;
+    width: 42%;
+}
+
+.omh{
+    width: 100%;
+    height: 113px;
+    position: absolute;
+    left: -145px;
+    top: 110px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.omt{
+    width: 32%;
+    height: 234px;
+    position: absolute;
+    left: 60%;
+    top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.of{
+    position: absolute;
+    top: 691px;
+    left: 114px;
+    border: #f3ea12;
+    width: 42%;
+}
+
+.ofh{
+    width: 100%;
+    height: 113px;
+    position: absolute;
+    left: -145px;
+    top: 110px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.oft{
+    width: 32%;
+    height: 234px;
+    position: absolute;
+    left: 60%;
+    top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+.os{
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 1056px;
+    left: 114px;
+    width: 42%;
+}
+
+.osh{
+    width: 100%;
+    height: 113px;
+    position: absolute;
+    left: -145px;
+    top: 110px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 31px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.osi{
+    width: 33%;
+    height: 192px;
+    position: absolute;
+    left: 60%;
+    top: 65px;
+}
+
+.imageos{
+    width: 100%;
+}
+
+.omi{
+    position: absolute;
+    top: 326px;
+    left: 51.7%;
+    width: 42%;
+    /* 850 */
+}
+
+.imageom{
+    width: 100%;
+    height: 317px;
+}
+
+.ofi{
+    width: 42%;
+    position: absolute;
+    top: 691px;
+    left: 850px;
+}
+
+.ofp{
+    width: 42%;
+    height: 311px;
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    background-color: ivory;
+    border-radius: 400px;
+}
+
+.imageof{
+    width: 100%;
+}
+
+.box{
+    width: 20%;
+    height: 312px;
+    background-color: #919090;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.ft-1{
+    position: absolute;
+    top: 1056px;
+    left: 51.7%;
+}
+
+.ft-2{
+    position: absolute;
+    top: 1056px;
+    left: 74.4%;
+}
+
+.ft1t{
+    padding-left: 40px;
+    width: 100%;
+}
+
+.ft1h{
+    font-size: 28px;
+    width: 100%;
+}
+
+.ft1s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.ft2t{
+    padding-left: 40px;
+    width: 100%;
+}
+
+.ft2h{
+    font-size: 28px;
+    width: 100%;
+}
+
+.ft2s{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.foot{
+    width: 87.5%;
+    height: 140px;
+    position: absolute;
+    left: 7%;
+    top: 1421px;
+    background-color: #514d57;
+}
+
+.foottxt{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    line-height: 28.6px;
+    color: ivory;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    left: 11%;
+
+}
+
+.footsub{
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.label{
+    position: absolute;
+    width: 93px;
+    height: 18px;
+    left: 65.7%;
+    top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    color: #ffffff;
+}
+
+.field{
+    position: absolute;
+    width: 343px;
+    height: 40px;
+    left: 65.7%;
+    top: 42px;
+    background-color: #eeeeee;
+    border: 1px solid #c3c7d2;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.submit{
+    position: absolute;
+    width: 197px;
+    height: 40px;
+    left: 65.7%;
+    right: 0px;
+    top: 90px;
+    background-color: #f3ea12;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    background-color: #f9f9f9;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.logon{
+    width: 38px;
+    height: 22px;
+    position: absolute;
+    top: 24px;
+    left: 115px;
+}
+
+.logon:hover{
+    cursor: pointer;
+}
+
+.home{
+    width: 48px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 59.7%;
+    top: 24px;
+}
+
+.l1{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 65.3%;
+    top: 24px;
+}
+
+.l2{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 72.2%;
+    top: 24px;
+}
+
+.l3{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 79.1%;
+    top: 24px;
+}
+
+.l4{
+    width: 73px;
+    height: 22px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 86.2%;
+    top: 24px;
+}
+
+.navbutton{
+    color: #180126;
+}
+
+.navbutton:hover{
+    color: #072ac8;
+}
+}
