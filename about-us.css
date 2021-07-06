@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media only screen and (max-width: 280px){
         .logo{
     display: flex;
@@ -3461,6 +3462,23 @@
     position: absolute;
     left: 0px;
     top: 123px;
+=======
+.logo{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 53px;
+    left: 813px;
+}
+
+.logotxt{
+    width: 245px;
+    height: 52px;
+    position: absolute;
+    left: 708px;
+    top: 83px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     text-align: center;
@@ -3470,11 +3488,19 @@
 }
 
 .title{
+<<<<<<< HEAD
     width: 100%;
     height: 46px;
     position: absolute;
     top: 228px;
     left: 0px;
+=======
+    width: 514px;
+    height: 46px;
+    position: absolute;
+    top: 228px;
+    left: 573px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     font-family: 'Open Sans', sans-serif;
     font-size: 21px;
     text-align: center;
@@ -3488,6 +3514,7 @@
 }
 
 .om{
+<<<<<<< HEAD
     display: flex;
     background-color: #e4e4e4;
     position: absolute;
@@ -3501,6 +3528,19 @@
     height: 113px;
     position: absolute;
     left: -145px;
+=======
+    background-color: #e4e4e4;
+    position: absolute;
+    top: 326px;
+    left: 114px;
+}
+
+.omh{
+    width: 219px;
+    height: 113px;
+    position: absolute;
+    left: 100px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     top: 110px;
     font-family: 'Open Sans', sans-serif;
     font-size: 31px;
@@ -3510,10 +3550,17 @@
 }
 
 .omt{
+<<<<<<< HEAD
     width: 32%;
     height: 234px;
     position: absolute;
     left: 60%;
+=======
+    width: 219px;
+    height: 234px;
+    position: absolute;
+    left: 440px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     top: 20px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -3522,6 +3569,7 @@
 }
 
 .of{
+<<<<<<< HEAD
     position: absolute;
     top: 691px;
     left: 114px;
@@ -3534,6 +3582,19 @@
     height: 113px;
     position: absolute;
     left: -145px;
+=======
+    background-color: ivory;
+    position: absolute;
+    top: 691px;
+    left: 114px;
+}
+
+.ofh{
+    width: 219px;
+    height: 113px;
+    position: absolute;
+    left: 100px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     top: 110px;
     font-family: 'Open Sans', sans-serif;
     font-size: 31px;
@@ -3543,10 +3604,17 @@
 }
 
 .oft{
+<<<<<<< HEAD
     width: 32%;
     height: 234px;
     position: absolute;
     left: 60%;
+=======
+    width: 219px;
+    height: 234px;
+    position: absolute;
+    left: 440px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     top: 20px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -3559,6 +3627,7 @@
     position: absolute;
     top: 1056px;
     left: 114px;
+<<<<<<< HEAD
     width: 42%;
 }
 
@@ -3567,6 +3636,15 @@
     height: 113px;
     position: absolute;
     left: -145px;
+=======
+}
+
+.osh{
+    width: 219px;
+    height: 113px;
+    position: absolute;
+    left: 100px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     top: 110px;
     font-family: 'Open Sans', sans-serif;
     font-size: 31px;
@@ -3576,6 +3654,7 @@
 }
 
 .osi{
+<<<<<<< HEAD
     width: 33%;
     height: 192px;
     position: absolute;
@@ -3585,11 +3664,20 @@
 
 .imageos{
     width: 100%;
+=======
+    width: 234px;
+    height: 192px;
+    position: absolute;
+    left: 410px;
+    top: 65px;
+    background-color: #BBBBBB;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
 }
 
 .omi{
     position: absolute;
     top: 326px;
+<<<<<<< HEAD
     left: 51.7%;
     width: 42%;
     /* 850 */
@@ -3602,27 +3690,48 @@
 
 .ofi{
     width: 42%;
+=======
+    left: 850px;
+    background-color: #BBBBBB;
+}
+
+.ofi{
+
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     position: absolute;
     top: 691px;
     left: 850px;
 }
 
 .ofp{
+<<<<<<< HEAD
     width: 42%;
     height: 311px;
     position: absolute;
     top: 0px;
     left: 25%;
+=======
+    width: 311px;
+    height: 311px;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     background-color: ivory;
     border-radius: 400px;
 }
 
+<<<<<<< HEAD
 .imageof{
     width: 100%;
 }
 
 .box{
     width: 20%;
+=======
+.box{
+    width: 328px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     height: 312px;
     background-color: #919090;
     font-family: 'Open Sans', sans-serif;
@@ -3632,44 +3741,68 @@
 .ft-1{
     position: absolute;
     top: 1056px;
+<<<<<<< HEAD
     left: 51.7%;
+=======
+    left: 850px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
 }
 
 .ft-2{
     position: absolute;
     top: 1056px;
+<<<<<<< HEAD
     left: 74.4%;
+=======
+    left: 1218px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
 }
 
 .ft1t{
     padding-left: 40px;
+<<<<<<< HEAD
     width: 100%;
+=======
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
 }
 
 .ft1h{
     font-size: 28px;
+<<<<<<< HEAD
     width: 100%;
+=======
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
 }
 
 .ft1s{
     font-size: 16px;
     font-weight: 400;
+<<<<<<< HEAD
     width: 100%;
+=======
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
 }
 
 .ft2t{
     padding-left: 40px;
+<<<<<<< HEAD
     width: 100%;
+=======
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
 }
 
 .ft2h{
     font-size: 28px;
+<<<<<<< HEAD
     width: 100%;
+=======
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
 }
 
 .ft2s{
     font-size: 16px;
     font-weight: 400;
+<<<<<<< HEAD
     width: 100%;
 }
 
@@ -3678,6 +3811,15 @@
     height: 140px;
     position: absolute;
     left: 7%;
+=======
+}
+
+.foot{
+    width: 1432px;
+    height: 140px;
+    position: absolute;
+    left: 114px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     top: 1421px;
     background-color: #514d57;
 }
@@ -3690,7 +3832,11 @@
     font-weight: 400;
     font-style: normal;
     position: absolute;
+<<<<<<< HEAD
     left: 11%;
+=======
+    left: 153px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
 
 }
 
@@ -3703,7 +3849,11 @@
     position: absolute;
     width: 93px;
     height: 18px;
+<<<<<<< HEAD
     left: 65.7%;
+=======
+    left: 941px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     top: 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -3717,7 +3867,11 @@
     position: absolute;
     width: 343px;
     height: 40px;
+<<<<<<< HEAD
     left: 65.7%;
+=======
+    left: 941px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     top: 42px;
     background-color: #eeeeee;
     border: 1px solid #c3c7d2;
@@ -3729,7 +3883,11 @@
     position: absolute;
     width: 197px;
     height: 40px;
+<<<<<<< HEAD
     left: 65.7%;
+=======
+    left: 941px;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
     right: 0px;
     top: 90px;
     background-color: #f3ea12;
@@ -3737,10 +3895,15 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 13px;
+<<<<<<< HEAD
+=======
+    border: none;
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
 }
 
 .submit:hover{
     cursor: pointer;
+<<<<<<< HEAD
 }
 
 .navbar{
@@ -3826,4 +3989,6 @@
 .navbutton:hover{
     color: #072ac8;
 }
+=======
+>>>>>>> 49bf7945fad4d07a0b4bab3d9da3c965891708ff
 }
