@@ -192,26 +192,34 @@ footer {
 }
 
 .call-us {
-  width: 50%;
+  width: 65%;
+  margin-right: 0;
 }
 
 .email-us {
   width: 50%;
 }
 
+.email {
+  padding-left: 50px;
+}
+
 .call-paragraph {
+  margin-top: 7%;
   padding-right: 5%;
-  margin-left: 50%;
-  width: 120px;
+  margin-left: 34%;
+  margin-right: 0;
+  width: 100%;
   font-size: 16px;
   width: 50%;
   text-align: center;
 }
 
 .email-paragraph {
-  margin-left: 5%;
+  margin-left: 0%;
+  margin-right: 10%;
   font-size: 16px;
-  width: 50%;
+  width: 55%;
   text-align: center;
 }
 
@@ -381,7 +389,7 @@ footer {
 
   .call-paragraph {
     padding-right: 5%;
-    margin-left: 20%;
+    margin-left: 10%;
     font-size: 16px;
     width: 100%;
     display: flex;
@@ -392,6 +400,10 @@ footer {
     font-size: 16px;
     width: 40%;
     display: flex;
+  }
+  .call-us {
+    margin-left: 0%;
+    text-align: center;
   }
   .email-us {
     width: 100%;
