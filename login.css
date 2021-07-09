@@ -28,17 +28,27 @@ body {
 a {
     text-decoration: none;
    font-weight: 600;
+   color: #180126;
   
+}
+
+a:hover{
+  background: #eef0f6;
 }
 
 .navbar a:visited {
   color: #180126;
 }
 
+.active:hover{
+  background: #f9f9f9;
+}
+
 .navbar a:hover {
   background-color: #f3ea12;
-  padding: 8px 12px;
-    border-radius: 5px;
+  padding: 3px;
+  border-radius: 5px;
+    color: #180126;
 }
 
 ul.nav-tabs,
@@ -110,6 +120,10 @@ h2 {
   width: 320px;
    margin-top: 15px;
   height: 40px;
+}
+
+.login-btn:hover, button:hover{
+  background: #eef0f6;
 }
 
 .checkbox {
@@ -228,7 +242,7 @@ h6{
   
   /* Style the hamburger menu */
   .topnav a.icon {
-    background: white;
+    background: #f9f9f9;;
     display: block;
     position: absolute;
     right: 0;
