@@ -40,10 +40,11 @@ p {
     grid-area: header;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
 }
 .logo {
-  margin: 1rem;
-  width: 200px;
+  width: 60%;
 }
 /* Nav */
 .mainNav {
@@ -54,6 +55,7 @@ p {
     margin-top: 1rem;
     display: none;
 }
+
 nav a,
   nav ul {
     color: var(--background);
@@ -85,7 +87,7 @@ nav a,
     border-radius: 20px;
     background-color: var(--background);
     border: 1px solid var(--tertiaryText);
-    margin: 1rem 2rem;
+    margin: 1rem;
     padding: 2rem;
 }
 .welcome p,
@@ -101,13 +103,13 @@ nav a,
  /* Clinics */ 
 .clinics{
     grid-area: clinics;
-    margin: 0 1rem 0 2rem;
+    margin: 1rem;
 }
 
 /* Users */
 .users {
     grid-area: users;
-    margin: 0 2rem 0 1rem;
+    margin: 1rem;
 }
 .users p {
   line-height: 2;
@@ -131,11 +133,14 @@ nav a,
 /* Reviews */
 .reviews {
     grid-area: reviews;
-    margin: 1rem 2rem;
+    margin: 1rem;
 }
+
 /* Styling for Table */
+.clinics, .reviews {
+  overflow-x: auto;
+}
 table {
-  width: 100%;
   border-collapse: separate;
   border-spacing: 0 1rem;
   text-align: left;
@@ -171,7 +176,7 @@ td.location {
   width: 40%;
 }
 td.quote {
-  width: 40%;
+  width: 100%;
 }
 /* Styling for Headings */
 .heading {
