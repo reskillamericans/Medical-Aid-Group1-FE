@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
     margin:0;
     padding:0;
@@ -125,7 +128,6 @@ table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 1rem;
-  margin-top: 10px;
   text-align: left;
 }
 th {
@@ -159,7 +161,12 @@ td > * {
   justify-content: space-between;
   align-items: center;
 }
-
+td.address {
+  text-align: center;
+}
+td.location {
+  width: 40%;
+}
 /* Button Styling */
 button.edit {
   padding: 0;
