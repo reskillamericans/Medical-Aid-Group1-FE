@@ -1,35 +1,19 @@
 body {
-  margin: 0;
-  padding: 0;
-  color: var(--primaryText);
-  font-family: "Open Sans", sans-serif;
+    margin:0;
+    padding:0;
+    color: var(--primaryText);
+    font-family: "Open Sans", sans-serif;
 }
 :root {
   --background: #f9f9f9;
   --primaryText: #180126;
   --secondaryText: #7e7a8f;
-  --tertiaryyText: #c3c7d2;
+  --tertiaryText: #c3c7d2;
   --primaryColor: #3a5df8;
   --secondaryColor: #f3ea12;
 }
-/* This creates a two column layout */
-.flex-container {
-  display: flex;
-}
-.flex-child {
-  flex: 1;
-  margin: 1rem;
-}
-
 button {
   cursor: pointer;
-}
-h1,
-h2,
-h3,
-p {
-  padding: 0;
-  margin: 0;
 }
 h1 {
   font-size: 37px;
@@ -47,69 +31,140 @@ p {
   font-size: 16px;
   font-weight: 400;
 }
-.logo {
-  margin: 1.5rem;
+
+/* Header */
+.mainHead {
+    grid-area: header;
 }
-/* Styling for Side Navigation */
-nav {
-  background-color: var(--primaryColor);
-  border-radius: 0 20px 0 0;
-  color: var(--background);
-  margin-top: 1rem;
+
+/* Nav */
+.mainNav {
+    grid-area: sidebar;
+    background-color: var(--primaryColor);
+    border-radius: 0 20px 0 0;
+    color: var(--background);
+    margin-top: 1rem;
 }
 nav a,
-nav ul {
-  color: var(--background);
-  text-decoration: none;
-  list-style-type: none;
-  margin-left: 0;
-  padding: 0;
-}
-nav a:hover,
-.activeLink {
-  color: var(--secondaryColor);
-}
-.navLinks {
-  padding: 3rem;
-}
-.navLinks li {
-  line-height: 80px;
-}
-.navLinks img {
-  vertical-align: middle;
-  padding-right: 5px;
-}
-/* Styling for the Welcome Alerts bubble */
+  nav ul {
+    color: var(--background);
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+  }
+  nav a:hover,
+  .activeLink {
+    color: var(--secondaryColor);
+  }
+  .navLinks {
+    padding: 3rem;
+  }
+  .navLinks li {
+    line-height: 80px;
+  }
+  .navLinks img {
+    vertical-align: middle;
+    padding-right: 5px;
+  }
+
+/* Welcome Alerts */
 .welcome {
-  display: flex;
-  justify-content: space-between;
-  border-radius: 20px;
-  background-color: var(--background);
-  border: 1px solid var(--tertiaryyText);
-  margin: 0 1rem;
-  padding: 2rem;
-  align-items: center;
+    grid-area: welcome;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--background);
+    border: 1px solid var(--tertiaryText);
+    margin: 1rem 1rem;
+    padding: 2rem;
 }
 .welcome p,
-.welcome h1 {
-  line-height: 2.5;
+  .welcome h1 {
+    line-height: normal;
+  }
+  .welcomeAlerts span {
+    font-weight: 700;
+  }
+.userPic {
+  display: none;
 }
-.welcomeAlerts span {
-  font-weight: 700;
+ /* Clinics */ 
+.clinics{
+    grid-area: clinics;
+    margin: 0 1rem;
 }
+
+/* Users */
+.users {
+    grid-area: users;
+    margin: 0 1rem;
+}
+.bubble {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background);
+  border: 1px solid var(--tertiaryText);
+  border-radius: 20px;
+  margin: 1rem 0;
+  padding: 7px;
+  text-align: center;
+}
+
+/* Reviews */
+.reviews {
+    grid-area: reviews;
+    margin: 1rem;
+}
+/* Styling for Table */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+  margin-top: 10px;
+  text-align: left;
+}
+th {
+  padding: 0 10px;
+}
+
+td {
+  border: 1px solid var(--tertiaryText);
+  border-style: solid none;
+  padding: 10px;
+  background-color: var(--background);
+}
+td:first-child {
+  border-left-style: solid;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+td:last-child {
+  border-right-style: solid;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-right: 0;
+}
+td > * {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+/* Styling for Headings */
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Button Styling */
 button.edit {
   padding: 0;
   margin: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
-/* Heading section for section bubbles */
-.heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 .view img {
   width: 30px;
@@ -118,22 +173,10 @@ button.view {
   width: 50px;
   height: 34px;
   border-radius: 40px;
-  border: 1px solid var(--tertiaryyText);
+  border: 1px solid var(--tertiaryText);
   background-color: var(--background);
   margin-left: 5px;
 }
-.bubble {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--background);
-  border: 1px solid var(--tertiaryyText);
-  border-radius: 20px;
-  margin: 1rem 0;
-  padding: 7px;
-}
-
 button.all {
   width: 55px;
   height: 24px;
@@ -141,39 +184,6 @@ button.all {
   background-color: var(--primaryText);
   color: white;
   border: none;
-}
-.clinicsUsers p {
-  text-align: center;
-}
-
-.clinicsUsers {
-  margin-top: 1rem;
-}
-
-.recentClinics {
-  width: 60%;
-  flex: 1.5;
-}
-.recentUsers {
-  flex: 1;
-  margin-left: 2rem;
-}
-.recentUsers p {
-  line-height: 2;
-}
-
-.recentFeedback {
-  display: flex;
-  justify-content: start;
-}
-
-.recentFeedback button.all {
-  margin-left: 1rem;
-}
-
-th,
-td {
-  text-align: left;
 }
 button.action {
   border: none;
@@ -183,6 +193,7 @@ button.action {
   width: 63px;
   font-weight: 700;
   font-size: 13px;
+  margin-right: 5px;
 }
 button.review {
   background-color: #fec9de;
@@ -190,37 +201,34 @@ button.review {
 button.accept {
   background-color: #aceb98;
 }
-
-table {
-  width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 1rem;
-  margin-top: 10px;
-}
-td {
-    border: 1px solid var(--tertiaryyText);
-    border-style: solid none;
-    padding: 10px;
-    background-color: var(--background);
-}
-td:first-child {
-    border-left-style: solid;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-td:last-child {
-    border-right-style: solid;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
-}
-td > * {
-    vertical-align: middle;
-    margin-right: 5px;
+/* Mobile first column layout */
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "sidebar"
+        "welcome"
+        "clinics"
+        "users"
+        "reviews";
 }
 
-/*tr.feedbackBubble {
-  border: 1px solid var(--tertiaryyText);
-  border-radius: 20px;
-  background-color: var(--background);
-  border-collapse: collapse;
+@media (min-width: 801px) {
+    .wrapper {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+            "header  header header"
+            "sidebar welcome welcome"
+            "sidebar clinics users"
+            "sidebar reviews reviews";
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .welcome {
+      display: flex;
+    }
+    .userPic {
+      display: block;
+    }
 }
