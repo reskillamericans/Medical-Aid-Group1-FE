@@ -111,6 +111,9 @@ nav a,
   padding: 7px;
   text-align: center;
 }
+#contactsPic {
+  width: 70px;
+}
 
 /* Reviews */
 .reviews {
@@ -128,7 +131,6 @@ table {
 th {
   padding: 0 10px;
 }
-
 td {
   border: 1px solid var(--tertiaryText);
   border-style: solid none;
@@ -230,5 +232,8 @@ button.accept {
     }
     .userPic {
       display: block;
+    }
+    #contactsPic {
+      width: 75px;
     }
 }
