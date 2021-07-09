@@ -79,7 +79,7 @@ nav a,
     border-radius: 20px;
     background-color: var(--background);
     border: 1px solid var(--tertiaryText);
-    margin: 1rem 1rem;
+    margin: 1rem 2rem;
     padding: 2rem;
 }
 .welcome p,
@@ -95,14 +95,18 @@ nav a,
  /* Clinics */ 
 .clinics{
     grid-area: clinics;
-    margin: 0 1rem;
+    margin: 0 1rem 0 2rem;
 }
 
 /* Users */
 .users {
     grid-area: users;
-    margin: 0 1rem;
+    margin: 0 2rem 0 1rem;
 }
+.users p {
+  line-height: 2;
+}
+
 .bubble {
   display: flex;
   justify-content: space-between;
@@ -121,7 +125,7 @@ nav a,
 /* Reviews */
 .reviews {
     grid-area: reviews;
-    margin: 1rem;
+    margin: 1rem 2rem;
 }
 /* Styling for Table */
 table {
@@ -224,7 +228,7 @@ button.accept {
 
 @media (min-width: 801px) {
     .wrapper {
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 309px 1.5fr 1fr;
         grid-template-areas: 
             "header  header header"
             "sidebar welcome welcome"
