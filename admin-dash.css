@@ -38,8 +38,13 @@ p {
 /* Header */
 .mainHead {
     grid-area: header;
+    display: flex;
+    justify-content: space-between;
 }
-
+.logo {
+  margin: 1rem;
+  width: 200px;
+}
 /* Nav */
 .mainNav {
     grid-area: sidebar;
@@ -47,6 +52,7 @@ p {
     border-radius: 0 20px 0 0;
     color: var(--background);
     margin-top: 1rem;
+    display: none;
 }
 nav a,
   nav ul {
@@ -241,6 +247,15 @@ button.accept {
     }
     nav ul{
         flex-direction: column;
+    }
+    .mainNav{
+      display:block;
+    }
+    .logo {
+      width: auto;
+    }
+    .icon {
+      display: none;  
     }
     .welcome {
       display: flex;
