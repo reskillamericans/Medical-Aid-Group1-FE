@@ -2,13 +2,14 @@ body {
   margin: 0;
   padding: 0;
   color: var(--primaryText);
+  font-family: "Open Sans", sans-serif;
 }
 :root {
   --background: #f9f9f9;
   --primaryText: #180126;
   --secondaryText: #7e7a8f;
   --tertiaryyText: #c3c7d2;
-  --primaryColor: #072ac8;
+  --primaryColor: #3a5df8;
   --secondaryColor: #f3ea12;
 }
 /* This creates a two column layout */
@@ -20,6 +21,29 @@ body {
   margin: 1rem;
 }
 
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 37px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+}
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
 /* Styling for Side Navigation */
 nav {
   background-color: var(--primaryColor);
@@ -43,24 +67,51 @@ nav ul {
   border: 1px solid var(--tertiaryyText);
   margin: 0 1rem;
   padding: 1rem;
+  align-items: center;
 }
 
 /* Heading section for section bubbles */
 .heading {
-  background-color: green;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+.view img {
+  width: 30px;
+}
+button.view {
+  width: 50px;
+  height: 34px;
+  border-radius: 40px;
+  border: 1px solid var(--tertiaryyText);
+  background-color: var(--background);
 }
 .bubble {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--background);
   border: 1px solid var(--tertiaryyText);
   border-radius: 20px;
-  padding: 1rem;
+  margin: 1rem 0;
+  padding: 7px;
 }
+
 .clinicsUsers p {
   text-align: center;
+}
+
+.clinicsUsers {
+  margin-top: 1rem;
+}
+
+.recentClinics {
+  width: 60%;
+  margin-right: 0;
+}
+.recentUsers {
+  background-color: yellow;
+  margin-left: 4rem;
 }
