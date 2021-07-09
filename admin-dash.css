@@ -137,8 +137,15 @@ nav a,
 }
 
 /* Styling for Table */
-.clinics, .reviews {
+.reviews {
   overflow-x: auto;
+}
+.reviews table {
+  width: 600px;
+}
+.reviews td:first-child {
+  width: 225px;
+
 }
 table {
   border-collapse: separate;
@@ -175,8 +182,11 @@ td.address {
 td.location {
   width: 40%;
 }
-td.quote {
-  width: 100%;
+
+.stars {
+  width: 90px;
+  padding:0;
+  margin:0;
 }
 /* Styling for Headings */
 .heading {
@@ -270,5 +280,8 @@ button.accept {
     }
     #contactsPic {
       width: 75px;
+    }
+    .reviews table, .clinics table {
+      width: 100%;
     }
 }
