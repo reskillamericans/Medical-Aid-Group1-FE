@@ -99,6 +99,14 @@ button.view {
   padding: 7px;
 }
 
+button.all {
+  width: 55px;
+  height: 24px;
+  border-radius: 40px;
+  background-color: var(--primaryText);
+  color: white;
+  border: none;
+}
 .clinicsUsers p {
   text-align: center;
 }
@@ -109,9 +117,12 @@ button.view {
 
 .recentClinics {
   width: 60%;
-  margin-right: 0;
+  flex: 1.5;
 }
 .recentUsers {
-  background-color: yellow;
-  margin-left: 4rem;
+  flex: 1;
+  margin-left: 2rem;
+}
+.recentUsers p {
+  line-height: 2;
 }
