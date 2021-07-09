@@ -19,11 +19,11 @@ button {
   cursor: pointer;
 }
 h1 {
-  font-size: 37px;
+  font-size: 30px;
   font-weight: 400;
 }
 h2 {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
 }
 h3 {
@@ -63,6 +63,7 @@ nav a,
     list-style-type: none;
     margin-left: 0;
     padding: 0;
+    margin-top:0;
   }
   nav a:hover,
   .activeLink {
@@ -133,7 +134,7 @@ nav a,
 /* Reviews */
 .reviews {
     grid-area: reviews;
-    margin: 1rem;
+    margin: 0 1rem 1rem 1rem;
 }
 
 /* Styling for Table */
@@ -195,7 +196,9 @@ td.location {
   justify-content: space-between;
   align-items: center;
 }
-
+.heading h2 {
+  width: 60%;
+}
 /* Button Styling */
 button.edit {
   padding: 0;
@@ -259,6 +262,15 @@ button.accept {
             "sidebar welcome welcome"
             "sidebar clinics users"
             "sidebar reviews reviews";
+    }
+    h1 {
+      font-size: 37px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    .heading h2 {
+      width: auto;
     }
     nav ul{
         flex-direction: column;
