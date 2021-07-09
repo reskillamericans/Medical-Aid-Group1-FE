@@ -1,18 +1,66 @@
-
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--primaryText);
+}
+:root {
+  --background: #f9f9f9;
+  --primaryText: #180126;
+  --secondaryText: #7e7a8f;
+  --tertiaryyText: #c3c7d2;
+  --primaryColor: #072ac8;
+  --secondaryColor: #f3ea12;
+}
+/* This creates a two column layout */
 .flex-container {
-    display: flex;
+  display: flex;
 }
 .flex-child {
-    flex: 1;
+  flex: 1;
+  margin: 1rem;
 }
 
+/* Styling for Side Navigation */
+nav {
+  background-color: var(--primaryColor);
+  border-radius: 0 20px 0 0;
+  color: var(--background);
+  margin-top: 1rem;
+}
+nav a,
+nav ul {
+  color: var(--background);
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* Styling for the Welcome Alerts bubble */
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  background-color: var(--background);
+  border: 1px solid var(--tertiaryyText);
+  margin: 0 1rem;
+  padding: 1rem;
+}
+
+/* Heading section for section bubbles */
 .heading {
-    background-color: green;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
-.recentUsers {
-    background-color: seagreen;
+.bubble {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--background);
+  border: 1px solid var(--tertiaryyText);
+  border-radius: 20px;
+  padding: 1rem;
+}
+.clinicsUsers p {
+  text-align: center;
 }

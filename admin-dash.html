@@ -9,7 +9,11 @@
   </head>
   <body>
     <header>
-      <img src="images/admin-dash/logo_header.svg" alt="Century Health logo" />
+      <img
+        class="logo"
+        src="images/admin-dash/logo_header.svg"
+        alt="Century Health logo"
+      />
     </header>
     <div class="flex-container sideNav">
       <nav>
@@ -68,12 +72,15 @@
       <div class="flex-child">
         <!-- Welcome and Alerts Bubble -->
         <div class="welcome">
-          <h1>Welcome to your dashboard, Mr. Picard</h1>
-          <p>You have <span>4 Patient Feedback</span> awaiting approval</p>
-          <p><span>3 User Profiles</span> to review</p>
-          <p>
-            <span>3 new requests</span> from practitioners to join the platform
-          </p>
+          <div class="welcomeAlerts">
+            <h1>Welcome to your dashboard, Mr. Picard</h1>
+            <p>You have <span>4 Patient Feedback</span> awaiting approval</p>
+            <p><span>3 User Profiles</span> to review</p>
+            <p>
+              <span>3 new requests</span> from practitioners to join the
+              platform
+            </p>
+          </div>
           <img
             src="images/admin-dash/picard.svg"
             alt="image of current user"
@@ -82,7 +89,7 @@
         </div>
         <!-- Welcome and Alerts Bubble End -->
 
-        <div class="flex-container">
+        <div class="flex-container clinicsUsers">
           <div class="flex-child recentClinics">
             <div class="row heading">
               <h2>Recent Pharmacies and Clinics</h2>
@@ -101,11 +108,45 @@
                 </button>
               </div>
             </div>
+            <!--Row ending-->
+            <div class="bubble">
+              <h3>Giant Pharmacy#3201</h3>
+              <p>4517 Washington Ave.<br />Manchester, Kentucky 39495</p>
+              <img src="images/admin-dash/edit_icon.svg" alt="edit icon" />
+            </div>
+            <div class="bubble">
+              <h3>Quark's Pharmacy</h3>
+              <p>2118 Thornridge Cir.<br />Syracuse, Connecticut</p>
+              <img src="images/admin-dash/edit_icon.svg" alt="edit icon" />
+            </div>
+            <div class="bubble">
+              <h3>Vulcan General Hospital</h3>
+              <p>4140 Parker Rd.<br />Allentown, New Mexico 31134</p>
+              <img src="images/admin-dash/edit_icon.svg" alt="edit icon" />
+            </div>
+            <div class="bubble">
+              <h3>Klingon Clinic</h3>
+              <p>6391 Elgin St.<br />Celina, Delaware 10299</p>
+              <img src="images/admin-dash/edit_icon.svg" alt="edit icon" />
+            </div>
           </div>
           <div class="flex-child recentUsers">
-            <h2>Recent Users</h2>
+            <div class="heading">
+              <h2>Recent Users</h2>
+              <button>all</button>
+            </div>
+            <div class="bubble userBubble">
+              <img
+                src="images/admin-dash/crusher.svg"
+                alt="Profile pic of recent user"
+              />
+              <p><b>Mr. Wesley Crusher</b><br />added 6/28/21</p>
+              <img src="images/admin-dash/edit_icon.svg" alt="edit icon" />
+            </div>
           </div>
+          <!--recent-Users end-->
         </div>
+        <!--Welcome Flex-Container end starting-->
       </div>
     </div>
   </body>
