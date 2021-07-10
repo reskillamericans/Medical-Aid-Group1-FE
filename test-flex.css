@@ -1,0 +1,31 @@
+.mainNav {
+  grid-area: sidebar;
+  background-color: var(--primaryColor);
+  border-radius: 0 20px 0 0;
+  color: var(--background);
+  margin-top: 0rem;
+  display: none;
+}
+nav a,
+nav ul {
+  color: var(--background);
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+  margin-top:0;
+}
+nav a:hover,
+.activeLink {
+  color: var(--secondaryColor);
+}
+.navLinks {
+  padding: 2rem;
+}
+.navLinks li {
+  line-height: 80px;
+}
+.navLinks img {
+  vertical-align: middle;
+  padding-right: 5px;
+}

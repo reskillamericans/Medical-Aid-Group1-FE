@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
 }
 body {
-    margin: 0 1rem;
+    margin: 0;
     padding:0;
     color: var(--primaryText);
     font-family: "Open Sans", sans-serif;
@@ -42,49 +42,65 @@ p {
     border: 1px solid var(--tertiaryText);
     align-items: center;
 }
-/* Header */
-.mainHead {
-    grid-area: header;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+/************************************ Section Styling ************************************/
+
+/********** Nav **********/
+header {
+  grid-area: header;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+nav {
+  grid-area: sidebar;
 }
 .logo {
   width: 60%;
-  margin: 10px;
+  margin: 0;
 }
-/********** Nav **********/
-.mainNav {
-    grid-area: sidebar;
-    background-color: var(--primaryColor);
-    border-radius: 0 20px 0 0;
-    color: var(--background);
-    margin-top: 0rem;
-    display: none;
+.hamburger {
+  display: block;
+  float: right;
 }
-nav a,
-  nav ul {
-    color: var(--background);
-    text-decoration: none;
-    list-style-type: none;
-    margin-left: 0;
-    padding: 0;
-    margin-top:0;
-  }
-  nav a:hover,
-  .activeLink {
-    color: var(--secondaryColor);
-  }
-  .navLinks {
-    padding: 2rem;
-  }
-  .navLinks li {
-    line-height: 80px;
-  }
-  .navLinks img {
-    vertical-align: middle;
-    padding-right: 5px;
-  }
+button.hamburger {
+ padding: 0;
+ margin: 0;
+ background-color: transparent;
+ border: none;
+}
+
+.nav-ul {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 70vh;
+  background-color: blue;
+  justify-content: center;
+  z-index: 10;
+} 
+.nav-ul a {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  line-height: 1.5;
+}
+.nav-ul li {
+  padding: 20px;
+}
+.nav-ul img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.nav-ul.show {
+   display: flex;
+}
+
+
 
 /* Welcome Alerts */
 .welcome {
@@ -281,7 +297,7 @@ button.accept:hover {
         "reviews";
 }
 
-/************************Styling for Larger Screens 801px Up************************/
+/************************Styling for Larger Screens 801px Up*****************************/
 @media (min-width: 801px) {
     body {
       margin:0 1rem 0 0;
@@ -310,18 +326,43 @@ button.accept:hover {
    .reviews .heading button  {
       margin-left: 10px;
     }
-    nav ul{
-        flex-direction: column;
-    }
-    .mainNav{
-      display:block;
-    }
+    /***** Nav *****/
     .logo {
       width: auto;
     }
-    .icon {
-      display: none;  
-    }
+   nav {
+
+   }
+   .nav-ul {
+     display: flex;
+     background-color: var(--primaryColor);
+     border-radius: 0 20px 0 0;
+     color: var(--background);
+     margin-top: 0rem;
+     height: 100%;
+   }
+   nav a,
+nav ul {
+  color: var(--background);
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+  margin-top:0;
+}
+nav a:hover,
+.activeLink {
+  color: var(--secondaryColor);
+}
+
+.nav-ul li {
+  line-height: 80px;
+}
+.nav-ul img {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
     .welcome {
       display: flex;
     }

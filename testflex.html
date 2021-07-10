@@ -6,40 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="admin-dash.css">
+    <link rel="stylesheet" href="test-flex.css">
+    <script src="admin-dash.js" defer></script>
 </head>
 
 <body>
-    <section class="clinics">
-        <div class="bubble clinics-bubble">
-            <h3>Giant Pharmacy #3201</h3>
-            <p class="address">4517 Washington Ave.<br />Manchester, Kentucky 39495</p>
-            <button class="edit">
-                <img src="images/admin-dash/edit_icon.svg" alt="edit icon">
-            </button>
-        </div>
-        <div class="bubble clinics-bubble">
-            <h3>Quark's Pharmacy</h3>
-            <p class="address">2118 Thornridge Cir.<br />Syracuse, Connecticut</p>
-            <button class="edit">
-                <img src="images/admin-dash/edit_icon.svg" alt="edit icon">
-            </button>
-        </div>
-        <div class="bubble clinics-bubble">
-            <h3>Vulcan General Hospital</h3>
-            <p class="address">4140 Parker Rd.<br />Allentown, New Mexico 31134</p>
-            <button class="edit">
-                <img src="images/admin-dash/edit_icon.svg" alt="edit icon">
-            </button>
-        </div>
-        <div class="bubble clinics-bubble">
-            <h3>Klingon Clinic</h3>
-            <p class="address">6391 Elgin St.<br />Celina, Delaware 10299</p>
-            <button class="edit">
-                <img src="images/admin-dash/edit_icon.svg" alt="edit icon">
-            </button>
-        </div>
-    </section>
+    <header><a href="#"><img src="images/admin-dash/logo_header.svg" class="logo"></a>
+        <button class="hamburger" id="hamburger"><img src="images/admin-dash/icon-hamburger.svg"></button>
+    </header>
+    <nav>
+        <ul class="nav-ul" id="nav-ul">
+            <li>
+                <a href="admin-dash.html" class="activeLink">
+                    <img src="images/admin-dash/dashboard_icon.svg" alt="dashboard icon" />
+                    Dashboard</a>
+            </li>
+            <li>
+                <a href="admin-dash.html">
+                    <img src="images/admin-dash/users_icon.svg" alt="users icon" />
+                    Users</a>
+            </li>
+            <li>
+                <a href="admin-dash.html">
+                    <img src="images/admin-dash/clinics_icon.svg" alt="Clinics icon" />
+                    Pharmacies and Clinics</a>
+            </li>
+            <li>
+                <a href="admin-dash.html">
+                    <img src="images/admin-dash/requests_icon.svg" alt="requests icon" />
+                    Requests</a>
+            </li>
+            <li>
+                <a href="admin-dash.html">
+                    <img src="images/admin-dash/feedback_icon.svg" alt="feedback icon" />
+                    Feedback & Complaints</a>
+            </li>
+            <li>
+                <a href="admin-dash.html">
+                    <img src="images/admin-dash/logout_icon.svg" alt="logout icon" />
+                    Logout</a>
+            </li>
+        </ul>
+    </nav>
+
 </body>
 
 </html>
