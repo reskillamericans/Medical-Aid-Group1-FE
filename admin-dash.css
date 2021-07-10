@@ -147,7 +147,6 @@ nav a,
 }
 .reviews td:first-child {
   width: 225px;
-
 }
 table {
   border-collapse: separate;
@@ -196,6 +195,7 @@ td.location {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: -20px;
 }
 .heading h2 {
   width: 60%;
@@ -306,4 +306,5 @@ button.accept {
     .reviews table, .clinics table {
       width: 100%;
     }
+   
 }
