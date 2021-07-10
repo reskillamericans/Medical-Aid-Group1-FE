@@ -323,7 +323,13 @@ button.accept {
     #contactsPic {
       width: 75px;
     }
+    .welcome, .reviews {
+      margin: 0rem 2rem;
+    }
     /**** Clinics Styling Desktop View *****/
+    .clinics {
+      margin: 1rem 2rem;
+    }
     .clinics-bubble {
       display: grid;
       grid-template-columns: 1fr 2fr 50px;
@@ -333,6 +339,9 @@ button.accept {
     }
     .address {
       text-align: center;
+    }
+    .users {
+      margin: 1rem 2rem 1rem 1rem;
     }
     /***** Reviews Styling Desktop View n*****/
     .review-bubble{
