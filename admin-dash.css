@@ -320,8 +320,43 @@ button.accept {
 }
 
 /*Test Flex Styling */
-
-
+.clinics-bubble {
+  display: grid;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  grid-template-areas: 
+    "clinicName edit"
+    "address edit";
+  padding: 15px;
+  grid-template-columns: 1fr 50px;
+}
+.clinic-name {
+  grid-area: clinicName;
+}
+h3.clinic-name {
+  margin: 0;
+}
+.address {
+  grid-area: address;
+  line-height: 1.5;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.edit {
+  grid-area: edit;
+  float: right;
+}
+.clinics-bubble h3 {
+  text-align: left;
+}
+.clinics-bubble img {
+  text-align: right;
+}
 @media (min-width: 801px) {
- 
+  .clinics-bubble {
+    display: grid;
+    grid-template-columns: 1fr 350px 50px;
+    justify-content: space-evenly;
+  }
 }
