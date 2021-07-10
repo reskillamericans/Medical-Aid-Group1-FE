@@ -330,6 +330,11 @@ button.accept {
     "address edit";
   padding: 15px;
   grid-template-columns: 1fr 50px;
+  background-color: var(--background);
+  border: 1px solid var(--tertiaryText);
+  border-radius: 20px;
+  margin: 1rem 0;
+  padding: 7px;
 }
 .clinic-name {
   grid-area: clinicName;
@@ -356,7 +361,12 @@ h3.clinic-name {
 @media (min-width: 801px) {
   .clinics-bubble {
     display: grid;
-    grid-template-columns: 1fr 350px 50px;
+    grid-template-columns: 1fr 1fr 50px;
+    grid-template-areas: 
+      "clinicName address edit";
     justify-content: space-evenly;
+  }
+  .address {
+    text-align: center;
   }
 }
