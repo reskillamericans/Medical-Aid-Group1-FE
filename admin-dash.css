@@ -167,7 +167,7 @@ h3.clinic-name {
 /************** Reviews *************/
 .reviews {
     grid-area: reviews;
-    margin: 0 1rem 1rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
 }
 .reviews .heading{
   margin-bottom: 5px;
@@ -258,8 +258,16 @@ button.action {
 button.review {
   background-color: #fec9de;
 }
+button.review:hover {
+  background-color: white;
+  border: 2px solid #fec9de;
+}
 button.accept {
   background-color: #aceb98;
+}
+button.accept:hover {
+  background-color: white;
+  border: 2px solid #aceb98;
 }
 /* Mobile first column layout */
 .wrapper {
@@ -344,6 +352,9 @@ button.accept {
       margin: 1rem 2rem 1rem 1rem;
     }
     /***** Reviews Styling Desktop View n*****/
+    .reviews {
+      margin-bottom: 1rem;
+    }
     .review-bubble{
       grid-template-columns: 1fr 550px 1fr 150px;
       justify-content: center;
