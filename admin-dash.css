@@ -245,6 +245,7 @@ button.accept {
         "reviews";
 }
 
+/************************Styling for Larger Screens 801px Up************************/
 @media (min-width: 801px) {
     body {
       margin:0 1rem 0 0;
@@ -268,6 +269,7 @@ button.accept {
     }
     .reviews .heading  {
       justify-content: flex-start;
+      margin-bottom: -20px;
     }
    .reviews .heading button  {
       margin-left: 10px;
@@ -296,7 +298,7 @@ button.accept {
     .reviews table, .clinics table {
       width: 100%;
     }
-    /* Styling for the Reviews section */
+    /*****Styling for the Reviews section*****/
     .review-bubble{
       grid-template-columns: 1fr 550px 1fr 150px;
       justify-content: center;
@@ -311,6 +313,9 @@ button.accept {
       padding: 0;
       margin-left: 16px;
       margin-bottom: -20px;
+    }
+    .reviewer p {
+      margin: 5px;
     }
 }
 
