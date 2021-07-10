@@ -70,7 +70,7 @@ nav a,
     color: var(--secondaryColor);
   }
   .navLinks {
-    padding: 3rem;
+    padding: 2rem;
   }
   .navLinks li {
     line-height: 80px;
