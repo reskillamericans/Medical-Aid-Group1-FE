@@ -2,11 +2,12 @@
   box-sizing: border-box;
 }
 body {
-    margin:0;
+    margin: 0 1rem;
     padding:0;
     color: var(--primaryText);
     font-family: "Open Sans", sans-serif;
 }
+/* Colors and Typography */
 :root {
   --background: #f9f9f9;
   --primaryText: #180126;
@@ -41,10 +42,10 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
 }
 .logo {
   width: 60%;
+  margin: 10px;
 }
 /* Nav */
 .mainNav {
@@ -52,10 +53,9 @@ p {
     background-color: var(--primaryColor);
     border-radius: 0 20px 0 0;
     color: var(--background);
-    margin-top: 1rem;
+    margin-top: 0rem;
     display: none;
 }
-
 nav a,
   nav ul {
     color: var(--background);
@@ -88,7 +88,7 @@ nav a,
     border-radius: 20px;
     background-color: var(--background);
     border: 1px solid var(--tertiaryText);
-    margin: 1rem;
+    margin: 0 1rem 0rem 1rem;
     padding: 2rem;
 }
 .welcome p,
@@ -129,6 +129,7 @@ nav a,
 }
 #contactsPic {
   width: 70px;
+  margin-left: 5px;
 }
 
 /* Reviews */
@@ -255,6 +256,9 @@ button.accept {
 }
 
 @media (min-width: 801px) {
+    body {
+      margin:0 1rem 0 0;
+    }
     .wrapper {
         grid-template-columns: 309px 1.5fr 1fr;
         grid-template-areas: 
@@ -271,6 +275,12 @@ button.accept {
     }
     .heading h2 {
       width: auto;
+    }
+    .reviews .heading  {
+      justify-content: flex-start;
+    }
+   .reviews .heading button  {
+      margin-left: 10px;
     }
     nav ul{
         flex-direction: column;
