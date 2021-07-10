@@ -1,13 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-body {
-    margin: 0 1rem;
-    padding:0;
-    color: var(--primaryText);
-    font-family: "Open Sans", sans-serif;
-}
-/* Colors and Typography */
+/* Body Styling */
 :root {
   --background: #f9f9f9;
   --primaryText: #180126;
@@ -15,6 +6,16 @@ body {
   --tertiaryText: #c3c7d2;
   --primaryColor: #3a5df8;
   --secondaryColor: #f3ea12;
+}
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+    margin: 0 1rem;
+    padding:0;
+    color: var(--primaryText);
+    font-family: "Open Sans", sans-serif;
 }
 button {
   cursor: pointer;
@@ -35,7 +36,12 @@ p {
   font-size: 16px;
   font-weight: 400;
 }
-
+.bubble-style{
+  border-radius: 20px;
+    background-color: var(--background);
+    border: 1px solid var(--tertiaryText);
+    align-items: center;
+}
 /* Header */
 .mainHead {
     grid-area: header;
@@ -47,7 +53,7 @@ p {
   width: 60%;
   margin: 10px;
 }
-/* Nav */
+/********** Nav **********/
 .mainNav {
     grid-area: sidebar;
     background-color: var(--primaryColor);
@@ -84,10 +90,6 @@ nav a,
 .welcome {
     grid-area: welcome;
     justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
-    background-color: var(--background);
-    border: 1px solid var(--tertiaryText);
     margin: 0 1rem 0rem 1rem;
     padding: 2rem;
 }
@@ -101,13 +103,47 @@ nav a,
 .userPic {
   display: none;
 }
- /* Clinics */ 
+ /********* Clinics ********/ 
 .clinics{
     grid-area: clinics;
     margin: 1rem;
 }
+.clinics-bubble {
+  display: grid;
+  justify-content: left;
+  text-align: left;
+  grid-template-areas: 
+    "clinicName edit"
+    "address edit";
+  padding: 15px;
+  grid-template-columns: 1fr 50px;
+  margin: 1rem 0;
+  padding: 7px;
+}
+.clinic-name {
+  grid-area: clinicName;
+}
+h3.clinic-name {
+  margin: 0;
+}
+.address {
+  grid-area: address;
+  line-height: 1.5;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.edit {
+  grid-area: edit;
+  float: right;
+}
+.clinics-bubble h3 {
+  text-align: left;
+}
+.clinics-bubble img {
+  text-align: right;
+}
 
-/* Users */
+/********** Users **********/
 .users {
     grid-area: users;
     margin: 1rem;
@@ -119,10 +155,6 @@ nav a,
 .bubble {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: var(--background);
-  border: 1px solid var(--tertiaryText);
-  border-radius: 20px;
   margin: 1rem 0;
   padding: 7px;
   text-align: center;
@@ -142,11 +174,7 @@ nav a,
 }
 .review-bubble {
   display: grid;
-  background-color: var(--background);
-  border: 1px solid var(--tertiaryText);
-  border-radius: 20px;
   justify-content: center;
-  align-items: center;
   text-align: center;
   margin: 10px 0;
 }
@@ -295,10 +323,18 @@ button.accept {
     #contactsPic {
       width: 75px;
     }
-    .reviews table, .clinics table {
-      width: 100%;
+    /**** Clinics Styling Desktop View *****/
+    .clinics-bubble {
+      display: grid;
+      grid-template-columns: 1fr 2fr 50px;
+      grid-template-areas: 
+        "clinicName address edit";
+      justify-content: space-evenly;
     }
-    /*****Styling for the Reviews section*****/
+    .address {
+      text-align: center;
+    }
+    /***** Reviews Styling Desktop View n*****/
     .review-bubble{
       grid-template-columns: 1fr 550px 1fr 150px;
       justify-content: center;
@@ -320,53 +356,7 @@ button.accept {
 }
 
 /*Test Flex Styling */
-.clinics-bubble {
-  display: grid;
-  justify-content: left;
-  align-items: center;
-  text-align: left;
-  grid-template-areas: 
-    "clinicName edit"
-    "address edit";
-  padding: 15px;
-  grid-template-columns: 1fr 50px;
-  background-color: var(--background);
-  border: 1px solid var(--tertiaryText);
-  border-radius: 20px;
-  margin: 1rem 0;
-  padding: 7px;
-}
-.clinic-name {
-  grid-area: clinicName;
-}
-h3.clinic-name {
-  margin: 0;
-}
-.address {
-  grid-area: address;
-  line-height: 1.5;
-  margin-top: 5px;
-  margin-bottom: 0px;
-}
-.edit {
-  grid-area: edit;
-  float: right;
-}
-.clinics-bubble h3 {
-  text-align: left;
-}
-.clinics-bubble img {
-  text-align: right;
-}
+
 @media (min-width: 801px) {
-  .clinics-bubble {
-    display: grid;
-    grid-template-columns: 1fr 1fr 50px;
-    grid-template-areas: 
-      "clinicName address edit";
-    justify-content: space-evenly;
-  }
-  .address {
-    text-align: center;
-  }
+  
 }
