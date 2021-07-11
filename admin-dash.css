@@ -21,7 +21,7 @@ button {
   cursor: pointer;
 }
 h1 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 400;
 }
 h2 {
@@ -307,6 +307,7 @@ button.accept:hover {
         "sidebar reviews";
 
 }
+
 /***** Nav *****/
 .logo {
   width: auto;
@@ -351,6 +352,9 @@ nav a:hover,
             "sidebar welcome welcome"
             "sidebar clinics users"
             "sidebar reviews reviews";
+    }
+    h1 {
+      font-size: 30px;
     }
     h2 {
       font-size: 28px;
