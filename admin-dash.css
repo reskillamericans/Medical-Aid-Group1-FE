@@ -86,11 +86,11 @@ button.hamburger {
 .nav-ul a {
   color: white;
   text-decoration: none;
-  list-style-type: none;
   line-height: 1.5;
 }
 .nav-ul li {
   padding: 20px;
+  list-style-type: none;
 }
 .nav-ul img {
   vertical-align: middle;
@@ -99,8 +99,6 @@ button.hamburger {
 .nav-ul.show {
    display: flex;
 }
-
-
 
 /* Welcome Alerts */
 .welcome {
@@ -330,41 +328,39 @@ button.accept:hover {
     .logo {
       width: auto;
     }
-   nav {
-
-   }
-   .nav-ul {
-     display: flex;
-     background-color: var(--primaryColor);
+    nav{
+      background-color: var(--primaryColor);
      border-radius: 0 20px 0 0;
      color: var(--background);
-     margin-top: 0rem;
-     height: 100%;
+    }
+   .nav-ul {
+     display: block;
+     background-color: transparent;
+     padding-top: 1rem;
    }
-   nav a,
-nav ul {
-  color: var(--background);
-  text-decoration: none;
-  list-style-type: none;
-  margin-left: 0;
-  padding: 0;
-  margin-top:0;
-}
-nav a:hover,
-.activeLink {
-  color: var(--secondaryColor);
-}
+   
+    nav a:hover,
+    .activeLink {
+      color: var(--secondaryColor);
+    }
 
-.nav-ul li {
-  line-height: 80px;
-}
-.nav-ul img {
-  vertical-align: middle;
-  padding-right: 5px;
-}
-
+    .nav-ul li {
+      line-height: 50px;
+    }
+    .nav-ul img {
+      vertical-align: middle;
+      padding-right: 5px;
+    }
+    .hamburger {
+      display: none;
+    }
+    /***** Welcome *****/
     .welcome {
       display: flex;
+    }
+    .welcome h1 {
+      padding: 0;
+      margin: 0;
     }
     .userPic {
       display: block;
