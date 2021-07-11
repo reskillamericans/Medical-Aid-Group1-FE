@@ -36,11 +36,23 @@ p {
   font-size: 16px;
   font-weight: 400;
 }
+/* ˅ This is so all the content sections have the same border, color and are vertically centered */
 .bubble-style{
   border-radius: 20px;
     background-color: var(--background);
     border: 1px solid var(--tertiaryText);
     align-items: center;
+}
+/* This controls the layout of the page and stacks everything for mobile view (mobile first)  */
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+      "header"
+      "sidebar"
+      "welcome"
+      "clinics"
+      "users"
+      "reviews";
 }
 
 /************************************ Section Styling ************************************/
@@ -258,6 +270,7 @@ button.all {
   background-color: var(--primaryText);
   color: white;
   border: none;
+  text-transform: uppercase;
 }
 button.action {
   border: none;
@@ -283,20 +296,11 @@ button.accept:hover {
   background-color: white;
   border: 2px solid #aceb98;
 }
-/* Mobile first column layout */
-.wrapper {
-    display: grid;
-    grid-template-areas: 
-        "header"
-        "sidebar"
-        "welcome"
-        "clinics"
-        "users"
-        "reviews";
-}
 
-/************************Styling for Laptops and Small Screens 769px -1024px*****************************/
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
+/************************Styling for Laptops and Small Screens 769px -1082px*****************************/
+@media only screen and (max-width: 1082px) and (min-width: 769px) {
+ 
+  /* This creates a two column view and makes the sidebar visible  */
   .wrapper {
     grid-template-columns: 275px  1fr;
     grid-template-areas: 
@@ -305,48 +309,49 @@ button.accept:hover {
         "sidebar clinics"
         "sidebar users"
         "sidebar reviews";
-
+    margin-right: 2rem;
+  }
+  /***** Need this to make nav visible *****/
+  .logo {
+    width: auto;
+  }
+  nav{
+    background-color: var(--primaryColor);
+    border-radius: 0 20px 0 0;
+    color: var(--background);
+  }
+  .nav-ul {
+    display: block;
+    background-color: transparent;
+    padding-top: 1rem;
+    position: fixed;
+  }
+  nav a:hover,
+    .activeLink {
+    color: var(--secondaryColor);
+  }
+  .nav-ul li {
+    line-height: 50px;
+  }
+  .nav-ul img {
+    vertical-align: middle;
+    padding-right: 5px;
+  }
+  /* hides hamburger button */
+  .hamburger {
+    display: none;
+  }
+  h2 {
+    font-size: 20px;
+  }
 }
-
-/***** Nav *****/
-.logo {
-  width: auto;
-}
-nav{
-  background-color: var(--primaryColor);
- border-radius: 0 20px 0 0;
- color: var(--background);
-}
-.nav-ul {
- display: block;
- background-color: transparent;
- padding-top: 1rem;
- position: fixed;
-}
-
-nav a:hover,
-.activeLink {
-  color: var(--secondaryColor);
-}
-
-.nav-ul li {
-  line-height: 50px;
-}
-.nav-ul img {
-  vertical-align: middle;
-  padding-right: 5px;
-}
-.hamburger {
-  display: none;
-}
-}
-/************************Styling for Desktops and Large Screens 1025px Up*****************************/
-@media (min-width: 1025px) {
+/************************Styling for Desktops and Large Screens 1083px Up*****************************/
+@media (min-width: 1083px) {
     body {
       margin:0 1rem 0 0;
     }
     .wrapper {
-        grid-template-columns: 309px 1.5fr 1fr;
+        grid-template-columns: 275px 1.5fr 1fr;
         grid-template-areas: 
             "header  header header"
             "sidebar welcome welcome"
@@ -357,7 +362,7 @@ nav a:hover,
       font-size: 30px;
     }
     h2 {
-      font-size: 28px;
+      font-size: 20px;
     }
     .heading h2 {
       width: auto;
