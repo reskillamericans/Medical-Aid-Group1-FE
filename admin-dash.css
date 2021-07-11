@@ -79,7 +79,7 @@ button.hamburger {
   padding: 0;
   margin: 0;
   height: 70vh;
-  background-color: blue;
+  background-color: var(--primaryColor);
   justify-content: center;
   z-index: 10;
 } 
@@ -295,6 +295,49 @@ button.accept:hover {
         "reviews";
 }
 
+/************************Styling for Laptops and Small Screens 769px -1024px*****************************/
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .wrapper {
+    grid-template-columns: 275px  1fr;
+    grid-template-areas: 
+        "header  header"
+        "sidebar welcome"
+        "sidebar clinics"
+        "sidebar users"
+        "sidebar reviews";
+
+}
+/***** Nav *****/
+.logo {
+  width: auto;
+}
+nav{
+  background-color: var(--primaryColor);
+ border-radius: 0 20px 0 0;
+ color: var(--background);
+}
+.nav-ul {
+ display: block;
+ background-color: transparent;
+ padding-top: 1rem;
+}
+
+nav a:hover,
+.activeLink {
+  color: var(--secondaryColor);
+}
+
+.nav-ul li {
+  line-height: 50px;
+}
+.nav-ul img {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+.hamburger {
+  display: none;
+}
+}
 /************************Styling for Desktops and Large Screens 1025px Up*****************************/
 @media (min-width: 1025px) {
     body {
