@@ -21,7 +21,7 @@ button {
   cursor: pointer;
 }
 h1 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 400;
 }
 h2 {
@@ -307,6 +307,7 @@ button.accept:hover {
         "sidebar reviews";
 
 }
+
 /***** Nav *****/
 .logo {
   width: auto;
@@ -320,6 +321,7 @@ nav{
  display: block;
  background-color: transparent;
  padding-top: 1rem;
+ position: fixed;
 }
 
 nav a:hover,
@@ -352,7 +354,7 @@ nav a:hover,
             "sidebar reviews reviews";
     }
     h1 {
-      font-size: 37px;
+      font-size: 30px;
     }
     h2 {
       font-size: 28px;
@@ -380,6 +382,7 @@ nav a:hover,
      display: block;
      background-color: transparent;
      padding-top: 1rem;
+     position: fixed;
    }
    
     nav a:hover,
