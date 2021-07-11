@@ -162,6 +162,9 @@ h3.clinic-name {
   grid-area: edit;
   float: right;
 }
+button.edit img {
+  width: 25px;
+}
 .clinics-bubble h3 {
   text-align: left;
 }
@@ -342,7 +345,7 @@ button.accept:hover {
     display: none;
   }
   h2 {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 /************************Styling for Desktops and Large Screens 1083px Up*****************************/
