@@ -295,8 +295,8 @@ button.accept:hover {
         "reviews";
 }
 
-/************************Styling for Larger Screens 801px Up*****************************/
-@media (min-width: 801px) {
+/************************Styling for Desktops and Large Screens 1025px Up*****************************/
+@media (min-width: 1025px) {
     body {
       margin:0 1rem 0 0;
     }
