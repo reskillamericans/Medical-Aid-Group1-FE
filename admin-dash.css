@@ -320,6 +320,7 @@ nav{
  display: block;
  background-color: transparent;
  padding-top: 1rem;
+ position: fixed;
 }
 
 nav a:hover,
@@ -351,9 +352,6 @@ nav a:hover,
             "sidebar clinics users"
             "sidebar reviews reviews";
     }
-    h1 {
-      font-size: 37px;
-    }
     h2 {
       font-size: 28px;
     }
@@ -380,6 +378,7 @@ nav a:hover,
      display: block;
      background-color: transparent;
      padding-top: 1rem;
+     position: fixed;
    }
    
     nav a:hover,
