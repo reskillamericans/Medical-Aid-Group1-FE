@@ -8,20 +8,12 @@ body {
 
 
 /* NAVBAR */
-/* .logo-div img {
-  width: 9em;
-} */
-
 .logo-text{
-
 font-size: 28px;
 font-weight: bold;
-
 color: rgb(69 122 255);
 width: 214px;
 height: 23px;
-
-
 }
 
 .navbar {
@@ -36,8 +28,7 @@ a {
   text-decoration: none;
   font-weight: 600;
   color: #180126;
-  
-}
+  }
 
 
 a:hover{
@@ -79,8 +70,6 @@ ul.login {
   list-style-type: none;
 }
 
-
-
 .signup {
     margin-top: auto;
 }
@@ -94,8 +83,7 @@ ul.login {
 li {
   display: inline-block;
   padding: 0px 10px;
-  
-}
+  }
 
 .content-div {
     display: flex;
@@ -111,8 +99,7 @@ div.content-logo {
   width:50%;  
   border-radius: 20px;
   margin-top: 50px;
-  
-}
+  }
 
 .logo-img {
   vertical-align: middle;
@@ -162,8 +149,7 @@ input[type="password"] {
   border: 1.5px solid #c3c7d2;
   border-radius: 10px;
   box-sizing: border-box;
-  
-}
+  }
 
 .signup-btn {
   background: #f3ea12;
@@ -196,8 +182,6 @@ h3 {
 label {
   font-size: smaller;
 }
-
-
 
 div.signup-nav {
     margin-right: 85px;
