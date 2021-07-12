@@ -24,6 +24,10 @@ height: 23px;
   font-size: smaller;
 }
 
+.navbar a {
+  font-size: 15px;
+}
+
 a {
   text-decoration: none;
   font-weight: 600;
