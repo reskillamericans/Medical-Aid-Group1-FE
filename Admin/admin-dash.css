@@ -57,7 +57,7 @@ p {
 
 /************************************ Section Styling ************************************/
 
-/********** Nav **********/
+/********** Nav Mobile View**********/
 header {
   grid-area: header;
   display: flex;
@@ -112,7 +112,7 @@ button.hamburger {
    display: flex;
 }
 
-/* Welcome Alerts */
+/***** Welcome Alerts *****/
 .welcome {
     grid-area: welcome;
     justify-content: space-between;
@@ -129,7 +129,7 @@ button.hamburger {
 .userPic {
   display: none;
 }
- /********* Clinics ********/ 
+ /***** Clinics *****/ 
 .clinics{
     grid-area: clinics;
     margin: 1rem;
@@ -172,7 +172,7 @@ button.edit img {
   text-align: right;
 }
 
-/********** Users **********/
+/***** Users *****/
 .users {
     grid-area: users;
     margin: 1rem;
@@ -193,7 +193,7 @@ button.edit img {
   margin-left: 5px;
 }
 
-/************** Reviews *************/
+/***** Reviews *****/
 .reviews {
     grid-area: reviews;
     margin: 1rem 1rem 1rem 1rem;
@@ -247,7 +247,7 @@ img.stars {
 .heading h2 {
   width: 60%;
 }
-/* Button Styling */
+/* Styling for all buttons */
 button.edit {
   padding: 0;
   margin: 0;
@@ -302,7 +302,7 @@ button.accept:hover {
 /************************Styling for Laptops and Small Screens 769px and up*****************************/
 @media only screen and (min-width: 769px) {
  
-  /* This creates a two column view and makes the sidebar visible  */
+  /* This creates a two column view and makes the sidebar navigation visible  */
   .wrapper {
     grid-template-columns: 275px  1fr;
     grid-template-areas: 
@@ -346,12 +346,14 @@ button.accept:hover {
   .hamburger {
     display: none;
   }
+  /***** styling for content headings *****/
   h2 {
     font-size: 22px;
   }
 }
 /************************Styling for Desktops and Large Screens 1083px Up*****************************/
 @media (min-width: 1083px) {
+  /* This creates a 3 column view  */
     .wrapper {
         grid-template-columns: 275px 1.5fr 1fr;
         grid-template-areas: 
