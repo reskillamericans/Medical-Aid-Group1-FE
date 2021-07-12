@@ -144,7 +144,7 @@ button.hamburger {
   padding: 15px;
   grid-template-columns: 1fr 50px;
   margin: 1rem 0;
-  padding: 7px;
+  padding: 1rem 1.5rem;
 }
 .clinic-name {
   grid-area: clinicName;
@@ -185,7 +185,7 @@ button.edit img {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
-  padding: 7px;
+  padding: 1rem 1.5rem;
   text-align: center;
 }
 #contactsPic {
@@ -321,11 +321,11 @@ button.accept:hover {
   }
  .nav-ul {
    display: flex;
-  background-color: var(--primaryColor);
-  border-radius: 0 20px 0 0;
-  color: var(--background);
-  height: 100vh;
-   padding-top: 1rem;
+   background-color: var(--primaryColor);
+   border-radius: 0 20px 0 0;
+   color: var(--background);
+   height: 100vh;
+   padding-top: 0;
    position: sticky;
    top: 0px;
  }
@@ -353,9 +353,6 @@ button.accept:hover {
 }
 /************************Styling for Desktops and Large Screens 1083px Up*****************************/
 @media (min-width: 1083px) {
-    body {
-      margin:0 1rem 0 0;
-    }
     .wrapper {
         grid-template-columns: 275px 1.5fr 1fr;
         grid-template-areas: 
