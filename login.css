@@ -69,10 +69,9 @@ li {
 
 .content-div {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  
-    
+  justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 11px;    
 }
 
 
@@ -284,9 +283,11 @@ div.inner {
   padding-left: 2em;;
   width: auto;
  }
+ 
  .content-img {
-  width: 56%;
-  }
+  width: 100%;
+  padding-top: 30px;
+}
 
 h2 {
   font-size: 15px;
