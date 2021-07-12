@@ -300,8 +300,8 @@ button.accept:hover {
   border: 2px solid #aceb98;
 }
 
-/************************Styling for Laptops and Small Screens 769px -1082px*****************************/
-@media only screen and (max-width: 1082px) and (min-width: 769px) {
+/************************Styling for Laptops and Small Screens 769px and up*****************************/
+@media only screen and (min-width: 769px) {
  
   /* This creates a two column view and makes the sidebar visible  */
   .wrapper {
@@ -315,24 +315,26 @@ button.accept:hover {
     margin-right: 2rem;
   }
   /***** Need this to make nav visible *****/
+  /***** Nav *****/
   .logo {
-    width: auto;
+    width: 250px;
   }
-  nav{
-    background-color: var(--primaryColor);
-    border-radius: 0 20px 0 0;
-    color: var(--background);
-  }
-  .nav-ul {
-    display: block;
-    background-color: transparent;
-    padding-top: 1rem;
-    position: fixed;
-  }
+ .nav-ul {
+   display: flex;
+  background-color: var(--primaryColor);
+  border-radius: 0 20px 0 0;
+  color: var(--background);
+  height: 100vh;
+   padding-top: 1rem;
+   position: sticky;
+   top: 0px;
+ }
+ 
   nav a:hover,
-    .activeLink {
+  .activeLink {
     color: var(--secondaryColor);
   }
+
   .nav-ul li {
     line-height: 50px;
   }
@@ -340,6 +342,7 @@ button.accept:hover {
     vertical-align: middle;
     padding-right: 5px;
   }
+  
   /* hides hamburger button */
   .hamburger {
     display: none;
@@ -377,37 +380,7 @@ button.accept:hover {
    .reviews .heading button  {
       margin-left: 10px;
     }
-    /***** Nav *****/
-    .logo {
-      width: auto;
-    }
-    nav{
-      background-color: var(--primaryColor);
-     border-radius: 0 20px 0 0;
-     color: var(--background);
-    }
-   .nav-ul {
-     display: block;
-     background-color: transparent;
-     padding-top: 1rem;
-     position: fixed;
-   }
-   
-    nav a:hover,
-    .activeLink {
-      color: var(--secondaryColor);
-    }
-
-    .nav-ul li {
-      line-height: 50px;
-    }
-    .nav-ul img {
-      vertical-align: middle;
-      padding-right: 5px;
-    }
-    .hamburger {
-      display: none;
-    }
+    
     /***** Welcome *****/
     .welcome {
       display: flex;
