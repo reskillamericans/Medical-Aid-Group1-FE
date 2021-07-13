@@ -138,7 +138,7 @@ header {
       color: #575368;
   }
   .back a:hover {
-      border-bottom: 2px solid var(--primaryColor);
+      color: var(--primaryColor);
   }
 /*****Feedback and Complaints*****/
 .reviews {
