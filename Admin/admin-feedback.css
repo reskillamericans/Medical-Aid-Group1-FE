@@ -140,6 +140,9 @@ header {
   .back a:hover {
       color: var(--primaryColor);
   }
+  .reviews a {
+      text-decoration: none;
+  }
 /*****Feedback and Complaints*****/
 .reviews {
     grid-area: reviews;
