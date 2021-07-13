@@ -82,7 +82,7 @@ li {
 .logo-img {
   vertical-align: middle;
   padding-top: 4px;
-  padding-left: 10px;
+  padding-left: 40px;
   width: 17%;
 }
 
@@ -150,6 +150,7 @@ h2 {
 
 /* FORM */
 .form {
+  padding-top: 20px;
   padding-bottom: 0px;
   width: 40%;
   font-family: "Open Sans", sans-serif;
