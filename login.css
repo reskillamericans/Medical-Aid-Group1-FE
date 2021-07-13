@@ -14,10 +14,8 @@ body {
   justify-content: space-around;
   padding: 0em .4em 5px;
   align-items: center;
-  font-size: smaller;
+  font-size: 15px;
  }
-
-
 
 a {
     text-decoration: none;
@@ -45,7 +43,7 @@ a:hover{
 }
 
 .nav-logo {
-  vertical-align: top;
+  vertical-align: middle;
     width: 16%;
 }
 
@@ -53,6 +51,7 @@ a:hover{
 color: rgb(69 122 255);
   font-weight: bold;
    display: inline;
+   font-size: 23px;
 }
 
 ul.nav-tabs,
@@ -82,9 +81,9 @@ li {
 
 .logo-img {
   vertical-align: middle;
-  padding-top: 8px;
-  padding-left: 10px;
-  width: 20%;
+  padding-top: 4px;
+  padding-left: 40px;
+  width: 17%;
 }
 
 .content-span {
@@ -151,6 +150,7 @@ h2 {
 
 /* FORM */
 .form {
+  padding-top: 20px;
   padding-bottom: 0px;
   width: 40%;
   font-family: "Open Sans", sans-serif;
@@ -211,6 +211,7 @@ h6{
 
  p {
   font-size: medium;
+  margin-top: 0;
  }
  .topnav {
   display: none;
@@ -279,6 +280,7 @@ h6{
  .login-btn {
   width: 179px;
   height: 35px;
+  margin-top: 25px; 
 }
 
 div.inner {
@@ -297,6 +299,7 @@ h2 {
 
 h6 {
   padding:0;
+  margin-top: 10px;
 }
 
 }
