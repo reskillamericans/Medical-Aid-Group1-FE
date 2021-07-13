@@ -21,7 +21,7 @@
     cursor: pointer;
   }
   h1 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     text-align: center;
   }
@@ -88,7 +88,9 @@ header {
    background-color: transparent;
    border: none;
   }
-  
+  nav a.activeLink{
+      color: var(--secondaryColor);
+  }
   .nav-ul {
     display: none;
     flex-direction: column;
@@ -120,6 +122,63 @@ header {
       grid-area: content;
       margin: 0 2rem;
   }
+  .back img{
+      vertical-align: middle;
+  }
+  .back {
+      margin: 1rem 1rem 2rem;
+  }
+  .back a {
+      text-decoration: none;
+      color: #575368;
+  }
+  .back a:hover {
+      border-bottom: 2px solid var(--primaryColor);
+  }
+/*****Feedback and Complaints*****/
+.reviews {
+    grid-area: reviews;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.reviews .heading{
+  margin-bottom: 5px;
+}
+.review-bubble {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 0;
+}
+.review-bubble p, .review-bubble img {
+  vertical-align: middle;
+}
+.review-bubble img {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.review-bubble .reviewer {
+  display: flex;
+  margin: 10px 0 5px 0;
+  align-items: stretch;
+  justify-content: center;
+}
+.quote {
+  padding: 5px 0;
+  margin: 0 10px;
+}
+img.stars {
+  align-self: center  ;
+  padding: 5px 0;
+}
+.action-btns {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.bubble-heading {
+  display: none;
+
+}
+
 
   /************************Styling for Laptops and Small Screens 769px and up*****************************/
 @media only screen and (min-width: 769px) {
