@@ -51,6 +51,9 @@
       padding: 1rem;
       margin: 1rem 0;
   }
+  .bubble-style:hover {
+      background-color: #DAE4FF;
+  }
   /* This controls the layout of the page and stacks everything for mobile view (mobile first)  */
   .wrapper {
     display: grid;
@@ -59,7 +62,9 @@
         "sidebar"
         "content";
   }
-
+button.review-bubble {
+    width: 100%;
+}
   /************************************ Section Styling ************************************/
 
 /********** Header and Nav Mobile View**********/
@@ -235,12 +240,53 @@ img.stars {
 
 /************************Styling for Screens 770px and up*****************************/
   @media only screen and (min-width: 770px) {
-    
-    
+    h1 {
+        font-size: 24px;
+        margin-bottom: 3rem;
+        margin-top: -2rem;
+    }
+
   }
 
-  /************************Styling for Screens 1000px and up*****************************/
-  @media only screen and (min-width: 1000px) {
-
+  /************************Styling for Screens 1140px and up*****************************/
+  @media only screen and (min-width: 1140px) {
+      .reviews {
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+      }
+      .review-bubble {
+        display: grid;
+        grid-template-areas: 
+          "reviewer quote stars type";
+        grid-template-columns: 250px .75fr .5fr 150px;
+        text-align: left;
+        padding: .25rem 1rem;
+        justify-content: space-between;
+      }
+      .review-bubble .reviewer {
+        display: flex;
+        justify-content: start;
+      }
+     
+      .quote {
+        grid-area: quote;
+      }
+      .stars   {
+        grid-area: stars;
+      }
+      .type{
+        grid-area: type;
+      }
+      .action-btns {
+        margin-right: 0;
+        display: flex;
+        justify-content: end;
+      }
+      .bubble-heading {
+        display: grid;
+        grid-template-columns: 250px .75fr .5fr 150px ;
+        padding: 0;
+        margin-left: 30px;
+      }
     
   }
