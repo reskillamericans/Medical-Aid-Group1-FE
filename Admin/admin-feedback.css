@@ -149,9 +149,13 @@ header {
   text-align: center;
   margin: 10px 0;
 }
-.review-bubble p, .review-bubble img {
+.reviewer img {
   vertical-align: middle;
 }
+.reviewer p{
+    margin-top: 1rem;
+}
+
 .review-bubble img {
   margin-right: 10px;
   margin-left: 10px;
