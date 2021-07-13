@@ -21,7 +21,7 @@ height: 23px;
   justify-content: space-around;
   padding: 0em .4em 5px;
   align-items: center;
-  font-size: smaller;
+  font-size: 15px;
 }
 
 .navbar a {
@@ -43,8 +43,8 @@ a:hover{
   color: #180126;
 }
 
-.active:hover{
-  background: #f9f9f9;
+.active {
+  vertical-align: middle;
 }
 
 .navbar a:hover {
@@ -55,7 +55,7 @@ a:hover{
 }
 
 .nav-logo {
-  vertical-align: top;
+  vertical-align: middle;
     width: 16%;
 }
 
@@ -63,6 +63,8 @@ a:hover{
 color: rgb(69 122 255);
   font-weight: bold;
    display: inline;
+   font-size: 23px;
+   font-size: larger;
 }
 
 .signup-btn:hover, button:hover{
@@ -107,9 +109,9 @@ div.content-logo {
 
 .logo-img {
   vertical-align: middle;
-  padding-top: 8px;
-  padding-left: 10px;
-  width: 20%;
+  padding-top: 4px;
+  padding-left: 15px;
+  width: 17%;
 }
 
 .content-span {
@@ -117,8 +119,7 @@ div.content-logo {
   font-weight: bold;
    display: inline;
    font-size: 23px;
-   vertical-align: middle;
-}
+   }
 
 div.inner {
   padding-top: 40px;
@@ -162,13 +163,12 @@ input[type="password"] {
   border-style: none;
   font-weight: bold;
   width: 320px;
-    font-size: 1em;
-    margin-top: 15px;
-  height: 40px;
+  margin-top: 28px;
+  height: 35px;
 }
 
 .checkbox {
-  font-size: 11px;
+  font-size: x-small;
 }
 
 /* FORM */
@@ -218,13 +218,14 @@ h6{
 
  p {
   font-size: medium;
+  margin-top: 0;
  }
 .topnav {
   display: none;
 }
 
 
-@media screen and (max-width: 600px) and (min-width: 340px) {
+@media screen and (max-width: 750px) and (min-width: 340px) {
   .topnav {
     overflow: hidden;
     display: block;
@@ -254,10 +255,10 @@ h6{
     color: #180126;
     padding: 20px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 15px;
     display: block;
     text-align: center;
-  }
+     }
   
   /* Style the hamburger menu */
   .topnav a.icon {
@@ -284,10 +285,10 @@ h6{
       justify-content: center;
     }
 
-    div.content-logo {
-    margin-top: 0px;
-    padding-bottom: 0px;
+    .checkbox {
+      display: block;
     }
+
  }
  .login-btn {
   width: 179px;
@@ -295,7 +296,7 @@ h6{
 }
 
 div.inner {
-  padding: 0;
+  padding: 1em 2em 0em;
 }
 
 
@@ -303,4 +304,3 @@ h2 {
   font-size: 15px;
     padding-left: 6px;
 }
-
