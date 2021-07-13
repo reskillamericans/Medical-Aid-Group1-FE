@@ -36,16 +36,28 @@ p {
   font-size: 16px;
   font-weight: 400;
 }
+/* ˅ This is so all the content sections have the same border, color and are vertically centered */
 .bubble-style{
   border-radius: 20px;
     background-color: var(--background);
     border: 1px solid var(--tertiaryText);
     align-items: center;
 }
+/* This controls the layout of the page and stacks everything for mobile view (mobile first)  */
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+      "header"
+      "sidebar"
+      "welcome"
+      "clinics"
+      "users"
+      "reviews";
+}
 
 /************************************ Section Styling ************************************/
 
-/********** Nav **********/
+/********** Nav Mobile View**********/
 header {
   grid-area: header;
   display: flex;
@@ -100,7 +112,7 @@ button.hamburger {
    display: flex;
 }
 
-/* Welcome Alerts */
+/***** Welcome Alerts *****/
 .welcome {
     grid-area: welcome;
     justify-content: space-between;
@@ -117,7 +129,7 @@ button.hamburger {
 .userPic {
   display: none;
 }
- /********* Clinics ********/ 
+ /***** Clinics *****/ 
 .clinics{
     grid-area: clinics;
     margin: 1rem;
@@ -132,7 +144,7 @@ button.hamburger {
   padding: 15px;
   grid-template-columns: 1fr 50px;
   margin: 1rem 0;
-  padding: 7px;
+  padding: 1rem 1.5rem;
 }
 .clinic-name {
   grid-area: clinicName;
@@ -150,6 +162,9 @@ h3.clinic-name {
   grid-area: edit;
   float: right;
 }
+button.edit img {
+  width: 19px;
+}
 .clinics-bubble h3 {
   text-align: left;
 }
@@ -157,7 +172,7 @@ h3.clinic-name {
   text-align: right;
 }
 
-/********** Users **********/
+/***** Users *****/
 .users {
     grid-area: users;
     margin: 1rem;
@@ -170,7 +185,7 @@ h3.clinic-name {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
-  padding: 7px;
+  padding: 1rem 1.5rem;
   text-align: center;
 }
 #contactsPic {
@@ -178,7 +193,7 @@ h3.clinic-name {
   margin-left: 5px;
 }
 
-/************** Reviews *************/
+/***** Reviews *****/
 .reviews {
     grid-area: reviews;
     margin: 1rem 1rem 1rem 1rem;
@@ -232,7 +247,7 @@ img.stars {
 .heading h2 {
   width: 60%;
 }
-/* Button Styling */
+/* Styling for all buttons */
 button.edit {
   padding: 0;
   margin: 0;
@@ -258,6 +273,7 @@ button.all {
   background-color: var(--primaryText);
   color: white;
   border: none;
+  text-transform: uppercase;
 }
 button.action {
   border: none;
@@ -283,20 +299,10 @@ button.accept:hover {
   background-color: white;
   border: 2px solid #aceb98;
 }
-/* Mobile first column layout */
-.wrapper {
-    display: grid;
-    grid-template-areas: 
-        "header"
-        "sidebar"
-        "welcome"
-        "clinics"
-        "users"
-        "reviews";
-}
-
-/************************Styling for Laptops and Small Screens 769px -1024px*****************************/
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
+/************************Styling for Laptops and Small Screens 769px and up*****************************/
+@media only screen and (min-width: 769px) {
+ 
+  /* This creates a two column view and makes the sidebar navigation visible  */
   .wrapper {
     grid-template-columns: 275px  1fr;
     grid-template-areas: 
@@ -305,48 +311,51 @@ button.accept:hover {
         "sidebar clinics"
         "sidebar users"
         "sidebar reviews";
+    margin-right: 2rem;
+  }
+  /***** Need this to make nav visible *****/
+  /***** Nav *****/
+  .logo {
+    width: 250px;
+  }
+ .nav-ul {
+   display: flex;
+   background-color: var(--primaryColor);
+   border-radius: 0 20px 0 0;
+   color: var(--background);
+   height: 100vh;
+   padding-top: 0;
+   position: sticky;
+   top: 0px;
+ }
+ 
+  nav a:hover,
+  .activeLink {
+    color: var(--secondaryColor);
+  }
 
+  .nav-ul li {
+    line-height: 50px;
+  }
+  .nav-ul img {
+    vertical-align: middle;
+    padding-right: 5px;
+  }
+  
+  /* hides hamburger button */
+  .hamburger {
+    display: none;
+  }
+  /***** styling for content headings *****/
+  h2 {
+    font-size: 22px;
+  }
 }
-
-/***** Nav *****/
-.logo {
-  width: auto;
-}
-nav{
-  background-color: var(--primaryColor);
- border-radius: 0 20px 0 0;
- color: var(--background);
-}
-.nav-ul {
- display: block;
- background-color: transparent;
- padding-top: 1rem;
- position: fixed;
-}
-
-nav a:hover,
-.activeLink {
-  color: var(--secondaryColor);
-}
-
-.nav-ul li {
-  line-height: 50px;
-}
-.nav-ul img {
-  vertical-align: middle;
-  padding-right: 5px;
-}
-.hamburger {
-  display: none;
-}
-}
-/************************Styling for Desktops and Large Screens 1025px Up*****************************/
-@media (min-width: 1025px) {
-    body {
-      margin:0 1rem 0 0;
-    }
+/************************Styling for Desktops and Large Screens 1083px Up*****************************/
+@media (min-width: 1083px) {
+  /* This creates a 3 column view  */
     .wrapper {
-        grid-template-columns: 309px 1.5fr 1fr;
+        grid-template-columns: 275px 1.5fr 1fr;
         grid-template-areas: 
             "header  header header"
             "sidebar welcome welcome"
@@ -357,7 +366,7 @@ nav a:hover,
       font-size: 30px;
     }
     h2 {
-      font-size: 28px;
+      font-size: 20px;
     }
     .heading h2 {
       width: auto;
@@ -369,37 +378,7 @@ nav a:hover,
    .reviews .heading button  {
       margin-left: 10px;
     }
-    /***** Nav *****/
-    .logo {
-      width: auto;
-    }
-    nav{
-      background-color: var(--primaryColor);
-     border-radius: 0 20px 0 0;
-     color: var(--background);
-    }
-   .nav-ul {
-     display: block;
-     background-color: transparent;
-     padding-top: 1rem;
-     position: fixed;
-   }
-   
-    nav a:hover,
-    .activeLink {
-      color: var(--secondaryColor);
-    }
-
-    .nav-ul li {
-      line-height: 50px;
-    }
-    .nav-ul img {
-      vertical-align: middle;
-      padding-right: 5px;
-    }
-    .hamburger {
-      display: none;
-    }
+    
     /***** Welcome *****/
     .welcome {
       display: flex;
@@ -437,29 +416,42 @@ nav a:hover,
     /***** Reviews Styling Desktop View n*****/
     .reviews {
       margin-bottom: 1rem;
+      margin-left: 2rem;
     }
-    .review-bubble{
-      grid-template-columns: 1fr 550px 1fr 150px;
-      justify-content: center;
+    .review-bubble {
+      display: grid;
+      grid-template-areas: 
+        "reviewer quote stars buttons";
+      grid-template-columns: 250px 2fr .5fr 1fr;
       text-align: left;
+      padding: .25rem 1rem;
+      justify-content: space-between;
+    }
+    .review-bubble .reviewer {
+      display: flex;
+      justify-content: start;
+    }
+   
+    .quote {
+      grid-area: quote;
+    }
+    .stars   {
+      grid-area: stars;
+    }
+    .action-btns{
+      grid-area: buttons;
     }
     .action-btns {
       margin-right: 0;
+      display: flex;
+      justify-content: end;
     }
     .bubble-heading {
       display: grid;
-      grid-template-columns: 1fr 550px 1fr 150px ;
+      grid-template-columns: 250px 1fr .5fr 150px ;
       padding: 0;
-      margin-left: 16px;
+      margin-left: 30px;
       margin-bottom: -20px;
     }
-    .reviewer p {
-      margin: 5px;
-    }
-}
-
-/*Test Flex Styling */
-
-@media (min-width: 801px) {
-  
+    
 }
