@@ -59,34 +59,75 @@
       </div>
     </header>
     <h2>Get in Touch!</h2>
-    <label for="fullname"></label>
-    <input
-      type="fullname"
-      id="fullname"
-      name="fullname"
-      placeholder=" Full Name"
-    /><br />
-    <label for="email"></label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      placeholder="Email Address"
-    /><br />
-    <label for="password"></label>
-    <input
-      type="password"
-      id="password"
-      name="password"
-      placeholder="Password"
-    /><br />
-    <label for="password"></label>
-    <input
-      type="password"
-      id="password"
-      name="password"
-      placeholder="Confirm Password"
-    />
+    <div class="form">
+      <div class="form-div-one">
+        <label for="fname">First name</label>
+        <br />
+        <input type="text" id="fname" name="fname" /><br />
+
+        <label for="lname">Last name</label><br />
+        <input type="text" id="lname" name="lname" /><br />
+      </div>
+      <div class="form-div-two">
+        <label for="email">Email Address</label><br />
+        <input type="text" id="email" name="email" /><br />
+
+        <label for="subject">Subject</label><br />
+        <input type="text" id="subject" name="subject" /><br />
+      </div>
+      <div class="dropdown">
+      <!-- DROPDOWN -->
+      <select name="inquiry" id="inquiry">
+        <option value="" disabled selected>Nature of Inquiry</option>
+        <option value="feedback">Feedback</option>
+        <option value="career">Careers</option>
+        <option value="account">Support</option>
+      </select>
+
+      <br />
+    </div>
+      <div class="bottom-form">
+        <label for="comment"> Message </label>
+        <br />
+        <textarea id="comment" name="comment"></textarea>
+        <br />
+        <input type="submit" class="submit-btn" value="Submit" />
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-info">
+        <a class="navbar-footer" href="index.html">
+          <img src="./images/logo/logoicon.svg"></a>
+          <p class="bold">We will always consider<br> the wellbeing 
+            of our<br> patient. You matter</p>
+          <p class="follow-us">Follow us</p>
+          <!-- <div class="social-icons">
+            <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="www.google.com"><i class="fab fa-google-plus-g"></i></a> -->
+          </div>
+        <div class="link-list">
+          <ul class="footer-links">
+            <li class="quick-links">Quick Links</li>
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="about-us.html">About</a></li>
+            <li class="link"><a href="faq.html">FAQ</a></li>
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+            
+          </ul>
+        </div>
+        <div class="office-info">
+          <p class="address-header">Office Address</p>
+          <p class="address-info">15668, Boluevard<br> Avenue Oxford</p>
+
+          <p class="email-header">Email</p>
+          <p class="email-info">centuryhealth@hotmail.com<br>centuryhealth@gmail.com</p>
+
+      <div class="copyright">
+        <p>Copyright &copy 2021</p>
+      </div>
+    </footer>
     <script src="./contact.js"></script>
   </body>
 </html>
