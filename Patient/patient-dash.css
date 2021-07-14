@@ -157,7 +157,6 @@ button.hamburger {
 .med-info-detail{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1rem;
 }
 .med-info-group {
     padding: 1rem;
