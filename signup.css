@@ -22,7 +22,10 @@ height: 23px;
   padding: 0em .4em 5px;
   align-items: center;
   font-size: 15px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ef715cce0091cbe30f1e1a62a6aa5c1f044f1a9
 }
 
 .navbar a {
@@ -57,15 +60,24 @@ a:hover{
 
 .nav-logo {
   vertical-align: middle;
+<<<<<<< HEAD
   width: 16%;
+=======
+    width: 16%;
+>>>>>>> 4ef715cce0091cbe30f1e1a62a6aa5c1f044f1a9
 }
 
 .nav-logo-text {
 color: rgb(69 122 255);
   font-weight: bold;
    display: inline;
+<<<<<<< HEAD
    font-size: larger;
 
+=======
+   font-size: 23px;
+   font-size: larger;
+>>>>>>> 4ef715cce0091cbe30f1e1a62a6aa5c1f044f1a9
 }
 
 .signup-btn:hover, button:hover{
@@ -113,6 +125,7 @@ div.content-logo {
   padding-top: 4px;
   padding-left: 15px;
   width: 17%;
+<<<<<<< HEAD
 }
 
 .content-span {
@@ -121,6 +134,8 @@ div.content-logo {
    display: inline;
    font-size: 23px;
    vertical-align: middle;
+=======
+>>>>>>> 4ef715cce0091cbe30f1e1a62a6aa5c1f044f1a9
 }
 
 .content-span {
@@ -172,7 +187,10 @@ input[type="password"] {
   border-style: none;
   font-weight: bold;
   width: 320px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ef715cce0091cbe30f1e1a62a6aa5c1f044f1a9
   margin-top: 28px;
   height: 35px;
 }
@@ -235,7 +253,10 @@ h6{
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ef715cce0091cbe30f1e1a62a6aa5c1f044f1a9
 @media screen and (max-width: 750px) and (min-width: 340px) {
   .topnav {
     overflow: hidden;
@@ -270,7 +291,10 @@ h6{
     display: block;
     text-align: center;
      }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ef715cce0091cbe30f1e1a62a6aa5c1f044f1a9
   
   /* Style the hamburger menu */
   .topnav a.icon {
@@ -297,7 +321,10 @@ h6{
       justify-content: center;
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ef715cce0091cbe30f1e1a62a6aa5c1f044f1a9
     .checkbox {
       display: block;
     }
@@ -312,6 +339,7 @@ div.inner {
   padding: 1em 2em 0em;
 }
 
+<<<<<<< HEAD
     div.content-logo {
     margin-top: 0px;
     padding-bottom: 0px;
@@ -326,10 +354,16 @@ div.inner {
   padding: 0;
 }
 
+=======
+>>>>>>> 4ef715cce0091cbe30f1e1a62a6aa5c1f044f1a9
 
 h2 {
   font-size: 15px;
     padding-left: 6px;
+<<<<<<< HEAD
 
 }
 
+=======
+}
+>>>>>>> 4ef715cce0091cbe30f1e1a62a6aa5c1f044f1a9
