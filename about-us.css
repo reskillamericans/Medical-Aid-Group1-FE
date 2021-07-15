@@ -92,7 +92,7 @@
     width: 80%;
     height: 190px;
     position: relative;
-    top: 200px;
+    top: 120px;
     left: 20%;
   }
 
@@ -120,7 +120,7 @@
     display: grid;
     position: relative;
     left: 110%;
-    top: -60px;
+    top: -120px;
     width: 80%;
   }
 
@@ -704,7 +704,7 @@
     width: 80%;
     height: 190px;
     position: relative;
-    top: 200px;
+    top: 170px;
     left: 20%;
   }
 
@@ -732,7 +732,7 @@
     display: grid;
     position: relative;
     left: 110%;
-    top: -60px;
+    top: -120px;
     width: 80%;
   }
 
@@ -1959,7 +1959,7 @@
     width: 80%;
     height: 210px;
     position: relative;
-    top: 200px;
+    top: 150px;
     left: 20%;
   }
 
@@ -1987,7 +1987,7 @@
     display: grid;
     position: relative;
     left: 110%;
-    top: -60px;
+    top: -130px;
     width: 80%;
   }
 
