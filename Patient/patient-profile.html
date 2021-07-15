@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient - Century Health</title>
+    <link rel="shortcut icon" href="/images/admin-dash/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="patient-profile.css">
+    <script src="patient-profile.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Header-->
+        <header><a href="#"><img src="../images/patient-images/logo.svg" class="logo"></a>
+            <button class="hamburger" id="hamburger"><img src="../images/admin-dash/fi_menu.svg"></button>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="nav-ul" id="nav-ul">
+                <li>
+                    <a href="patient-dash.html" class="activeLink">
+                        <img src="../images/patient-profile-img/dashboard-white.svg" alt="dashboard icon">
+                        Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/patient-profile-img/profile-icon-yellow.svg" alt="profile icon">
+                        Profile</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/patient-images/doctor-icon.svg" alt="doctor icon">
+                        Talk to a Doctor</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../images/patient-images/clinic-icon.svg" alt="clinics icon">
+                        Pharmacies and Clinics</a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <img src="../images/patient-images/contact-icon.svg" alt="contact icon">
+                        Contact Us / Support</a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="../images/patient-images/logout.svg" alt="logout icon" />
+                        Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <a class="back" href="patient-dash.html">< Back</a>
+            <h1 class="main-heading">Patient Profile</h1>
+            <form>
+                <!--Patient Info-->
+                <section class="patient-info-block">
+                    <div class="heading">
+                        <h2>Personal Information</h2>
+                    </div>
+                    <div class="personal-info bubble-style">
+                        <div class="patient">
+                            <img src="../images/patient-images/michael-profile.svg" alt="profile-image" class="userPic" />
+                            <p>Michael Bostick</p>
+                        </div>
+                        <div class="patient-info">
+                            <div>
+                                <label for="birth-date">Date of Birth </label><br>
+                                <input id="birth-date" type="date" name="birthdate">
+                            </div>
+                            <div>
+                                <label for="age">Age</label><br>
+                                <input id="age" type="number" name="age">
+                            </div>
+                            <div>
+                            <label for="ethnicity">Race/Ethnicity</label><br>
+                            <select id="ethnicity" name="ethnicity">
+                                <option value="Asian">Asian or Pacific Islander</option>
+                                <option value="Black">Black or African American"</option>
+                                <option value="Hispanic">Hispanic or Latino</option>
+                                <option value="Native">Native American or Alaskan Native</option>
+                                <option value="White">White or Caucasian</option>
+                                <option value="Multiracial">Multiracial</option>
+                                <option value="Other">Other</option>
+                            </select></div>
+                            <div>
+                            <label for="gender">Gender</label><br>
+                            <input id="gender" type="text" name="gender">
+                            </div><div>
+                            <label for="martial-status">Marital status</label><br>
+                            <input id="martial-status" type="text" name="marital"></div>
+                        </div>
+                    </div>
+                </section>
+                <!--Contact Info-->
+                <div class="contact-wrapper">
+                <section class="contact-info-block">
+                    <div class="heading">
+                        <h2>Contact Information</h2>
+                    </div>
+                    <div class="contact-info">
+                        <label for="address1">Address 1</label><br>
+                        <input id="address1" type="text" name="address1"><br>
+                        <label for="address2">Address 2</label><br>
+                        <input id="address2" type="text" name="address2"><br>
+                        <label for="city">City</label><br>
+                        <input id="city" type="text" name="city"><br>
+                        <label for="state">State</label><br>
+                        <input id="state" type="text" name="state"><br>
+                        <label for="zipcode">Zip Code</label><br>
+                        <input id="zipcode" type="number" name="zipcode"><br>
+                        <label for="phone">Phone Number</label><br>
+                        <input id="phone" type="number" name="phone"><br>
+                        <label for="email">Email</label><br>
+                        <input id="email" type="email" name="email"><br>
+                    </div>
+                </section>
+                <!--Emergency-Contact-->
+                <section class="emergency-contact-block">
+                    <div class="heading">
+                        <h2>Emergency Contact Information</h2>
+                    </div>
+                    <div class="emergency-contact">
+                        <label for="contactname">Name</label><br>
+                        <input id="contactname" type="text" name="contactname"><br>
+                        <label for="contactaddress1">Address 1</label><br>
+                        <input id="contactaddress1" type="text" name="address1"><br>
+                        <label for="contactaddress2">Address 2</label><br>
+                        <input id="contactaddress2" type="text" name="address2"><br>
+                        <label for="contactcity">City</label><br>
+                        <input id="contactcity" type="text" name="city"><br>
+                        <label for="contactstate">State</label><br>
+                        <input id="contactstate" type="text" name="state"><br>
+                        <label for="contactzipcode">Zip Code</label><br>
+                        <input id="contactzipcode" type="number" name="zipcode"><br>
+                        <label for="contactphone">Phone Number</label><br>
+                        <input id="contactphone" type="number" name="phone"><br>
+                        <label for="contactemail">Email</label><br>
+                        <input id="contactemail" type="email" name="email">
+                    </div>
+
+                </section>
+                </div>
+                <button class="update-btn">Update Profile</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
