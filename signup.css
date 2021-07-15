@@ -56,15 +56,15 @@ a:hover{
 
 .nav-logo {
   vertical-align: middle;
-    width: 16%;
+  width: 16%;
 }
 
 .nav-logo-text {
 color: rgb(69 122 255);
   font-weight: bold;
    display: inline;
-   font-size: 23px;
    font-size: larger;
+
 }
 
 .signup-btn:hover, button:hover{
@@ -112,6 +112,14 @@ div.content-logo {
   padding-top: 4px;
   padding-left: 15px;
   width: 17%;
+}
+
+.content-span {
+  color: rgb(69 122 255);
+  font-weight: bold;
+   display: inline;
+   font-size: 23px;
+   vertical-align: middle;
 }
 
 .content-span {
@@ -299,8 +307,24 @@ div.inner {
   padding: 1em 2em 0em;
 }
 
+    div.content-logo {
+    margin-top: 0px;
+    padding-bottom: 0px;
+    }
+ 
+ .login-btn {
+  width: 179px;
+  height: 35px;
+}
+
+div.inner {
+  padding: 0;
+}
+
 
 h2 {
   font-size: 15px;
     padding-left: 6px;
+
 }
+
