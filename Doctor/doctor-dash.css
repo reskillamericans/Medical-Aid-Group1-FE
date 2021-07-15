@@ -200,6 +200,7 @@ a.test-bubble {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: -20px;
   }
   .heading h2 {
     width: 60%;
