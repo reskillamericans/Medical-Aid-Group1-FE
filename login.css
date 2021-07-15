@@ -83,15 +83,14 @@ ul.login {
 .logo-img {
   vertical-align: middle;
   padding-top: 4px;
-  padding-left: 15px;
-  width: 17%;
+  padding-left: 35px;
+  width: 13%;
 }
 
 .content-span {
   color: rgb(69 122 255);
   font-weight: bold;
-   display: inline;
-   font-size: 23px;
+   font-size: 30px;
    vertical-align: middle;
 }
 
@@ -156,10 +155,6 @@ h2 {
   width: 40%;
   font-family: "Open Sans", sans-serif;
  }
-
-.info {
-  font-size: smaller;
-}
 
 input[type="email"],
 input[type="password"] {
