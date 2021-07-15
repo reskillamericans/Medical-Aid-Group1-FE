@@ -219,6 +219,9 @@ p.large-rating {
     margin: 0;
     padding: 0;
 }
+.star-chart {
+    width: 80%;
+}
 /***** Visits *****/
 .visits {
     grid-area: visits;
@@ -395,9 +398,6 @@ button.download {
     .rating {
         margin: 1rem 2rem 1rem 1rem;
       }
-    .star-chart {
-        width: 80%;
-    }
     /***** Visits Styling Desktop View n*****/
     .visits {
         margin-bottom: 1rem;
@@ -446,5 +446,8 @@ button.download {
       .bubble-heading:last-child {
           display: flex;
           justify-content: end;
+      }
+      .visits .heading {
+          margin-bottom: -1rem;
       }
     }
