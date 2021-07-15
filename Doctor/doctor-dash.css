@@ -53,7 +53,7 @@
         "welcome"
         "tests"
         "rating"
-        "reviews";
+        "visits";
   }
   
   /************************************ Section Styling ************************************/
@@ -129,20 +129,26 @@
 .userPic {
   display: none;
 }
-button.appt-schedule {
+button.appt-schedule, button.download {
     border: none;
     background-color: var(--secondaryColor);
-    width: 247px;
-    height: 40px;
     font-weight: 700;
     font-size: 13px;
-    margin-top: 20px;
     border-radius: 4px;
 }
-button.appt-schedule:hover {
+button.appt-schedule {
+    width: 247px;
+    height: 40px;
+    margin-top: 20px;  
+}
+button.appt-schedule:hover, button.download:hover{
     background-color: #EAEAEA;
     border: 1px solid var(--primaryColor);
     color: var(--primaryColor);
+}
+button.download {
+    width: 138px;
+    height: 40px;
 }
 /***** Tests *****/ 
 .tests{
@@ -213,7 +219,44 @@ p.large-rating {
     margin: 0;
     padding: 0;
 }
-
+/***** Visits *****/
+.visits {
+    grid-area: visits;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.visits .heading{
+  margin-bottom: 5px;
+}
+.visit-bubble {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 0;
+  padding: 1rem;
+}
+.visit-bubble p, .visit-bubble img {
+  vertical-align: middle;
+}
+.visit-bubble img {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.visit-bubble .patient {
+  display: flex;
+  margin: 10px 0 5px 0;
+  align-items: stretch;
+  justify-content: center;
+}
+.location {
+  padding: 5px 0;
+  margin: 0 10px;
+}
+/* hides visits heading in mobile view since blocks are stacked */
+.bubble-heading {
+  display: none;
+}
+button.download {
+}
   /* Styling for Headings */
 .heading {
     display: flex;
@@ -259,7 +302,7 @@ p.large-rating {
           "sidebar welcome"
           "sidebar tests"
           "sidebar rating"
-          "sidebar reviews";
+          "sidebar visits";
       margin-right: 2rem;
     }
     /***** Need this to make nav visible *****/
@@ -312,7 +355,7 @@ p.large-rating {
               "header  header header"
               "sidebar welcome welcome"
               "sidebar tests rating"
-              "sidebar reviews reviews";
+              "sidebar visits visits";
       }
       h1 {
         font-size: 30px;
@@ -355,4 +398,53 @@ p.large-rating {
     .star-chart {
         width: 80%;
     }
+    /***** Visits Styling Desktop View n*****/
+    .visits {
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+      }
+      .visit-bubble {
+        display: grid;
+        grid-template-areas: 
+          "patient location date buttons";
+        grid-template-columns: 300px 2.5fr 2fr 150px;
+        text-align: left;
+        padding: .25rem 1rem;
+        justify-content: center;
+      }
+      .visit-bubble .patient {
+        display: flex;
+        justify-content: start;
+      }
+     .patient {
+         grid-area: patient;
+     }
+      .location {
+        grid-area: location;
+      }
+      .date   {
+        grid-area: date;
+      }
+      .pdf-btns{
+        grid-area: buttons;
+        display: flex;
+        justify-content: end;
+      }
+    
+      .bubble-heading {
+        display: grid;
+        grid-template-columns: 300px 2.5fr 2fr 150px;
+        padding: 0;
+        justify-content: space-between;
+        margin-bottom: -20px;
+        margin-left: 25px;
+      }
+      .bubble-heading:first-child {
+          display: flex;
+          justify-content: start;
+      }
+      .bubble-heading:last-child {
+          display: flex;
+          justify-content: end;
+      }
     }
