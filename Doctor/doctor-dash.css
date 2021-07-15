@@ -111,6 +111,32 @@
   .nav-ul.show {
      display: flex;
   }
+/***** Welcome Alerts *****/
+.welcome {
+    grid-area: welcome;
+    justify-content: space-between;
+    margin: 0 1rem 0rem 1rem;
+    padding: 2rem;
+}
+.welcome p,
+  .welcome h1 {
+    line-height: normal;
+  }
+  .welcomeAlerts span {
+    font-weight: 700;
+  }
+.userPic {
+  display: none;
+}
+button.appt-schedule {
+    border: none;
+    background-color: var(--secondaryColor);
+    width: 247px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 20px;
+}
   /************************Styling for Laptops and Small Screens 769px and up*****************************/
 @media only screen and (min-width: 769px) {
  
@@ -144,6 +170,9 @@
     nav a:hover,
     .activeLink {
       color: var(--secondaryColor);
+    }
+    nav .activeLink {
+        color: var(--secondaryColor);
     }
   
     .nav-ul li {
@@ -179,5 +208,22 @@
       }
       h2 {
         font-size: 20px;
+      }
+      /***** Welcome *****/
+    .welcome {
+        display: flex;
+      }
+      .welcome h1 {
+        padding: 0;
+        margin: 0;
+      }
+      .userPic {
+        display: block;
+      }
+      #contactsPic {
+        width: 75px;
+      }
+      .welcome, .reviews {
+        margin: 0rem 2rem;
       }
     }
