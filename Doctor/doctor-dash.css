@@ -42,6 +42,7 @@
       background-color: var(--background);
       border: 1px solid var(--tertiaryText);
       align-items: center;
+      margin: 1rem 0;
   }
   /* This controls the layout of the page and stacks everything for mobile view (mobile first)  */
   .wrapper {
@@ -50,7 +51,7 @@
         "header"
         "sidebar"
         "welcome"
-        "clinics"
+        "tests"
         "users"
         "reviews";
   }
@@ -136,7 +137,94 @@ button.appt-schedule {
     font-weight: 700;
     font-size: 13px;
     margin-top: 20px;
+    border-radius: 4px;
 }
+button.appt-schedule:hover {
+    background-color: #EAEAEA;
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+}
+/***** Tests *****/ 
+.tests{
+    grid-area: tests;
+    margin: 1rem;
+}
+.tests-bubble {
+  display: grid;
+  justify-content: left;
+  text-align: left;
+  grid-template-areas: 
+    "patient"
+    "test"
+    "results";
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.patient-name {
+  grid-area: patient;
+}
+h3.patient-name {
+  margin: 0;
+}
+.test-type {
+  grid-area: test;
+  line-height: 1.5;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.test-bubble h3 {
+  text-align: left;
+}
+a.test-bubble {
+    color: var(--primaryColor);
+}
+/* styling for list and grid view buttons*/
+.view img {
+    width: 30px;
+  }
+
+  button.view {
+    width: 50px;
+    height: 34px;
+    border-radius: 40px;
+    border: 1px solid var(--tertiaryText);
+    background-color: var(--background);
+    margin-left: 5px;
+  }
+
+  /* Styling for Headings */
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heading h2 {
+    width: 60%;
+  }
+  /* Styling for all buttons */
+  button.edit {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .view img {
+    width: 30px;
+  }
+  button.view {
+    width: 50px;
+    height: 34px;
+    border-radius: 40px;
+    border: 1px solid var(--tertiaryText);
+    background-color: var(--background);
+    margin-left: 5px;
+  }
+
+
   /************************Styling for Laptops and Small Screens 769px and up*****************************/
 @media only screen and (min-width: 769px) {
  
@@ -146,7 +234,7 @@ button.appt-schedule {
       grid-template-areas: 
           "header  header"
           "sidebar welcome"
-          "sidebar clinics"
+          "sidebar tests"
           "sidebar users"
           "sidebar reviews";
       margin-right: 2rem;
@@ -200,7 +288,7 @@ button.appt-schedule {
           grid-template-areas: 
               "header  header header"
               "sidebar welcome welcome"
-              "sidebar clinics users"
+              "sidebar tests users"
               "sidebar reviews reviews";
       }
       h1 {
@@ -226,4 +314,16 @@ button.appt-schedule {
       .welcome, .reviews {
         margin: 0rem 2rem;
       }
+      /**** Tests Styling Desktop View *****/
+    .tests {
+        margin: 1rem 2rem;
+      }
+      .tests-bubble {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 1fr;
+        grid-template-areas: 
+          "patient test results";
+        justify-content: space-evenly;
+      }
+
     }
