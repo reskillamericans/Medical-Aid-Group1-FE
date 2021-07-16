@@ -20,15 +20,18 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-bottom: 70px;
+    align-items: center;
+}
+
+input, select, textarea {
+    width: 100%;
 }
 
 .back {
     margin-left: 30px;
 }
 
-.update-btn {
+.submit-btn {
     background: var(--secondaryColor);
     color: var(--primaryText);
     font-size: 13px;
@@ -41,7 +44,7 @@ form {
     margin: 0 auto;
 }
 
-.update-btn:hover {
+.submit-btn:hover {
     background-color: var(--background);
     border: 1px solid var(--primaryColor);
     color: var(--primaryColor);
@@ -53,24 +56,12 @@ h1 {
   font-size: 26px;
   font-weight: 700;
 }
-h2 {
-  font-size: 20px;
-  font-weight: 700;
-}
-h3 {
-  font-size: 16px;
-  font-weight: 700;
-}
+
 p {
   font-size: 16px;
   font-weight: 400;
 }
-/* ˅ This is so all the content sections have the same border, color and are vertically centered */
-.bubble-style{
-  border-radius: 20px !important;
-    background-color: var(--background);
-    border: 1px solid var(--tertiaryText);
-}
+
 /* This controls the layout of the page and stacks everything for mobile view (mobile first)  */
 .wrapper {
   display: grid;
@@ -117,7 +108,6 @@ button.hamburger {
   margin: 0;
   height: 70vh;
   background-color: var(--primaryColor);
-  /*justify-content: center;*/
   z-index: 10;
 } 
 .nav-ul a {
@@ -139,76 +129,13 @@ button.hamburger {
 
 
 /* Styling for Headings */
-.heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-}
-/*.heading h2 {*/
-/*  width: 60%;*/
-/*}*/
-/*Patient Info*/
 
 .main-heading{
     text-align: center;
 }
-.patient-info-block,
-.contact-info-block,
-.emergency-contact-block {
-    justify-content: space-between;
-    margin: 0 1rem;
-    padding: 2rem;
-}
-.patient {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.userPic {
-    display: block;
-    margin: 30px;
-}
-.patient p {
-    font-weight: 700;
-}
-
-.personal-info {
-    display: flex;
-    flex-direction: column;
-    /*justify-content: space-between;*/
-    align-items: center;
-}
-
-.patient-info {
-    display: flex;
-    flex-wrap: wrap;
-    line-height: 2rem;
-    margin-left: 30px;
-}
 main {
     grid-area: main;
-}
-.patient-info-block {
-    grid-area: patient;
-}
-
-.contact-info-block {
-    grid-area: contact;
-}
-
-.emergency-contact-block {
-    grid-area: emergency;
-}
-.personal-info,
-.contact-info,
-.emergency-contact{
-    /*padding: 15px 30px;*/
-    border-radius: 5px;
-    /*display: flex;*/
-    /*flex-direction: column;*/
 }
 
 label {
@@ -216,36 +143,25 @@ label {
     font-weight: 700;
 }
 
-.patient-info input, .patient-info select {
+input, select, textarea {
     padding: 10px;
-    width: 250px;
-    background-color: #fff;
+    background-color: var(--background);
     border: 1px solid var(--tertiaryText);
-    border-radius: 4px;
-    margin: 0 20px 20px 0;
-}
-
- input {
-    padding: 10px;
-     width: 385px;
-     background-color: var(--background);
-     border: 1px solid var(--tertiaryText);
     border-radius: 4px;
     margin-bottom: 15px;
 }
 
-
 input:focus,
 select:focus,
+textarea:focus,
 input:hover,
-select:hover {
+select:hover,
+textarea:hover {
     border: 1px solid var(--secondaryColor) !important;
     box-shadow: 0 0 5px var(--secondaryColor);
     outline-offset: 0;
     outline: none;
 }
-
-
 
 /************************Styling for Laptops and Small Screens 769px and up*****************************/
 @media only screen and (min-width: 769px) {
@@ -293,15 +209,8 @@ select:hover {
   .hamburger {
     display: none;
   }
-  /***** styling for content headings *****/
-  h2 {
-    font-size: 22px;
-  }
-    .personal-info {
-        padding: 15px 30px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: row;
+    input, select, textarea {
+        width: 450px;
     }
 
 }
@@ -320,24 +229,16 @@ select:hover {
         font-size: 30px;
     }
 
-    .patient-info {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        line-height: 2rem;
-        margin-left: 90px;
+    h2 {
+        font-size: 20px;
+        padding-bottom: 20px;
     }
 
-    .personal-info {
-        display: flex;
-        align-items: center;
+    .heading h2 {
+        width: auto;
     }
-    .contact-wrapper {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: stretch;
-
+    input, select, textarea {
+        width: 685px;
     }
-
 
 }
