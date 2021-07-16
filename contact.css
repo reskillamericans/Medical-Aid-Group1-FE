@@ -54,10 +54,7 @@ a:hover{
 
 .navbar li a:hover {
   background-color: #f3ea12;
-    padding: 3px 3px;
-    border-radius: 5px;
-    color: #180126;
-}
+   }
 
 .nav-logo {
   vertical-align: middle;
@@ -91,9 +88,14 @@ ul.login {
     border-radius: 5px;
   }
 
-li {
-  display: inline-block;
-  padding: 0px 10px;
+  li {
+    display: inline-block;
+     padding: 8px 12px; 
+  }
+
+  li:hover {
+    background-color: #f3ea12;
+   border-radius: 4px;    
   }
 
 .topnav {
@@ -194,11 +196,14 @@ li {
    }
 
    footer {
-    background-color: var(--paleblue);
     justify-content: center; 
     margin-top: 5em;   
     height: 100vh;
    
+}
+
+.link-list {
+  background-color: rgb(238,240,246);
 }
 
 .navbar-footer {
@@ -217,7 +222,6 @@ color: rgb(69 122 255);
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    color: var(--darkgray);
     margin-top: 3em;
 }
 
@@ -225,10 +229,10 @@ color: rgb(69 122 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--verylightgray);
-    padding-left: 3rem;
-    padding-right: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-left: 276px;
+    padding-right: 186px;
+    background-color: rgb(238,240,246);
+    padding-bottom: 59px;
 }
 
 .follow-us {
@@ -243,15 +247,15 @@ color: rgb(69 122 255);
     padding: 2px;
 }
 
+.footer-icon {
+  width: 2%;
+}
+
 .fab {
-    color: var(--black);
     justify-content: space-between;
     padding: 4px;
 }
 
-.fab:hover{
-    color: var(--lightblue);
-}
 
 .footer-links {
     display: flex;
@@ -269,15 +273,12 @@ color: rgb(69 122 255);
 .link {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: var(--darkgray);
-    font-size: 18px;
+        font-size: 18px;
     padding: 15px;
     cursor: pointer;
 }
 
-.link:hover {
-    color: var(--lightblue);
-}
+
 
 .office-info {
     margin-top: -330px;
@@ -291,14 +292,14 @@ color: rgb(69 122 255);
 }
 
 .address-info {
-    color: var(--darkgray);
+  margin-top: 2px;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     text-align: left;
 }
 
 .email-header {
-    margin-top: 6em;
+  margin-bottom: 0px;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -308,8 +309,8 @@ color: rgb(69 122 255);
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: var(--darkgray);
     line-height: 30px;
+    margin-top: 0px;
 }
 
 .copyright {
@@ -318,8 +319,7 @@ color: rgb(69 122 255);
     padding:0;
     font-size: 18px;
     font-weight: 400;
-    color: var(--darkgray);
-}
+   }
     
   @media screen and (max-width: 750px) and (min-width: 340px) {
     .topnav {
