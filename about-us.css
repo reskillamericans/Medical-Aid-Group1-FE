@@ -2759,14 +2759,14 @@
   .logof {
     width: 30px;
     position: relative;
-    top: 74%;
+    top: 58%;
     left: -30%;
   }
 
   .fh {
     color: #180126;
     position: relative;
-    top: 185px;
+    top: 135px;
     left: -5%;
     width: 200%;
     font-size: 1.1em;
@@ -2781,11 +2781,12 @@
     align-items: center;
     justify-content: center;
     width: 198.2%;
-    height: 470px;
+    height: 420px;
     position: relative;
     padding-top: 60px;
     top: 200px;
   }
+  
   .footer-wrapper {
     display: grid;
     grid-template-areas: "mission quick find";
@@ -2854,7 +2855,7 @@
   .social {
     position: relative;
     left: 110%;
-    top: 5%;
+    top: -10%;
   }
 
   .fab {
@@ -2863,7 +2864,7 @@
 
   .fm {
     position: relative;
-    top: 50%;
+    top: 35%;
     left: -5%;
     font-size: 0.9em;
   }
@@ -3474,14 +3475,14 @@
   .logof {
     width: 30px;
     position: relative;
-    top: 74%;
+    top: 58%;
     left: -25%;
   }
 
   .fh {
     color: #180126;
     position: relative;
-    top: 185px;
+    top: 130px;
     left: -5%;
     width: 200%;
     font-size: 1.1em;
@@ -3496,7 +3497,7 @@
     align-items: center;
     justify-content: center;
     width: 198.2%;
-    height: 480px;
+    height: 420px;
     position: relative;
     padding-top: 60px;
     top: 200px;
@@ -3569,7 +3570,7 @@
   .social {
     position: relative;
     left: 110%;
-    top: 10%;
+    top: -7%;
   }
 
   .fab {
@@ -3578,7 +3579,7 @@
 
   .fm {
     position: relative;
-    top: 50%;
+    top: 35%;
     left: -5%;
     font-size: 0.9em;
   }
