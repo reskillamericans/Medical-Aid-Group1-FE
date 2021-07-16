@@ -18,16 +18,16 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 form {
-    display: flex; flex-direction: column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-bottom: 70px;
 }
 
 .back {
     margin-left: 30px;
 }
-form {
-    margin-bottom: 70px;
-}
+
 .update-btn {
     background: var(--secondaryColor);
     color: var(--primaryText);
@@ -146,9 +146,9 @@ button.hamburger {
   align-items: center;
 
 }
-.heading h2 {
-  width: 60%;
-}
+/*.heading h2 {*/
+/*  width: 60%;*/
+/*}*/
 /*Patient Info*/
 
 .main-heading{
@@ -178,27 +178,18 @@ button.hamburger {
 .personal-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /*justify-content: space-between;*/
     align-items: center;
 }
 
 .patient-info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     line-height: 2rem;
-
+    margin-left: 30px;
 }
 main {
     grid-area: main;
-    /*display: grid;*/
-    /*grid-template-columns: 1fr  1fr;*/
-    /*grid-template-areas:*/
-    /*    "patient patient"*/
-    /*    "contact emergency";*/
-
-    /*margin-right: 2rem;*/
-
 }
 .patient-info-block {
     grid-area: patient;
@@ -240,6 +231,7 @@ label {
      background-color: var(--background);
      border: 1px solid var(--tertiaryText);
     border-radius: 4px;
+    margin-bottom: 15px;
 }
 
 
@@ -328,18 +320,16 @@ select:hover {
         font-size: 30px;
     }
 
-    h2 {
-        font-size: 20px;
-        padding-bottom: 20px;
-    }
-
-    .heading h2 {
-        width: auto;
+    .patient-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        line-height: 2rem;
+        margin-left: 90px;
     }
 
     .personal-info {
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
     }
     .contact-wrapper {
@@ -349,6 +339,5 @@ select:hover {
 
     }
 
-    /***** Welcome *****/
 
 }
