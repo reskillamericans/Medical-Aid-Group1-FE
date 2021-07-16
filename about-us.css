@@ -134,6 +134,7 @@
     position: relative;
     top: 25%;
     left: 12%;
+    width: 80%;
   }
 
   .moth {
@@ -201,6 +202,7 @@
     position: relative;
     top: 25%;
     left: 12%;
+    width: 80%;
   }
 
   .pswoh {
@@ -254,6 +256,11 @@
     top: 11.5%;
     left: 18%;
     color: #7e7a8f;
+  }
+
+  .btt {
+    position: relative;
+    left: 15%;
   }
 
   :root {
@@ -528,13 +535,13 @@
   }
   .blue {
     background-color: #f3f4fe;
-    padding: 2rem;
+    padding: 0rem;
     align-items: center;
     justify-content: center;
-    width: 198.2%;
-    height: 450px;
+    width: 208%;
+    height: 400px;
     position: relative;
-    padding-top: 60px;
+    padding-top: 10px;
   }
   .footer-wrapper {
     display: grid;
@@ -572,7 +579,7 @@
     text-align: center;
     padding: 10px;
     color: #7e7a8f;
-    width: 205%;
+    width: 204%;
     position: relative;
   }
   .copyright img {
@@ -1140,13 +1147,13 @@
   }
   .blue {
     background-color: #f3f4fe;
-    padding: 2rem;
+    padding: 0rem;
     align-items: center;
     justify-content: center;
-    width: 198.2%;
-    height: 450px;
+    width: 208%;
+    height: 400px;
     position: relative;
-    padding-top: 60px;
+    padding-top: 10px;
   }
   .footer-wrapper {
     display: grid;
@@ -1752,7 +1759,7 @@
     color: #180126;
     position: relative;
     top: -55px;
-    left: 13%;
+    left: 10%;
   }
 
   .blue img {
@@ -1760,13 +1767,13 @@
   }
   .blue {
     background-color: #f3f4fe;
-    padding: 2rem;
+    padding: 0rem;
     align-items: center;
     justify-content: center;
-    width: 196%;
-    height: 450px;
+    width: 208%;
+    height: 440px;
     position: relative;
-    padding-top: 60px;
+    padding-top: 10px;
   }
   .footer-wrapper {
     display: grid;
@@ -2396,13 +2403,13 @@
   }
   .blue {
     background-color: #f3f4fe;
-    padding: 2rem;
+    padding: 0rem;
     align-items: center;
     justify-content: center;
-    width: 198.2%;
+    width: 208%;
     height: 500px;
     position: relative;
-    padding-top: 60px;
+    padding-top: 10px;
   }
   .footer-wrapper {
     display: grid;
@@ -2774,7 +2781,7 @@
     align-items: center;
     justify-content: center;
     width: 198.2%;
-    height: 500px;
+    height: 470px;
     position: relative;
     padding-top: 60px;
     top: 200px;
@@ -3489,7 +3496,7 @@
     align-items: center;
     justify-content: center;
     width: 198.2%;
-    height: 500px;
+    height: 480px;
     position: relative;
     padding-top: 60px;
     top: 200px;
