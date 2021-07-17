@@ -479,46 +479,40 @@ body {
 
 /*****Subscription Section*****/
 .subscribe-header {
-    display: block;
+    display: grid;
     margin-top: 60px;
-}
-
-.subscription-head {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 31px;
-    font-weight: 700;
-   margin-left: 330px;
-}
-
-.subscription-subheader {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-    width: 50%;
-    padding-left: 290px;
+    justify-content: center;
     text-align: center;
 }
 
+.subscription-head {
+    font-size: 31px;
+    font-weight: 700;
+}
+
+.subscription-subheader {
+    font-size: 21px;
+    font-weight: 400;
+}
+
 .email-box {
-    padding: 1px solid var(--verylightgray);
+    border: 1px solid var(--lightgray);
     background-color: var(--white);
-    padding: 15px;
     border-radius: 6px;
-    width: 25%;
-    margin-left: 340px;
+    width: 300px;
+    height: 40px;
 }
 
 #subscribe-btn {
     background-color: var(--yellow);
-    padding: 15px;
     border-radius: 6px;
-    width: 25%;
-    margin-left: -15px;
-    border: none;
+    border: 1px solid var(--yellow);
     cursor: pointer;
-    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 700;
+    width: 200px;
+    height: 45px;
+    margin-left: -10px;
 }
 
 #subscribe-btn:hover {
@@ -526,6 +520,7 @@ body {
     color: var(--blue);
     border: 2px solid var(--blue);
 }
+
 
 /*****Footer****/
 footer {
