@@ -70,6 +70,29 @@ select:hover {
     outline: none;
 }
 
+button {
+    background: var(--secondaryColor);
+    color: var(--primaryText);
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 30px;
+    width: 160px;
+    text-align: center;
+    /*margin: 0 auto;*/
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: var(--background);
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+}
+button {
+    cursor: pointer;
+}
+
 /* ˅ This is so all the content sections have the same border, color and are vertically centered */
 .border-style {
     border-radius: 20px;
@@ -314,6 +337,9 @@ button.hamburger {
       padding: 0;
       margin-left: 30px;
       margin-bottom: -20px;
+    }
+    button {
+        margin-top: 0;
     }
     
 }
