@@ -146,10 +146,7 @@ button.hamburger {
   align-items: center;
 
 }
-/*.heading h2 {*/
-/*  width: 60%;*/
-/*}*/
-/*Patient Info*/
+
 
 .main-heading{
     text-align: center;
@@ -178,12 +175,10 @@ button.hamburger {
 .personal-info {
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
     align-items: center;
 }
 
 .patient-info {
-    display: flex;
     flex-wrap: wrap;
     line-height: 2rem;
     margin-left: 30px;
@@ -205,10 +200,7 @@ main {
 .personal-info,
 .contact-info,
 .emergency-contact{
-    /*padding: 15px 30px;*/
     border-radius: 5px;
-    /*display: flex;*/
-    /*flex-direction: column;*/
 }
 
 label {
