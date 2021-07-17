@@ -144,12 +144,14 @@ label {
 }
 
 input, select, textarea {
+    width: 300px;
     padding: 10px;
     background-color: var(--background);
     border: 1px solid var(--tertiaryText);
     border-radius: 4px;
     margin-bottom: 15px;
 }
+
 
 input:focus,
 select:focus,
