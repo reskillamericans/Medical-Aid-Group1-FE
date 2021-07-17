@@ -244,8 +244,8 @@ body {
     width: 100%;
 }
 
-.middle-right {
-    
+.middle-right-right {
+    margin-top: 100px;
 }
 
 
@@ -313,23 +313,27 @@ body {
  }
 
  .get-started-btn {
-     padding: 20px;
-     width: 40%;
-     border-radius: 6px;
-     border: none;
+     background-color: var(--yellow);
      color: var(--black);
-     font-family: 'Open Sans', sans-serif;
-     font-size: 14px;
-     font-weight: 700;
-     margin-left: 350px; 
+     border-radius: 4px;
+     border: none;
+     height: 40px;
+     width: 200px;
+     font-size: 16px;
+     font-weight: 700; 
      cursor: pointer;
  }
-
  .get-started-btn:hover {
      background-color: var(--white);
      color: var(--blue);
      border: 2px solid var(--blue);
  }
+.start-btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
 
  /**Doctor Section**/
  .doctors-section {
