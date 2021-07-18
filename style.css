@@ -618,6 +618,7 @@ footer a:hover, footer li:hover {
         grid-template-areas: 
             "mission links office"
             "follow links office";
+        padding: 4rem 150px;
     }
     footer img {
         width: auto;
@@ -626,6 +627,7 @@ footer a:hover, footer li:hover {
         font-size: 16px;
         line-height: 3;
         grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
     }
     footer h4 {
         font-size: 16px;
