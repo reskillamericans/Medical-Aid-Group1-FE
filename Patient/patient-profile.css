@@ -136,7 +136,10 @@ button.hamburger {
 .nav-ul.show {
    display: flex;
 }
-
+.active-link {
+    color: var(--secondaryColor) !important;
+    font-weight: 700;
+}
 
 /* Styling for Headings */
 .heading {
