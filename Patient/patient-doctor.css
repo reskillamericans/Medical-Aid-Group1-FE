@@ -70,7 +70,7 @@ select:hover {
     outline: none;
 }
 
-button {
+.search-btn {
     background: var(--secondaryColor);
     color: var(--primaryText);
     font-size: 13px;
@@ -84,7 +84,7 @@ button {
     margin-top: 15px;
 }
 
-button:hover {
+.search-btn:hover {
     background-color: var(--background);
     border: 1px solid var(--primaryColor);
     color: var(--primaryColor);
@@ -179,8 +179,9 @@ button.hamburger {
    display: flex;
 }
 
-.activeLink {
-    color: var(--secondaryColor);
+.active-link {
+    color: var(--secondaryColor) !important;
+    font-weight: 700;
 }
 
 /***** Recent Visits *****/
