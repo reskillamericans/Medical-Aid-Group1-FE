@@ -133,6 +133,7 @@ button.hamburger {
 }
 .active-link {
     color: var(--secondaryColor) !important;
+    font-weight: 700;
 }
 
 /***** Welcome Alerts *****/
