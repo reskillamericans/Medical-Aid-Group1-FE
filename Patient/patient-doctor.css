@@ -70,7 +70,7 @@ select:hover {
     outline: none;
 }
 
-button {
+.search-btn {
     background: var(--secondaryColor);
     color: var(--primaryText);
     font-size: 13px;
@@ -84,7 +84,7 @@ button {
     margin-top: 15px;
 }
 
-button:hover {
+.search-btn:hover {
     background-color: var(--background);
     border: 1px solid var(--primaryColor);
     color: var(--primaryColor);
