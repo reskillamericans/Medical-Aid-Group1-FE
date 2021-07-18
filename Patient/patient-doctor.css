@@ -179,8 +179,9 @@ button.hamburger {
    display: flex;
 }
 
-.activeLink {
-    color: var(--secondaryColor);
+.active-link {
+    color: var(--secondaryColor) !important;
+    font-weight: 700;
 }
 
 /***** Recent Visits *****/
