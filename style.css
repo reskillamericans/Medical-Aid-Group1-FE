@@ -351,6 +351,7 @@ body {
     font-size: 14px;
     margin: 0;
     padding: 0;
+    color: var(--black);
 }
 .dr-about {
     text-align: center;
@@ -368,13 +369,20 @@ body {
     width: 125px;
     margin: 0;
     padding: 16px;
+    color: var(--darkgray);
+}
+.dr-card img {
+    height: 100px;
+    width: auto;
 }
 .dr-btn {
-    height: 25px;
+    height: 40px;
+    width: 100px;
     cursor: pointer;
     font-size: 12px;
     border-radius: 4px;
     border: 1px solid var(--lightgray);
+    color: var(--darkgray);
 }
 .dr-btn:hover {
     background-color: var(--white);
@@ -647,9 +655,56 @@ footer a:hover, footer li:hover {
 /************ Styling for Desktop View ***********/
 @media screen and (min-width: 768px) {
     /* doctor for desktop */
+    .doctors h2 {
+        font-size: 30px;
+    }
+    .dr-about p {
+        font-size: 20px;
+        margin: 2rem 20rem;
+    }
     .hidden {
         display: none;
     }
+    .dr-card {
+        width: 200px;
+        height: auto;
+        padding: 2rem;
+    }
+    .dr-card img {
+        height: 200px;
+        width: auto;
+    }
+    
+   .dr-container {
+
+       display: grid;
+       grid-template-areas: 
+        "dr1 dr2 dr3"
+        "dr4 dr4 dr5";
+        grid-gap: 40px;
+        width: 80%;
+        justify-content: center;
+        margin-left: 135px;
+   }
+   .dr1 {
+       grid-area: dr1;
+   }
+   .dr2 {
+       grid-area: dr2;
+   }
+   .dr3 {
+       grid-area: dr3;
+   }
+   .dr4 {
+       grid-area: dr4;
+       display: grid;
+       margin-left: 200px;  
+   }
+   .dr5 {
+       grid-area: dr5;
+       margin-left: -200px;
+   }
+    
     /* subscribe for desktop */
     form {
         display: inline-block;
