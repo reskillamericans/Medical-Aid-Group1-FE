@@ -354,6 +354,7 @@ body {
 }
 .dr-about {
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 .dr-container {
     display: grid;
@@ -361,16 +362,24 @@ body {
     justify-content: space-evenly;
     grid-gap: 20px;
 }
+
 .dr-card {
     background-color: var(--verylightgray);
     width: 125px;
     margin: 0;
-    padding: 10px;
+    padding: 16px;
 }
 .dr-btn {
     height: 25px;
     cursor: pointer;
     font-size: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--lightgray);
+}
+.dr-btn:hover {
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    color: var(--blue);
 }
  /**Doctor Section**/
  .doctors-section {
@@ -637,6 +646,11 @@ footer a:hover, footer li:hover {
    
 /************ Styling for Desktop View ***********/
 @media screen and (min-width: 768px) {
+    /* doctor for desktop */
+    .hidden {
+        display: none;
+    }
+    /* subscribe for desktop */
     form {
         display: inline-block;
     }
