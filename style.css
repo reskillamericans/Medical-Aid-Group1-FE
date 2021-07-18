@@ -33,6 +33,7 @@ body {
     align-items: center;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--white);
     
   }
   
@@ -634,9 +635,12 @@ footer a:hover, footer li:hover {
     }
     footer {
         font-size: 16px;
-        line-height: 3;
+        line-height: 2;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
+    }
+    footer li {
+        line-height: 2;
     }
     footer h4 {
         font-size: 16px;
