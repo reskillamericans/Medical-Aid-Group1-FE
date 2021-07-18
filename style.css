@@ -484,10 +484,11 @@ body {
     margin-top: 60px;
     justify-content: center;
     text-align: center;
+    margin: 1rem;
 }
 
 .subscription-head {
-    font-size: 31px;
+    font-size: 30px;
     font-weight: 700;
 }
 
@@ -500,7 +501,7 @@ body {
     border: 1px solid var(--lightgray);
     background-color: var(--white);
     border-radius: 6px;
-    width: 300px;
+    width: 235px;
     height: 40px;
 }
 
@@ -509,11 +510,11 @@ body {
     border-radius: 6px;
     border: 1px solid var(--yellow);
     cursor: pointer;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
-    width: 200px;
+    width: 75px;
     height: 45px;
-    margin-left: -10px;
+    margin-left: -77px;
 }
 
 #subscribe-btn:hover {
@@ -521,7 +522,6 @@ body {
     color: var(--blue);
     border: 2px solid var(--blue);
 }
-
 
 /*****Footer****/
 footer { 
@@ -611,6 +611,15 @@ footer a:hover, footer li:hover {
 
 }
 @media screen and (min-width: 768px) {
+    form {
+        display: inline-block;
+    }
+    .email-box{
+        width: 320px;
+    }
+    #subscribe-btn {
+        width: 200px;
+    }
     .copyright {
         font-size: 16px;
     }
