@@ -131,6 +131,10 @@ button.hamburger {
 .nav-ul.show {
    display: flex;
 }
+.active-link {
+    color: var(--secondaryColor) !important;
+    font-weight: 700;
+}
 
 /***** Welcome Alerts *****/
 .welcome {
@@ -152,7 +156,7 @@ button.hamburger {
 /***** Med Info *****/
 .medical-info{
     grid-area: medinfo;
-    padding: 2rem;
+    /*padding: 2rem;*/
 }
 .med-info-detail{
     display: grid;
@@ -199,8 +203,8 @@ width:20px;
   display: grid;
     grid-template-columns: 1fr 1fr;
   justify-content: space-around;
-  margin: 1rem 0;
-  padding: 1rem 1.5rem;
+    margin: .5rem;
+    padding: .85rem 1.5rem;
   /*text-align: center;*/
 }
 #contactsPic {
@@ -430,6 +434,9 @@ button.accept:hover {
 
     .prescriptions {
       margin: 1rem 2rem 1rem 1rem;
+    }
+    .prescriptions .heading {
+        margin-bottom: 22px;
     }
     /***** Recent Visits Styling Desktop View n*****/
     .visits {
