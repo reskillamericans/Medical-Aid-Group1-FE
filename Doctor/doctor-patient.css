@@ -146,10 +146,10 @@
   .page-title h1 {
     text-align: center;
   }
-  .page-title a {
+  .page-title a, .appointments a {
     color: var(--primaryText);
   }
-  .page-title a:hover {
+  .page-title a:hover, .appointments a:hover{
     color: var(--primaryColor);
   }
   .page-title img {
@@ -168,12 +168,14 @@
     margin-bottom: 30px;
   }
   .patient {
-    padding: 20px;
+    padding: 2rem;
     display: grid;
     grid-template-columns: 150px 1fr;
     grid-gap: 20px;
     justify-content: center;
+    align-items: center;
     line-height: 1;
+    
   }
   .patient img {
     width: 70%;
@@ -215,8 +217,11 @@
   
    /***** Appointments *****/
   .appointments{
-      grid-area: appointment;
-      margin: 1rem;
+    grid-area: appointment;
+    margin: 1rem;
+  }
+  .visits-bubble {
+    line-height: 1;
   }
   .up-down {
       padding-left: 5px;
@@ -234,7 +239,7 @@
   
   .bubble {
     display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: .5fr 1fr;
     justify-content: space-around;
       margin: .5rem;
       padding: .85rem 1.5rem;
@@ -355,6 +360,16 @@
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
       }
+    /* Patient */
+    .patient{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .col3 {
+      display: block;
+    }
+    .page-title h1 {
+      margin-top: -30px;
+    }
   }
   
   
@@ -457,6 +472,11 @@
         padding: 0;
         margin-left: 30px;
         margin-bottom: -20px;
+      }
+      /* Prescriptions */
+      .bubble {
+        line-height: 1;
+        grid-template-columns: .5fr 1fr;
       }
       
   }
