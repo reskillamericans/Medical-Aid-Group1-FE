@@ -37,6 +37,8 @@ input, select, textarea {
 }
 .back:hover {
     color: var(--secondaryColor);
+    text-shadow:  1px 1px 1px var(--primaryColor);
+
 }
 
 .submit-btn {
