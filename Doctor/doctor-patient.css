@@ -68,13 +68,14 @@
     grid-template-areas: 
         "header"
         "sidebar"
-        "welcome"
+        "title"
+        "patient"
         "medinfo"
         "appointment"
         "prescriptions"
         "visits";
   }
-  
+
   /************************************ Section Styling ************************************/
   
   /********** Nav Mobile View**********/
@@ -134,29 +135,50 @@
   .active-link {
       color: var(--secondaryColor) !important;
   }
-  
-  /***** Welcome Alerts *****/
-  .welcome {
-      grid-area: welcome;
-      justify-content: space-between;
-      margin: 0 1rem 0rem 1rem;
-      padding: 2rem;
+  /***** Title of Page and Back Button *****/
+  .page-title {
+    grid-area: title;
+    margin: 1rem;
   }
-  .welcome p,
-    .welcome h1 {
-      line-height: normal;
-    }
-    .welcomeAlerts span {
-      font-weight: 700;
-    }
-  .userPic {
-    display: none;
+  .page-title h1 {
+    text-align: center;
   }
+
+  /***** Patient Information *****/
+  .patient-profile {
+    grid-area: patient;
+    margin: 1rem;
+    font-size: 14px;
+  }  
+  .patient-profile h2 {
+    font-size: 20px;
+    margin-left: 1rem;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .patient {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    line-height: 1;
+  }
+  .patient img {
+    width: 70%;
+  }
+
+.col3, .col4 {
+  display: none;
+}
   /***** Med Info *****/
   .medical-info{
       grid-area: medinfo;
       /*padding: 2rem;*/
       padding-left: .5rem;
+  }
+  .medical-info h2 {
+    margin-left: 1rem;
   }
   .med-info-detail{
       display: grid;
@@ -272,7 +294,8 @@
       grid-template-columns: 275px  1fr;
       grid-template-areas: 
           "header  header"
-          "sidebar welcome"
+          "sidebar title"
+          "sidebar patient"
           "sidebar medinfo"
           "sidebar appointment"
           "sidebar prescriptions"
@@ -332,7 +355,8 @@
           grid-template-columns: 275px 1.5fr 1fr;
           grid-template-areas: 
               "header  header header"
-              "sidebar welcome welcome"
+              "sidebar title title"
+              "sidebar patient patient"
               "sidebar medinfo medinfo"
               "sidebar appointment prescriptions"
               "sidebar visits visits";
@@ -347,24 +371,20 @@
       .heading h2 {
         width: auto;
       }
+      /* Patient */
+      .patient {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+      .col1 {
+        margin-right: 1rem;
+        text-align: center;
+      }
+      .col2, .col3, .col4 {
+        display: grid;
+        line-height: .5;
+      }
       
-      /***** Welcome *****/
-      .welcome {
-        display: flex;
-      }
-      .welcome h1 {
-        padding: 0;
-        margin: 0;
-      }
-      .userPic {
-        display: block;
-      }
-      #contactsPic {
-        width: 75px;
-      }
-      .welcome, .visits {
-        margin: 0rem 2rem;
-      }
       /**** Medical Info *****/
       .medical-info
       {
