@@ -49,11 +49,8 @@ p {
         "header"
         "sidebar"
         "title"
-        "patient"
-        "medinfo"
-        "appointment"
-        "prescriptions"
-        "visits";
+        "search"
+        "results";
 }
 /************************************ Section Styling ************************************/
   
@@ -142,6 +139,66 @@ button.hamburger {
 .heading h2 {
     width: 60%;
 }
+/* Search Bar Div */
+.search {
+    grid-area: "search";
+    display: grid;
+    margin: 2rem;
+}
+.search h2 {
+    justify-content: left;
+}
+input, select {
+    width: 200px;
+    height: 40px;
+    border: 1px solid var(--tertiaryText);
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+input {
+    background-color: var(--background);
+}
+
+select {
+    background-color: #fff;
+}
+
+input:focus,
+select:focus,
+input:hover,
+select:hover {
+    border: 1px solid var(--secondaryColor) !important;
+    box-shadow: 0 0 5px var(--secondaryColor);
+    outline-offset: 0;
+    outline: none;
+}
+
+.search-btn {
+    background: var(--secondaryColor);
+    color: var(--primaryText);
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 41px;
+    text-align: center;
+    margin-left: -20px;
+    /*margin-top: 15px;*/
+}
+
+.search-btn:hover {
+    background-color: var(--background);
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+}
+button {
+    cursor: pointer;
+}
+.search-box {
+    display: inline-block;
+}
  /************************Styling for Laptops and Small Screens 769px and up*****************************/
  @media only screen and (min-width: 769px) {
    
@@ -151,11 +208,8 @@ button.hamburger {
       grid-template-areas: 
           "header  header"
           "sidebar title"
-          "sidebar patient"
-          "sidebar medinfo"
-          "sidebar appointment"
-          "sidebar prescriptions"
-          "sidebar visits";
+          "sidebar search"
+          "sidebar results";
       margin-right: 2rem;
     }
   
@@ -212,10 +266,8 @@ button.hamburger {
           grid-template-areas: 
               "header  header header"
               "sidebar title title"
-              "sidebar patient patient"
-              "sidebar medinfo medinfo"
-              "sidebar appointment prescriptions"
-              "sidebar visits visits";
+              "sidebar search search"
+              "sidebar results results";
       }
       h1 {
         font-size: 30px;
