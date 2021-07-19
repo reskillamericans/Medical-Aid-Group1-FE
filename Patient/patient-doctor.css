@@ -23,6 +23,16 @@ main {
 
 .back {
     margin-left: 30px;
+    text-decoration: none;
+}
+.back:link,
+.back:visited {
+    color: var(--primaryColor);
+}
+.back:hover {
+    color: var(--secondaryColor);
+    text-shadow:  1px 1px 1px var(--primaryColor);
+
 }
 .main-heading {
     text-align: center;
