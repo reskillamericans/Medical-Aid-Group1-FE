@@ -146,7 +146,15 @@
   .page-title h1 {
     text-align: center;
   }
-  
+  .page-title a {
+    color: var(--primaryText);
+  }
+  .page-title a:hover {
+    color: var(--primaryColor);
+  }
+  .page-title img {
+    vertical-align: middle;
+  }
   /***** Patient Information *****/
   .patient-profile {
     grid-area: patient;
