@@ -156,6 +156,7 @@
   .medical-info{
       grid-area: medinfo;
       /*padding: 2rem;*/
+      padding-left: .5rem;
   }
   .med-info-detail{
       display: grid;
