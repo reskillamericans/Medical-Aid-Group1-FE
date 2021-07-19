@@ -217,10 +217,7 @@ button.hamburger {
 .results {
     grid-area: doctors;
     align-items: center;
-    padding: 15px 60px;
     margin: 30px;
-    max-height: 65vh;
-    overflow: scroll;
 }
 .results .heading{
   margin-bottom: 15px;
@@ -325,6 +322,9 @@ button.hamburger {
     select {
         width: 160px;
         background-color: #fff;
+    }
+    input, select {
+        margin-bottom: 0;
     }
 
     /***** Styling Desktop View n*****/
