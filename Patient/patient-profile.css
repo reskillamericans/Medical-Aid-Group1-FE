@@ -159,7 +159,7 @@ button.hamburger {
 .emergency-contact-block {
     justify-content: space-between;
     margin: 0 1rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 .patient {
     display: flex;
