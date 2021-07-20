@@ -139,7 +139,7 @@ button.hamburger {
 .heading h2 {
     width: 60%;
 }
-/* Search Bar Div */
+/***** Search Bar Div *****/
 .search {
     display: grid;
     margin: 2rem;
@@ -172,7 +172,6 @@ select:hover {
     outline-offset: 0;
     outline: none;
 }
-
 .search-btn {
     background: var(--secondaryColor);
     color: var(--primaryText);
@@ -186,7 +185,6 @@ select:hover {
     margin-left: -20px;
     /*margin-top: 15px;*/
 }
-
 .search-btn:hover {
     background-color: var(--background);
     border: 1px solid var(--primaryColor);
@@ -197,6 +195,20 @@ button {
 }
 .search-box {
     display: inline-block;
+}
+/****** Results Section ******/
+.search-results {
+    margin: 1rem 2rem;
+}
+.row-heading {
+    display: none;
+}
+.row-results {
+    text-align: center;
+    padding: 10px;
+}
+.col5, .col6 {
+    display: none;
 }
  /************************Styling for Laptops and Small Screens 769px and up*****************************/
  @media only screen and (min-width: 769px) {
