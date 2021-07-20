@@ -48,9 +48,10 @@ p {
     grid-template-areas: 
         "header"
         "sidebar"
-        "title"
-        "search"
-        "results";
+        "content";
+}
+.content-wrapper {
+    grid-area: content;
 }
 /************************************ Section Styling ************************************/
   
@@ -112,7 +113,6 @@ button.hamburger {
 }
 /***** Title of Page and Back Button *****/
 .page-title {
-    grid-area: title;
     margin-left: 1rem;
     margin-bottom: 0;
 }
@@ -141,7 +141,6 @@ button.hamburger {
 }
 /* Search Bar Div */
 .search {
-    grid-area: "search";
     display: grid;
     margin: 2rem;
 }
@@ -207,9 +206,7 @@ button {
       grid-template-columns: 275px  1fr;
       grid-template-areas: 
           "header  header"
-          "sidebar title"
-          "sidebar search"
-          "sidebar results";
+          "sidebar content";
       margin-right: 2rem;
     }
   
@@ -248,7 +245,8 @@ button {
     }
     /***** styling for content headings *****/
     h2 {
-      font-size: 22px;
+      font-size: 20px;
+      margin-bottom: 10px;
     }
       .med-info-detail{
           display: grid;
@@ -256,6 +254,18 @@ button {
       }
       .page-title h1 {
         margin-top: -30px;
+      }
+      /* Styilng for Search Box */
+      .search {
+          justify-content: center;
+          margin-top: 0;
+      }
+      input, select {
+          width: 300px;
+          margin-right: 0;
+      }
+      .search-btn {
+          margin-left: 5px;
       }
 }
 /************************Styling for Desktops and Large Screens 1200px Up*****************************/
@@ -265,18 +275,17 @@ button {
           grid-template-columns: 275px 1.5fr 1fr;
           grid-template-areas: 
               "header  header header"
-              "sidebar title title"
-              "sidebar search search"
-              "sidebar results results";
+              "sidebar content content";
       }
       h1 {
         font-size: 30px;
       }
-      h2 {
-        font-size: 20px;
-          padding-bottom: 20px;
-      }
+      
       .heading h2 {
         width: auto;
+      }
+      /* Styling for Search */
+      input, select {
+        width: 400px;
       }
 }
