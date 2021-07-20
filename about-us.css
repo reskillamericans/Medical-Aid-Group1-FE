@@ -648,9 +648,19 @@
     margin-top: -5px;
   }
 
+  .social-links{
+    position: relative;
+    left: 6%;
+  }
+
   .fm {
     position: relative;
     top: -10%;
+  }
+
+  .emailf{
+    position: relative;
+    left: 0%;
   }
 
   /***** For Mobile Screens ****/
@@ -1321,9 +1331,19 @@
     margin-top: -5px;
   }
 
+  .social-links{
+    position: relative;
+    left: 6%;
+  }
+
   .fm {
     position: relative;
     top: -10%;
+  }
+
+  .emailf{
+    position: relative;
+    left: 0%;
   }
 
   /***** For Mobile Screens ****/
@@ -2639,12 +2659,19 @@
   }
   .social-links {
     font-size: 1.3em;
+    position: relative;
+    left: 6%;
   }
 
   .fm {
     position: relative;
     top: -10%;
     font-size: 1.1em;
+  }
+
+  .emailf{
+    position: relative;
+    left: 0%;
   }
 
   /***** For Mobile Screens ****/
