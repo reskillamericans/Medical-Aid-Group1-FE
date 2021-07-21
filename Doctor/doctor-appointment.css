@@ -176,7 +176,18 @@
 .col5, .col6 {
     display: none;
 }
-  
+.col7 input {
+  background-color: var(--secondaryColor);
+  border-radius: 4px;
+  width: 178px;
+  height: 40px;
+  border: none;
+} 
+.col7 input:hover {
+  background-color: var(--background);
+      border: 1px solid var(--primaryColor);
+      color: var(--primaryColor);
+}
   /***** Prescription *****/
   .prescriptions {
       grid-area: prescriptions;
@@ -337,19 +348,19 @@
   }
  
   }
-/* Styling for row at 960px screens and up */
-  @media  (min-width: 960px)
+/* Styling for row at 1200px screens and up */
+  @media  (min-width: 1200px)
 {
      /****** Results Section ******/
      .row-heading {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         margin-bottom: 10px;
         font-weight: 700;
     }
     .row-results {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         text-align: left;
         padding: 0px 10px;
     }
