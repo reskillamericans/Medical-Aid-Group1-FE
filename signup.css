@@ -47,12 +47,12 @@ a {
   vertical-align: middle;
 }
 
-.navbar a:hover {
+/* .navbar a:hover {
   background-color: #f3ea12;
     padding: 8px 12px;
     border-radius: 5px;
     color: #180126;
-}
+} */
 
 .nav-logo {
   vertical-align: middle;
@@ -86,9 +86,13 @@ ul.login {
     border-radius: 5px;
   }
 
-li {
-  display: inline-block;
-  padding: 0px 10px;
+  li {
+    display: inline-block;
+     padding: 8px 12px; 
+  }
+  li:hover {
+    background-color: #f3ea12;
+   border-radius: 4px;    
   }
 
 .content-div {
@@ -255,12 +259,13 @@ h6{
   /* Style navigation menu links */
   .topnav a {
     color: #180126;
+    vertical-align: middle;
     padding: 20px 16px;
     text-decoration: none;
     font-size: 15px;
     display: block;
     text-align: center;
-    vertical-align: middle;
+    
      }
 
      .topnav a:hover {
