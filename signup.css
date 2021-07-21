@@ -35,8 +35,8 @@ a {
   }
 
 
-a:hover{
-  background: #eef0f6;
+.checkbox a:hover, .login-link:hover{
+  color: rgb(164,162,179);
 }
 
 .navbar a:visited {
@@ -96,6 +96,7 @@ li {
     justify-content: space-evenly;
     align-items: flex-start;
     margin-top: 11px;
+    padding-top: 20px;
 }
 
 
@@ -104,33 +105,26 @@ div.content-logo {
   background-color: #eef0f6;
   width:50%;  
   border-radius: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
+  
   }
 
 .logo-img {
   vertical-align: middle;
   padding-top: 4px;
-  padding-left: 15px;
-  width: 17%;
+  padding-left: 35px;
+  width: 13%;
 }
 
 .content-span {
   color: rgb(69 122 255);
   font-weight: bold;
-   display: inline;
-   font-size: 23px;
    vertical-align: middle;
-}
-
-.content-span {
-  color: rgb(69 122 255);
-  font-weight: bold;
-   display: inline;
-   font-size: 23px;
-   }
+   font-size: 30px;
+  }
 
 div.inner {
-  padding-top: 40px;
+  padding-top: 46px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -138,8 +132,8 @@ div.inner {
 }
 
 .content-img {
-  width: 100%;
-  padding-top: 65px;
+  width: 115%;
+  padding-top: 125px
 }
 
 .info {
@@ -150,7 +144,7 @@ h2 {
   text-align: center;
   font-weight: 400;
 line-height: 0px;
-font-size:large;
+font-size:x-large;
 }
 
 input[type="fullname"],
@@ -266,6 +260,11 @@ h6{
     font-size: 15px;
     display: block;
     text-align: center;
+    vertical-align: middle;
+     }
+
+     .topnav a:hover {
+      color: rgb(164,162,179);
      }
   
   /* Style the hamburger menu */
@@ -297,29 +296,21 @@ h6{
       display: block;
     }
 
- }
+ 
  .login-btn {
   width: 179px;
   height: 35px;
-}
+ }
 
 div.inner {
   padding: 1em 2em 0em;
 }
 
-    div.content-logo {
-    margin-top: 0px;
-    padding-bottom: 0px;
-    }
  
  .login-btn {
   width: 179px;
   height: 35px;
-}
-
-div.inner {
-  padding: 0;
-}
+ }
 
 
 h2 {
@@ -328,3 +319,4 @@ h2 {
 
 }
 
+}
