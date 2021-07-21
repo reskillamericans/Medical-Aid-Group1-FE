@@ -25,6 +25,7 @@ form {
 }
 
 .back {
+    font-weight: 700;
     margin-left: 30px;
     text-decoration: none;
 }
@@ -34,8 +35,6 @@ form {
 }
 .back:hover {
     color: var(--secondaryColor);
-    text-shadow:  1px 1px 1px var(--primaryColor);
-
 }
 
 .update-btn {
@@ -302,12 +301,12 @@ select:hover {
   h2 {
     font-size: 22px;
   }
-    .personal-info {
-        padding: 15px 30px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: row;
-    }
+    /*.personal-info {*/
+    /*    padding: 15px 30px;*/
+    /*    border-radius: 5px;*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*}*/
 
 }
 
@@ -335,6 +334,7 @@ select:hover {
 
     .personal-info {
         display: flex;
+        flex-direction: row;
         align-items: center;
     }
     .contact-wrapper {
