@@ -17,11 +17,8 @@ body {
     color: var(--primaryText);
     font-family: "Open Sans", sans-serif;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 70px;
+main {
+    grid-area: main;
 }
 
 .back {
@@ -36,54 +33,101 @@ form {
 .back:hover {
     color: var(--secondaryColor);
 }
+.main-heading {
+    text-align: center;
+}
 
-.update-btn {
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input, select {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid var(--tertiaryText);
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+
+}
+input {
+    background-color: var(--background);
+}
+
+select {
+    background-color: #fff;
+}
+
+input:focus,
+select:focus,
+input:hover,
+select:hover {
+    border: 1px solid var(--secondaryColor) !important;
+    box-shadow: 0 0 5px var(--secondaryColor);
+    outline-offset: 0;
+    outline: none;
+}
+
+.search-btn {
     background: var(--secondaryColor);
     color: var(--primaryText);
     font-size: 13px;
     font-weight: 700;
     border: none;
     border-radius: 5px;
-    padding: 10px 50px;
-    width: 243px;
+    padding: 12px 30px;
+    width: 160px;
     text-align: center;
-    margin: 0 auto;
+    /*margin-top: 15px;*/
 }
 
-.update-btn:hover {
+.search-btn:hover {
     background-color: var(--background);
     border: 1px solid var(--primaryColor);
     color: var(--primaryColor);
 }
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
-h1 {
-  font-size: 26px;
-  font-weight: 700;
-}
-h2 {
-  font-size: 20px;
-  font-weight: 700;
-}
-h3 {
-  font-size: 16px;
-  font-weight: 700;
-}
-p {
-  font-size: 16px;
-  font-weight: 400;
-}
+
 /* ˅ This is so all the content sections have the same border, color and are vertically centered */
+.border-style {
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid var(--tertiaryText);
+    align-items: center;
+    margin: 30px;
+    /*padding: 15px 60px;*/
+}
+.bubble-style:hover {
+    background-color: #DAE4FF;
+}
+
 .bubble-style{
-  border-radius: 20px !important;
+  border-radius: 20px;
     background-color: var(--background);
     border: 1px solid var(--tertiaryText);
+    align-items: center;
 }
 /* This controls the layout of the page and stacks everything for mobile view (mobile first)  */
 .wrapper {
   display: grid;
-  grid-template-areas:
+  grid-template-areas: 
       "header"
       "sidebar"
       "main";
@@ -126,7 +170,6 @@ button.hamburger {
   margin: 0;
   height: 70vh;
   background-color: var(--primaryColor);
-  /*justify-content: center;*/
   z-index: 10;
 } 
 .nav-ul a {
@@ -145,108 +188,49 @@ button.hamburger {
 .nav-ul.show {
    display: flex;
 }
+
 .active-link {
     color: var(--secondaryColor) !important;
     font-weight: 700;
 }
 
-/* Styling for Headings */
-.heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+/***** Recent Visits *****/
+.doctors {
+    grid-area: doctors;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.doctors .heading{
+  margin-bottom: 5px;
+}
+.doctors-bubble {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.doctors-bubble img {
+    margin: 15px 30px;
+}
+
+.clinic {
+  padding: 5px 0;
+  margin: 0 10px;
+}
+
+.bubble-heading {
+  display: none;
 
 }
 
-
-.main-heading{
-    text-align: center;
-}
-.patient-info-block,
-.contact-info-block,
-.emergency-contact-block {
-    justify-content: space-between;
-    margin: 0 1rem;
-    padding: 1rem;
-}
-.patient {
+.doctor-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 
-.userPic {
-    display: block;
-    margin: 30px;
-}
-.patient p {
-    font-weight: 700;
-}
-
-.personal-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.patient-info {
-    flex-wrap: wrap;
-    line-height: 2rem;
-    margin-left: 30px;
-}
-main {
-    grid-area: main;
-}
-.patient-info-block {
-    grid-area: patient;
-}
-
-.contact-info-block {
-    grid-area: contact;
-}
-
-.emergency-contact-block {
-    grid-area: emergency;
-}
-.personal-info,
-.contact-info,
-.emergency-contact{
-    border-radius: 5px;
-}
-
-label {
-    font-size: 13px;
-    font-weight: 700;
-}
-
-.patient-info input, .patient-info select {
-    padding: 10px;
-    width: 250px;
-    background-color: #fff;
-    border: 1px solid var(--tertiaryText);
-    border-radius: 4px;
-    margin: 0 20px 20px 0;
-}
-
- input {
-    padding: 10px;
-     width: 385px;
-     background-color: var(--background);
-     border: 1px solid var(--tertiaryText);
-    border-radius: 4px;
-    margin-bottom: 15px;
-}
-
-
-input:focus,
-select:focus,
-input:hover,
-select:hover {
-    border: 1px solid var(--secondaryColor) !important;
-    box-shadow: 0 0 5px var(--secondaryColor);
-    outline-offset: 0;
-    outline: none;
+.doctor-info p {
+    margin: 0;
 }
 
 
@@ -257,10 +241,9 @@ select:hover {
   /* This creates a two column view and makes the sidebar navigation visible  */
   .wrapper {
     grid-template-columns: 275px  1fr;
-    grid-template-areas:
+    grid-template-areas: 
         "header  header"
         "sidebar main";
-
     margin-right: 2rem;
   }
 
@@ -297,52 +280,76 @@ select:hover {
   .hamburger {
     display: none;
   }
-  /***** styling for content headings *****/
-  h2 {
-    font-size: 22px;
-  }
-    /*.personal-info {*/
-    /*    padding: 15px 30px;*/
-    /*    border-radius: 5px;*/
-    /*    display: flex;*/
-    /*    flex-direction: row;*/
-    /*}*/
-
 }
+
+
 
 /************************Styling for Desktops and Large Screens 1200px Up*****************************/
 @media (min-width: 1200px) {
-    /* This creates a 3 column view  */
+  /* This creates a 3 column view  */
     .wrapper {
-        grid-template-columns: 275px 1.5fr 1fr;
+        grid-template-columns: 275px 1fr;
         grid-template-areas: 
-            "header  header header"
-            "sidebar main main";
+            "header  header"
+            "sidebar main";
     }
 
     h1 {
-        font-size: 30px;
+      font-size: 30px;
     }
 
-    .patient-info {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        line-height: 2rem;
-        margin-left: 90px;
-    }
-
-    .personal-info {
-        display: flex;
+    .search {
         flex-direction: row;
+        justify-content: center;
         align-items: center;
     }
-    .contact-wrapper {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: stretch;
-
+    input, select {
+        margin-bottom: 0;
     }
 
+    /***** Styling Desktop View n*****/
+    .border-style {
+        border-radius: 20px;
+        background-color: #fff;
+        border: 1px solid var(--tertiaryText);
+        align-items: center;
+        margin: 30px;
+        padding: 15px 60px;
+    }
+    .doctors {
+      margin-bottom: 1rem;
+      margin-left: 2rem;
+    }
+    .doctors-bubble {
+      display: grid;
+      grid-template-areas: 
+        "doctor clinic phone ";
+      grid-template-columns: 1fr 1fr 1fr;
+      text-align: left;
+      padding: .25rem 1rem;
+      justify-content: space-between;
+    }
+    .doctors-bubble .doctor {
+      display: flex;
+      justify-content: start;
+    }
 
+    .clinic {
+      grid-area: clinic;
+    }
+    .phone {
+      grid-area: phone;
+    }
+
+    .bubble-heading {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 0;
+      margin-left: 30px;
+      margin-bottom: -20px;
+    }
+    button {
+        margin-top: 0;
+    }
+    
 }
