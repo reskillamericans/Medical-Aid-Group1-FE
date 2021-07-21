@@ -120,10 +120,11 @@ button.hamburger {
     text-align: center;
 }
 .page-title a, .appointments a {
-    color: var(--primaryText);
+    color: var(--primaryColor);
+    text-decoration: none;
 }
 .page-title a:hover, .appointments a:hover{
-    color: var(--primaryColor);
+    color: var(--secondaryColor);
 }
 .page-title img {
     vertical-align: middle;
