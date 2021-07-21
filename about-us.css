@@ -343,59 +343,69 @@
   }
 
   .nav1{
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
   top: -6px;
-  left: 0%;
+  left: -30%;
 }
 
 .nav2{
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
   top: -6px;
-  left: 0%;
+  left: -30%;
   background-color: #f3ea12;
 }
 
 .nav3{
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
   top: -6px;
-  left: 0%;
+  left: -45%;
 }
 
 .nav4{
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
   top: -6px;
-  left: 0%;
+  left: -40%;
 }
 
 .nav5{
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
   top: -6px;
-  left: 90%;
+  left: 60%;
 }
 
 .nav6{
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
   top: -6px;
-  left: 70%;
+  left: 40%;
 }
+
+.nav7{
+  font-size: 0.8em;
+  padding: 10px 10px 14px 10px;
+  border-radius: 7px;
+  position: relative;
+  top: -6px;
+  left: -26%;
+}
+
   /*Media query for tablets in landscape*/
   @media (max-width: 1280px) and (orientation: landscape) {
     .nav-ul {
@@ -1026,58 +1036,67 @@
   }
 
   .nav1{
-  font-size: 1.1em;
+  font-size: 0.9em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
-  top: -10px;
-  left: 135%;
+  top: -5px;
+  left: 85%;
 }
 
 .nav2{
-  font-size: 1.1em;
+  font-size: 0.9em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
-  top: -10px;
-  left: 90%;
+  top: -5px;
+  left: 85%;
   background-color: #f3ea12;
 }
 
 .nav3{
-  font-size: 1.1em;
+  font-size: 0.9em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
-  top: -10px;
-  left: 155%;
+  top: -5px;
+  left: 125%;
 }
 
 .nav4{
-  font-size: 1.1em;
+  font-size: 0.9em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
-  top: -10px;
-  left: 70%;
+  top: -5px;
+  left: 55%;
 }
 
 .nav5{
-  font-size: 1.1em;
+  font-size: 0.9em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
-  top: -10px;
-  left: 330%;
+  top: -5px;
+  left: 280%;
 }
 
 .nav6{
-  font-size: 1.1em;
+  font-size: 0.9em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
-  top: -10px;
-  left: 280%;
+  top: -5px;
+  left: 230%;
+}
+
+.nav7{
+  font-size: 0.9em;
+  padding: 10px 10px 14px 10px;
+  border-radius: 7px;
+  position: relative;
+  top: -5px;
+  left: 50%;
 }
   /*Media query for tablets in landscape*/
   @media (max-width: 1280px) and (orientation: landscape) {
@@ -1762,7 +1781,7 @@
 
     /* Style navigation menu links */
     .topnav a {
-      color: black;
+      color: var(--main-color);
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -1772,7 +1791,7 @@
     /* Style the hamburger menu */
     .topnav a.icon {
       background: #eeeeee;
-      color: black;
+      color: var(--main-color);
       display: block;
       width: 5%;
       position: absolute;
@@ -2350,58 +2369,67 @@
   }
 
   .nav1{
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
-  top: -15px;
-  left: 90%;
+  top: -6px;
+  left: 60%;
 }
 
 .nav2{
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
-  top: -15px;
-  left: 75%;
+  top: -6px;
+  left: 65%;
   background-color: #f3ea12;
 }
 
 .nav3{
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
-  top: -15px;
-  left: 155%;
+  top: -6px;
+  left: 105%;
 }
 
 .nav4{
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
-  top: -15px;
-  left: 75%;
+  top: -6px;
+  left: 55%;
 }
 
 .nav5{
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
-  top: -15px;
-  left: 250%;
+  top: -6px;
+  left: 220%;
 }
 
 .nav6{
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 10px 10px 14px 10px;
   border-radius: 7px;
   position: relative;
-  top: -15px;
-  left: 200%;
+  top: -6px;
+  left: 180%;
+}
+
+.nav7{
+  font-size: 1.1em;
+  padding: 10px 10px 14px 10px;
+  border-radius: 7px;
+  position: relative;
+  top: -6px;
+  left: 45%;
 }
   /*Media query for tablets in landscape*/
   @media (max-width: 1280px) and (orientation: landscape) {
@@ -3508,7 +3536,7 @@
 
     /* Style navigation menu links */
     .topnav a {
-      color: black;
+      color: var(--main-color);
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -3518,7 +3546,7 @@
     /* Style the hamburger menu */
     .topnav a.icon {
       background: #eeeeee;
-      color: black;
+      color: var(--main-color);
       display: block;
       width: 5%;
       position: absolute;
@@ -4224,7 +4252,7 @@
 
     /* Style navigation menu links */
     .topnav a {
-      color: black;
+      color: var(--main-color);
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -4234,7 +4262,7 @@
     /* Style the hamburger menu */
     .topnav a.icon {
       background: #eeeeee;
-      color: black;
+      color: var(--main-color);
       display: block;
       width: 5%;
       position: absolute;
@@ -4939,7 +4967,7 @@
 
     /* Style navigation menu links */
     .topnav a {
-      color: black;
+      color: var(--main-color);
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -4949,7 +4977,7 @@
     /* Style the hamburger menu */
     .topnav a.icon {
       background: #eeeeee;
-      color: black;
+      color: var(--main-color);
       display: block;
       width: 5%;
       position: absolute;
@@ -5655,7 +5683,7 @@
 
     /* Style navigation menu links */
     .topnav a {
-      color: black;
+      color: var(--main-color);
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -5665,7 +5693,7 @@
     /* Style the hamburger menu */
     .topnav a.icon {
       background: #eeeeee;
-      color: black;
+      color: var(--main-color);
       display: block;
       width: 5%;
       position: absolute;
@@ -6371,7 +6399,7 @@
 
     /* Style navigation menu links */
     .topnav a {
-      color: black;
+      color: var(--main-color);
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -6381,7 +6409,7 @@
     /* Style the hamburger menu */
     .topnav a.icon {
       background: #eeeeee;
-      color: black;
+      color: var(--main-color);
       display: block;
       width: 5%;
       position: absolute;
@@ -7090,7 +7118,7 @@
 
     /* Style navigation menu links */
     .topnav a {
-      color: black;
+      color: var(--main-color);
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
@@ -7100,7 +7128,7 @@
     /* Style the hamburger menu */
     .topnav a.icon {
       background: #eeeeee;
-      color: black;
+      color: var(--main-color);
       display: block;
       width: 5%;
       position: absolute;
