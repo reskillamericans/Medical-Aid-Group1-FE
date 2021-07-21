@@ -23,7 +23,7 @@ vertical-align: middle;
 .navbar {
   display: flex;
   justify-content: space-around;
-  padding: 0em .4em 5px;
+  padding: 0px 25px 5px;
   align-items: center;
   font-size: 15px;
 
@@ -69,6 +69,10 @@ color: rgb(69 122 255);
 
 }
 
+.login {
+  padding-right: 20px;
+}
+
 .signup-btn:hover, button:hover{
   background: #eef0f6;
 }
@@ -93,7 +97,7 @@ ul.login {
      padding: 8px 12px; 
   }
 
-  li:hover {
+  .navbar li:hover {
     background-color: #f3ea12;
    border-radius: 4px;    
   }
@@ -123,6 +127,7 @@ ul.login {
    label, input {
      display: block;
    }
+
    .contact-div{
     display: flex;
     flex-direction: row;
@@ -195,19 +200,26 @@ ul.login {
   height: 40px;
    }
 
+   .submit-btn:hover {
+    background: #eef0f6;
+   }
+
    footer {
     justify-content: center; 
     margin-top: 5em;   
-    height: 100vh;
-   
-}
+        }
 
-.link-list {
-  background-color: rgb(238,240,246);
-}
+   p {
+    color: rgb(164,162,179);
+    }
+
+    .follow-us, .address-header, .email-header {
+      color: #180126;
+    }
+
 
 .navbar-footer {
-    margin-top: 3.5em;
+    margin-top: 30px;
 }
 
 .content-span{
@@ -229,10 +241,11 @@ color: rgb(69 122 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 276px;
+    padding-left: 250px;
     padding-right: 186px;
+    padding-bottom: 70px;
     background-color: rgb(238,240,246);
-    padding-bottom: 59px;
+    
 }
 
 .follow-us {
@@ -261,24 +274,30 @@ color: rgb(69 122 255);
     display: flex;
     flex-direction: column;
     margin-top: -230px;
-    margin-left: 380px;
+    margin-left: 350px;
 }
 
 .quick-links {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
+    
 }
 
 .link {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-        font-size: 18px;
-    padding: 15px;
-    cursor: pointer;
+    font-size: 18px;
+    padding: 15px;   
+    }
+
+.link a {
+  color: rgb(164,162,179)
 }
 
-
+.link a:hover{
+  color: #180126;
+}
 
 .office-info {
     margin-top: -330px;
@@ -293,6 +312,7 @@ color: rgb(69 122 255);
 
 .address-info {
   margin-top: 2px;
+  margin-bottom: 40px;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
     text-align: left;
@@ -315,17 +335,29 @@ color: rgb(69 122 255);
 
 .copyright {
     display: flex;
-    flex-direction: wrap;
-    padding:0;
+    justify-content: center;
     font-size: 18px;
-    font-weight: 400;
-   }
+    margin-bottom: 0px;
+    margin-top: 14px;
+    }
+
+    .copyright p {
+      margin-top: 0px;
+    }
+
+    /* .number-break {
+    display: none;
+    } */
     
   @media screen and (max-width: 750px) and (min-width: 340px) {
     .topnav {
       overflow: hidden;
       display: block;
       position: relative;
+    }
+
+    .topnav a {
+      font-weight: 600;
     }
     
   
@@ -355,6 +387,7 @@ color: rgb(69 122 255);
       font-size: 15px;
       display: block;
       text-align: center;
+      
        }
   
     
@@ -366,5 +399,82 @@ color: rgb(69 122 255);
       right: 0;
       top: 0;
     }
+
+    .topnav img {
+      vertical-align: middle;
+    }
+
+    /* .number-break {
+      display: unset;
+      } */
+    
+
+    h2 {
+      font-size: large;
+    }
+
+    .contact-div {
+      align-items: flex-end;
+      display: inline-flex;
+    }
+
+    .map-img {
+      width: 80%;
+    }
+
+    .map-div, .phone-div, .email-div {
+    margin-right: 0;
+    margin-left: 0;  
+    }
+
+    figcaption {
+      font-size: 11px
+    }
+
+    .phone-img {
+     width: 68%;
+    }
+
+    .email-img {
+      width: 49%;
+    }
+
+    .form, .dropdown {
+      width: 100%;
+      text-align: center; 
+    }
+
+    .input-container {
+      display: block;
+    }
+
+    textarea#comment {
+      height: 215px;
+      width: 390px;
+      }
+
+      #fname, #email {
+        margin-right: 0;
+       }
+
+       .submit-btn {
+       margin-left: 100px;
+       }
+
+
+
+       .footer-info {
+         display: inline-flex;
+         flex-direction: row;
+         padding: 0;
+       }
+
+       .footer-links {
+         margin: 0;
+        }
+
+       .office-info {
+         margin: 0;;
+       }
 
 }
