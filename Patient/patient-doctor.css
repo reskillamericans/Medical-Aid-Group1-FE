@@ -61,6 +61,10 @@ input, select {
     padding: 10px;
     border: 1px solid var(--tertiaryText);
     border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+
 }
 input {
     background-color: var(--background);
@@ -90,8 +94,7 @@ select:hover {
     padding: 12px 30px;
     width: 160px;
     text-align: center;
-    /*margin: 0 auto;*/
-    margin-top: 15px;
+    /*margin-top: 15px;*/
 }
 
 .search-btn:hover {
@@ -109,10 +112,8 @@ button {
     background-color: #fff;
     border: 1px solid var(--tertiaryText);
     align-items: center;
-    padding: 15px 60px;
     margin: 30px;
-    max-height: 65vh;
-    overflow: scroll;
+    /*padding: 15px 60px;*/
 }
 .bubble-style:hover {
     background-color: #DAE4FF;
@@ -212,12 +213,7 @@ button.hamburger {
 .doctors-bubble img {
     margin: 15px 30px;
 }
-/*.doctors-bubble .doctor {*/
-/*  display: flex;*/
-/*  margin: 10px 0 5px 0;*/
-/*  align-items: stretch;*/
-/*  justify-content: center;*/
-/*}*/
+
 .clinic {
   padding: 5px 0;
   margin: 0 10px;
@@ -285,7 +281,6 @@ button.hamburger {
   .hamburger {
     display: none;
   }
-
 }
 
 
@@ -304,19 +299,24 @@ button.hamburger {
       font-size: 30px;
     }
 
-/*.doctors {*/
-/*      margin: 0 2rem;*/
-/*    }*/
     .search {
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    label {
-        margin-right: 10px;
+    input, select {
+        margin-bottom: 0;
     }
 
     /***** Styling Desktop View n*****/
+    .border-style {
+        border-radius: 20px;
+        background-color: #fff;
+        border: 1px solid var(--tertiaryText);
+        align-items: center;
+        margin: 30px;
+        padding: 15px 60px;
+    }
     .doctors {
       margin-bottom: 1rem;
       margin-left: 2rem;

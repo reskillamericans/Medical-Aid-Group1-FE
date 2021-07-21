@@ -26,6 +26,16 @@ form {
 
 .back {
     margin-left: 30px;
+    text-decoration: none;
+}
+.back:link,
+.back:visited {
+    color: var(--primaryColor);
+}
+.back:hover {
+    color: var(--secondaryColor);
+    text-shadow:  1px 1px 1px var(--primaryColor);
+
 }
 
 .update-btn {
@@ -159,7 +169,7 @@ button.hamburger {
 .emergency-contact-block {
     justify-content: space-between;
     margin: 0 1rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 .patient {
     display: flex;
