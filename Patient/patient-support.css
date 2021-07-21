@@ -28,6 +28,7 @@ input, select, textarea {
 }
 
 .back {
+    font-weight: 700;
     margin-left: 30px;
     text-decoration: none;
 }
@@ -37,8 +38,6 @@ input, select, textarea {
 }
 .back:hover {
     color: var(--secondaryColor);
-    text-shadow:  1px 1px 1px var(--primaryColor);
-
 }
 
 .submit-btn {
@@ -172,8 +171,8 @@ textarea:focus,
 input:hover,
 select:hover,
 textarea:hover {
-    border: 1px solid var(--secondaryColor) !important;
-    box-shadow: 0 0 5px var(--secondaryColor);
+    border: 1px solid var(--primaryColor) !important;
+    box-shadow: 0 0 5px var(--primaryColor);
     outline-offset: 0;
     outline: none;
 }
