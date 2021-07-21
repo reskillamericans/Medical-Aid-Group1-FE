@@ -30,6 +30,7 @@ p {
 }
 
 .back {
+    font-weight: 700;
     margin-left: 30px;
     text-decoration: none;
 }
@@ -39,7 +40,6 @@ p {
 }
 .back:hover {
     color: var(--secondaryColor);
-    text-shadow:  1px 1px 1px var(--primaryColor);
 }
 
 .support {
@@ -47,7 +47,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    /*margin: 30px;*/
 }
 
 .support p {
@@ -64,7 +64,7 @@ p {
 }
 
 .feedback-thanks {
-    padding: 5px;
+    padding-bottom: 15px;
     width: 280px;
     border-radius: 20px;
     background-color: var(--primaryColor);
