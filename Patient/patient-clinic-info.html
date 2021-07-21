@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient - Century Health</title>
+    <link rel="shortcut icon" href="/images/admin-dash/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="patient-clinic-info.css">
+    <script src="patient-dash.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Header-->
+        <header><a href="#"><img src="../images/patient-images/logo.svg" class="logo"></a>
+            <button class="hamburger" id="hamburger"><img src="../images/admin-dash/fi_menu.svg"></button>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="nav-ul" id="nav-ul">
+                <li>
+                    <a href="patient-dash.html">
+                        <img src="../images/patient-profile-img/dashboard-white.svg" alt="dashboard icon">
+                        Dashboard</a>
+                </li>
+                <li>
+                    <a href="patient-profile.html">
+                        <img src="../images/patient-images/profile-icon.svg" alt="profile icon">
+                        Profile</a>
+                </li>
+                <li>
+                    <a href="patient-doctor.html" >
+                        <img src="../images/patient-images/doctor-icon.svg" alt="doctor icon">
+                        Talk to a Doctor</a>
+                </li>
+                <li>
+                    <a href="patient-clinic.html" class="active-link">
+                        <img src="../images/patient-clinic-img/clinic-icon-yellow.svg" alt="clinics icon">
+                        Pharmacies and Clinics</a>
+                </li>
+
+                <li>
+                    <a href="patient-support.html">
+                        <img src="../images/patient-images/contact-icon.svg" alt="contact icon">
+                        Contact Us / Support</a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <img src="../images/patient-images/logout.svg" alt="logout icon" />
+                        Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <a class="back" href="patient-dash.html">< Back</a>
+            <h1 class="main-heading">Pharmacy and Clinic Information</h1>
+            <div class="pharmacy-info">
+                <section class="location-info bubble-style">
+                    <img src="../images/patient-clinic-info-img/pharmacy.svg">
+                    <div class="location-details">
+                        <div class="address">
+                            <p><b>Quark's Pharmacy</b></p>
+                            <p>4517 Washington Ave.<br>
+                                Manchester, Kentucky 39495<br>
+                                <br>
+                                (455) 888-3884
+                            </p>
+                        </div>
+                        <button class="directions-btn">Get Directions</button>
+                    </div>
+                </section>
+                <section class="other-details">
+                    <div>
+                        <div class="hours">
+                            <p><b>Pharmacy Hours</b></p>
+                            <p>Monday through Friday: 9am to 7pm <br>
+                                Saturday: 9am to 2pm<br>
+                                Sundays: 10am to 1pm
+                            </p>
+                        </div>
+                        <div class="holiday-hours">
+                            <p><b>Major Holidays</b></p>
+                            <p>Mostly 10am to 1pm.</p>
+                        </div>
+                        <div class="closed">
+                            <p><b>Closed</b></p>
+                            <p>Thanksgiving, Christmas and Easter Sunday.<br>
+                                Check with us for holiday schedules.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="../images/patient-clinic-info-img/pharmacy-map.svg" alt="pharmacy map">
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
