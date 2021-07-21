@@ -22,6 +22,7 @@ main {
 }
 
 .back {
+    font-weight: 700;
     margin-left: 30px;
     text-decoration: none;
 }
@@ -31,8 +32,6 @@ main {
 }
 .back:hover {
     color: var(--secondaryColor);
-    text-shadow:  1px 1px 1px var(--primaryColor);
-
 }
 .main-heading {
     text-align: center;
@@ -65,10 +64,12 @@ p {
 .pharmacies {
     text-decoration: underline;
     text-decoration-color: #3A5DF8;
+    text-underline-position: under;
 }
 .clinics {
     text-decoration: underline;
     text-decoration-color: #C3C7D2;
+    text-underline-position: under;
 }
 .filter a:link,
 .filter a:visited {
