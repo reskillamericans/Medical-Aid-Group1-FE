@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
+
+
 body {
   background: #f9f9f9;
   font-family: "Open Sans", sans-serif;
@@ -206,7 +208,7 @@ ul.login {
 
    footer {
     justify-content: center; 
-    margin-top: 5em;   
+    margin-top: 3em;   
         }
 
    p {
@@ -219,7 +221,7 @@ ul.login {
 
 
 .navbar-footer {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .content-span{
@@ -233,31 +235,30 @@ color: rgb(69 122 255);
 .bold {
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    margin-top: 3em;
+    margin-top: 2em;
+    padding-left: 35px;
 }
 
 .footer-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 250px;
-    padding-right: 186px;
-    padding-bottom: 70px;
     background-color: rgb(238,240,246);
-    
-}
+    padding-left: 185px;
+    padding-bottom: 20px;
+    padding-top: 12px;
+   }
+
 
 .follow-us {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    margin-top: 2.5em;
-}
+   }
 
 .social-icons {
-    cursor: pointer;
-    padding: 2px;
+    padding-top: 15px;
+    margin-left: 35px;
 }
 
 .footer-icon {
@@ -273,8 +274,10 @@ color: rgb(69 122 255);
 .footer-links {
     display: flex;
     flex-direction: column;
-    margin-top: -230px;
-    margin-left: 350px;
+    margin-top: -256px;
+    margin-left: 336px;
+    padding-left: 0;
+    margin-bottom: 16px;
 }
 
 .quick-links {
@@ -300,8 +303,8 @@ color: rgb(69 122 255);
 }
 
 .office-info {
-    margin-top: -330px;
-    margin-left: 720px;
+    margin-top: -342px;
+    margin-left: 570px;
 }
 
 .address-header {
@@ -311,18 +314,16 @@ color: rgb(69 122 255);
 }
 
 .address-info {
-  margin-top: 2px;
-  margin-bottom: 40px;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
-    text-align: left;
-}
+   }
 
 .email-header {
   margin-bottom: 0px;
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 700;
+    margin-top: 110px;
 }
 
 .email-info {
@@ -345,11 +346,8 @@ color: rgb(69 122 255);
       margin-top: 0px;
     }
 
-    /* .number-break {
-    display: none;
-    } */
-    
-  @media screen and (max-width: 750px) and (min-width: 340px) {
+     
+  @media screen and (max-width: 740px) and (min-width: 340px) {
     .topnav {
       overflow: hidden;
       display: block;
@@ -404,18 +402,15 @@ color: rgb(69 122 255);
       vertical-align: middle;
     }
 
-    /* .number-break {
-      display: unset;
-      } */
-    
-
-    h2 {
+       h2 {
       font-size: large;
     }
 
     .contact-div {
       align-items: flex-end;
-      display: inline-flex;
+      width: 87%;
+      padding-left: 20px;
+      
     }
 
     .map-img {
@@ -426,6 +421,12 @@ color: rgb(69 122 255);
     margin-right: 0;
     margin-left: 0;  
     }
+
+    .phone-div {
+      padding-left: 20px;
+        padding-right: 20px;
+    }
+    
 
     figcaption {
       font-size: 11px
@@ -461,20 +462,46 @@ color: rgb(69 122 255);
        margin-left: 100px;
        }
 
-
-
        .footer-info {
-         display: inline-flex;
-         flex-direction: row;
+         display: flex;
+         flex-direction: column;
          padding: 0;
-       }
+         margin: 0;
+         }
 
        .footer-links {
-         margin: 0;
+        margin-left: 267px;
+        white-space: nowrap;
+        padding-top: 69px;
+        padding-right: 172px;
         }
 
        .office-info {
-         margin: 0;;
+         margin: 0;
+         padding-left: 15px;
+       }
+
+       .email-header {
+        margin: 0;
+       }
+
+       .link-list {
+        width: 0px;
+        height: 0px;
+       }
+
+       .bold {
+         padding-left: 14px;
+       }
+
+       .social-icons {
+        margin-left: 17px;
+        padding-top: 1px;
+       }
+
+       .footer-icon {
+        width: 6%;
+        padding: 4px;
        }
 
 }
