@@ -47,13 +47,6 @@ a {
   vertical-align: middle;
 }
 
-/* .navbar a:hover {
-  background-color: #f3ea12;
-    padding: 8px 12px;
-    border-radius: 5px;
-    color: #180126;
-} */
-
 .nav-logo {
   vertical-align: middle;
   width: 16%;
@@ -220,6 +213,8 @@ h6{
 
 .icon {
     padding-right: 5px;
+    width: 19px;
+    vertical-align: text-bottom;
 }
 
  p {
