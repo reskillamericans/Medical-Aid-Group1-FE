@@ -58,7 +58,11 @@ color: rgb(69 122 255);
   font-weight: bold;
    display: inline;
    font-size: larger;
+}
 
+.logo-div {
+  display: flex;
+align-items: center;
 }
 
 .signup-btn:hover, button:hover{
