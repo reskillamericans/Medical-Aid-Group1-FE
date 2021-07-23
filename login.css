@@ -15,6 +15,7 @@ body {
   padding: 0em .4em 5px;
   align-items: center;
   font-size: 15px;
+  white-space: nowrap;
  }
 
 a {
@@ -48,6 +49,11 @@ li:hover {
     width: 16%;
 }
 
+.logo-div {
+  display: flex;
+align-items: center;
+}
+
 .nav-logo-text {
 color: rgb(69 122 255);
   font-weight: bold;
@@ -77,7 +83,7 @@ ul.login {
   display: flex;
   justify-content: space-evenly;
     align-items: flex-start;
-    margin-top: 11px;    
+    margin-top: 11px;  
 }
 
 .logo-img {
@@ -100,21 +106,23 @@ div.content-logo {
     margin-top: 40px;
   width: 50%;
   border-radius: 20px;
+  margin-left: 25px;
   
 }
 
 div.inner {
-  padding-top: 15px;
+  padding-top: 45px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  white-space: nowrap;
 }
 
 .content-img {
-  width: 95%;
-  padding-top: 65px;
-    }
+  width: 115%;
+  padding-top: 125px;
+}
 
 h2 {
   text-align: center;
@@ -139,21 +147,22 @@ h2 {
   background: #eef0f6;
 }
 
-.checkbox {
-  padding-right: 5.7em;
+   label.checkbox, .password {
+    white-space: nowrap;
    }
 
-.password a {
+/* .password a {
   font-size: smaller;
   font-size: 13px;
-}
+} */
 
 /* FORM */
 .form {
-  padding-top: 20px;
   padding-bottom: 0px;
   width: 40%;
-  font-family: "Open Sans", sans-serif;
+  padding-top: 69px;
+  padding-left: 15px;
+  margin-left: 50px;
  }
 
 input[type="email"],
@@ -166,14 +175,18 @@ input[type="password"] {
   box-sizing: border-box;
   }
 
+  .checkbox {
+    padding-right: 42px;
+  }
+
+  .password a:hover, .signup-link:hover{
+    color: rgb(164,162,179);
+  }
+
 h3 {
   font-weight: 500;
     line-height: 0;
   }
-
-label {
-  font-size: smaller;
-}
 
 div.login-nav {
     margin-right: 85px;
@@ -198,7 +211,7 @@ h6{
 
 .social-div {
   display: flex;
-  font-family: "Open Sans", sans-serif
+  white-space: nowrap;
 }
 
 .icon {
@@ -243,8 +256,9 @@ h6{
     padding: 20px 16px;
     text-decoration: none;
     font-size: 17px;
-    display: block;
     text-align: center;
+    display: flex;
+align-items: center;
   }
   
   /* Style the hamburger menu */
@@ -272,9 +286,6 @@ h6{
       justify-content: center;
     }
 
-    .checkbox {
-      padding-right: 4.7em;
- }
  .login-btn {
   width: 179px;
   height: 35px;
