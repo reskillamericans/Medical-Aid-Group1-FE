@@ -25,7 +25,16 @@ form {
 }
 
 .back {
+    font-weight: 700;
     margin-left: 30px;
+    text-decoration: none;
+}
+.back:link,
+.back:visited {
+    color: var(--primaryColor);
+}
+.back:hover {
+    color: var(--secondaryColor);
 }
 
 .update-btn {
@@ -136,7 +145,10 @@ button.hamburger {
 .nav-ul.show {
    display: flex;
 }
-
+.active-link {
+    color: var(--secondaryColor) !important;
+    font-weight: 700;
+}
 
 /* Styling for Headings */
 .heading {
@@ -146,10 +158,7 @@ button.hamburger {
   align-items: center;
 
 }
-/*.heading h2 {*/
-/*  width: 60%;*/
-/*}*/
-/*Patient Info*/
+
 
 .main-heading{
     text-align: center;
@@ -159,7 +168,7 @@ button.hamburger {
 .emergency-contact-block {
     justify-content: space-between;
     margin: 0 1rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 .patient {
     display: flex;
@@ -178,12 +187,10 @@ button.hamburger {
 .personal-info {
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
     align-items: center;
 }
 
 .patient-info {
-    display: flex;
     flex-wrap: wrap;
     line-height: 2rem;
     margin-left: 30px;
@@ -205,10 +212,7 @@ main {
 .personal-info,
 .contact-info,
 .emergency-contact{
-    /*padding: 15px 30px;*/
     border-radius: 5px;
-    /*display: flex;*/
-    /*flex-direction: column;*/
 }
 
 label {
@@ -297,12 +301,12 @@ select:hover {
   h2 {
     font-size: 22px;
   }
-    .personal-info {
-        padding: 15px 30px;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: row;
-    }
+    /*.personal-info {*/
+    /*    padding: 15px 30px;*/
+    /*    border-radius: 5px;*/
+    /*    display: flex;*/
+    /*    flex-direction: row;*/
+    /*}*/
 
 }
 
@@ -330,6 +334,7 @@ select:hover {
 
     .personal-info {
         display: flex;
+        flex-direction: row;
         align-items: center;
     }
     .contact-wrapper {

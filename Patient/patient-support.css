@@ -28,7 +28,16 @@ input, select, textarea {
 }
 
 .back {
+    font-weight: 700;
     margin-left: 30px;
+    text-decoration: none;
+}
+.back:link,
+.back:visited {
+    color: var(--primaryColor);
+}
+.back:hover {
+    color: var(--secondaryColor);
 }
 
 .submit-btn {
@@ -126,7 +135,10 @@ button.hamburger {
 .nav-ul.show {
    display: flex;
 }
-
+.active-link {
+    color: var(--secondaryColor) !important;
+    font-weight: 700;
+}
 
 /* Styling for Headings */
 
@@ -144,6 +156,7 @@ label {
 }
 
 input, select, textarea {
+    width: 300px;
     padding: 10px;
     background-color: var(--background);
     border: 1px solid var(--tertiaryText);
@@ -151,14 +164,15 @@ input, select, textarea {
     margin-bottom: 15px;
 }
 
+
 input:focus,
 select:focus,
 textarea:focus,
 input:hover,
 select:hover,
 textarea:hover {
-    border: 1px solid var(--secondaryColor) !important;
-    box-shadow: 0 0 5px var(--secondaryColor);
+    border: 1px solid var(--primaryColor) !important;
+    box-shadow: 0 0 5px var(--primaryColor);
     outline-offset: 0;
     outline: none;
 }

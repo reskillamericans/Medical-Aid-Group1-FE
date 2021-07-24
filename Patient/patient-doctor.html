@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient - Century Health</title>
+    <link rel="shortcut icon" href="/images/admin-dash/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="patient-doctor.css">
+    <script src="patient-dash.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Header-->
+        <header><a href="#"><img src="../images/patient-images/logo.svg" class="logo"></a>
+            <button class="hamburger" id="hamburger"><img src="../images/admin-dash/fi_menu.svg"></button>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="nav-ul" id="nav-ul">
+                <li>
+                    <a href="patient-dash.html">
+                        <img src="../images/patient-profile-img/dashboard-white.svg" alt="dashboard icon">
+                        Dashboard</a>
+                </li>
+                <li>
+                    <a href="patient-profile.html">
+                        <img src="../images/patient-images/profile-icon.svg" alt="profile icon">
+                        Profile</a>
+                </li>
+                <li>
+                    <a href="patient-doctor.html"  class="active-link">
+                        <img src="../images/patient-doctor-img/doctor-icon-yellow.svg" alt="doctor icon">
+                        Talk to a Doctor</a>
+                </li>
+                <li>
+                    <a href="patient-clinic.html">
+                        <img src="../images/patient-images/clinic-icon.svg" alt="clinics icon">
+                        Pharmacies and Clinics</a>
+                </li>
+
+                <li>
+                    <a href="patient-support.html">
+                        <img src="../images/patient-images/contact-icon.svg" alt="contact icon">
+                        Contact Us / Support</a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <img src="../images/patient-images/logout.svg" alt="logout icon" />
+                        Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <a class="back" href="patient-dash.html">< Back</a>
+            <h1 class="main-heading">Talk to a Doctor</h1>
+            <div class="search">
+                <input id="search" type="text" name="search" placeholder="Name or Location">
+                <select id="speciality" name="speciality">
+                    <option value="">Choose a Speciality</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                    <option value=""></option>
+                </select>
+                <button class="search-btn">Search</button>
+            </div>
+            <section class="border-style visits">
+                <div class="bubble-heading">
+                    <p><b>Name</b></p>
+                    <p><b>Location</b></p>
+                    <p><b>Phone</b></p>
+                </div>
+                <div class="doctors-bubble bubble-style">
+                    <div class="doctor">
+                        <img src="../images/patient-images/drcrusher.svg" alt="image of doctor">
+                        <div class="doctor-info">
+                            <p><b>Dr Crusher</b></p>
+                            <p>Internal Medicine</p>
+                        </div>
+                    </div>
+                    <p class="clinic">Washington General Hospital</p>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                </div>
+                <div class="doctors-bubble bubble-style">
+                    <div class="doctor">
+                        <img src="../images/patient-images/drpul.svg" alt="image of doctor">
+                        <div class="doctor-info">
+                            <p><b>Dr. Pulaski</b></p>
+                            <p>Proctology</p>
+                        </div>
+                    </div>
+                    <p class="clinic">Pulaski Health Center</p>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                </div>
+                <div class="doctors-bubble bubble-style">
+                    <div class="doctor">
+                        <img src="../images/patient-images/drcrusher.svg" alt="image of doctor">
+                        <div class="doctor-info">
+                            <p><b>Dr Crusher</b></p>
+                            <p>Internal Medicine</p>
+                        </div>
+                    </div>
+                    <p class="clinic">Washington General Hospital</p>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                </div>
+                <div class="doctors-bubble bubble-style">
+                    <div class="doctor">
+                        <img src="../images/patient-images/drpul.svg" alt="image of doctor">
+                        <div class="doctor-info">
+                            <p><b>Dr. Pulaski</b></p>
+                            <p>Proctology</p>
+                        </div>
+                    </div>
+                    <p class="clinic">Pulaski Health Center</p>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                </div>
+                <div class="doctors-bubble bubble-style">
+                    <div class="doctor">
+                        <img src="../images/patient-images/drcrusher.svg" alt="image of doctor">
+                        <div class="doctor-info">
+                            <p><b>Dr Crusher</b></p>
+                            <p>Internal Medicine</p>
+                        </div>
+                    </div>
+                    <p class="clinic">Washington General Hospital</p>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                </div>
+                <div class="doctors-bubble bubble-style">
+                    <div class="doctor">
+                        <img src="../images/patient-images/drpul.svg" alt="image of doctor">
+                        <div class="doctor-info">
+                            <p><b>Dr. Pulaski</b></p>
+                            <p>Proctology</p>
+                        </div>
+                    </div>
+                    <p class="clinic">Pulaski Health Center</p>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                </div>
+                <div class="doctors-bubble bubble-style">
+                    <div class="doctor">
+                        <img src="../images/patient-images/drcrusher.svg" alt="image of doctor">
+                        <div class="doctor-info">
+                            <p><b>Dr Crusher</b></p>
+                            <p>Internal Medicine</p>
+                        </div>
+                    </div>
+                    <p class="clinic">Washington General Hospital</p>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                </div>
+                <div class="doctors-bubble bubble-style">
+                    <div class="doctor">
+                        <img src="../images/patient-images/drpul.svg" alt="image of doctor">
+                        <div class="doctor-info">
+                            <p><b>Dr. Pulaski</b></p>
+                            <p>Proctology</p>
+                        </div>
+                    </div>
+                    <p class="clinic">Pulaski Health Center</p>
+                    <div class="phone">
+                        <p>(455) 888-3884</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -22,6 +22,7 @@ height: 23px;
   padding: 0em .4em 5px;
   align-items: center;
   font-size: 15px;
+  white-space: nowrap ;
 }
 
 .navbar a {
@@ -35,8 +36,8 @@ a {
   }
 
 
-a:hover{
-  background: #eef0f6;
+.checkbox a:hover, .login-link:hover{
+  color: rgb(164,162,179);
 }
 
 .navbar a:visited {
@@ -45,13 +46,6 @@ a:hover{
 
 .active {
   vertical-align: middle;
-}
-
-.navbar a:hover {
-  background-color: #f3ea12;
-    padding: 8px 12px;
-    border-radius: 5px;
-    color: #180126;
 }
 
 .nav-logo {
@@ -64,7 +58,11 @@ color: rgb(69 122 255);
   font-weight: bold;
    display: inline;
    font-size: larger;
+}
 
+.logo-div {
+  display: flex;
+align-items: center;
 }
 
 .signup-btn:hover, button:hover{
@@ -86,9 +84,17 @@ ul.login {
     border-radius: 5px;
   }
 
-li {
-  display: inline-block;
-  padding: 0px 10px;
+  li {
+    display: inline-block;
+     padding: 8px 12px; 
+  }
+  li:hover {
+    background-color: #f3ea12;
+   border-radius: 4px;    
+  }
+
+  .login {
+    white-space: nowrap ;
   }
 
 .content-div {
@@ -96,6 +102,7 @@ li {
     justify-content: space-evenly;
     align-items: flex-start;
     margin-top: 11px;
+    padding-top: 20px;
 }
 
 
@@ -104,42 +111,36 @@ div.content-logo {
   background-color: #eef0f6;
   width:50%;  
   border-radius: 20px;
-  margin-top: 50px;
+  margin-top: 20px;
+  
   }
 
 .logo-img {
   vertical-align: middle;
   padding-top: 4px;
-  padding-left: 15px;
-  width: 17%;
+  padding-left: 35px;
+  width: 13%;
 }
 
 .content-span {
   color: rgb(69 122 255);
   font-weight: bold;
-   display: inline;
-   font-size: 23px;
    vertical-align: middle;
-}
-
-.content-span {
-  color: rgb(69 122 255);
-  font-weight: bold;
-   display: inline;
-   font-size: 23px;
-   }
+   font-size: 30px;
+  }
 
 div.inner {
-  padding-top: 40px;
+  padding-top: 46px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  white-space: nowrap ;
 }
 
 .content-img {
-  width: 100%;
-  padding-top: 65px;
+  width: 115%;
+  padding-top: 125px
 }
 
 .info {
@@ -150,7 +151,8 @@ h2 {
   text-align: center;
   font-weight: 400;
 line-height: 0px;
-font-size:large;
+font-size:x-large;
+white-space: nowrap ;
 }
 
 input[type="fullname"],
@@ -176,7 +178,7 @@ input[type="password"] {
 }
 
 .checkbox {
-  font-size: x-small;
+  font-size: small;
 }
 
 /* FORM */
@@ -218,10 +220,13 @@ h6{
 
 .social-div {
   display: flex;
+  white-space: nowrap;
  }
 
 .icon {
     padding-right: 5px;
+    width: 19px;
+    vertical-align: text-bottom;
 }
 
  p {
@@ -261,11 +266,18 @@ h6{
   /* Style navigation menu links */
   .topnav a {
     color: #180126;
+    /* vertical-align: middle; */
     padding: 20px 16px;
     text-decoration: none;
     font-size: 15px;
-    display: block;
+    display: flex;
+align-items: center;
     text-align: center;
+    
+     }
+
+     .topnav a:hover {
+      color: rgb(164,162,179);
      }
   
   /* Style the hamburger menu */
@@ -295,31 +307,27 @@ h6{
 
     .checkbox {
       display: block;
+      
     }
 
- }
- .login-btn {
-  width: 179px;
-  height: 35px;
-}
-
-div.inner {
-  padding: 1em 2em 0em;
-}
-
-    div.content-logo {
-    margin-top: 0px;
-    padding-bottom: 0px;
+    label.checkbox {
+      white-space: nowrap ;
     }
  
  .login-btn {
   width: 179px;
   height: 35px;
-}
+ }
 
 div.inner {
-  padding: 0;
+  padding: 1em 2em 0em;
 }
+
+ 
+ .login-btn {
+  width: 179px;
+  height: 35px;
+ }
 
 
 h2 {
@@ -328,3 +336,4 @@ h2 {
 
 }
 
+}
