@@ -22,6 +22,7 @@ height: 23px;
   padding: 0em .4em 5px;
   align-items: center;
   font-size: 15px;
+  white-space: nowrap ;
 }
 
 .navbar a {
@@ -57,7 +58,11 @@ color: rgb(69 122 255);
   font-weight: bold;
    display: inline;
    font-size: larger;
+}
 
+.logo-div {
+  display: flex;
+align-items: center;
 }
 
 .signup-btn:hover, button:hover{
@@ -86,6 +91,10 @@ ul.login {
   li:hover {
     background-color: #f3ea12;
    border-radius: 4px;    
+  }
+
+  .login {
+    white-space: nowrap ;
   }
 
 .content-div {
@@ -126,6 +135,7 @@ div.inner {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+  white-space: nowrap ;
 }
 
 .content-img {
@@ -142,6 +152,7 @@ h2 {
   font-weight: 400;
 line-height: 0px;
 font-size:x-large;
+white-space: nowrap ;
 }
 
 input[type="fullname"],
@@ -167,7 +178,7 @@ input[type="password"] {
 }
 
 .checkbox {
-  font-size: x-small;
+  font-size: small;
 }
 
 /* FORM */
@@ -209,6 +220,7 @@ h6{
 
 .social-div {
   display: flex;
+  white-space: nowrap;
  }
 
 .icon {
@@ -254,11 +266,12 @@ h6{
   /* Style navigation menu links */
   .topnav a {
     color: #180126;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     padding: 20px 16px;
     text-decoration: none;
     font-size: 15px;
-    display: block;
+    display: flex;
+align-items: center;
     text-align: center;
     
      }
@@ -294,8 +307,12 @@ h6{
 
     .checkbox {
       display: block;
+      
     }
 
+    label.checkbox {
+      white-space: nowrap ;
+    }
  
  .login-btn {
   width: 179px;
