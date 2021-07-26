@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient - Century Health</title>
+    <link rel="shortcut icon" href="/images/admin-dash/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="patient-doctor-profile.css">
+    <script src="patient-dash.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--Header-->
+        <header><a href="#"><img src="../images/patient-images/logo.svg" class="logo"></a>
+            <button class="hamburger" id="hamburger"><img src="../images/admin-dash/fi_menu.svg"></button>
+        </header>
+        <!--Navigation-->
+        <nav>
+            <ul class="nav-ul" id="nav-ul">
+                <li>
+                    <a href="patient-dash.html">
+                        <img src="../images/patient-images/dash-icon.svg" alt="dashboard icon">
+                        Dashboard</a>
+                </li>
+                <li>
+                    <a href="patient-profile.html">
+                        <img src="../images/patient-images/profile-icon.svg" alt="profile icon">
+                        Profile</a>
+                </li>
+                <li>
+                    <a href="patient-doctor.html" class="active-link">
+                        <img src="../images/patient-doctor-img/doctor-icon-yellow.svg" alt="doctor icon">
+                        Talk to a Doctor</a>
+                </li>
+                <li>
+                    <a href="patient-clinic.html">
+                        <img src="../images/patient-images/clinic-icon.svg" alt="clinics icon">
+                        Pharmacies and Clinics</a>
+                </li>
+
+                <li>
+                    <a href="patient-support.html" >
+                        <img src="../images/patient-images/contact-icon.svg" alt="contact icon">
+                        Contact Us / Support</a>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <img src="../images/patient-images/logout.svg" alt="logout icon" />
+                        Logout</a>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <a class="back" href="patient-doctor.html">< Back</a>
+            <section class="dr-section bubble-style">
+                <img src="../images/patient-doctor-profile-img/drcrusher.svg" alt="Dr Crusher">
+
+                <div class="dr-info">
+                    <h1>Dr. Beverly Crusher, MD</h1>
+                    <div class="dr-info-details">
+                    <div class="dr-info-group">
+                        <p class="dr-info-title">Specialty</p>
+                        <p class="dr-info-detail"><b>Internal Medicine and Pediatrics</b></p>
+
+                        <p class="dr-info-title">Location</p>
+                        <p class="dr-info-detail"><b>Cleveland General Hospital</b></p>
+
+                        <p class="dr-info-title">Insurance Accepted</p>
+                        <p class="dr-info-detail"><b>Blue Cross, Cigna, and Shield</b></p>
+                    </div>
+                    <div class="dr-info-group">
+                    <p class="dr-info-title">Languages</p>
+                    <p class="dr-info-detail"><b>English and Spanish</b></p>
+
+                    <p class="dr-info-title">Accepting New Patients</p>
+                    <p class="dr-info-detail"><b>Yes</b></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="rating-review-info">
+                    <h1 class="rating">4.6</h1>
+                    <div class="star-rating">
+                        <img src="../images/patient-doctor-profile-img/star.svg">
+                        <img src="../images/patient-doctor-profile-img/star.svg">
+                        <img src="../images/patient-doctor-profile-img/star.svg">
+                        <img src="../images/patient-doctor-profile-img/star.svg">
+                        <img src="../images/patient-doctor-profile-img/star.svg">
+                    </div>
+                    <div class="review">
+                        <p><b>34 </b>Reviews</p>
+                        <p><b>30 </b>Patient Comments</p>
+                    </div>
+                    <button class="schedule-btn">Make an Appointment</button>
+                </div>
+            </section>
+
+        <!--Contact and Locations-->
+            <section class="location">
+                <div class="location-details">
+                <div class="heading">
+                    <h2>Contact and Locations</h2>
+                </div>
+                 <div class="location-address bubble-style">
+                    <div class="address">
+                        <p><b>Monday, Wednesday, Friday</b></p>
+                        <p>Cleveland General Hospital<br>
+                            4517 Washington Ave.<br>
+                            Manchester, Kentucky 39495<br>
+                            <br>
+                            (455) 888-3884
+                        </p>
+                    </div>
+                    <div class="address">
+                        <p><b>Tuesday, Thursday</b></p>
+                        <p>Corner Health Center<br>
+                            4517 Washington Ave.<br>
+                            Manchester, Kentucky 39495<br>
+                            <br>
+                            (455) 888-3884
+                        </p>
+                    </div>
+                 </div>
+                </div>
+                <img src="../images/patient-doctor-profile-img/doctor-map.svg">
+        </section>
+        </main>
+    </div>
+</body>
+
+</html>
