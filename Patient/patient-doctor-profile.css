@@ -174,16 +174,16 @@ button.hamburger {
 .rating-review-info {
     text-align: center;
 }
-.dr-info-group {
-    line-height: .25rem;
-    margin-right: 30px ;
-}
-.dr-info-details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0;
-}
+/*.dr-info-group {*/
+/*    line-height: .25rem;*/
+/*    margin-right: 30px ;*/
+/*}*/
+/*.dr-info-details {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: space-around;*/
+/*    margin: 0;*/
+/*}*/
 .dr-info-detail {
     margin-bottom: 30px;
 }
@@ -195,6 +195,46 @@ button.hamburger {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+@media (max-width:900px) {
+    .dr-info h1 {
+        font-size: 30px;
+    }
+    .dr-info-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dr-info-group {
+        line-height: .25rem;
+        margin: 0;
+
+    }
+    .dr-info-title {
+        margin: 0;
+    }
+}
+@media (min-width:901px) {
+    .dr-info-details {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .dr-info-group {
+        line-height: .25rem;
+        margin-right: 30px ;
+    }
+}
+
+@media (max-width: 1399px){
+    .location img {
+        width:100%;
+        max-width:590px;
+        align-self: center;
+    }
 }
 
 /************************Styling for Laptops and Small Screens 769px and up*****************************/
