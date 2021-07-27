@@ -13,6 +13,7 @@
     <title>Contact Us</title>
     <link rel="icon" href="./images/logo/logoicon.svg" type="image/svg" />
   </head>
+
   <body>
     <header>
       <!-- NAV BAR -->
@@ -30,7 +31,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about-us.html">About</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="medical-practitioners.html">Find a Doctor</a></li>
+            <li><a href="./Doctor/doctor-dash.html">Find a Doctor</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
@@ -51,7 +52,7 @@
           <a href="index.html">Home</a>
           <a href="about-us.html">About</a>
           <a href="faq.html">FAQ</a>
-          <a href="medical-practitioners.html">Find a Doctor</a>
+          <a href="./Doctor/doctor-dash.html">Find a Doctor</a>
           <a href="contact.html">Contact Us</a>
           <a href="login.html">Log In</a>
           <a href="signup.html">Sign Up</a>
@@ -62,6 +63,7 @@
         </a>
       </div>
     </header>
+
     <h2>Get in touch!</h2>
 
     <div class="contact-div">
@@ -105,22 +107,24 @@
           <input type="text" id="subject" name="subject" /><br />
         </div>
       </div>
+      <!-- DROPDOWN -->
       <div class="dropdown">
-        <!-- DROPDOWN -->
         <select name="inquiry" id="inquiry">
           <option value="" disabled selected>Nature of Inquiry</option>
           <option value="feedback">Feedback</option>
           <option value="career">Careers</option>
           <option value="account">Support</option>
         </select>
-      </div>
-      <div class="bottom-form">
-        <label for="comment"> Message </label>
-        <textarea id="comment" name="comment"></textarea>
         <br />
-        <input type="submit" class="submit-btn" value="Submit" />
+        <div class="bottom-form">
+          <label for="comment"> Message </label>
+          <textarea id="comment" name="comment"></textarea>
+          <br />
+          <input type="submit" class="submit-btn" value="Submit" />
+        </div>
       </div>
     </div>
+
     <script src="./contact.js"></script>
   </body>
   <!-- FOOTER -->
@@ -147,6 +151,19 @@
           /></a>
         </div>
       </div>
+
+      <div class="link-list">
+        <ul class="footer-links">
+          <li class="quick-links">Quick Links</li>
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="about-us.html">About</a></li>
+          <li class="link"><a href="faq.html">FAQ</a></li>
+          <li class="link">
+            <a href="./Doctor/doctor-dash.html">Find a Doctor</a>
+          </li>
+          <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
       <div class="office-info">
         <p class="address-header">Office Address</p>
         <p class="address-info">
@@ -158,18 +175,6 @@
         <p class="email-info">
           Centuryhealth@hotmail.com<br />Centuryhealth@gmail.com
         </p>
-      </div>
-      <div class="link-list">
-        <ul class="footer-links">
-          <li class="quick-links">Quick Links</li>
-          <li class="link"><a href="index.html">Home</a></li>
-          <li class="link"><a href="about-us.html">About</a></li>
-          <li class="link"><a href="faq.html">FAQ</a></li>
-          <li class="link">
-            <a href="medical-practitioners.html">Find a Doctor</a>
-          </li>
-          <li class="link"><a href="contact.html">Contact Us</a></li>
-        </ul>
       </div>
     </div>
   </footer>

@@ -8,6 +8,8 @@ body {
   background: #f9f9f9;
   font-family: "Open Sans", sans-serif;
   color: #180126;
+  display: block;
+  margin: 0;
  }
 
 /* NAVBAR */
@@ -42,11 +44,6 @@ a {
   color: #180126;
   }
 
-
-a:hover{
-  background: #eef0f6;
-}
-
 .navbar a:visited {
   color: #180126;
 }
@@ -59,6 +56,10 @@ align-items: center;
 .active {
   display: flex;
 align-items: center;
+}
+
+.active a:hover {
+  background-color: #f9f9f9;
 }
 
 .navbar li a:hover {
@@ -127,7 +128,7 @@ ul.login {
    } 
 
    input, select#inquiry{
-    width: 318px;
+    width: 300px;
     height: 39px;
     border: 0.5px solid gray;
     border-radius: 5px;
@@ -144,6 +145,7 @@ ul.login {
     text-align: center;
     padding-bottom: 60px;
     padding-top: 10px;
+    white-space: nowrap;
    }
 
    .map-img {
@@ -164,22 +166,26 @@ ul.login {
    }
    
   .form {
-    width: 50%;
+    width: 90%;
     margin: auto;
     }
 
     .input-container {
       margin: auto;
-      justify-content: space-between;
+      justify-content: center;
       display: flex;
-    }
+      flex-direction: row;
+     }
 
     .form-div{
     display: inline-block;
    }
 
    .dropdown{
-    text-align: left;
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
     margin-top: 13px;
     padding-bottom: 30px;
    }
@@ -214,8 +220,7 @@ ul.login {
    }
 
    footer {
-    justify-content: center; 
-    margin-top: 3em;   
+    margin-top: 2em;   
         }
 
    p {
@@ -241,33 +246,34 @@ color: rgb(69 122 255);
 
 .bold {
     font-weight: 400;
-    margin-top: 2em;
-    padding-left: 35px;
+    margin-top: 10px;
+    padding-left: 30px;
 }
 
 .footer-info {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
     background-color: rgb(238,240,246);
-    padding-left: 185px;
     padding-bottom: 20px;
     padding-top: 12px;
    }
 
 
 .follow-us {
-    font-size: 18px;
+    font-size: 21px;
     font-weight: 700;
    }
 
 .social-icons {
-    padding-top: 15px;
-    margin-left: 35px;
+    padding-top: 39px;
+    margin-left: 29px;
 }
 
 .footer-icon {
-  width: 23px;
+  width: 26px;
+  padding: 2px;
 }
 
 .fab {
@@ -279,10 +285,8 @@ color: rgb(69 122 255);
 .footer-links {
     display: flex;
     flex-direction: column;
-    margin-top: -256px;
-    margin-left: 336px;
-    padding-left: 0;
     margin-bottom: 16px;
+    padding-left: 0px;
 }
 
 .quick-links {
@@ -305,13 +309,13 @@ color: rgb(69 122 255);
   color: #180126;
 }
 
-.office-info {
+/* .office-info {
     margin-top: -342px;
     margin-left: 570px;
-}
+} */
 
 .address-header {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -345,8 +349,87 @@ color: rgb(69 122 255);
       margin-top: 0px;
     }
 
+    @media screen and (max-width: 768px) and (min-width: 427px) {
+      .topnav {
+        overflow: hidden;
+        display: block;
+        position: relative;
+      }
+  
+      .topnav a {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        color: #180126;
+        padding: 20px 16px;
+      text-decoration: none;
+      font-size: 15px;
+       text-align: center;
+      }
+
+      
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+      display: none;
+    }
+  
      
-  @media screen and (max-width: 740px) and (min-width: 340px) {
+    /* Style navigation menu links */
+    .topnav a {
+      color: #180126;
+      padding: 20px 16px;
+      text-decoration: none;
+      font-size: 15px;
+      display: block;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+
+     /* Style the hamburger menu */
+     .topnav a.icon {
+      background: #f9f9f9;;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav img {
+      vertical-align: middle;
+    }
+
+    .topnav a:hover {
+      color: rgb(164,162,179);
+     }
+
+      .navbar {
+        display: none;
+      }
+
+      #fname, #email {
+        margin-right: 54px;
+       }
+
+       .map-div, .phone-div, .email-div {
+        margin-right: 15px;
+        margin-left: 15px;  
+        }
+
+        .dropdown {
+          display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        }
+
+        textarea#comment {
+          width: 667px;
+        }
+
+    }
+     
+  @media screen and (max-width: 426px) and (min-width: 320px) {
     .topnav {
       overflow: hidden;
       display: block;
@@ -420,13 +503,15 @@ align-items: center;
 
     .contact-div {
       align-items: flex-end;
-      width: 87%;
-      padding-left: 20px;
+      padding-top: 0;
+      white-space: normal;
+      justify-content: unset;
+      padding-bottom: 25px;
       
     }
 
     .map-img {
-      width: 80%;
+      width: 50%;
     }
 
     .map-div, .phone-div, .email-div {
@@ -445,11 +530,11 @@ align-items: center;
     }
 
     .phone-img {
-     width: 68%;
+     width: 45%;
     }
 
     .email-img {
-      width: 49%;
+      width: 31%;
     }
 
     .form, .dropdown {
@@ -490,10 +575,9 @@ align-items: center;
          }
 
        .footer-links {
-        margin-left: 270px;
+        margin-left: 276px;
         white-space: nowrap;
-        padding-right: 172px;
-        margin-top: -152px;
+        margin-top: -149px;
 
         }
 
