@@ -543,7 +543,10 @@ align-items: center;
     }
 
     .input-container {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
     }
 
     textarea#comment {
