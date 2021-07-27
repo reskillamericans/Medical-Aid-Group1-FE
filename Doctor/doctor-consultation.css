@@ -50,10 +50,8 @@
     grid-template-areas: 
         "header"
         "sidebar"
-        "profile"
-        "contact"
-        "map"
-        "update";
+        "requests"
+        "consultations";
   }
   
   /************************************ Section Styling ************************************/
@@ -113,65 +111,47 @@
      display: flex;
   }
 
-/* Profile */
+  /* Consultations */
 
-.profile {
-    grid-area: profile;
-    /* justify-content: space-between; */
-    text-align: center;
-    margin: 30px;       
+  .requests {
+      grid-area: requests;
+  }
+
+  .consultations {
+      grid-area: consultations;
+  }
+
+  .heading {
+      text-align: center;
+  }
+
+  .bubble-heading {
+      display: none;
+  }
+
+  .request-bubble {
+      text-align: center;
+      margin: 30px;
+  }
+
+  .review {
+      border: none;
+      background-color: pink;
+      border-radius: 5px;
+      padding: 10px;
+      margin-bottom: 5px;
+  }
+
+  .accept {
+    border: none;
+    background-color: greenyellow;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
 }
 
-.heading{
-    font-style: bold;
-}
 
-.userPic {
-  width: 30%;
-}
-
-.profile-container{
-    background-color:#DAE4FF ;
-    padding: 5px;
-}
-
-.contact {
-    /* display: none; */
-    text-align: center;
-    margin: 30px;
-    grid-area: contact;   
-}
-
-.heading {
-    text-align: center;
-    margin: 30px;  
-}
-
-.new-patients {
-    grid-area:new ;
-}
-
-/* Form */
-
-.info-input {
-    padding: 1rem;
-    grid-area: input;    
-}
-
-input {
-    margin: 15px 0;
-    width: 90%;
-    padding: 8px;
-    background-color:#C3C7D2 ;
-}
-
-select {
-    width:90% ;
-    margin: 15px 0;
-    padding: 8px;
-}
-
-.update {
+  .download {
     background: var(--secondaryColor);
     color: var(--primaryText);
     font-size: 13px;
@@ -182,9 +162,8 @@ select {
     /* width: 243px; */
     text-align: center;
     margin: 0 auto;
-    grid-area: update;
+    margin-bottom: 5px;
 }
-
 
 /************************Styling for Laptops and Small Screens 769px and up*****************************/
 @media only screen and (min-width: 769px) {
@@ -194,11 +173,10 @@ select {
       grid-template-columns: 275px  1fr;
       grid-template-areas: 
       "header  header"
-      "sidebar profile"
-      "sidebar contact"
-      "sidebar new"
-      "sidebar input"
-      "sidebar update";
+      "sidebar requests"
+      "sidebar requests"
+      "sidebar consultations"
+      "sidebar consultations";
       margin-right: 2rem;
     }
   

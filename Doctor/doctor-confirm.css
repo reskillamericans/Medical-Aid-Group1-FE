@@ -51,9 +51,11 @@
         "header"
         "sidebar"
         "profile"
+        "buttons"
         "contact"
-        "map"
-        "update";
+        "econtact"
+        "recent"
+        "medical";
   }
   
   /************************************ Section Styling ************************************/
@@ -113,65 +115,49 @@
      display: flex;
   }
 
-/* Profile */
+  /* Styling */
 
-.profile {
-    grid-area: profile;
-    /* justify-content: space-between; */
-    text-align: center;
-    margin: 30px;       
-}
+  .profile {
+      text-align: center;
+      margin: 30px;
+      grid-area: profile;
+  }
 
-.heading{
-    font-style: bold;
-}
+  .request-buttons {
+      text-align: center;
+      margin: 30px;
+      grid-area: buttons;
+  }
 
-.userPic {
-  width: 30%;
-}
-
-.profile-container{
-    background-color:#DAE4FF ;
-    padding: 5px;
-}
-
-.contact {
-    /* display: none; */
+  .contact {
     text-align: center;
     margin: 30px;
-    grid-area: contact;   
-}
+    grid-area: contact;
+  }
 
-.heading {
+  .e-contact {
     text-align: center;
-    margin: 30px;  
-}
+    margin: 30px;
+    grid-area: econtact;
+  }
 
-.new-patients {
-    grid-area:new ;
-}
+  .visits {
+    text-align: center;
+    margin: 30px;
+    grid-area: recent;
+  }
 
-/* Form */
+  .bubble-heading {
+      display: none;
+  }
 
-.info-input {
-    padding: 1rem;
-    grid-area: input;    
-}
+  .records {
+    text-align: center;
+    margin: 30px;
+    grid-area: medical;
+  }
 
-input {
-    margin: 15px 0;
-    width: 90%;
-    padding: 8px;
-    background-color:#C3C7D2 ;
-}
-
-select {
-    width:90% ;
-    margin: 15px 0;
-    padding: 8px;
-}
-
-.update {
+  .results {
     background: var(--secondaryColor);
     color: var(--primaryText);
     font-size: 13px;
@@ -182,11 +168,27 @@ select {
     /* width: 243px; */
     text-align: center;
     margin: 0 auto;
-    grid-area: update;
-}
+    margin-bottom: 5px;
+  }
 
+  .review {
+    border: none;
+    background-color: pink;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
 
-/************************Styling for Laptops and Small Screens 769px and up*****************************/
+  .accept {
+  border: none;
+  background-color: greenyellow;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  }
+
+  /************************Styling for Laptops and Small Screens 769px and up*****************************/
 @media only screen and (min-width: 769px) {
  
     /* This creates a two column view and makes the sidebar navigation visible  */
@@ -195,10 +197,11 @@ select {
       grid-template-areas: 
       "header  header"
       "sidebar profile"
+      "sidebar buttons"
       "sidebar contact"
-      "sidebar new"
-      "sidebar input"
-      "sidebar update";
+      "sidebar econtact"
+      "sidebar recent"
+      "sidebar medical";
       margin-right: 2rem;
     }
   
@@ -277,3 +280,16 @@ select {
   
   
   }
+
+
+
+
+
+
+
+ 
+
+
+
+
+

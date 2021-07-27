@@ -118,9 +118,8 @@
   .profile {
     grid-area: profile;
     /* justify-content: space-between; */
-    margin: 0 1rem 0rem 1rem;
-    padding: 1rem;
-    width: 90%;       
+    text-align: center;
+    margin: 30px;
 }
 
 .heading{
@@ -139,8 +138,8 @@
 /* Details */
 
  .details{
-    margin: 0 1rem 0rem 1rem;
-    padding: 1rem;
+    text-align: center;
+    margin: 30px;
 } 
 
 .details h1 p {
@@ -148,10 +147,9 @@
 }
 
 .contact {
-    align-items: center;
-    margin: 0 1rem 0rem 1rem;
-    padding: 1rem;
-    width: 90%;
+    text-align: center;
+    margin: 30px;
+    grid-area: contact;
 }
 
 .locations {
@@ -160,8 +158,123 @@
 
 .map {
     display: none;
+    grid-area: map;
 }
 
 .update {
-    display: none;
+    /* display: none; */
+    grid-area: update;
 }
+
+.update {
+    background: var(--secondaryColor);
+    color: var(--primaryText);
+    font-size: 13px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding:10px;
+    /* width: 243px; */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.update:hover {
+    background-color: var(--background);
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+}
+button {
+  cursor: pointer;
+}
+
+/************************Styling for Laptops and Small Screens 769px and up*****************************/
+@media only screen and (min-width: 769px) {
+ 
+    /* This creates a two column view and makes the sidebar navigation visible  */
+    .wrapper {
+      grid-template-columns: 275px  1fr;
+      grid-template-areas: 
+      "header  header"
+      "sidebar profile"
+      "sidebar contact"
+      "sidebar map"
+      "sidebar update";
+      margin-right: 2rem;
+    }
+  
+    /***** Need this to make nav visible *****/
+    /***** Nav *****/
+    .logo {
+      width: 250px;
+    }
+   .nav-ul {
+     display: flex;
+     background-color: var(--primaryColor);
+     border-radius: 0 20px 0 0;
+     color: var(--background);
+     height: 100vh;
+     padding-top: 0;
+     position: sticky;
+     top: 0px;
+   }
+   
+    nav a:hover,
+    .activeLink {
+      color: var(--secondaryColor);
+    }
+  
+    .nav-ul li {
+      line-height: 50px;
+    }
+    .nav-ul img {
+      vertical-align: middle;
+      padding-right: 5px;
+    }
+    
+    /* hides hamburger button */
+    .hamburger {
+      display: none;
+    }
+    /***** styling for content headings *****/
+    h2 {
+        font-size: 22px;
+      }
+    }
+  
+  
+  /************************Styling for Desktops and Large Screens 1200px Up*****************************/
+  @media (min-width: 1400px) {
+  
+      .wrapper {
+          grid-template-columns: 275px 1fr;
+          grid-template-areas:
+          "header  header header"
+          "sidebar profile profile"
+          "sidebar contact map"
+          "sidebar update update";
+      }
+      h1 {
+        font-size: 37px;
+      }
+      h2 {
+        font-size: 28px;
+      }
+      .proofile {
+        display: flex;
+      }
+      .profile h1 {
+        padding: 0;
+        margin: 0;
+      }
+      .userPic {
+        display: block;
+      }
+
+      
+
+  
+  
+  
+  
+  }
