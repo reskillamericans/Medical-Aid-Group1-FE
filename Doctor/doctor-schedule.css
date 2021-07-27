@@ -313,8 +313,16 @@
   height: 28px;
   color: var(--secondaryText);
 }
+.cal-pink a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #71717A;
+}
 .cal-pink:hover {
   background-color: #DC2626;
+}
+
+.cal-pink:hover > * {
   color: white;
 }
 
@@ -323,14 +331,39 @@
   display: inline-block;
   margin-left: 10px;
 }
+.dropdown img {
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
 .dropdown button{
   width: 86px;
   height: 28px;
   background-color: rgba(239, 239, 240, 1);
   border: none;
   border-radius: 8px;
+  color: #71717A;
+}
+.months {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.months li {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}
+.months li a {
+  text-decoration: none;
+  color: #71717A;
+  font-size: 14px;
+  line-height: 2;
 }
 
+.months li a:hover {
+  color: #DC2626;
+}
 .dropdown-content {
   display: none;
   position: absolute;
