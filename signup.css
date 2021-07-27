@@ -313,7 +313,7 @@ align-items: center;
   }
   
   div.content-logo {
-    display: none;
+    display: block;
   }
 
   }
