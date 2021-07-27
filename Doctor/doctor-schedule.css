@@ -318,11 +318,43 @@
   font-size: 14px;
   color: #71717A;
 }
-.cal-pink:hover {
+.cal-pink:hover{
   background-color: #DC2626;
 }
+.cal-pink:hover > *{
+  color: white;
+}
+.cal-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.space {
+  width: 300px;
+}
+@media (max-width: 960px) {
+  .space {
+    display: none;
+  }
+  .cal-btns {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+}
 
-.cal-pink:hover > * {
+.cal-view {
+  background-color: #EFEFF0;
+  border: none;
+  border-radius: 8px;
+  width: 76px;
+  height: 28px;
+}
+.selected {
+  color: white;
+  background-color: #DC2626;
+}
+.cal-view:hover {
+  background-color: #DC2626;
   color: white;
 }
 
