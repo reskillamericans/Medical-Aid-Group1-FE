@@ -296,7 +296,7 @@ h6{
   }
   
   div.content-logo {
-    display: none;
+    display: block;
   }
 }
 
