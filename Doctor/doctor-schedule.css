@@ -280,10 +280,17 @@
     border-radius: 10px;
     color: var(--secondaryText);
     border: 1px solid #C3C7D2; 
-    padding-right: 40px;
-    padding-left: 0px;
-    padding-bottom: 40px;
+    padding: 20px 20px 20px 0px;
   }
+.right-side {
+    border-right: none !important;
+  }
+.left-side {
+  border-left: none !important;
+}
+.b-side {
+  border-bottom: none !important;
+}
   .days-of-week li {
     text-align: left  ;
     color: var(--secondaryText);
@@ -305,6 +312,10 @@
   width: 60px;
   height: 28px;
   color: var(--secondaryText);
+}
+.cal-pink:hover {
+  background-color: #DC2626;
+  color: white;
 }
 
 .dropdown {
