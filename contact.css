@@ -129,7 +129,7 @@ ul.login {
    input, select#inquiry{
          font-size: 13px;
     font-weight: bold;
-    width: 318px;
+    width: 360px;
     height: 39px;
     border: 0.5px solid gray;
     border-radius: 5px;
@@ -355,7 +355,7 @@ color: rgb(69 122 255);
      display: block; 
     
   }
-
+}
   @media screen and (max-width: 741px) and (min-width: 340px) {
     .topnav {
       overflow: hidden;
