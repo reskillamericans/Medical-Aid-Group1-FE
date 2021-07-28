@@ -391,7 +391,10 @@ h2 {
 }
 
 /* Calendar Week Styling */
-
+.calendar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .days-of-week, .hours-of-week {
   padding-left: 20px;
   display: grid;
