@@ -457,7 +457,10 @@ p.thu {
   color: #DC2626;
   border-left: 5px solid #DC2626;
 }
-
+p.current img {
+  vertical-align: top;
+}
+/* Calendar Responsive Styling */
 @media (max-width: 1200px) {
   .sun, .mon, .tue, .sat {
     display: none;
