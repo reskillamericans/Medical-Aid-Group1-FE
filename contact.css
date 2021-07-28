@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 html {
@@ -27,7 +28,7 @@ vertical-align: middle;
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0px 25px 5px;
   align-items: center;
   font-size: 15px;
@@ -128,13 +129,7 @@ ul.login {
    } 
 
    input, select#inquiry{
-<<<<<<< HEAD
     width: 300px;
-=======
-         font-size: 13px;
-    font-weight: bold;
-    width: 360px;
->>>>>>> 1538c0d146ec7a9129f784a8967ed4e74f0bda08
     height: 39px;
     border: 0.5px solid gray;
     border-radius: 5px;
@@ -147,7 +142,7 @@ ul.login {
    .contact-div{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
     padding-bottom: 60px;
     padding-top: 10px;
@@ -172,33 +167,19 @@ ul.login {
    }
    
   .form {
-<<<<<<< HEAD
     width: 90%;
-=======
-   width: 80%;
->>>>>>> 1538c0d146ec7a9129f784a8967ed4e74f0bda08
     margin: auto;
-    flex-direction: column;
-    display: flex;
     }
 
-<<<<<<< HEAD
     .input-container {
       margin: auto;
       justify-content: center;
-
       display: flex;
       flex-direction: row;
      }
-=======
-   .input-container {
-      display: flex;
-      justify-content: space-between;
-    }
->>>>>>> 1538c0d146ec7a9129f784a8967ed4e74f0bda08
 
     .form-div{
-    display: inline;
+    display: inline-block;
    }
 
    .dropdown{
@@ -236,8 +217,7 @@ ul.login {
    }
 
    .submit-btn:hover {
-   background: white;
-    border: 1px solid #f3ea12;
+    background: #eef0f6;
    }
 
    footer {
@@ -369,11 +349,6 @@ color: rgb(69 122 255);
     .copyright p {
       margin-top: 0px;
     }
-    
-    @media screen and (max-width: 991px) and (min-width: 741px) {
-    .input-container {
-
-<<<<<<< HEAD
 
     @media screen and (max-width: 768px) and (min-width: 427px) {
       .topnav {
@@ -468,19 +443,11 @@ color: rgb(69 122 255);
     }
      
   @media screen and (max-width: 426px) and (min-width: 320px) {
-=======
-     display: block; 
-    
-  }
-}
-  @media screen and (max-width: 741px) and (min-width: 340px) {
->>>>>>> 1538c0d146ec7a9129f784a8967ed4e74f0bda08
     .topnav {
       overflow: hidden;
       display: block;
       position: relative;
     }
-
 
     .topnav a {
       font-weight: 600;
@@ -494,7 +461,6 @@ color: rgb(69 122 255);
     }
     
   
-
     h6 {
       padding: 0;
     } 
@@ -519,11 +485,11 @@ color: rgb(69 122 255);
       padding: 20px 16px;
       text-decoration: none;
       font-size: 15px;
+      display: block;
       text-align: center;
       display: flex;
-      align-items: center;
-      font-weight: 600;
 align-items: center;
+      
        }
   
     
@@ -549,21 +515,16 @@ align-items: center;
     }
 
     .contact-div {
-/*       align-items: flex-end;
-      width: 87%;
-      padding-left: 20px; */
-      }
-
-      .input-container {
-        display: inline-block;
-      }
+      align-items: flex-end;
+      padding-top: 0;
+      white-space: normal;
+      justify-content: unset;
+      padding-bottom: 25px;
+      
+    }
 
     .map-img {
-<<<<<<< HEAD
       width: 50%;
-=======
-      width: 61%;
->>>>>>> 1538c0d146ec7a9129f784a8967ed4e74f0bda08
     }
 
     .map-div, .phone-div, .email-div {
@@ -582,19 +543,11 @@ align-items: center;
     }
 
     .phone-img {
-<<<<<<< HEAD
      width: 45%;
     }
 
     .email-img {
       width: 31%;
-=======
-     width: 55%;
-    }
-
-    .email-img {
-      width: 40%;
->>>>>>> 1538c0d146ec7a9129f784a8967ed4e74f0bda08
     }
 
     .form, .dropdown {
@@ -606,14 +559,12 @@ align-items: center;
     }
     
 
-
     .input-container {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
     }
-
 
     textarea#comment {
       height: 215px;
