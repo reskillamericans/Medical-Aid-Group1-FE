@@ -300,16 +300,7 @@ h2 {
 .space {
   width: 300px;
 }
-@media (max-width: 960px) {
-  .space {
-    display: none;
-  }
-  .cal-btns {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-  }
-}
+
 .cal-view {
   background-color: #EFEFF0;
   border: none;
@@ -458,4 +449,41 @@ p.thu {
 .hours-of-week p.red{
   color: #DC2626;
   border-left: 5px solid #DC2626;
+}
+
+@media (max-width: 1200px) {
+  .sun, .mon, .tue, .sat {
+    display: none;
+  }
+  .days-of-week, .hours-of-week {
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    text-align: left;
+  }
+  .space {
+    display: none;
+  }
+  .cal-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  p.fri {
+    border-right: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .space {
+    display: none;
+  }
+  .cal-btns {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  p.fri {
+    border-right: none;
+  }
 }
