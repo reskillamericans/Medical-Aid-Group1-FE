@@ -27,7 +27,7 @@ vertical-align: middle;
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0px 25px 5px;
   align-items: center;
   font-size: 15px;
@@ -141,7 +141,7 @@ ul.login {
    .contact-div{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     padding-bottom: 60px;
     padding-top: 10px;
@@ -178,7 +178,7 @@ ul.login {
      }
 
     .form-div{
-    display: inline-block;
+    display: inline;
    }
 
    .dropdown{
@@ -348,6 +348,13 @@ color: rgb(69 122 255);
     .copyright p {
       margin-top: 0px;
     }
+    
+    @media screen and (max-width: 850px) and (min-width: 741px) {
+    .contact-div {
+      justify-content: flex-start;
+    }
+  }
+
 
     @media screen and (max-width: 768px) and (min-width: 427px) {
       .topnav {
@@ -448,6 +455,7 @@ color: rgb(69 122 255);
       position: relative;
     }
 
+
     .topnav a {
       font-weight: 600;
       display: flex;
@@ -460,6 +468,7 @@ color: rgb(69 122 255);
     }
     
   
+
     h6 {
       padding: 0;
     } 
@@ -484,11 +493,11 @@ color: rgb(69 122 255);
       padding: 20px 16px;
       text-decoration: none;
       font-size: 15px;
-      display: block;
       text-align: center;
       display: flex;
+      align-items: center;
+      font-weight: 600;
 align-items: center;
-      
        }
   
     
@@ -515,6 +524,7 @@ align-items: center;
 
     .contact-div {
       align-items: flex-end;
+
       padding-top: 0;
       white-space: normal;
       justify-content: unset;
@@ -558,12 +568,14 @@ align-items: center;
     }
     
 
+
     .input-container {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
     }
+
 
     textarea#comment {
       height: 215px;
