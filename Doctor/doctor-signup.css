@@ -268,6 +268,10 @@ display: flex;
     .tab-wrapper ul {
         margin-right: 36px;
     }
+
+    .logo-img {
+      padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 751px){
@@ -277,9 +281,13 @@ display: flex;
         position: relative;
       }
     
-      h6 {
+      /* h6 {
         padding: 0;
-      } 
+      }  */
+
+      #deleted-br {
+        display: none;
+      }
     
       .content-div {
         margin-top: 0;
@@ -339,7 +347,7 @@ display: flex;
   }
 
 
-@media screen and (max-width: 750px) and (min-width: 340px) {
+@media screen and (max-width: 750px) and (min-width: 320px) {
   .topnav {
     overflow: hidden;
     display: block;
@@ -402,6 +410,13 @@ align-items: center;
   .form {
     text-align: center;  }
 
+    input[type="fullname"],
+input[type="email"],
+input[type="license"],
+input[type="password"] {
+  width: 310px;
+}
+
     .social-div{
       display: flex;
       justify-content: center;
@@ -409,11 +424,19 @@ align-items: center;
 
     .checkbox {
       display: block;
-      
-    }
+      }
+
+      input[type="checkbox"] {
+        width: 11px;
+        vertical-align: text-top;
+      }
 
     label.checkbox {
       white-space: nowrap ;
+    }
+
+    .signup-btn {
+      width: 305px;
     }
  
  .login-btn {
