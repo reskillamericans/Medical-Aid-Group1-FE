@@ -256,60 +256,26 @@
    
   }
 
-  /* Calendar Styling */
-
-  .clearfix:after { 
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .days-of-month ul, .days-of-week ul {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .days-of-week ul, .days-of-month ul, .days-of-month li, .days-of-week li {
-    list-style-type: none;
-    display: block;
-    width: 14.2857143%; 
-    float: left;
-  }
-  .content {
+  /* Calendar Styling */  
+.content {
     background-color: #F9F9F9;
     border-radius: 10px;
     color: var(--secondaryText);
     border: 1px solid #C3C7D2; 
     padding: 20px 20px 20px 0px;
-  }
-.right-side {
-    border-right: none !important;
-  }
-.left-side {
-  border-left: none !important;
 }
-.b-side {
-  border-bottom: none !important;
-}
-  .days-of-week li {
-    text-align: left  ;
-    color: var(--secondaryText);
-    padding: 10px 0;
-  }
-  h2 {
+
+h2 {
     text-align: left;
     padding-left: 40px;
-  }
-  .month-week {
-    display: flex;
-    justify-content: center;
-  }
-  input.cal-view  {
-    margin-right: 5px;
-  }
-  .highlight img, .highlight2 img {
-    vertical-align: middle;
-  }
+}
+.month-week {
+  display: flex;
+  justify-content: center;
+}
+input.cal-view  {
+  margin-right: 5px;
+}
 .cal-btns {
   display: flex;
   justify-content: left;
@@ -340,16 +306,6 @@
 }
 .space {
   width: 300px;
-}
-@media (max-width: 960px) {
-  .space {
-    display: none;
-  }
-  .cal-btns {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-  }
 }
 
 .cal-view {
@@ -418,33 +374,9 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
-  .days-of-month li {
-    position: relative; 
-    padding: 25px 10px;
-    height: 125px; 
-    text-align: left;
-    border-top: none;
-    border-right: 1px solid #C3C7D2;
-    border-bottom: 1px solid #C3C7D2;
-  }
-  .days-of-month li:nth-of-type(1) {
-    border-left: 1px solid #C3C7D2;
-  }
-  
-  .days-of-month li:nth-of-type(7n+8) {
-    border-left: 1px solid #C3C7D2;
-    clear: both; 
-  }
-  
-  .days-of-month li span {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    font-size: 0.8em;
-  }
+
 .highlight {
-  background-color: rgba(255, 228, 230, 0.7)
-  ;
+  background-color: rgba(255, 228, 230, 0.7);
 }
 .highlight a, .highlight2 a {
   text-decoration: none;
@@ -456,47 +388,112 @@
   background-color: rgba(239, 246, 255, 1);
 }
 
-/* Calendar media query */
-  @media (max-width: 960px) {
-    .wrap {
-      padding: 25px;
-    }
-  
-    .days-of-week {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
-    }
-  
-    .days-of-month li {
-      display: block;
-      height: auto;
-      width: 100%;
-      padding: 0;
-      text-align: left;
-      float: none;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-    }
-  
-    .days-of-month li:empty {
-      display: none;
-    }
-  
-    .days-of-month li:nth-of-type(1) {
-      border-left: none;
-    }
-  
-    .days-of-month li:nth-of-type(7n+8) {
-      border-left: none;
-      clear: both;
-    }
-    
-    .days-of-month li span {
-      position: static;
-      display: inline-block;
-      padding: 15px;
-      margin-right: 15px;
-    }
+/* Calendar Week Styling */
+.calendar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.days-of-week, .hours-of-week {
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+  text-align: left;
+}
+.days-of-week p {
+  font-size: 9px;
+  font-weight: 700;
+  border-right: 1px solid #c3c7d2;
+  border-bottom: 1px solid #c3c7d2;
+  margin-bottom: 0;
+  padding-left: 7px;
+  padding-bottom: 10px;
+}
+.days-of-week p:last-child, .days-of-week p:first-child{
+  border: none;
+}
+.days-of-week p:nth-child(8) {
+  border-right: none;
+}
+.days-of-week b {
+  font-size: 16px;
+}
+.hours-of-week p {
+  font-size: 10px;
+  margin:0;
+}
+.hours-of-week {
+  margin-top: 0px;
+}
+.hours-of-week p{
+  border-right: 1px solid #C3C7D2;
+  border-bottom: 1px solid #C3C7D2;
+  height: 60px;
+}
+.hours-of-week p:first-child, .hours-of-week p:last-child {
+  border: none;
+}
+.hours-of-week p:last-child {
+  margin-left: 20px;
+}
+.hours-of-week p:nth-child(8) {
+  border-right: none;
+}
+.hours-of-week p:nth-child(6), .days-of-week p:nth-child(6) {
+  background-color: #EFF6FF;
+}
+p.thu {
+  padding-left: 7px;
+  padding-top: 5px;
+}
+.hours-of-week p.current{
+  background-color: rgba(14, 165, 233, 0.1);
+  color: #0369A1;
+  border-left: 5px solid #0369A1;
+}
+.hours-of-week p.current:hover, .hours-of-week p.red:hover{
+  background-color: rgba(14, 165, 233, 0.35);
+}
+.hours-of-week p.red{
+  color: #DC2626;
+  border-left: 5px solid #DC2626;
+}
+p.current img {
+  vertical-align: top;
+}
+/* Calendar Responsive Styling */
+@media (max-width: 1200px) {
+  .sun, .mon, .tue, .sat {
+    display: none;
   }
+  .days-of-week, .hours-of-week {
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    text-align: left;
+  }
+  .space {
+    display: none;
+  }
+  .cal-btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  p.fri {
+    border-right: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .space {
+    display: none;
+  }
+  .cal-btns {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  p.fri {
+    border-right: none;
+  }
+}
