@@ -249,29 +249,70 @@ button {
       .wrapper {
           grid-template-columns: 275px 1fr;
           grid-template-areas:
-          "header  header header"
+          "header header header"
           "sidebar profile profile"
           "sidebar contact map"
           "sidebar update update";
       }
+
+      
       h1 {
         font-size: 37px;
       }
       h2 {
         font-size: 28px;
       }
-      .proofile {
-        display: flex;
+
+      h3 {
+        font-size: 20px;
       }
+   
+      .profile {
+        display: flex;
+       
+     }
+      .info {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+      } 
+
       .profile h1 {
         padding: 0;
         margin: 0;
       }
+
       .userPic {
         display: block;
       }
 
-      
+      .big-rating h1{
+        font-size: 50px;
+      }
+      .map {
+          display: flex;
+      }
+      .contact {
+          width: 50%;
+      }
+
+      .update {
+          height: 90%;
+      }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 
   
   

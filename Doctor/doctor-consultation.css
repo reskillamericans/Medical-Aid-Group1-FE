@@ -227,9 +227,10 @@
           grid-template-columns: 275px 1fr;
           grid-template-areas:
           "header  header header"
-          "sidebar profile profile"
-          "sidebar contact map"
-          "sidebar update update";
+          "sidebar requests requests"
+          "sidebar requests requests"
+          "sidebar consultations consultations "
+          "sidebar consultations consultations";
       }
       h1 {
         font-size: 37px;
@@ -237,9 +238,7 @@
       h2 {
         font-size: 28px;
       }
-      .proofile {
-        display: flex;
-      }
+    
       .profile h1 {
         padding: 0;
         margin: 0;
@@ -247,6 +246,54 @@
       .userPic {
         display: block;
       }
+
+      .bubble-heading {
+          display: flex;
+          flex-direction: row ;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .patient {
+          grid-area: patient;
+      }
+
+      .reason {
+          grid-area: reason;
+      }
+
+      .date {
+        grid-area: date;
+    }
+
+      .time {
+        grid-area: time;
+    }
+
+      .buttons {
+        grid-area: buttons;
+    }
+
+    .request-bubble {
+        display: grid;
+        grid-template-areas: 
+          "patient reason date time buttons";
+        grid-template-columns: 300px 2.5fr 2fr 150px;
+        text-align: left;
+        padding: .25rem 1rem;
+        justify-content: center; 
+    }
+
+
+
+
+
+      
+
+
+
+
+      
 
       
 
