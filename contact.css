@@ -350,6 +350,10 @@ color: rgb(69 122 255);
       margin-top: 0px;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df21a95c64e205954a16736fab69aa06e4767ebb
     @media screen and (max-width: 768px) and (min-width: 427px) {
       .topnav {
         overflow: hidden;
@@ -516,6 +520,10 @@ align-items: center;
 
     .contact-div {
       align-items: flex-end;
+<<<<<<< HEAD
+=======
+
+>>>>>>> df21a95c64e205954a16736fab69aa06e4767ebb
       padding-top: 0;
       white-space: normal;
       justify-content: unset;
@@ -559,12 +567,20 @@ align-items: center;
     }
     
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df21a95c64e205954a16736fab69aa06e4767ebb
     .input-container {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> df21a95c64e205954a16736fab69aa06e4767ebb
 
     textarea#comment {
       height: 215px;
