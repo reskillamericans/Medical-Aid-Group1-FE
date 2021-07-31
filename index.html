@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" type="cross-logo" href="images/landing-page/cross.png">
   <script src="https://kit.fontawesome.com/539f78907e.js" crossorigin="anonymous"></script>
+  <script src="./login.js" defer></script>
   <title>Landing Page</title>
 </head>
 
@@ -17,27 +18,42 @@
     <!-- NAV BAR -->
     <nav class="navbar">
       <div class="logo-div">
-        <a class="navbar-brand" href="index.html">
-          <img src="./images/landing-page/cross.png" class="nav-logo" alt="logo image"/>
-          <span class="nav-logo-text">Century Health</span></a>
+        <img src="images/logo/logoicon.svg" class="nav-logo" alt="logo image">
+        <span class="nav-logo-text">Century Health</span>
       </div>
       <div class="nav-tabs">
         <ul>
-          <li class="home-icon"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about-us.html">About</a></li>
           <li><a href="faq.html">FAQ</a></li>
-          <li><a href="medical-practitioners.html">Find Doctor</a></li>
+          <li><a href="#">Find a Doctor</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
       <div class="login">
         <ul>
           <li><a class="login-nav" href="login.html">Log In</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
+          <li class="active-link"><a href="signup.html">Sign Up</a></li>
         </ul>
       </div>
     </nav>
-
+    <div class="topnav">
+      <a href="index.html" class="active"><img src="images/logo/logoicon.svg"> <span class="nav-logo-text">Century
+          Health</span></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="about-us.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Log In</a>
+        <a class="active-hamburger" href="signup.html">Sign Up</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </header>
 
   <!----Top Section -->
@@ -132,8 +148,8 @@
           <button class="dr-btn">View Profile</button>
         </div>
         <div class="dr-card dr4">
-         <img src="images/landing-page/dr-davies.svg" alt="Image of Doctor">
-         <h3>Dr. Pam Davies</h3>
+          <img src="images/landing-page/dr-davies.svg" alt="Image of Doctor">
+          <h3>Dr. Pam Davies</h3>
           <p>Gynecologist</p>
           <button class="dr-btn">View Profile</button>
         </div>
@@ -214,7 +230,7 @@
 
         <div class="mission">
           <a class="brand-footer" href="index.html">
-            <img src="./images/landing-page/cross.png" class="nav-logo" alt="logo image"/>
+            <img src="./images/landing-page/cross.png" class="nav-logo" alt="logo image" />
             <span class="nav-logo-text">Century Health</span></a>
           <p class="bold">We will always consider<br> the wellbeing
             of our<br> patient. You matter</p>

@@ -13,79 +13,74 @@
 }
 
 body {
-    background: var(-white);
-    box-sizing: content-box;
-    overflow-x: hidden;
+    background-color: var(--white);
     font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: var(--black);
     margin: 0;
+    padding: 0;
+  }
+header {
+    margin: 0;
+    padding: 0;
 }
-
-/* NAVBAR */
-.logo-div img {
-    width: 9em;
-  }
-  
-  .navbar-brand img {
-      vertical-align: top;
-      width: 16%;
-  }
-
-  .nav-logo-text {
-      color: var(--lightblue);
-      font-weight: bold;
-      display: inline;
-  }
-  
-  .navbar {
+/* NAVBAR Desktop View */
+.navbar {
     display: flex;
     justify-content: space-around;
-    padding: 0em .4em 0em;
+    padding: 0em .4em 5px;
     align-items: center;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--white);
-    
-  }
-  
+    font-size: 15px;
+   }
   .navbar a {
-    text-decoration: none;
-     font-weight: 600;
-     color: #180126;
-    
-  }
-  
-  .navbar li:hover {
-   
-   border-radius: 4px;
-   background-color: var(--yellow);
-    
-  }
-  
-  .navbar li:visited {
+      text-decoration: none;
+      font-weight: 600;
+      color: #180126;
+    }
+  .navbar a:visited {
     color: #180126;
   }
-  
-  .active:hover{
-    background-color: #f9f9f9;
+  .active img {
+    vertical-align: bottom;
   }
-  
-  
+  .navbar li {
+      display: inline-block;
+      padding: 8px 12px; 
+  }
+  .navbar li:hover, .active-link {
+      background-color: #f3ea12;
+      border-radius: 4px;    
+  }
+  a.active-hamburger {
+      color:#457aff !important;
+  }
+  .nav-logo {
+    vertical-align: middle;
+      width: 16%;
+  }
+  .nav-logo-text {
+  color: rgb(69 122 255);
+    font-weight: bold;
+     display: inline;
+     font-size: larger;
+  }
   ul.nav-tabs,
   ul.login {
     list-style-type: none;
   }
-  
-  .home-icon {
-    background-color: var(--yellow);
-    padding: 8px 12px;
-    border-radius: 5px;
+  .logo-img {
+    vertical-align: middle;
+    padding-top: 4px;
+    padding-left: 35px;
+    width: 13%;
   }
-  
-  .navbar li {
-    display: inline-block;
-    padding: 8px 12px;
+   .topnav {
+    display: none;
   }
+  /* End of Navbar  */
+
   
+ 
   .content-div {
     display: flex;
     justify-content: space-around;
@@ -801,4 +796,38 @@ footer a:hover, footer li:hover {
     footer h4 {
         font-size: 16px;
     }
+}
+
+@media screen and (max-width: 857px) {
+    /*Navbar Mobile View */
+  .topnav {
+    overflow: hidden;
+    display: block;
+    position: relative;
+  }
+  .navbar {
+    display: none;
+  }
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  /* Style navigation menu links */
+  .topnav a {
+    color: #180126;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+  }
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #f9f9f9;;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
