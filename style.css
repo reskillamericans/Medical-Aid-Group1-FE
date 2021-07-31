@@ -638,6 +638,7 @@ footer img {
 .follow {
     grid-area: follow;
 }
+
 .navbar-footer {
     margin-top: 3.5em;
 }
@@ -860,5 +861,10 @@ footer a:hover, footer li:hover {
     .how-btn {
       height: 40px;
       width: 197px;
+  }
+  /* Testimony */
+  .testimonies img {
+    margin-right: 20px;
+    width: auto;
   }
   }
