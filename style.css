@@ -774,7 +774,9 @@ footer a:hover, footer li:hover {
   .topnav #myLinks {
     display: none;
   }
-
+  #myLinks a:hover {
+    color: var(--lightblue);
+  }
   /* Style navigation menu links */
   .topnav a {
     color: #180126;
