@@ -78,34 +78,122 @@ header {
     display: none;
   }
   /* End of Navbar  */
-
-  
- 
-  .content-div {
+  /* Hero Section Mobile View */
+  .hero {
+    background-image: url(/images/landing-page/hero-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 1rem;
+    padding: 2rem;
+  }
+  .hero-wrapper {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .hero p {
+    font-size: 14px;
+    color: var(--darkgray);
+  }
+  .hero-p {
+    display: none;
+  }
+  .hero-btn {
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    width: 197px;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+  .hero-btn:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+  }
+  .how-img {
+    width: 80%;
+  }
+  /* Stats Box */
+  .stats-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .stats {
+    background-color: var(--verylightgray);
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px 7px 0 32px;
-      
+    width: 200px;
+    height: 60px;
+    padding: 10px 15px;
+    margin-top: -10px;
   }
-  
-  .middle-wrapper {
-      display: flex;
-      justify-content: space-between;
+  .numbers {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
   }
-  .middle-right-left {
-    width: 30%;
-  }  
-  .middle-right-right {
-      width: 30%;
+  .words {
+    font-size: 10px;
+    color: #7E7A8F;
+    padding: 0;
+    margin: 5px 0 0 0;
   }
-  div.content-logo {
-    background-color: #eef0f6;
-      height: auto;
-    width: 50%;
-    border-radius: 20px;
-    
+  /* End Stats Box */
+ 
+/* How To Section */
+.how {
+    margin: 1rem;
+    display: grid;
+    justify-content: center;
   }
+  .how-container {
+    text-align: center;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+  }
+  .how-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .directions {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .directions img {
+    width: 16px;
+    height: 16px;
+  }
+  .directions p {
+    padding: 0;
+    margin: 0;
+  }
+  /* Get Started Button */
+  .how-outside {
+    display: flex;
+    justify-content: center;
+  }
+  .how-btn {
+    width: 137px;
+    height: 34px;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 4px;
+  }
+  .how-btn:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+  }
+/* End How To */
   
   .logo-img {
     width: 50%;
@@ -156,99 +244,7 @@ header {
     font-size: 13px;
   }
 
-/******Top Section******/
-.top-container {
-    background-color: var(--white);
-    display: flex;
-    flex-direction: row;
-    
 
-}
- .top-left {
-    max-width: 35%;
-    padding: 55px 80px 40px 80px;
-    position: relative;
- }
-
- .top-container::before {
-     content: '';
-     position: absolute;
-     width: 30%;
-     height: 90vh;
-     opacity: .07;
-     background-image: url(images/landing-page/Ellipse\ 2.png);
-     background-repeat: no-repeat;
-     background-position: left;
-     background-size: cover;
-     margin-top: 10em;
- }
-
-  .top-header {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 31px;
-      color: var(--black);
-      text-align: left;
-  }
-
-  .top-subheading {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 18px;
-      color: var(--darkgray);
-      font-weight: 400;
-  }
-
-  .appointment-btn {
-      font-weight: 700;
-      background-color: var(--yellow);
-      color: var(--black);
-      border-radius: 6px;
-      border: none;
-      width: 200px;
-      height: 40px;
-      cursor: pointer;
-  }
-  .appointment-btn:hover {
-      background-color: var(--white);
-      color: var(--blue);
-      border: 2px solid var(--blue);
-
-  }
-
-.top-right img {
-  float: right; 
-  width: 200%;
-  margin-right: -350px;
-  background-image: url(images/landing-page/Ellipse\ 1.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  
-}
-
-.container-box {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: var(--verylightgray);
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    text-align: left;
-    width: 25%;
-    height: 40%; 
-    margin-top: -5px;
-    margin-left: 650px;
-}
-
-.numbers {
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-}
-
-.words {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-}
 
 /******Middle Section*******/
 .middle-container-1 {
@@ -831,3 +827,73 @@ footer a:hover, footer li:hover {
     top: 0;
   }
 }
+@media screen and (min-width: 768px) {
+    /* Hero Desktop View */
+    .hero {
+        background-image: url(/images/landing-page/hero-desktop.png);
+        height: 50vh;
+        margin:0;
+    }
+    .hero-wrapper {
+        text-align: left;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+    }
+    .hero-btn {
+        margin-top: 0;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .hero-p{
+        display: block;
+    }
+    .mobiletext {
+        display: none;
+    }
+    /* Stats Box Desktop View */
+    .stats-wrapper {
+        justify-content: right;
+        margin-right: 100px;
+    }
+    .stats {
+        width: 300px;
+        height: 80px;
+    }
+    .numbers {
+        font-size: 20px;
+    }
+    .words {
+        font-size: 12px;
+    }
+    /* How To Desktop View */
+    .how {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+    .how-container {
+        margin-right: 100px;
+        text-align: left;
+    }
+    .how-container h2 {
+        font-size: 28px;
+    }
+    .how-container p {
+        width: 80%;
+    }
+    .column3 {
+        margin-top: 75px;
+    }
+    .directions {
+        width: 50%;
+    }
+    .how-btn {
+      height: 40px;
+      width: 197px;
+  }
+  }
