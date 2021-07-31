@@ -13,104 +13,187 @@
 }
 
 body {
-    background: var(-white);
-    box-sizing: content-box;
-    overflow-x: hidden;
+    background-color: var(--white);
     font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: var(--black);
     margin: 0;
+    padding: 0;
+  }
+header {
+    margin: 0;
+    padding: 0;
 }
-
-/* NAVBAR */
-.logo-div img {
-    width: 9em;
-  }
-  
-  .navbar-brand img {
-      vertical-align: top;
-      width: 16%;
-  }
-
-  .nav-logo-text {
-      color: var(--lightblue);
-      font-weight: bold;
-      display: inline;
-  }
-  
-  .navbar {
+/* NAVBAR Desktop View */
+.navbar {
     display: flex;
     justify-content: space-around;
-    padding: 0em .4em 0em;
+    padding: 0em .4em 5px;
     align-items: center;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    background-color: var(--white);
-    
-  }
-  
+    font-size: 15px;
+   }
   .navbar a {
-    text-decoration: none;
-     font-weight: 600;
-     color: #180126;
-    
-  }
-  
-  .navbar li:hover {
-   
-   border-radius: 4px;
-   background-color: var(--yellow);
-    
-  }
-  
-  .navbar li:visited {
+      text-decoration: none;
+      font-weight: 600;
+      color: #180126;
+    }
+  .navbar a:visited {
     color: #180126;
   }
-  
-  .active:hover{
-    background-color: #f9f9f9;
+  .active img {
+    vertical-align: bottom;
   }
-  
-  
+  .navbar li {
+      display: inline-block;
+      padding: 8px 12px; 
+  }
+  .navbar li:hover, .active-link {
+      background-color: #f3ea12;
+      border-radius: 4px;    
+  }
+  a.active-hamburger {
+      color:#457aff !important;
+  }
+  .nav-logo {
+    vertical-align: middle;
+      width: 16%;
+  }
+  .nav-logo-text {
+  color: rgb(69 122 255);
+    font-weight: bold;
+     display: inline;
+     font-size: larger;
+  }
   ul.nav-tabs,
   ul.login {
     list-style-type: none;
   }
-  
-  .home-icon {
+  .logo-img {
+    vertical-align: middle;
+    padding-top: 4px;
+    padding-left: 35px;
+    width: 13%;
+  }
+   .topnav {
+    display: none;
+  }
+  /* End of Navbar  */
+  /* Hero Section Mobile View */
+  .hero {
+    background-image: url(/images/landing-page/hero-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 1rem;
+    padding: 2rem;
+  }
+  .hero-wrapper {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .hero p {
+    font-size: 14px;
+    color: var(--darkgray);
+  }
+  .hero-p {
+    display: none;
+  }
+  .hero-btn {
     background-color: var(--yellow);
-    padding: 8px 12px;
-    border-radius: 5px;
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    width: 197px;
+    font-weight: 700;
+    margin-top: 1rem;
   }
-  
-  .navbar li {
-    display: inline-block;
-    padding: 8px 12px;
+  .hero-btn:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 2px solid var(--blue);
   }
-  
-  .content-div {
+  .how-img {
+    width: 80%;
+  }
+  /* Stats Box */
+  .stats-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .stats {
+    background-color: var(--verylightgray);
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 5px 7px 0 32px;
-      
+    width: 200px;
+    height: 60px;
+    padding: 10px 15px;
+    margin-top: -10px;
   }
-  
-  .middle-wrapper {
-      display: flex;
-      justify-content: space-between;
+  .numbers {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
   }
-  .middle-right-left {
-    width: 30%;
-  }  
-  .middle-right-right {
-      width: 30%;
+  .words {
+    font-size: 10px;
+    color: #7E7A8F;
+    padding: 0;
+    margin: 5px 0 0 0;
   }
-  div.content-logo {
-    background-color: #eef0f6;
-      height: auto;
-    width: 50%;
-    border-radius: 20px;
-    
+  /* End Stats Box */
+ 
+/* How To Section */
+.how {
+    margin: 1rem;
+    display: grid;
+    justify-content: center;
   }
+  .how-container {
+    text-align: center;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+  }
+  .how-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .directions {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .directions img {
+    width: 16px;
+    height: 16px;
+  }
+  .directions p {
+    padding: 0;
+    margin: 0;
+  }
+  /* Get Started Button */
+  .how-outside {
+    display: flex;
+    justify-content: center;
+  }
+  .how-btn {
+    width: 137px;
+    height: 34px;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 4px;
+  }
+  .how-btn:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+  }
+/* End How To */
   
   .logo-img {
     width: 50%;
@@ -161,99 +244,7 @@ body {
     font-size: 13px;
   }
 
-/******Top Section******/
-.top-container {
-    background-color: var(--white);
-    display: flex;
-    flex-direction: row;
-    
 
-}
- .top-left {
-    max-width: 35%;
-    padding: 55px 80px 40px 80px;
-    position: relative;
- }
-
- .top-container::before {
-     content: '';
-     position: absolute;
-     width: 30%;
-     height: 90vh;
-     opacity: .07;
-     background-image: url(images/landing-page/Ellipse\ 2.png);
-     background-repeat: no-repeat;
-     background-position: left;
-     background-size: cover;
-     margin-top: 10em;
- }
-
-  .top-header {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 31px;
-      color: var(--black);
-      text-align: left;
-  }
-
-  .top-subheading {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 18px;
-      color: var(--darkgray);
-      font-weight: 400;
-  }
-
-  .appointment-btn {
-      font-weight: 700;
-      background-color: var(--yellow);
-      color: var(--black);
-      border-radius: 6px;
-      border: none;
-      width: 200px;
-      height: 40px;
-      cursor: pointer;
-  }
-  .appointment-btn:hover {
-      background-color: var(--white);
-      color: var(--blue);
-      border: 2px solid var(--blue);
-
-  }
-
-.top-right img {
-  float: right; 
-  width: 200%;
-  margin-right: -350px;
-  background-image: url(images/landing-page/Ellipse\ 1.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  
-}
-
-.container-box {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: var(--verylightgray);
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    text-align: left;
-    width: 25%;
-    height: 40%; 
-    margin-top: -5px;
-    margin-left: 650px;
-}
-
-.numbers {
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-}
-
-.words {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-}
 
 /******Middle Section*******/
 .middle-container-1 {
@@ -469,53 +460,19 @@ body {
     display: flex;
     justify-content: center;
 }
-/****Testimonial Section****/
-.testimonial-section {
-    display: flexbox;
-
-    margin-left: 3.5em
+/* Testimonies */
+.testimony {
+    display: grid;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-
- .testimonial-header {
-     font-family: 'Open Sans', sans-serif;
-     font-size: 37px;
-    margin-top: 3em;
-   text-align: center;
-
- }
-
-.row {
-    display: flex;
-    align-items: baseline;
+.testimony h2 {
+    font-size: 30px;
 }
-
-.column {
-    flex: 50%;
-    padding: 10px;
+.testimonies img{
+    width: 80%;
 }
-
-.circles {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-   margin-left: 320px;
-    width: 40%;
-}
-
-.dot {
-    height: 25px;
-    width: 25px;
-    background-color: var(--blue);
-    border-radius: 50%;
-}
-
-.dot:hover {
-    background-color: var(--lightgray);
-    cursor: pointer;
-}
-
-
-
 /******Lower Section*****/
 
 .lower-section {
@@ -682,6 +639,7 @@ footer img {
 .follow {
     grid-area: follow;
 }
+
 .navbar-footer {
     margin-top: 3.5em;
 }
@@ -802,3 +760,114 @@ footer a:hover, footer li:hover {
         font-size: 16px;
     }
 }
+
+@media screen and (max-width: 857px) {
+    /*Navbar Mobile View */
+  .topnav {
+    overflow: hidden;
+    display: block;
+    position: relative;
+  }
+  .navbar {
+    display: none;
+  }
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  #myLinks a:hover {
+    color: var(--lightblue);
+  }
+  /* Style navigation menu links */
+  .topnav a {
+    color: #180126;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+  }
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #f9f9f9;;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+    /* Hero Desktop View */
+    .hero {
+        background-image: url(/images/landing-page/hero-desktop.png);
+        height: 50vh;
+        margin:0;
+    }
+    .hero-wrapper {
+        text-align: left;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3rem;
+    }
+    .hero-btn {
+        margin-top: 0;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .hero-p{
+        display: block;
+    }
+    .mobiletext {
+        display: none;
+    }
+    /* Stats Box Desktop View */
+    .stats-wrapper {
+        justify-content: right;
+        margin-right: 100px;
+    }
+    .stats {
+        width: 300px;
+        height: 80px;
+    }
+    .numbers {
+        font-size: 20px;
+    }
+    .words {
+        font-size: 12px;
+    }
+    /* How To Desktop View */
+    .how {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px;
+        margin-right: 3rem;
+        margin-left: 3rem;
+    }
+    .how-container {
+        margin-right: 100px;
+        text-align: left;
+    }
+    .how-container h2 {
+        font-size: 28px;
+    }
+    .how-container p {
+        width: 80%;
+    }
+    .column3 {
+        margin-top: 75px;
+    }
+    .directions {
+        width: 50%;
+    }
+    .how-btn {
+      height: 40px;
+      width: 197px;
+  }
+  /* Testimony */
+  .testimonies img {
+    margin-right: 20px;
+    width: auto;
+  }
+  }
