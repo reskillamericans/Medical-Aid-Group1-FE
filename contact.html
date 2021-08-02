@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="contact2.css" />
 
     <title>Contact Us</title>
     <link rel="icon" href="./images/logo/logoicon.svg" type="image/svg" />
@@ -92,39 +92,50 @@
     </div>
 
     <div class="form">
-      <div class="input-container">
-        <div class="form-div">
+      <!-- <div class="input-container"> -->
+      <div class="form-div">
+        <div>
           <label for="fname">First name</label>
-          <input type="text" id="fname" name="fname" /><br />
-          <label for="email">Email Address</label>
-          <input type="text" id="email" name="email" /><br />
+          <input type="text" id="fname" name="fname" />
         </div>
-        <div class="form-div">
-          <label for="lname">Last name</label>
-          <input type="text" id="lname" name="lname" /><br />
 
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" /><br />
+        <div>
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="lname" />
         </div>
       </div>
+      <div class="form-div-two">
+        <div>
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="email" />
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+        </div>
+      </div>
+      <!-- </div> -->
       <!-- DROPDOWN -->
-      <div class="dropdown">
+      <!-- <div class="dropdown"> -->
+      <div class="select-box">
         <select name="inquiry" id="inquiry">
           <option value="" disabled selected>Nature of Inquiry</option>
           <option value="feedback">Feedback</option>
           <option value="career">Careers</option>
           <option value="account">Support</option>
         </select>
+      </div>
+
+      <br />
+      <div class="bottom-form">
+        <label for="comment"> Message </label>
+        <textarea id="comment" name="comment"></textarea>
         <br />
-        <div class="bottom-form">
-          <label for="comment"> Message </label>
-          <textarea id="comment" name="comment"></textarea>
-          <br />
-          <input type="submit" class="submit-btn" value="Submit" />
-        </div>
+        <input type="submit" class="submit-btn" value="Submit" />
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
     </div>
-
     <script src="./contact.js"></script>
   </body>
   <!-- FOOTER -->
@@ -151,7 +162,6 @@
           /></a>
         </div>
       </div>
-
       <div class="link-list">
         <ul class="footer-links">
           <li class="quick-links">Quick Links</li>
@@ -164,6 +174,7 @@
           <li class="link"><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
+
       <div class="office-info">
         <p class="address-header">Office Address</p>
         <p class="address-info">
