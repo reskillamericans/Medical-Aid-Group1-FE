@@ -378,7 +378,14 @@ color: rgb(69 122 255);
        width: 706px;
       }
 
+<<<<<<< HEAD
     }
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> df21a95c64e205954a16736fab69aa06e4767ebb
+>>>>>>> 9d28b6a9cd9b6ece700279a17ee88179f1d5a1a4
     @media screen and (max-width: 768px) and (min-width: 427px) {
       .topnav {
         overflow: hidden;
@@ -560,6 +567,10 @@ align-items: center;
 
     .contact-div {
       align-items: flex-end;
+<<<<<<< HEAD
+=======
+
+>>>>>>> df21a95c64e205954a16736fab69aa06e4767ebb
       padding-top: 0;
       white-space: normal;
       justify-content: unset;
@@ -614,12 +625,20 @@ align-items: center;
     }
     
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> df21a95c64e205954a16736fab69aa06e4767ebb
     .input-container {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> df21a95c64e205954a16736fab69aa06e4767ebb
 
     textarea#comment {
         height: 200px;
