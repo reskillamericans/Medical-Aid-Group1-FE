@@ -786,6 +786,9 @@ footer a:hover, footer li:hover {
 .track-wrapper {
     margin-top: 0;
 }   
+.footer-info {
+    padding: 2rem;
+}
 }
 @media screen and (min-width: 768px) {
     /* Hero Desktop View */
