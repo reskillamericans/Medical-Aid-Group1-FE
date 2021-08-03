@@ -473,71 +473,38 @@ header {
 .testimonies img{
     width: 80%;
 }
-/******Lower Section*****/
-
-.lower-section {
-    background-color: var(--verylightgray);
-    width: 100%;
-    height: 100vh;
-    margin-top: 4em;
-    background-image: url(images/landing-page/Ellipse\ 7.png);
-    background-position: 16% 35%;
-    margin-top: 3em;
-    background-size: 25%;
+/* Track App Section */
+.track {
+    background-image: url(images/landing-page/track-app-mobile.svg);
     background-repeat: no-repeat;
-
+    background-position: center center;
+    background-size: cover;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.track img {
+    width: 100px;
+}
+.track-wrapper {
+    display: grid;
+    justify-content: center;
+    padding-top: 130px;
+    margin-left: 2rem;
 }
 
-
- .lower-left img {
-    transform: rotate(-15deg);
-    background-image: url(images/landing-page/imageedit_2_8918979501.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 65%;
-    margin-left: 5em;
+.track-wrapper h2 {
+    padding: 0;
+    margin: 0;
+}
+.track-wrapper p {
+    padding-top: 0;
+}
+.store-btns {
+    padding: 0;
+    margin: 0;
 }
 
-.lower-right {
-    margin-top: -350px;
-    background-image: url(images/landing-page/oie_20212938aXa34w6q.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 350px;
-    margin-right: 150px;     
-}
-
-.lower-header {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 31px;
-    font-weight: 700;
-    text-align: left;
-    margin-left: 550px;
-    width: 50%;
-}  
-
-.lower-subheading {
-    margin-left: 550px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--black);
-}
-
-.store-icons {
-    margin-left: 570px;
-    cursor: pointer;;
-}
-
-#apple {
-    margin: 1em;
-    width: 30%;
-}
-
-#google {
-    margin: 1em;
-    width: 30%;
-}
 
 /*****Subscription Section*****/
 .subscribe-header {
@@ -869,5 +836,23 @@ footer a:hover, footer li:hover {
   .testimonies img {
     margin-right: 20px;
     width: auto;
+  }
+  .track {
+    background-image: url(/images/landing-page/track-app-desktop.svg);
+    height: 550px;
+    width: 100vw;
+    margin:0;
+    position: relative;
+  }
+  .track p{
+      font-size: 21px;
+      width: 50%;
+  }
+  .track h2 {
+      font-size: 30px;
+  }
+  .track-wrapper {
+      position: absolute;
+      right: 20px;
   }
   }
