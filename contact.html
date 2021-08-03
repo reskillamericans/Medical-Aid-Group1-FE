@@ -8,7 +8,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact2.css" />
 
     <title>Contact Us</title>
     <link rel="icon" href="./images/logo/logoicon.svg" type="image/svg" />
@@ -42,6 +48,7 @@
           </ul>
         </div>
       </nav>
+      <!-- HAMBURGER MENU FOR MOBILE VIEW -->
       <div class="topnav">
         <a href="index.html" class="active">
           <img src="images/logo/logoicon.svg" />
@@ -66,6 +73,7 @@
 
     <h2>Get in touch!</h2>
 
+    <!-- CONTACT IMAGES SECTION -->
     <div class="contact-div">
       <figure class="map-div">
         <img
@@ -91,45 +99,114 @@
       </figure>
     </div>
 
+    <!-- FORM SECTION -->
     <div class="form">
-      <div class="input-container">
-        <div class="form-div">
+      <div class="form-div">
+        <div>
           <label for="fname">First name</label>
-          <input type="text" id="fname" name="fname" /><br />
-          <label for="email">Email Address</label>
-          <input type="text" id="email" name="email" /><br />
+          <input type="text" id="fname" name="fname" />
         </div>
-        <div class="form-div">
-          <label for="lname">Last name</label>
-          <input type="text" id="lname" name="lname" /><br />
 
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" /><br />
+        <div>
+          <label for="lname">Last name</label>
+          <input type="text" id="lname" name="lname" />
         </div>
       </div>
-      <!-- DROPDOWN -->
-      <div class="dropdown">
+      <div class="form-div-two">
+        <div>
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="email" />
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" />
+        </div>
+      </div>
+
+      <!-- DROPDOWN BOX -->
+      <div class="select-box">
         <select name="inquiry" id="inquiry">
           <option value="" disabled selected>Nature of Inquiry</option>
           <option value="feedback">Feedback</option>
           <option value="career">Careers</option>
           <option value="account">Support</option>
         </select>
+      </div>
+      <br />
+
+      <!-- MESSAGE AREA AND SUBMIT BUTTON -->
+      <div class="bottom-form">
+        <label for="comment"> Message </label>
+        <textarea id="comment" name="comment"></textarea>
         <br />
-        <div class="bottom-form">
-          <label for="comment"> Message </label>
-          <textarea id="comment" name="comment"></textarea>
-          <br />
-          <input type="submit" class="submit-btn" value="Submit" />
-        </div>
+        <input type="submit" class="submit-btn" value="Submit" />
       </div>
     </div>
 
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-info">
+        <div class="mission">
+          <a class="brand-footer" href="index.html">
+            <img
+              src="./images/logo/logoicon.svg"
+              class="nav-logo"
+              alt="logo image"
+            />
+            <span class="nav-logo-text">Century Health</span></a
+          >
+          <p class="bold">
+            We will always consider<br />
+            the wellbeing of our<br />
+            patient. You matter
+          </p>
+          <div class="follow">
+            <h4 class="follow-header">Follow us</h4>
+            <div class="social-icons">
+              <a href="www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+              <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+              <a href="www.google.com"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="link-list">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li class="link"><a href="about-us.html">About</a></li>
+            <li class="link"><a href="#">Services</a></li>
+            <li class="link"><a href="faq.html">FAQ</a></li>
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+            <li class="link">
+              <a href="Doctor/doctor-dash.html">Find a Doctor</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="office-info">
+          <h4 class="office-header">Office Address</h4>
+          <p class="address-info">
+            15668, Boluevard<br />
+            Avenue Oxford
+          </p>
+
+          <h4 class="email-header">Email</h4>
+          <p class="email-p-one">centuryhealth@hotmail.com</p>
+          <p class="email-p-two">centuryhealth@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &copy 2021</p>
+      </div>
+    </footer>
     <script src="./contact.js"></script>
   </body>
   <!-- FOOTER -->
-  <footer>
+  <!-- <footer>
+
     <div class="footer-info">
+
       <div class="navbar-footer">
         <img src="images/logo/logoicon.svg" class="logo-img" alt="logo image" />
         <span class="content-span">Century Health</span>
@@ -151,7 +228,6 @@
           /></a>
         </div>
       </div>
-
       <div class="link-list">
         <ul class="footer-links">
           <li class="quick-links">Quick Links</li>
@@ -164,6 +240,7 @@
           <li class="link"><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
+
       <div class="office-info">
         <p class="address-header">Office Address</p>
         <p class="address-info">
@@ -180,5 +257,5 @@
   </footer>
   <div class="copyright">
     <p>Copyright &copy 2021</p>
-  </div>
+  </div> -->
 </html>

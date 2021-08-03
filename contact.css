@@ -128,13 +128,21 @@ ul.login {
      text-align-last: start;
    } 
 
-   input, select#inquiry{
+   input{
     width: 300px;
     height: 39px;
     border: 0.5px solid gray;
     border-radius: 5px;
    }
-
+  .select-box{
+    margin:1em 0em
+  }
+#inquiry{
+  width:709px;
+  height: 39px;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+}
    label, input {
      display: block;
    }
@@ -169,6 +177,11 @@ ul.login {
   .form {
     width: 90%;
     margin: auto;
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    align-items: center;
     }
 
     .input-container {
@@ -178,17 +191,23 @@ ul.login {
       flex-direction: row;
      }
 
-    .form-div{
-    display: inline-block;
+    .form-div, .form-div-two{
+    display:flex;
+  
    }
 
+   .form-div div, .form-div-two div{
+  
+    margin:1em 0em;
+   }
    .dropdown{
     display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
+    flex-direction: column;
+    align-items: stretch;
     margin-top: 13px;
     padding-bottom: 30px;
+    width: 748px;
+    padding-left: 292px;
    }
 
    .bottom-form {
@@ -203,6 +222,7 @@ ul.login {
     resize: none;
     height: 300px;
     width: 740px;
+    margin:1em 0em;
     }
 
    .submit-btn{
@@ -221,8 +241,9 @@ ul.login {
    }
 
    footer {
-    margin-top: 2em;   
-        }
+    margin-top: 2em; 
+    background-color: rgb(238,240,246);
+    }
 
    p {
     color: rgb(164,162,179);
@@ -254,9 +275,8 @@ color: rgb(69 122 255);
 .footer-info {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: baseline;
-    background-color: rgb(238,240,246);
     padding-bottom: 20px;
     padding-top: 12px;
    }
@@ -349,11 +369,23 @@ color: rgb(69 122 255);
     .copyright p {
       margin-top: 0px;
     }
+    
+    @media screen and (max-width: 1024px) and (min-width: 769px) {
+      .dropdown {
+        padding-left: 107px;
+      }
+      textarea#comment {
+       width: 706px;
+      }
 
+<<<<<<< HEAD
+    }
+=======
 <<<<<<< HEAD
 =======
 
 >>>>>>> df21a95c64e205954a16736fab69aa06e4767ebb
+>>>>>>> 9d28b6a9cd9b6ece700279a17ee88179f1d5a1a4
     @media screen and (max-width: 768px) and (min-width: 427px) {
       .topnav {
         overflow: hidden;
@@ -416,37 +448,52 @@ color: rgb(69 122 255);
         margin-right: 54px;
        }
 
+       .contact-div {
+        /* justify-content: end; */
+        padding-bottom: 45px;
+       }
+
        .map-div, .phone-div, .email-div {
-        margin-right: 15px;
-        margin-left: 15px;  
+        margin-right: 10px;
+        margin-left: 10px;
         }
 
         .dropdown {
           display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
+        align-items: stretch;
+        padding-left: 233px;
+        width: 0;
         }
 
+        /* .form {
+          width: 108%;
+        } */
+
         textarea#comment {
-          width: 667px;
+          width: 300px;
+          height: 180px;
         }
 
         .input-container {
           margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-content: center;
         }
 
         input, select#inquiry {
           margin-right: 56px;
         }
 
+        .footer-info {
+          justify-content: space-evenly;
+        }
+
     }
      
-  @media screen and (max-width: 426px) and (min-width: 320px) {
+  @media screen and (max-width: 426px) and (min-width: 300px) {
     .topnav {
       overflow: hidden;
       display: block;
@@ -541,8 +588,8 @@ align-items: center;
     }
 
     .phone-div {
-      padding-left: 20px;
-        padding-right: 20px;
+      padding-left: 0px;
+        padding-right: 0px;
     }
     
 
@@ -560,10 +607,21 @@ align-items: center;
 
     .form, .dropdown {
       width: 100%;
-      text-align: center; 
-    }
+      }
+
+    .dropdown {
+      padding-left: 0;
+      display: flex;
+      align-items: center;
+    }  
+
     input, select#inquiry {
       margin-right: 0x;
+    }
+
+    select#inquiry {
+      width: 305px;
+      /* margin-left: 8px; */
     }
     
 
@@ -583,8 +641,8 @@ align-items: center;
 >>>>>>> df21a95c64e205954a16736fab69aa06e4767ebb
 
     textarea#comment {
-      height: 215px;
-      width: 390px;
+        height: 200px;
+        width: 318px;
       }
 
       #fname, #email {
@@ -592,13 +650,17 @@ align-items: center;
        }
 
        .submit-btn {
-       margin-left: 100px;
+       margin-left: 65px;
        }
+
+       /* footer {
+        width: max-content;
+       } */
 
        .footer-info {
          display: flex;
          flex-direction: column;
-         padding: 0;
+         padding: 10px;
          margin: 0;
          }
 
@@ -610,11 +672,17 @@ align-items: center;
            font-size: 18px;
          }
 
-       .footer-links {
-        margin-left: 276px;
+       /* .footer-links {
+        padding-left: 219px;
         white-space: nowrap;
-        margin-top: -149px;
+        margin-top: -152px;
 
+        } */
+
+        .footer-links {
+          padding-left: 230px;
+          white-space: nowrap;
+          margin-top: -183px;
         }
 
        .office-info {
@@ -638,7 +706,7 @@ align-items: center;
        }
 
        .follow-us {
-        font-size: 17px;
+        font-size: 18px;
         margin-bottom: 5px;
         margin-top: 10px;
         }
@@ -667,3 +735,20 @@ align-items: center;
        }
 
 }
+
+@media screen and (max-width: 320px) and (min-width: 200px) {
+
+  .footer-links {
+    padding-left: 180px;
+   }
+
+   textarea#comment {
+    height: 185px;
+    width: 295px;
+   }
+
+   .footer-info {
+    padding: 3px
+   }
+
+   }
