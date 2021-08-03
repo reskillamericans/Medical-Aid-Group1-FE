@@ -480,29 +480,32 @@ header {
     background-position: center center;
     background-size: cover;
     font-size: 12px;
-    margin: 0;
     padding: 0;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
-.track img {
+.track-wrapper {
+    margin-top: auto;
+}
+.store-btns img {
     width: 100px;
 }
 .track-wrapper {
     display: grid;
     justify-content: center;
-    padding-top: 130px;
     margin-left: 2rem;
 }
 
-.track-wrapper h2 {
+.track-wrapper h2, .track-wrapper p {
     padding: 0;
-    margin: 0;
+    margin: 10px;
 }
-.track-wrapper p {
-    padding-top: 0;
-}
+
 .store-btns {
     padding: 0;
-    margin: 0;
+    margin: 10px;
 }
 
 
