@@ -257,21 +257,27 @@ header {
     height: 100px;
     width: auto;
 }
-.dr-btn {
-    height: 40px;
-    width: 100px;
-    cursor: pointer;
-    font-size: 12px;
-    border-radius: 4px;
-    border: 1px solid var(--lightgray);
-    color: var(--darkgray);
+.doctors-btn {
+    display: grid;
+    justify-content: center;
 }
-.dr-btn:hover {
+.view-doctors-btn:hover {
     background-color: var(--white);
     border: 1px solid var(--blue);
     color: var(--blue);
 }
- 
+.view-doctors-btn {
+    background-color: var(--yellow);
+    color: var(--black);
+    border-radius: 4px;
+    border: none;
+    height: 40px;
+    width: 200px;
+    margin-top: 5em;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
 /* Testimonies */
 .testimony {
     display: grid;
@@ -312,18 +318,14 @@ header {
     justify-content: center;
     margin-left: 2rem;
 }
-
 .track-wrapper h2, .track-wrapper p {
     padding: 0;
     margin: 10px;
 }
-
 .store-btns {
     padding: 0;
     margin: 10px;
 }
-
-
 /*****Subscription Section*****/
 .subscribe-header {
     display: grid;
@@ -332,17 +334,14 @@ header {
     text-align: center;
     margin: 1rem;
 }
-
 .subscription-head {
     font-size: 30px;
     font-weight: 700;
 }
-
 .subscription-subheader {
     font-size: 21px;
     font-weight: 400;
 }
-
 .email-box {
     border: 1px solid var(--lightgray);
     background-color: var(--white);
@@ -350,7 +349,6 @@ header {
     width: 235px;
     height: 40px;
 }
-
 #subscribe-btn {
     background-color: var(--yellow);
     border-radius: 6px;
@@ -362,13 +360,11 @@ header {
     height: 45px;
     margin-left: -77px;
 }
-
 #subscribe-btn:hover {
     background-color: var(--white);
     color: var(--blue);
     border: 2px solid var(--blue);
 }
-
 /*****Footer****/
 .brand-footer img {
     vertical-align: top;
@@ -459,56 +455,6 @@ footer a:hover, footer li:hover {
    
 /************ Styling for Desktop View ***********/
 @media screen and (min-width: 768px) {
-    /* doctor for desktop */
-    .doctors h2 {
-        font-size: 30px;
-    }
-    .dr-about p {
-        font-size: 20px;
-        margin: 2rem 20rem;
-    }
-    .hidden {
-        display: none;
-    }
-    .dr-card {
-        width: 200px;
-        height: auto;
-        padding: 2rem;
-    }
-    .dr-card img {
-        height: 200px;
-        width: auto;
-    }
-    
-   .dr-container {
-
-       display: grid;
-       grid-template-areas: 
-        "dr1 dr2 dr3"
-        "dr4 dr4 dr5";
-        grid-gap: 40px;
-        width: 80%;
-        justify-content: center;
-        margin-left: 135px;
-   }
-   .dr1 {
-       grid-area: dr1;
-   }
-   .dr2 {
-       grid-area: dr2;
-   }
-   .dr3 {
-       grid-area: dr3;
-   }
-   .dr4 {
-       grid-area: dr4;
-       display: grid;
-       margin-left: 200px;  
-   }
-   .dr5 {
-       grid-area: dr5;
-       margin-left: -200px;
-   }
     
     /* subscribe for desktop */
     form {
@@ -677,8 +623,60 @@ footer a:hover, footer li:hover {
     width: auto;
   }
   }
-  /* Desktop view for Track */
+  /* Styling for Large Screens 1000px and up */
   @media screen and (min-width: 1000px){
+      /* doctor for desktop */
+    .doctors h2 {
+        font-size: 30px;
+    }
+    .dr-about p {
+        font-size: 20px;
+        margin: 2rem 20rem;
+    }
+    .hidden {
+        display: none;
+    }
+    .dr-card {
+        width: 200px;
+        height: auto;
+        padding: 2rem;
+    }
+    .dr-card img {
+        height: 200px;
+        width: auto;
+    }
+    
+   .dr-container {
+
+       display: grid;
+       grid-template-areas: 
+        "dr1 dr2 dr3"
+        "dr4 dr4 dr5";
+        grid-gap: 40px;
+        width: 80%;
+        justify-content: center;
+        margin-left: 135px;
+   }
+   .dr1 {
+       grid-area: dr1;
+   }
+   .dr2 {
+       grid-area: dr2;
+   }
+   .dr3 {
+       grid-area: dr3;
+   }
+   .dr4 {
+       grid-area: dr4;
+       display: grid;
+       margin-left: 200px;  
+   }
+   .dr5 {
+       grid-area: dr5;
+       margin-left: -200px;
+   }
+  
+   /* Track App */
     .phone {
         width: 60%;
         display: flex;
