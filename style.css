@@ -278,6 +278,20 @@ header {
     font-weight: 700;
     cursor: pointer;
 }
+button.dr-btn {
+    height: 40px;
+width: 100px;
+cursor: pointer;
+font-size: 12px;
+border-radius: 4px;
+border: 1px solid var(--lightgray);
+color: var(--darkgray);
+}
+.dr-btn:hover {
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    color: var(--blue);
+}
 /* Testimonies */
 .testimony {
     display: grid;
