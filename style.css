@@ -489,7 +489,7 @@ header {
 .phone {
     display: none;
 }
-.track-wrapper {
+.track-outer {
     margin-top: auto;
 }
 .store-btns img {
@@ -769,6 +769,24 @@ footer a:hover, footer li:hover {
     top: 0;
   }
 }
+@media  screen and (min-width: 500px) {
+      /* Ipad view for Track */
+ .track {
+    background-image: url(/images/landing-page/track-app-desktop.svg);
+}
+.phone {
+    display: block;
+    width: 90%;
+    margin-left: 70px;
+}
+.track-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.track-wrapper {
+    margin-top: 0;
+}   
+}
 @media screen and (min-width: 768px) {
     /* Hero Desktop View */
     .hero {
@@ -844,6 +862,7 @@ footer a:hover, footer li:hover {
     width: auto;
   }
   }
+  /* Desktop view for Track */
   @media screen and (min-width: 1000px){
     .phone {
         width: 80%;
