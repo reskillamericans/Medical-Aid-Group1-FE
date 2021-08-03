@@ -77,6 +77,14 @@ p {
     border: 1px solid var(--tertiaryText);
     align-items: center;
 }
+
+.border-style{
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid var(--tertiaryText);
+    align-items: center;
+    padding-bottom: 15px;
+}
 /* This controls the layout of the page and stacks everything for mobile view (mobile first)  */
 .wrapper {
   display: grid;
@@ -158,19 +166,6 @@ button.hamburger {
     padding: 2rem;
 }
 
-.location {
-    display: flex;
-    flex-direction: column;
-    margin: 0 1rem 3rem 1rem;
-}
-
-.location-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
 .rating-review-info {
     text-align: center;
 }
@@ -191,11 +186,208 @@ button.hamburger {
     font-size: 60px;
     margin: 0;
 }
-.location-address {
+
+.appointment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.date,
+.time,
+.reason-wrapper {
+    margin-bottom: 30px;
+}
+
+/*Calender - code adapted from  https://codepen.io/Markshall/pen/ExPxpYX */
+
+.calendar {
+    --side-padding: 30px;
+    --border-radius: 34px;
+    --accent-br: 50px;
+    width: 300px;
+}
+.calendar select:hover {
+    background-color: #f3f4f6;
+    color: var(--primaryColor);
+}
+
+.calendar__opts {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.calendar__opts {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    padding: 15px var(--side-padding);
+}
+
+.calendar__days {
+    background-color: #fff;
+    color: #19181A;
+    padding: 0 var(--side-padding) 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar__days > div {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    color: #19181A;
+;
+}
+.calendar__dates {
+    padding: 10px var(--side-padding);
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar__date {
+    --height: calc(400px / 6 - var(--side-padding));
+    text-align: center;
+    height: var(--height);
+    line-height: var(--height);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+.calendar__date:not(.calendar__date--grey) {
+    border-radius: 50px;
+    background-color: #E5E5E5;
+}
+.available-date {
+    border: 2px solid var(--primaryColor);
+}
+.calendar__date:not(.available-date) {
+    cursor: not-allowed;
+}
+.calendar__date::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    height: calc(var(--height) * 0.9);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: var(--accent-br);
+    transition: background-color 0.3s ease;
+}
+.calendar__date:not(.calendar__date--selected):not(.calendar__date--grey):hover::before {
+    background-color: #ededed;
+}
+.calendar__date--grey {
+    color: #c5c8ca;
+    cursor: not-allowed;
+}
+/*.calendar__date--selected {*/
+/*    color: #ff374b;*/
+/*}*/
+/*.calendar__date--selected::before {*/
+/*    background-color: #ffeaec;*/
+/*    border-radius: 0px;*/
+/*}*/
+/*.calendar__date--first-date::before {*/
+/*    border-top-left-radius: var(--accent-br);*/
+/*    border-bottom-left-radius: var(--accent-br);*/
+/*}*/
+/*.calendar__date--last-date::before {*/
+/*    border-top-right-radius: var(--accent-br);*/
+/*    border-bottom-right-radius: var(--accent-br);*/
+/*}*/
+/*.calendar__date--range-start::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    bottom: 3px;*/
+/*    border-radius: 24px;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*    background-color: #ff374b;*/
+/*    width: 10px;*/
+/*    height: 4px;*/
+/*}*/
+/*.calendar__date--range-end {*/
+/*    color: #fff;*/
+/*}*/
+/*.calendar__date--range-end::before {*/
+/*    box-shadow: 0 15px 20px -3px rgba(255, 55, 75, 0.35);*/
+/*    background-color: #ff374b;*/
+/*    border-radius: var(--accent-br);*/
+/*    z-index: 1;*/
+/*}*/
+/*.calendar__date--range-end::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    height: calc(var(--height) * 0.9);*/
+/*    background-color: #ffeaec;*/
+/*    width: 50px;*/
+/*    top: 50%;*/
+/*    right: 50%;*/
+/*    transform: translateY(-50%);*/
+/*}*/
+.calendar__date span {
+    position: relative;
+    z-index: 1;
+}
+
+select {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 15px;
+    outline: none;
+    border: 0;
+    padding: 15px 20px;
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*appearance: none;*/
+}
+
+/*Available Times*/
+.available-times-wrapper {
+    padding: 13px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
+
+.available-times p {
+    background-color: #E5E5E5;
+    margin: 5px 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.available-times p:not(.available-time) {
+    cursor: not-allowed;
+}
+
+.available-time {
+    border: 3px solid var(--primaryColor);
+}
+
+/*Appt Reason*/
+.reason-wrapper p {
+    margin-top: 0
+}
+.reason-wrapper h2 {
+    margin-bottom: 0;
+}
+
+textarea {
+    width: 300px;
+    margin-bottom: 20px;
+}
+.reason {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width:900px) {
     .dr-info h1 {
         font-size: 30px;
@@ -228,15 +420,6 @@ button.hamburger {
         margin-right: 30px ;
     }
 }
-
-@media (max-width: 1399px){
-    .location img {
-        width:100%;
-        max-width:590px;
-        align-self: center;
-    }
-}
-
 /************************Styling for Laptops and Small Screens 769px and up*****************************/
 @media only screen and (min-width: 769px) {
  
@@ -322,22 +505,14 @@ button.hamburger {
     .dr-info h1 {
         margin-bottom: 10px;
     }
-    .location {
+    .appointment {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-
+        justify-content: space-around;
     }
-    .location-address {
+    .reason {
         display: flex;
         flex-direction: column;
-        padding: 0 13rem 0 1rem;
     }
-    .address p{
-        margin-bottom: 0;
-    }
-
-
 
 }

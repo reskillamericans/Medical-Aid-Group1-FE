@@ -156,6 +156,7 @@ white-space: nowrap ;
 
 input[type="fullname"],
 input[type="email"],
+input[type="license"],
 input[type="password"] {
   width: 320px;
   padding: 8px 32px;
@@ -237,19 +238,18 @@ h6{
   display: none;
 }
 
-
 .tab-switch {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .tab-wrapper ul {
-  margin-bottom: 0px;
-  margin-top: 0px;
-  padding-left: 0px;
-  margin-right: 103px;
-  border: 1.5px solid #c3c7d2;
-  border-radius: 7px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+    margin-right: 103px;
+    border: 1.5px solid #c3c7d2;
+    border-radius: 7px;
 }
 
 .tab-wrapper li {
@@ -257,103 +257,93 @@ display: flex;
 }
 
 .patient-tab {
-  background-color: #c3c7d2;
-  border-bottom: 1.5px solid #c3c7d2;
+    border-bottom: 1.5px solid #c3c7d2;
 }
 
+.doc-tab {
+    background-color: #c3c7d2;
+}
 
 @media screen and (max-width: 1024px) and (min-width: 768px){
-  .tab-wrapper ul {
-      margin-right: 36px;
-  }
+    .tab-wrapper ul {
+        margin-right: 36px;
+    }
+
+    .logo-img {
+      padding-left: 0;
+    }
 }
 
 @media screen and (max-width: 991px) and (min-width: 751px){
-  .topnav{
-  overflow: hidden;
-  display: block;
-  position: relative;
-  }
-  .content-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  }
-  div .inner{
-  width:100%;
-  text-align-last: center;
-  }
-  .topnav {
-    display: none;
-  }
-   p {
-    text-align: center;
-   }
-  .content-logo {
-    padding-right: 77px;
-  }
-  .content-img {
-    padding-top: 65px;
-  }
-  .topnav {
-    overflow: hidden;
-    display: block;
-    position: relative;
-  }
-  .content-div {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  .navbar {
-    display: none;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-  }
-
-   
-  /* Style navigation menu links */
-  .topnav a {
-    color: #180126;
-    /* vertical-align: middle; */
-    padding: 20px 16px;
-    text-decoration: none;
-    font-size: 15px;
-    display: flex;
-align-items: center;
-    text-align: center;
+    .topnav {
+        overflow: hidden;
+        display: block;
+        position: relative;
+      }
     
-     }
+      /* h6 {
+        padding: 0;
+      }  */
 
-     .topnav a:hover {
-      color: rgb(164,162,179);
-     }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: #f9f9f9;;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  div.content-logo {
-    display: none;
-  }
+      #deleted-br {
+        display: none;
+      }
+    
+      .content-div {
+        margin-top: 0;
+        padding-top: 0;
+      }
+    
+      .navbar {
+        display: none;
+      }
+      
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+        display: none;
+      }
+    
+       
+      /* Style navigation menu links */
+      .topnav a {
+        color: #180126;
+        /* vertical-align: middle; */
+        padding: 20px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        display: flex;
+    align-items: center;
+        text-align: center;
+        
+         }
+    
+         .topnav a:hover {
+          color: rgb(164,162,179);
+         }
+      
+      /* Style the hamburger menu */
+      .topnav a.icon {
+        background: #f9f9f9;;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      
+      div.content-logo {
+        display: none;
+      }
 
-  .tab-wrapper ul {
-    margin-right: 0;
-    border: 1.5px solid #c3c7d2;
-    border-radius: 7px;
-    padding-right: 0;
-}
-
-
-
+    .tab-wrapper ul {
+        margin-right: 0;
+        border: 1.5px solid #c3c7d2;
+        border-radius: 7px;
+        padding-right: 0;
+    }
+    .tab-wrapper li {
+    border-bottom: 1.5px solid #c3c7d2;
+    display: flex;
+    }
   }
 
 
@@ -420,6 +410,13 @@ align-items: center;
   .form {
     text-align: center;  }
 
+    input[type="fullname"],
+input[type="email"],
+input[type="license"],
+input[type="password"] {
+  width: 310px;
+}
+
     .social-div{
       display: flex;
       justify-content: center;
@@ -427,11 +424,19 @@ align-items: center;
 
     .checkbox {
       display: block;
-      
-    }
+      }
+
+      input[type="checkbox"] {
+        width: 11px;
+        vertical-align: text-top;
+      }
 
     label.checkbox {
       white-space: nowrap ;
+    }
+
+    .signup-btn {
+      width: 305px;
     }
  
  .login-btn {
@@ -461,10 +466,13 @@ p {
  }
 
  .tab-wrapper ul {
-  margin-right: 0;
-  border: 1.5px solid #c3c7d2;
-  border-radius: 7px;
+    margin-right: 0;
+    border: 1.5px solid #c3c7d2;
+    border-radius: 7px;
 }
-
+.tab-wrapper li {
+border-bottom: 1.5px solid #c3c7d2;
+display: flex;
+}
 
 }
