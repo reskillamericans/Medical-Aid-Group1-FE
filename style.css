@@ -194,143 +194,8 @@ header {
     border: 2px solid var(--blue);
   }
 /* End How To */
-  
-  .logo-img {
-    width: 50%;
-    padding: 0em 0em 0em 6.5em;
-  }
-  
-  div.inner {
-    padding: 2em 2em 2em;
-  }
-  
-  .content-img {
-    width: 73%;
-    padding: 1em 0 0 6.5em;
-    
-  }
-  
-  .middle-header h2 {
-    text-align: center;
-      font-weight: 400;
-    line-height: 0px;
-    font-size: 18px;
-    
-  }
-  
-  
-  .login-btn {
-    background: #f3ea12;
-    text-align: center;
-    border-radius: 2.5px;
-    border-style: none;
-    font-weight: bold;
-    width: 320px;
-     margin-top: 15px;
-    height: 40px;
-  }
-  
-  .login-btn:hover, button:hover{
-    background: #eef0f6;
-  }
-  
-  .checkbox {
-    padding-right: 5.7em;
-     
-  }
-  
-  .password a {
-    font-size: smaller;
-    font-size: 13px;
-  }
-
-
-
-/******Middle Section*******/
-.middle-container-1 {
-    margin: 5em;
-}
-
-.middle-header {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 31px;
-   
-}
-
-.middle-subhead {
-    font-size: 20px;
-    color: var(--darkgray);
-    width: 100%;
-}
-
-.middle-right-right {
-    margin-top: 100px;
-}
-
-
-.number-1-icon {
-   text-align: left; 
-   font-family: 'Open Sans', sans-serif;
-   font-size: 16px;
-   color: var(--darkgray);
-}
-
-.description-1 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: -30px;
-    margin-left: 2em;
-    
-}
-
-.number-2-icon {
-    text-align: left; 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    color: var(--darkgray);
- }
  
- .description-2 {
-     font-family: 'Open Sans', sans-serif;
-     font-size: 18px;
-     font-weight: 400;
-     margin-top: -30px;
-     margin-left: 2em;  
- }
-
- .number-3-icon {
-    text-align: left; 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    color: var(--darkgray);
- }
- 
- .description-3 {
-     font-family: 'Open Sans', sans-serif;
-     font-size: 18px;
-     font-weight: 400;
-     margin-top: -5px;
-     margin-left: 2em;
-     
- }
-
- .number-4-icon {
-    text-align: left; 
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    color: var(--darkgray);
- }
- 
- .description-4 {
-     font-family: 'Open Sans', sans-serif;
-     font-size: 18px;
-     font-weight: 400;
-     margin-top: -5px;
-     margin-left: 2em;
-     
- }
-
+  /* Get Started  */
  .get-started-btn {
      background-color: var(--yellow);
      color: var(--black);
@@ -406,60 +271,7 @@ header {
     border: 1px solid var(--blue);
     color: var(--blue);
 }
- /**Doctor Section**/
- .doctors-section {
-     display: block;
-     font-weight: 700;
-     font-family: 'Open Sans', sans-serif;
-     margin-top: 10em;
- }
-
- .doctors-header {
-     text-align: center;
- }
-
- .doctors-subheading {
-     color: var(--darkgray);
-     font-weight: 400;
-     text-align: left;
-     display: block;
-     width: 45%;
-     margin-left: 310px;
- }
-
- .doctors-pictures {
-     display: grid;
-     grid-template-columns: repeat(3, 35%);
-     grid-template-rows: (2, 100vw);
- }
-
- .doctor-4, .doctor-5 img {
-     margin-top: 5em;
-     margin-left: 12em;
- }
-
- .view-doctors-btn {
-    background-color: var(--yellow);
-    color: var(--black);
-    border-radius: 4px;
-    border: none;
-    height: 40px;
-    width: 200px;
-    margin-top: 5em;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
- }
-
- .view-doctors-btn:hover {
-     background-color: var(--white);
-     border: 2px solid var(--blue);
-     color: var(--blue);
- }
-.doctors-btn {
-    display: flex;
-    justify-content: center;
-}
+ 
 /* Testimonies */
 .testimony {
     display: grid;
@@ -868,10 +680,10 @@ footer a:hover, footer li:hover {
   /* Desktop view for Track */
   @media screen and (min-width: 1000px){
     .phone {
-        width: 80%;
+        width: 60%;
         display: flex;
         align-items: flex-start;
-        margin-left: 150px;
+        margin-left: 250px;
     }
     .track {
       background-image: url(/images/landing-page/track-app-desktop.svg);
