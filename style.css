@@ -843,37 +843,38 @@ footer a:hover, footer li:hover {
     margin-right: 20px;
     width: auto;
   }
-  .phone {
-      height: 70%;
-      display: block;
   }
-  .track {
-    background-image: url(/images/landing-page/track-app-desktop.svg);
-    width: 100vw;  
-
-    padding-bottom: 10rem; 
-  }
-  .track-outer {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-  }
-
- .track-wrapper {
-    margin: 0;
-    
- } 
- 
- 
-  .track p{
-      font-size: 21px;
-      width: 50%;
-  }
-  .track h2 {
-      font-size: 30px;
-      width: 50%;
-  }
-
- 
+  @media screen and (min-width: 1000px){
+    .phone {
+        width: 80%;
+        display: flex;
+        align-items: flex-start;
+        margin-left: 150px;
+    }
+    .track {
+      background-image: url(/images/landing-page/track-app-desktop.svg);
+      width: 100vw;  
+      height: 550px;
+    }
+    .track-outer {
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+    }
+  
+   .track-wrapper {
+      margin: 0;
+      
+   } 
+   
+   
+    .track p{
+        font-size: 21px;
+        width: 50%;
+    }
+    .track h2 {
+        font-size: 30px;
+        width: 50%;
+    }
   }
