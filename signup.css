@@ -240,20 +240,17 @@ h6{
 
 .tab-switch {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .tab-wrapper ul {
   margin-bottom: 0px;
-  margin-top: 0px;
   padding-left: 0px;
-  margin-right: 103px;
+  }
+
+.patient-tab, .doc-tab {
   border: 1.5px solid #c3c7d2;
   border-radius: 7px;
-}
-
-.tab-wrapper li {
-display: flex;
 }
 
 .patient-tab {
@@ -347,8 +344,6 @@ align-items: center;
 
   .tab-wrapper ul {
     margin-right: 0;
-    border: 1.5px solid #c3c7d2;
-    border-radius: 7px;
     padding-right: 0;
 }
 
@@ -459,12 +454,5 @@ h2 {
 p {
   text-align: center;
  }
-
- .tab-wrapper ul {
-  margin-right: 0;
-  border: 1.5px solid #c3c7d2;
-  border-radius: 7px;
-}
-
 
 }
