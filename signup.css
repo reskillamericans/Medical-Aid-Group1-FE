@@ -248,7 +248,7 @@ h6{
   padding-left: 0px;
   }
 
-.patient-tab, .doc-tab {
+/* .patient-tab, .doc-tab {
   border: 1.5px solid #c3c7d2;
   border-radius: 7px;
 }
@@ -256,7 +256,7 @@ h6{
 .patient-tab {
   background-color: #c3c7d2;
   border-bottom: 1.5px solid #c3c7d2;
-}
+} */
 
 
 @media screen and (max-width: 1024px) and (min-width: 768px){
