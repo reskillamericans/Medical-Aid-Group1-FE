@@ -249,19 +249,19 @@ h6{
   padding-left: 0px;
   }
 
-.patient-tab, .doc-tab {
+/* .patient-tab, .doc-tab {
   border: 1.5px solid #c3c7d2;
   border-radius: 7px;
-}
+} */
 
 
-.patient-tab {
+/* .patient-tab {
     border-bottom: 1.5px solid #c3c7d2;
-}
+} */
 
-.doc-tab {
+/* .doc-tab {
     background-color: #c3c7d2;
-}
+} */
 
 @media screen and (max-width: 1024px) and (min-width: 768px){
      .logo-img {
