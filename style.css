@@ -562,17 +562,6 @@ footer a:hover, footer li:hover {
 .footer-info {
     padding: 2rem;
 }
-/* iPad view for Dr */
-.dr-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-evenly;
-    grid-gap: 4rem;
-}
-.doctors-btn {
-    margin-top: -25px;
-    margin-bottom:25px;
-}
 }
 @media screen and (min-width: 768px) {
     /* Hero Desktop View */
@@ -648,6 +637,17 @@ footer a:hover, footer li:hover {
     margin-right: 20px;
     width: auto;
   }
+  /* iPad view for Dr */
+.dr-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    grid-gap: 4rem;
+}
+.doctors-btn {
+    margin-top: -25px;
+    margin-bottom:25px;
+}
   }
   /* Styling for Large Screens 1000px and up */
   @media screen and (min-width: 1000px){
