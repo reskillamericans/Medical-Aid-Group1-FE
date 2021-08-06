@@ -56,8 +56,8 @@
 <div class="tab-switch">
   <div class="tab-wrapper">
   <ul>
-      <li class ="patient-tab"><a>Patient</a></li>
-      <li class ="doc-tab"><a href="./Doctor/doctor-signup.html">Doctor</a></li>
+      <li class ="patient-tab"><a class="patient-link">Patient</a></li>
+      <li class ="doc-tab"><a class="doc-link" href="./Doctor/doctor-signup.html">Doctor</a></li>
   </ul>
 </div>
 </div>
@@ -79,12 +79,19 @@
                 <h1>Hello!</h1>
                 <h3>Let's Help You Create An Account</h3>
               </div>
-            <label for="fullname"></label>
+            <label for="firstname"></label>
             <input
-              type="fullname"
-              id="fullname"
-              name="fullname"
-              placeholder=" Full Name*"
+              type="firstname"
+              id="firstname"
+              name="firstname"
+              placeholder="First Name*"
+            /><br />
+            <label for="lastname"></label>
+            <input
+              type="lastname"
+              id="lastname"
+              name="lastname"
+              placeholder="Last Name*"
             /><br />
             <label for="email"></label>
             <input
