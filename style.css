@@ -242,8 +242,9 @@ header {
 .dr-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-evenly;
-    grid-gap: 20px;
+    justify-content: space-between;
+    grid-gap: 30px;
+    margin: auto;
 }
 
 .dr-card {
@@ -561,6 +562,17 @@ footer a:hover, footer li:hover {
 .footer-info {
     padding: 2rem;
 }
+/* iPad view for Dr */
+.dr-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    grid-gap: 4rem;
+}
+.doctors-btn {
+    margin-top: -25px;
+    margin-bottom:25px;
+}
 }
 @media screen and (min-width: 768px) {
     /* Hero Desktop View */
@@ -657,37 +669,6 @@ footer a:hover, footer li:hover {
         height: 200px;
         width: auto;
     }
-    
-   .dr-container {
-
-       display: grid;
-       grid-template-areas: 
-        "dr1 dr2 dr3"
-        "dr4 dr4 dr5";
-        grid-gap: 40px;
-        width: 80%;
-        justify-content: center;
-        margin-left: 135px;
-   }
-   .dr1 {
-       grid-area: dr1;
-   }
-   .dr2 {
-       grid-area: dr2;
-   }
-   .dr3 {
-       grid-area: dr3;
-   }
-   .dr4 {
-       grid-area: dr4;
-       display: grid;
-       margin-left: 200px;  
-   }
-   .dr5 {
-       grid-area: dr5;
-       margin-left: -200px;
-   }
-  
    /* Track App */
     .phone {
         width: 60%;
