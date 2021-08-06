@@ -647,9 +647,7 @@ footer a:hover, footer li:hover {
         font-size: 20px;
         margin: 2rem 20rem;
     }
-    .hidden {
-        display: none;
-    }
+   
     .dr-card {
         width: 200px;
         height: auto;
