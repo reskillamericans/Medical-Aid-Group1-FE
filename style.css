@@ -120,7 +120,7 @@ header {
   }
   /* Stats Box */
   .stats-wrapper {
-    display: flex;
+    display: grid;
     justify-content: center;
   }
   .stats {
