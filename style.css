@@ -255,7 +255,7 @@ header {
     color: var(--darkgray);
 }
 .dr-card img {
-    height: 100px;
+    height: 150px;
     width: auto;
 }
 .doctors-btn {
