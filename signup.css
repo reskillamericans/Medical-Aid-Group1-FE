@@ -54,7 +54,7 @@ a {
 }
 
 .nav-logo-text {
-color: rgb(69 122 255);
+color: rgb (69 122 255);
   font-weight: bold;
    display: inline;
    font-size: larger;
@@ -88,7 +88,8 @@ ul.login {
     display: inline-block;
      padding: 8px 12px; 
   }
-  li:hover {
+
+  .navbar li:hover {
     background-color: #f3ea12;
    border-radius: 4px;    
   }
@@ -154,11 +155,12 @@ font-size:x-large;
 white-space: nowrap ;
 }
 
-input[type="fullname"],
+input[type="firstname"],
+input[type="lastname"],
 input[type="email"],
 input[type="password"] {
   width: 320px;
-  padding: 8px 32px;
+  padding: 8px 32px 8px 10px;
   margin: 8px 0px;
   border: 1.5px solid #c3c7d2;
   border-radius: 10px;
@@ -247,6 +249,26 @@ h6{
   margin-bottom: 0px;
   padding-left: 0px;
   }
+
+  .tab-wrapper a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #180126;
+      padding-bottom: 0.5em;
+  }
+
+      .patient-link {
+        border-bottom: 3.5px solid #f3ea12;
+      }
+
+      .doc-link {
+        border-bottom: 3.5px solid #c3c7d2;
+      }
+
+      .doc-link:hover {
+        border-bottom: 3.5px solid #f3ea12;
+      }
+  
 
 /* .patient-tab, .doc-tab {
   border: 1.5px solid #c3c7d2;
