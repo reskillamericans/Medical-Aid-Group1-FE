@@ -228,10 +228,10 @@ select {
      top: 0px;
    }
    
-    nav a:hover,
-    .activeLink {
-      color: var(--secondaryColor);
-    }
+   nav a:hover,
+   a.activeLink{
+     color: var(--secondaryColor);
+   }
   
     .nav-ul li {
       line-height: 50px;
