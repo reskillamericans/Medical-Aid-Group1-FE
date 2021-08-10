@@ -278,7 +278,9 @@ footer .quick-links a:hover {
 .fm{
   color: #7E7A8F;
 }
-
+#logo-foot {
+  color: rgb(69 122 255);
+}
 .find-us p, a{
   color: #7E7A8F;
   transition: 0.3s ease;
