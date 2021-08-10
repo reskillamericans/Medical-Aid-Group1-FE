@@ -133,54 +133,78 @@
             </div>
         </section>
 
-            <div class="new">
+            <section class="new">
                 <div class="heading">
                     <h2>Accepting New Patients</h2>              
                 </div>
                 <div class= "new-patients">
-                <input type="checkbox" id="yes" name="yes" value="yes">
-                    <label for="yes">Yes</label>
-                    <input type="checkbox" id="no" name="no" value="no">
-                    <label for="no">No</label>
-                    <input type="checkbox" id="wait list" name="wait list" value="wait list">
-                    <label for="wait list">Wait List</label>
+                    <label class="container">Yes
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">No
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">Wait List
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>   
-            </div>
+            </section>
         
         <!-- Personal Information -->
         <section class="personal-info">
             <div class="info-input">
                 <div>
-                    <label for="name">Name </label><br>
+                    <label for="name"><strong>Name</strong> </label><br>
                     <input id="name" type="text" name="name">
                 </div>
                 <div>
-                    <label for="gender">Gender</label><br>
+                    <label for="gender"><strong>Gender</strong></label><br>
                     <input id="gender" type="text" name="gender">
                 </div>
                 <div>
-                    <label for="age">Age</label><br>
+                    <label for="age"><strong>Age</strong></label><br>
                     <input id="age" type="number" name="age">
                 </div>
-                <div class="insurance">
-                <label for="insurance">Insurance Accepted</label><br>
-                    <input type="checkbox" id="insurance1" name="insurance1" value="Cigna">
-                    <label for="insurance1">Cigna</label>
-                    <input type="checkbox" id="insurance2" name="insurance2" value="Blue cross">
-                    <label for="insurance2">Blue cross</label>
-                    <input type="checkbox" id="insurance3" name="insurance3" value="Blue shield">
-                    <label for="insurance3">Blue shield</label><br>
-                    <input type="checkbox" id="insurance4" name="insurance4" value="Health Net">
-                    <label for="insurance4">Health Net</label>
-                    <input type="checkbox" id="insurance5" name="insurance5" value="Medicare">
-                    <label for="insurance5">Medicare</label>
-                    <input type="checkbox" id="insurance6" name="insurance6" value="World Health">
-                    <label for="insurance6">World Health</label><br>
-                    <input type="checkbox" id="insurance7" name="insurance7" value="Care First">
-                    <label for="insurance7">Care First</label>       
-                </select></div>
+                <div class="insurance"><strong>Accepted Insurance</strong>
+                    <br>
+                    <label class="container1">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark">Cigna</span>
+                    </label>
+                    <label class="container1">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark">Blue Cross</span>
+                    </label>
+                    <label class="container1">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark">Blue Shield</span>
+                    </label>
+                </div>
+                <div class="insurance1">  
+                    <label class="container1">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark">Health Net</span>
+                    </label>               
+                    <label class="container1">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark">Medicare</span>
+                    </label>
+                    <label class="container1">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark">World Health</span>
+                    </label>
+                </div>
+                <div class="insurance2">
+                    <label class="container1">
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark">Care First</span>
+                    </label>
+                </div>
                 <div>
-                    <label for="specialty">Specialty</label><br>
+                    <label for="specialty"><strong>Specialty</strong></label><br>
                     <select id="specialty" name="specialty">
                         <option value="Specialty1">Specialty 1</option>
                         <option value="Specialty2">Specialty 2</option>
@@ -192,7 +216,7 @@
                     </select></div>
                 
                 <div>
-                    <label for="languages">Languages</label><br>
+                    <label for="languages"><strong>Languages</strong></label><br>
                     <select id="languages" name="languages">
                         <option value="English">English</option>
                         <option value="Spanish">Spanish</option>
@@ -204,19 +228,19 @@
                     </select>
                 </div>
                 <div>
-                    <label for="location">Location Name </label><br>
+                    <label for="location"><strong>Location Name</strong> </label><br>
                     <input id="location" type="text" name="location">
                 </div>
                 <div>
-                    <label for="address1">Address 1 </label><br>
+                    <label for="address1"><strong>Address 1</strong></label><br>
                     <input id="address1" type="text" name="address1">
                 </div>
                 <div>
-                    <label for="address2">Address 2 </label><br>
+                    <label for="address2"><strong>Address 2</strong></label><br>
                     <input id="address2" type="text" name="address2">
                 </div>
                 <div>
-                    <label for="phone">Phone </label><br>
+                    <label for="phone"><strong>Phone</strong> </label><br>
                     <input id="phone" type="number" name="phone">
                 </div>
             </div>           

@@ -52,7 +52,8 @@
         "sidebar"
         "profile"
         "contact"
-        "map"
+        "new"
+        "input"
         "update";
   }
   
@@ -148,10 +149,19 @@
 }
 
 .new-patients {
-    grid-area:new ;
+    margin: 15px;
+}
+
+.new {
+  grid-area: new;
 }
 
 /* Form */
+.container {
+  /* padding: 1rem; */
+  display: inline-block;
+}
+
 
 .info-input {
     padding: 1rem;
@@ -240,6 +250,20 @@ select {
         font-size: 22px;
       }
     }
+
+    .container {
+     display: inline-block;
+     margin-left: 15%;
+    }
+
+    .container1 {
+      display:grid;
+      grid-template-areas: "container1"; 
+    }
+
+    
+
+
   
   
   /************************Styling for Desktops and Large Screens 1200px Up*****************************/
@@ -250,7 +274,8 @@ select {
           grid-template-areas:
           "header  header header"
           "sidebar profile profile"
-          "sidebar contact map"
+          "sidebar contact input"
+          "sidebar new input"
           "sidebar update update";
       }
       h1 {
@@ -268,6 +293,28 @@ select {
       }
       .userPic {
         display: block;
+      }
+
+      .container1{
+        display:inline-grid;
+        padding: 10px;   
+      }
+
+      .info-input {
+        width: 400px;
+        margin-left: 0;
+        margin-left: -300px;
+      }
+
+      .contact {
+        width: 60%;
+        height: 500px;
+      }
+
+      .new {
+        width: 60%;
+        margin-top: -500px;
+        margin-left: 100px;
       }
 
       
