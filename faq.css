@@ -345,18 +345,25 @@ footer .quick-links a:hover {
     background-color: #f3ea12;
     border: none;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 1.1vw;
     border-radius: 3px;
 }
 
+.search-button:hover{
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  background-color: #fcf77a;
+}
+
 #search-box {
-    font-size: 13px;
+    font-size: 1.1vw;
     height: 30px;
     padding-right: 0;
     margin-right: 0;
     margin-top: 2.5%;
     border: none;
     width: 40em;
+    outline: none;
 }
   
 .help-container{
@@ -369,6 +376,7 @@ footer .quick-links a:hover {
 .help-title{
     font-weight: 400;
     text-align: center;
+    font-size: 2.3vw;
 }
 .search-input{
     display: inline-flex;
@@ -398,11 +406,12 @@ footer .quick-links a:hover {
     padding-left: 70px;
     padding-bottom: 20px;
     font-weight: 400;
+    font-size: 2.7vw;
 }
 
 .accordion{
     background-color: #072AC8;
-    font-size: 1rem;
+    font-size: 1.2vw;
     color: #C3C7D2;
     cursor: pointer;
     height: 70px;
@@ -425,7 +434,7 @@ footer .quick-links a:hover {
 .answer {
     display: block;
     background-color: hsla(0, 0%, 93%, 1);
-    font-size: 1rem;
+    font-size: 1.2vw;
     text-align: left;
     width: 120%;
     overflow: hidden;
@@ -438,14 +447,18 @@ footer .quick-links a:hover {
     padding-left: 10px;
 }
 
-.active, .accordion:hover {
+.accordion:hover {
     background-color: rgb(69 122 255);
+}
+
+.accordion:focus {
+  background-color: rgb(69 122 255);
 }
 
 .arrows{
     position: absolute;
     left: 75%;
-    font-size: 0.9em;
+    font-size: 1vw;
     background-color: #f3ea12;
     color: black;
     border: none;
@@ -472,7 +485,7 @@ footer .quick-links a:hover {
 }
 
 .foot-help{
-  font-size: 1.5em;
+  font-size: 1.8vw;
   padding-left: 70px;
 }
 
@@ -487,23 +500,23 @@ footer .quick-links a:hover {
 }
 
 .fas{
-  font-size: 1.5em;
+  font-size: 1.8vw;
   padding-left: 50px;
 }
 
 .far{
-  font-size: 1.5em;
+  font-size: 1.8vw;
   padding-left: 55px;
 }
 
 .phone{
-  font-size: 0.8em;
+  font-size: 1.4vw;
   width: 60%;
   text-align: center;
 }
 
 .email{
-  font-size: 0.8em;
+  font-size: 1.3vw;
   width: 55%;
   text-align: center;
 }
@@ -518,4 +531,23 @@ footer .quick-links a:hover {
 
 .phone-info{
   padding-left: 50px;
+}
+
+@media only screen and (max-width:988px){
+footer .blue{
+  text-align: center;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: #eeeeee;
+  position: relative;
+  left: 35%;
+}
+
+.quick-links{
+  padding-left: 50px;
+}
 }
