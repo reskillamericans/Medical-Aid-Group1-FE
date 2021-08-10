@@ -266,7 +266,7 @@ footer .quick-links a:hover {
   padding: 4px 7px 4px 7px;
 }
 .social-links a:hover{
-  background-color: #7E7A8F;
+  color: rgb(69 122 255);
 }
 .copyright {
   text-align: center;
