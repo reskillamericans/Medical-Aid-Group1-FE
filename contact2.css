@@ -11,111 +11,74 @@ body {
   color: #180126;
   display: block;
   margin: 0;
-  }
-
+ }
+ a {
+  text-decoration: none;
+  color: #180126;
+}
 /* NAVBAR */
-.logo-text{
-font-size: 28px;
-font-weight: bold;
-color: rgb(69 122 255);
-width: 214px;
-height: 23px;
+.topnav {
+  display: none;
 }
-
-.logo-img {
-vertical-align: middle;
-}
-
 .navbar {
   display: flex;
   justify-content: space-around;
-  padding: 0px 25px 5px;
+  padding: 0em 0.4em 5px;
   align-items: center;
   font-size: 15px;
   white-space: nowrap;
 }
 
 .navbar a {
-  font-size: 15px;
-  font-weight: 700;
+  font-weight: 600;
 }
-
-a {
-  text-decoration: none;
-  color: #180126;
-  }
 
 .navbar a:visited {
   color: #180126;
 }
 
-.logo-div {
-  display: flex;
-align-items: center;
-}
-
-.active {
-  display: flex;
-align-items: center;
-}
-
-.active a:hover {
-  background-color: #f9f9f9;
-}
-
-.navbar li a:hover {
-  background-color: #f3ea12;
-   }
-
-.nav-logo {
+.active img {
   vertical-align: bottom;
+}
+
+li {
+  display: inline-block;
+  padding: 8px 12px;
+  color: #180126;
+}
+li:hover {
+  background-color: #f3ea12;
+  border-radius: 4px;
+}
+.login a{
+  color: #180126;
+}
+.nav-logo {
+  vertical-align: middle;
   width: 16%;
 }
 
+.logo-div {
+  display: flex;
+  align-items: center;
+}
+
 .nav-logo-text {
-color: rgb(69 122 255);
+  color: rgb(69 122 255);
   font-weight: bold;
-   display: inline;
-   font-size: 20px;
-
-}
-
-.login {
-  padding-right: 20px;
-}
-
-.signup-btn:hover, button:hover{
-  background: #eef0f6;
+  display: inline;
+  font-size: larger;
 }
 
 ul.nav-tabs,
 ul.login {
   list-style-type: none;
 }
-
-.signup {
-    margin-top: auto;
+/* active-link settings */
+.active-nav {
+  background-color: #f3ea12;
+  border-radius: 4px;
 }
-
-.signup-nav {
-    background-color: #f3ea12;
-    padding: 8px 12px;
-    border-radius: 5px;
-  }
-
-  li {
-    display: inline-block;
-     padding: 8px 12px; 
-  }
-
-  .navbar li:hover {
-    background-color: #f3ea12;
-   border-radius: 4px;    
-  }
-
-.topnav {
-    display: none;
-  }
   
   h2{
       text-align: center;
@@ -442,62 +405,6 @@ color: rgb(69 122 255);
         margin: auto;
        }
 
-       .topnav {
-        overflow: hidden;
-        display: block;
-        position: relative;
-      }
-  
-      .topnav a {
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        color: #180126;
-        padding: 20px 16px;
-      text-decoration: none;
-      font-size: 15px;
-       text-align: center;
-      }
-
-      
-    /* Hide the links inside the navigation menu (except for logo/home) */
-    .topnav #myLinks {
-      display: none;
-    }
-  
-     
-    /* Style navigation menu links */
-    .topnav a {
-      color: #180126;
-      padding: 20px 16px;
-      text-decoration: none;
-      font-size: 15px;
-      display: block;
-      text-align: center;
-      display: flex;
-      align-items: center;
-    }
-
-     /* Style the hamburger menu */
-     .topnav a.icon {
-      background: #f9f9f9;;
-      display: block;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    .topnav img {
-      vertical-align: middle;
-    }
-
-    .topnav a:hover {
-      color: rgb(164,162,179);
-     }
-
-      .navbar {
-        display: none;
-      }
 
       .contact-div {
           display: none;
@@ -539,3 +446,47 @@ color: rgb(69 122 255);
         }
         
     }
+    @media screen and (max-width: 857px) {
+      /*Navbar Mobile View */
+      .topnav {
+        overflow: hidden;
+        display: block;
+        position: relative;
+      }
+    
+      /* .content-div {
+        display: block;
+      } */
+    
+      .navbar {
+        display: none;
+      }
+    
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+        display: none;
+      }
+    
+      /* Style navigation menu links */
+      .topnav a {
+        color: #180126;
+        padding: 20px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+      }
+    
+      /* Style the hamburger menu */
+      .topnav a.icon {
+        background: #f9f9f9;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      div.content-logo {
+        display: none;
+      }
+  }
