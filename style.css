@@ -104,7 +104,7 @@ ul.login {
   list-style-type: none;
 }
 /* active-link settings */
-.about-nav {
+.active-nav {
   background-color: #f3ea12;
   border-radius: 4px;
 }
