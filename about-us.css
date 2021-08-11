@@ -179,6 +179,7 @@ label.checkbox,
   display: flex;
   justify-content: space-around;
   align-items: center;
+flex-wrap:wrap;
 }
 .content-2 div {
   margin: 1em 0em;
