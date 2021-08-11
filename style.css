@@ -475,93 +475,73 @@ color: var(--darkgray);
     border: 2px solid var(--blue);
 }
 /*****Footer****/
-.brand-footer img {
-    vertical-align: top;
-    width: 10%;
+footer .blue {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2em;
+  background-color: #F3F4FE;
 }
-
-.nav-logo-text {
-    color: var(--lightblue);
-    font-weight: bold;
-    display: inline;
+footer .quick-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-footer { 
-    margin-top: 5em; 
-    font-size: 10px;  
-    color: var(--darkgray)
+footer .quick-links a {
+  padding: 0.5em 0em;
+  color: #7E7A8F;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
 }
-footer a {
-    text-decoration: none;
-    color: var(--darkgray)
+footer .quick-links a:hover {
+  color: #180126;
 }
-footer ul, footer li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    line-height: 2.5;
+.footer-logo {
+  display: flex;
+  align-items: center;
 }
-footer h4 {
-    color: var(--black);
-    font-size: 12x;
-    margin: 0;
+.footer-logo span {
+  font-size: 20px;
+  font-weight: 700;
 }
-footer img {
-    width: 70%;
+.social-links a {
+  font-size: 20px;
+  padding-right: 1em;
+  color: #180126;
 }
-.footer-info {
-    background-color: var(--paleblue);
-    display: grid;
-    grid-template-areas: 
-        "links office"
-        "mission follow";
-    padding: 3rem 1rem;
+.social-links a{
+  background-color: transparent;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+  border-radius: 100px;
+  padding: 4px 7px 4px 7px;
 }
-.link-list {
-    grid-area: links;
+.social-links a:hover{
+  color: rgb(69 122 255);
 }
-.office-info {
-    grid-area: office;
-}
-.mission {
-    grid-area: mission;
-}
-.follow {
-    grid-area: follow;
-}
-
-.navbar-footer {
-    margin-top: 3.5em;
-}
-
-.social-icons {
-    cursor: pointer;
-    padding: 2px;
-}
-
-.fab {
-    color: var(--black);
-    justify-content: space-between;
-    padding: 4px;
-}
-
-.fab:hover{
-    color: var(--lightblue);
-}
-
-footer a:hover, footer li:hover {
-    color: var(--lightblue);
-}
-
 .copyright {
-    background-color: var(--white);
-    display: flex;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--darkgray);
+  text-align: center;
+  color: #7E7A8F;
+  background-color: #eeeeee;
+  padding: 0.1px 0px 0.1px 0px;
 }
-   
+
+.fm{
+  color: #7E7A8F;
+}
+#logo-foot {
+  color: rgb(69 122 255);
+}
+.find-us p, a{
+  color: #7E7A8F;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
+
+.find-us a:hover{
+  color: #180126;
+}
+
 /************ Styling for Desktop View ***********/
 @media screen and (min-width: 768px) {
     
@@ -662,9 +642,7 @@ footer a:hover, footer li:hover {
 .track-wrapper {
     margin-top: 0;
 }   
-.footer-info {
-    padding: 2rem;
-}
+
 }
 @media screen and (min-width: 768px) {
     /* Hero Desktop View */
@@ -807,3 +785,15 @@ footer a:hover, footer li:hover {
     }
   }
 
+  @media screen and (max-width: 991px) and (min-width: 340px) {
+   
+    footer .blue {
+      flex-direction: column;
+    }
+    .footm,
+    .quick-links,
+    .find-us {
+      margin: 0.8em 0em;
+    }
+  }
+  
