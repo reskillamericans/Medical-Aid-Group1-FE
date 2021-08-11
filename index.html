@@ -7,55 +7,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" type="cross-logo" href="images/landing-page/cross.png">
-  <script src="https://kit.fontawesome.com/539f78907e.js" crossorigin="anonymous"></script>
-  <script src="./login.js" defer></script>
-  <script src="carousel.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/images/admin-dash/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/21d1f09dfc.js" crossorigin="anonymous"></script>
+  <script src="login.js" defer></script>
   <title>Landing Page</title>
 </head>
 
 <body>
-  <header>
-    <!-- NAV BAR -->
-    <nav class="navbar">
-      <div class="logo-div">
-        <a href="index.html"> <img src="images/logo/logoicon.svg" class="nav-logo" alt="logo image">
-          <span class="nav-logo-text">Century Health</span></a>
-      </div>
-      <div class="nav-tabs">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about-us.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="Doctor/doctor-dash.html">Find a Doctor</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="login">
-        <ul>
-          <li><a class="login-nav" href="login.html">Log In</a></li>
-          <li class="active-link"><a href="signup.html">Sign Up</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="topnav">
-      <a href="index.html" class="logo"><img src="images/logo/logoicon.svg"> <span class="nav-logo-text">Century
-          Health</span></a>
-      <!-- Navigation links (hidden by default) -->
-      <div id="myLinks">
-        <a href="index.html">Home</a>
-        <a href="about-us.html">About</a>
-        <a href="faq.html">FAQ</a>
-        <a href="Doctor/doctor-dash.html">Find a Doctor</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="login.html">Log In</a>
-        <a class="active-hamburger" href="signup.html">Sign Up</a>
-      </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+  <nav class="navbar">
+    <a class="logo-div" href="index.html">
+      <img src="images/logo/logoicon.svg" class="nav-logo" alt="logo image" />
+      <span class="nav-logo-text">Century Health</span>
+    </a>
+    <div class="nav-tabs">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="about-nav"><a href="about-us.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="./Doctor/doctor-dash.html">Find a Doctor</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </div>
+    <div class="login">
+      <ul>
+        <li><a href="login.html">Log In</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="topnav">
+    <a href="index.html" class="active"><img src="images/logo/logoicon.svg"> <span class="nav-logo-text">Century
+        Health</span></a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="index.html">Home</a>
+      <a href="about-us.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="./Doctor/doctor-dash.html">Find a Doctor</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="signup.html">Sign Up</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
   </header>
 
   <!----Hero Section -->
