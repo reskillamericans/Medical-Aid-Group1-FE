@@ -217,137 +217,73 @@ ul.login {
 
     
 
-    .follow, .address-header, .email-header {
-      color: #180126;
-    }
-
-.navbar-footer {
-    margin-top: 15px;
+/*****Footer****/
+footer .blue {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2em;
+  background-color: #F3F4FE;
 }
-
-.content-span{
-color: rgb(69 122 255);
-  font-weight: bold;
-   display: inline;
-   font-size: 23px;
-   vertical-align: middle;
+footer .quick-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-.bold {
-    font-weight: 400;
-    margin-top: 10px;
-   }
-
-.footer-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: baseline;
-    background-color: rgb(238,240,246);
-    }
-
-
-.follow {
-    font-weight: 700;
-    margin-bottom: 6px;
-    margin-top: 0px;
-    }
-
-    .follow-header{
-    margin-bottom: 10px;
-    margin-top: 70px;
-    }
-
-    .office-header{
-    margin-bottom: 0px;
-    margin-top: 15px;  
-    }
-
-.footer-icon {
-  width: 26px;
-  padding: 2px;
+footer .quick-links a {
+  padding: 0.5em 0em;
+  color: #7E7A8F;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
 }
-
-.fab {
-    justify-content: space-between;
-    padding: 4px;
-}
-
-.fab, .far {
-    font-size: 20px;
-}
-
-
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
-    padding-left: 0px;
-}
-
-.quick-links {
-    font-size: 18px;
-    font-weight: 700;
-    
-}
-
-.link {
-    font-weight: 400;
-    font-size: 18px;
-    padding: 15px;   
-    }
-
-.link a {
-  color: rgb(164,162,179)
-}
-
-.link a:hover{
+footer .quick-links a:hover {
   color: #180126;
 }
-
-.address-header {
-    font-size: 18px;
-    font-weight: 700;
+.footer-logo {
+  display: flex;
+  align-items: center;
 }
-
-.address-info{
-  font-size: 14px;
-  margin-top: 10px;
+.footer-logo span {
+  font-size: 20px;
+  font-weight: 700;
 }
-
-.email-header {
-    margin-bottom: 0px;
-    margin-top: 93px;
+.social-links a {
+  font-size: 20px;
+  padding-right: 1em;
+  color: #180126;
 }
-
-.email-p-one {
-    margin-bottom: 0px;
-    margin-top: 10px;
+.social-links a{
+  background-color: transparent;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+  border-radius: 100px;
+  padding: 4px 7px 4px 7px;
 }
-.email-p-two {
-    margin-top: 10px;
+.social-links a:hover{
+  color: rgb(69 122 255);
 }
-
-.email-info {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 30px;
-    margin-top: 0px;
-}
-
 .copyright {
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    margin-bottom: 0px;
-    margin-top: 14px;
-    background-color: rgb(249,249,249);
-    }
+  text-align: center;
+  color: #7E7A8F;
+  background-color: #eeeeee;
+  padding: 0.1px 0px 0.1px 0px;
+}
 
-    .copyright p {
-      margin-top: 0px;
-    }
+.fm{
+  color: #7E7A8F;
+}
+#logo-foot {
+  color: rgb(69 122 255);
+}
+.find-us p, a{
+  color: #7E7A8F;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+}
 
+.find-us a:hover{
+  color: #180126;
+}
 
     @media screen and (max-width: 426px)  {
     .footer-info {
@@ -422,28 +358,6 @@ color: rgb(69 122 255);
        .submit-btn {
         margin-left: 70px;
        }
-
-       .logo-img {
-           width: 20px;
-       }
-
-       .link {
-        padding: 8px 0px; 
-        }
-
-        .address-header{
-            margin-bottom: 5px;
-            margin-top: 0px;
-        }
-
-        .social-icons {
-            padding-top: 0;
-            margin-left: 0px;
-        }
-
-        .footer-icon {
-            width: 20px;
-        }
         
     }
     @media screen and (max-width: 857px) {
@@ -489,4 +403,16 @@ color: rgb(69 122 255);
       div.content-logo {
         display: none;
       }
+  }
+  /* footer mobile */
+  @media screen and (max-width: 991px) and (min-width: 340px) {
+   
+    footer .blue {
+      flex-direction: column;
+    }
+    .footm,
+    .quick-links,
+    .find-us {
+      margin: 0.8em 0em;
+    }
   }
