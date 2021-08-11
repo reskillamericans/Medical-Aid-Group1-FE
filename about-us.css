@@ -163,12 +163,12 @@ label.checkbox,
   white-space: nowrap;
 }
 .moth {
-  padding-bottom: 2.5em;
+/*   padding-bottom: 2.5em; */
   text-align: center;
   font-weight: bold;
   font-size: 20px;
   position: relative;
-  top: 130px;
+/*   top: 130px; */
 }
 .content-1 {
   display: flex;
