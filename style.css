@@ -603,38 +603,47 @@ footer a:hover, footer li:hover {
 
 @media screen and (max-width: 857px) {
     /*Navbar Mobile View */
-  .topnav {
-    overflow: hidden;
-    display: block;
-    position: relative;
-  }
-  .navbar {
-    display: none;
-  }
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-  }
-  #myLinks a:hover {
-    color: var(--lightblue);
-  }
-  /* Style navigation menu links */
-  .topnav a {
-    color: #180126;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    text-align: center;
-  }
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: #f9f9f9;;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+    .topnav {
+      overflow: hidden;
+      display: block;
+      position: relative;
+    }
+  
+    /* .content-div {
+      display: block;
+    } */
+  
+    .navbar {
+      display: none;
+    }
+  
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+      display: none;
+    }
+  
+    /* Style navigation menu links */
+    .topnav a {
+      color: #180126;
+      padding: 20px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+  
+    /* Style the hamburger menu */
+    .topnav a.icon {
+      background: #f9f9f9;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    div.content-logo {
+      display: none;
+    }
 }
 @media  screen and (min-width: 500px) {
       /* Ipad view for Track */
