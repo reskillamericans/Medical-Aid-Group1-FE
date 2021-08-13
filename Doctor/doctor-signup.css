@@ -88,7 +88,7 @@ ul.login {
     display: inline-block;
      padding: 8px 12px; 
   }
-  li:hover {
+  .navbar li:hover {
     background-color: #f3ea12;
    border-radius: 4px;    
   }
@@ -154,12 +154,13 @@ font-size:x-large;
 white-space: nowrap ;
 }
 
-input[type="fullname"],
+input[type="firstname"],
+input[type="lastname"],
 input[type="email"],
 input[type="license"],
 input[type="password"] {
   width: 320px;
-  padding: 8px 32px;
+  padding: 8px 32px 8px 10px;
   margin: 8px 0px;
   border: 1.5px solid #c3c7d2;
   border-radius: 10px;
@@ -249,19 +250,33 @@ h6{
   padding-left: 0px;
   }
 
-.patient-tab, .doc-tab {
+  
+  .doc-link {
+    border-bottom: 3.5px solid #f3ea12;
+  }
+
+  .patient-link {
+    border-bottom: 3.5px solid #c3c7d2;
+  }
+
+  .patient-link:hover {
+    border-bottom: 3.5px solid #f3ea12;
+  }
+
+
+/* .patient-tab, .doc-tab {
   border: 1.5px solid #c3c7d2;
   border-radius: 7px;
-}
+} */
 
 
-.patient-tab {
+/* .patient-tab {
     border-bottom: 1.5px solid #c3c7d2;
-}
+} */
 
-.doc-tab {
+/* .doc-tab {
     background-color: #c3c7d2;
-}
+} */
 
 @media screen and (max-width: 1024px) and (min-width: 768px){
      .logo-img {
@@ -390,7 +405,8 @@ align-items: center;
   .form {
     text-align: center;  }
 
-input[type="fullname"],
+input[type="firstname"],
+input[type="lastname"],
 input[type="email"],
 input[type="license"],
 input[type="password"] {

@@ -4,26 +4,32 @@ body {
   background: #f9f9f9;
   font-family: "Open Sans", sans-serif;
   color: #180126;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+ font-weight: 600;
+ color: #180126;
 }
 
 
-
 /* NAVBAR */
+.topnav {
+  display: none;
+}
 .navbar {
   display: flex;
   justify-content: space-around;
-  padding: 0em .4em 5px;
+  padding: 0em 0.4em 5px;
   align-items: center;
   font-size: 15px;
   white-space: nowrap;
- }
+}
 
-a {
-    text-decoration: none;
-   font-weight: 600;
-   color: #180126;
-  }
-
+.navbar a {
+  font-weight: 600;
+}
 
 .navbar a:visited {
   color: #180126;
@@ -31,53 +37,47 @@ a {
 
 .active img {
   vertical-align: bottom;
-  
 }
-
 
 li {
   display: inline-block;
-   padding: 8px 12px; 
+  padding: 8px 12px;
+  color: #180126;
 }
 li:hover {
   background-color: #f3ea12;
- border-radius: 4px;    
+  border-radius: 4px;
 }
-
+.login a{
+  color: #180126;
+}
 .nav-logo {
   vertical-align: middle;
-    width: 16%;
+  width: 16%;
 }
 
 .logo-div {
   display: flex;
-align-items: center;
+  align-items: center;
 }
 
 .nav-logo-text {
-color: rgb(69 122 255);
+  color: rgb(69 122 255);
   font-weight: bold;
-   display: inline;
-   font-size: larger;
+  display: inline;
+  font-size: larger;
 }
 
 ul.nav-tabs,
 ul.login {
   list-style-type: none;
 }
-
-
-.login-nav {
-    background-color: #f3ea12;
-    padding: 8px 12px;
-    border-radius: 4px;
-  }
-
-/* li {
-  display: inline-block;
-  padding: 0px 10px;
-  
-} */
+/* active-link settings */
+.active-nav {
+  background-color: #f3ea12;
+  border-radius: 4px;
+}
+/* end navbar */
 
 .content-div {
   display: flex;

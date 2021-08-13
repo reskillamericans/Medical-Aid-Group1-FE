@@ -4,6 +4,13 @@ body {
   background: #f9f9f9;
   font-family: "Open Sans", sans-serif;
   color: #180126;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+ font-weight: 600;
+ color: #180126;
 }
 
 
@@ -40,63 +47,70 @@ a {
   color: rgb(164,162,179);
 }
 
+/* NAVBAR */
+.topnav {
+  display: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 0em 0.4em 5px;
+  align-items: center;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.navbar a {
+  font-weight: 600;
+}
+
 .navbar a:visited {
   color: #180126;
 }
 
-.active {
-  vertical-align: middle;
+.active img {
+  vertical-align: bottom;
 }
 
+li {
+  display: inline-block;
+  padding: 8px 12px;
+  color: #180126;
+}
+li:hover {
+  background-color: #f3ea12;
+  border-radius: 4px;
+}
+.login a{
+  color: #180126;
+}
 .nav-logo {
   vertical-align: middle;
   width: 16%;
 }
 
-.nav-logo-text {
-color: rgb(69 122 255);
-  font-weight: bold;
-   display: inline;
-   font-size: larger;
-}
-
 .logo-div {
   display: flex;
-align-items: center;
+  align-items: center;
 }
 
-.signup-btn:hover, button:hover{
-  background: #eef0f6;
+.nav-logo-text {
+  color: rgb(69 122 255);
+  font-weight: bold;
+  display: inline;
+  font-size: larger;
 }
 
 ul.nav-tabs,
 ul.login {
   list-style-type: none;
 }
-
-.signup {
-    margin-top: auto;
+/* active-link settings */
+.active-nav {
+  background-color: #f3ea12;
+  border-radius: 4px;
 }
-
-.signup-nav {
-    background-color: #f3ea12;
-    padding: 8px 12px;
-    border-radius: 5px;
-  }
-
-  li {
-    display: inline-block;
-     padding: 8px 12px; 
-  }
-  li:hover {
-    background-color: #f3ea12;
-   border-radius: 4px;    
-  }
-
-  .login {
-    white-space: nowrap ;
-  }
-
+/* navbar ends */
 .content-div {
     display: flex;
     justify-content: space-evenly;
@@ -154,11 +168,12 @@ font-size:x-large;
 white-space: nowrap ;
 }
 
-input[type="fullname"],
+input[type="firstname"],
+input[type="lastname"],
 input[type="email"],
 input[type="password"] {
   width: 320px;
-  padding: 8px 32px;
+  padding: 8px 32px 8px 10px;
   margin: 8px 0px;
   border: 1.5px solid #c3c7d2;
   border-radius: 10px;
@@ -248,7 +263,27 @@ h6{
   padding-left: 0px;
   }
 
-.patient-tab, .doc-tab {
+  .tab-wrapper a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #180126;
+      padding-bottom: 0.5em;
+  }
+
+      .patient-link {
+        border-bottom: 3.5px solid #f3ea12;
+      }
+
+      .doc-link {
+        border-bottom: 3.5px solid #c3c7d2;
+      }
+
+      .doc-link:hover {
+        border-bottom: 3.5px solid #f3ea12;
+      }
+  
+
+/* .patient-tab, .doc-tab {
   border: 1.5px solid #c3c7d2;
   border-radius: 7px;
 }
@@ -256,7 +291,7 @@ h6{
 .patient-tab {
   background-color: #c3c7d2;
   border-bottom: 1.5px solid #c3c7d2;
-}
+} */
 
 
 @media screen and (max-width: 1024px) and (min-width: 768px){
