@@ -267,7 +267,7 @@ select {
   
   
   /************************Styling for Desktops and Large Screens 1200px Up*****************************/
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
   
       .wrapper {
           grid-template-columns: 275px 1fr;
@@ -317,7 +317,22 @@ select {
         margin-left: 100px;
       }
 
-      
+      .info {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;  
+      }
+
+     
+
+      .large-rating {
+        font-size: 50px;
+      }
+
+
+      .update {
+        height: 90%;
+      }
 
   
   
