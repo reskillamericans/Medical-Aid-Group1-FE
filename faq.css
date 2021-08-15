@@ -1,10 +1,12 @@
 body,
 h4 {
-  background: #FAFCFF;
   font-family: "Open Sans", sans-serif;
   color: #180126;
   margin: 0;
   padding: 0;
+}
+body {
+  background-color: #f9f9f9;
 }
 a {
   text-decoration: none;
@@ -199,12 +201,14 @@ label.checkbox,
 .content-2 p {
   text-align: center;
 }
+/* footer */
+/*****Footer****/
 footer .blue {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
   padding: 2em;
-  background-color: #FAFCFF;
+  background-color: #F3F4FE;
 }
 footer .quick-links {
   display: flex;
@@ -241,7 +245,7 @@ footer .quick-links a:hover {
   padding: 4px 7px 4px 7px;
 }
 .social-links a:hover{
-  background-color: #7E7A8F;
+  color: rgb(69 122 255);
 }
 .copyright {
   text-align: center;
@@ -253,7 +257,9 @@ footer .quick-links a:hover {
 .fm{
   color: #7E7A8F;
 }
-
+#logo-foot {
+  color: rgb(69 122 255);
+}
 .find-us p, a{
   color: #7E7A8F;
   transition: 0.3s ease;
@@ -333,9 +339,6 @@ footer .quick-links a:hover {
   }
 }
 
-.fh{
-    background-color: #FAFCFF;
-}
 
 .search-button {
     height: 32px;
@@ -533,6 +536,7 @@ footer .quick-links a:hover {
   padding-left: 50px;
 }
 
+<<<<<<< HEAD
 @media screen and (max-width:988px) {
 footer .blue{
   text-align: center;
@@ -760,3 +764,16 @@ font-size: 3vw;
       padding-left: 0px;
     }
 } 
+=======
+@media screen and (max-width: 991px) and (min-width: 340px) {
+   
+  footer .blue {
+    flex-direction: column;
+  }
+  .footm,
+  .quick-links,
+  .find-us {
+    margin: 0.8em 0em;
+  }
+}
+>>>>>>> f7d9d252447d9cfcd57789ee7a63fb2b16fff9ba

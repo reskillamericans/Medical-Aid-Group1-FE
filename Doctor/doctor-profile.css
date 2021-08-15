@@ -244,7 +244,7 @@ button {
   
   
   /************************Styling for Desktops and Large Screens 1200px Up*****************************/
-  @media (min-width: 1400px) {
+  @media (min-width: 1200px) {
   
       .wrapper {
           grid-template-columns: 275px 1fr;
@@ -297,7 +297,7 @@ button {
       }
 
       .update {
-          height: 90%;
+          height: 60%;
       }
 
     
