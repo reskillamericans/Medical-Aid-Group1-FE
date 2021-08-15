@@ -220,7 +220,7 @@ button {
    }
    
     nav a:hover,
-    .activeLink {
+    a.activeLink {
       color: var(--secondaryColor);
     }
   
