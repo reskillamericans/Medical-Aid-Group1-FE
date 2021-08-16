@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctor-Profile</title>
+    <title>Consultations - Century Health</title>
     <link rel="shortcut icon" href="/images/admin-dash/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +24,8 @@
         <nav>
             <ul class="nav-ul" id="nav-ul">
                 <li>
-                    <a href="doctor-dash.html" class="activeLink">
-                        <img src="/images/admin-dash/dashboard_icon.svg" alt="dashboard icon">
+                    <a href="doctor-dash.html">
+                        <img src="/images/admin-dash/dashboard_icon_inactive.svg" alt="dashboard icon">
                         Dashboard</a>
                 </li>
                 <li>
@@ -39,8 +39,8 @@
                         Patients</a>
                 </li>
                 <li>
-                    <a href="doctor-consultations.html">
-                        <img src="/images/doctor-dash/consultations-icon.svg" alt="consultation icon">
+                    <a href="doctor-consultations.html" class="activeLink">
+                        <img src="/images/doctor-dash/icon-consultation-active.svg" alt="consultation icon">
                         Consultations</a>
                 </li>
                 <li>
@@ -60,155 +60,124 @@
                 </li>
             </ul>
         </nav>
-        <!--Consultations Recent Requests-->
-        <section class="requests">
-            <div class="heading">
-                <h2>Recent Requests</h2>
+        <div class="content-wrapper">
+            <!--Page Title-->
+            <div class="page-title">
+                <div class="back">
+                    <a href="/Doctor/doctor-dash.html">
+                        < Back</a>
+                </div>
+                <h1>Consultations</h1>
             </div>
-            <div class="bubble-heading">
-                <p><b>Patient</b></p>
-                <p><b>Reason for Appointment</b></p>
-                <p><b>Date</b></p>
-                <p><b>Time</b></p>
-                <p><b>Action</b></p>
-            </div>
-            <div class="request-bubble bubble-style">
-                <div class="patient">
-                    <img src="\images\doctor-profile\kirk.svg" alt="image of recent patient">
-                    <p><b>Mr. James Kirk</b></p>
+            <!-- Recent Requests -->
+            <div class="requests">
+                <div class="heading">
+                    <h2>Recent Requests</h2>
                 </div>
-                <div class="reason">
-                    <p>Blood test and physical</p>
-                </div>
-                <div class="date">
-                    <p>6/7/21</p>
-                </div>
-                <div class="time">
-                    <p>11:00am</p>
-                </div>
-                <div class="buttons">
-                    <div class="review-btns">
-                        <button class="review">Review</button>
+                <!-- Heading for Columns -->
+                <section class="search-results">
+                    <div class="row row-heading">
+                        <div class="col1">Patient</div>
+                        <div class="col2"></div>
+                        <div class="col3">Reason for Visit</div>
+                        <div class="col4">Date</div>
+                        <div class="col5">Time</div>
+                        <div class="col6">Action</div>
+
                     </div>
-                    <div class="accept-btns">
-                        <button class="accept">Accept</button>
+                    <!-- Patient Info -->
+                    <div class="row row-results bubble-style">
+                        <p><img class="col1" src="../images/doctor-profile/kirk.svg" alt="Image of patient"></p>
+                        <div class="col2"><b>Mr. James Kirk</b></div>
+                        <div class="col3">Blood test and physical</div>
+                        <div class="col4">6/7/21</div>
+                        <div class="col5">11:00am</div>
+                        <div class="col6">
+                            <div class="review-btns">
+                                <button class="review">Review</button>
+                                <button class="accept">Accept</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="request-bubble bubble-style">
-                <div class="patient">
-                    <img src="\images\doctor-profile\keiko.svg" alt="image of recent patient">
-                    <p><b>Mrs. Keiko O'brien</b></p>
-                </div>
-                <div class="reason">
-                    <p>Pain in left shoulder</p>
-                </div>
-                <div class="date">
-                    <p>8/22/21</p>
-                </div>
-                <div class="time">
-                    <p>12:30pm</p>
-                </div>
-                <div class="buttons">
-                    <div class="review-btns">
-                        <button class="review">Review</button>
+                    <div class="row row-results bubble-style">
+                        <p><img class="col1" src="../images/doctor-profile/keiko.svg" alt="Image of patient"></p>
+                        <div class="col2"><b>Mrs. Keiko O'brien</b></div>
+                        <div class="col3">Pain in left shoulder</div>
+                        <div class="col4">8/22/21</div>
+                        <div class="col5">12:30pm</div>
+                        <div class="col6">
+                            <div class="review-btns">
+                                <button class="review">Review</button>
+                                <button class="accept">Accept</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="accept-btns">
-                        <button class="accept">Accept</button>
+                    <div class="row row-results bubble-style">
+                        <p><img class="col1" src="../images/doctor-profile/kira.svg" alt="Image of patient"></p>
+                        <div class="col2"><b>Mrs. Kira Nereys</b></div>
+                        <div class="col3">Physical exam</div>
+                        <div class="col4">3/5/21</div>
+                        <div class="col5">2:30pm</div>
+                        <div class="col6">
+                            <div class="review-btns">
+                                <button class="review">Review</button>
+                                <button class="accept">Accept</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
+
             </div>
-            <div class="request-bubble bubble-style">
-                <div class="patient">
-                    <img src="\images\doctor-profile\kira.svg" alt="image of recent patient">
-                    <p><b>Mrs. Kira Nereys</b></p>
+            <!-- Previous Consultations -->
+            <div class="requests previous">
+                <div class="heading">
+                    <h2>Previous Consultations</h2>
                 </div>
-                <div class="reason">
-                    <p>Prostate exam</p>
-                </div>
-                <div class="date">
-                    <p>3/5/21</p>
-                </div>
-                <div class="time">
-                    <p>2:30pm</p>
-                </div>
-                <div class="buttons">
-                    <div class="review-btns">
-                        <button class="review">Review</button>
+                <!-- Heading for Columns -->
+                <section class="prveious-consultation search-results">
+                    <div class="row row-heading">
+                        <div class="col1">Patient</div>
+                        <div class="col2"></div>
+                        <div class="col3">Reason for Visit</div>
+                        <div class="col4">Date</div>
+                        <div class="col5">Time</div>
+                        <div class="col6">Action</div>
+
                     </div>
-                    <div class="accept-btns">
-                        <button class="accept">Accept</button>
+                    <!-- Patient Info -->
+                    <div class="row row-results bubble-style">
+                        <p><img class="col1" src="../images/doctor-profile/kirk.svg" alt="Image of patient"></p>
+                        <div class="col2"><b>Mr. James Kirk</b></div>
+                        <div class="col3">Blood test and physical</div>
+                        <div class="col4">6/7/21</div>
+                        <div class="col5">11:00am</div>
+                        <div class="col6 pdf">
+                            <button class="download">Download PDF</button>
+                        </div>
                     </div>
-                </div>
+                    <div class="row row-results bubble-style">
+                        <p><img class="col1" src="../images/doctor-profile/keiko.svg" alt="Image of patient"></p>
+                        <div class="col2"><b>Mrs. Keiko O'brien</b></div>
+                        <div class="col3">Pain in left shoulder</div>
+                        <div class="col4">8/22/21</div>
+                        <div class="col5">12:30pm</div>
+                        <div class="col6 pdf">
+                            <button class="download">Download PDF</button>
+                        </div>
+                    </div>
+                    <div class="row row-results bubble-style">
+                        <p><img class="col1" src="../images/doctor-profile/kira.svg" alt="Image of patient"></p>
+                        <div class="col2"><b>Mrs. Kira Nereys</b></div>
+                        <div class="col3">Physical exam</div>
+                        <div class="col4">3/5/21</div>
+                        <div class="col5">2:30pm</div>
+                        <div class="col6 pdf">
+                            <button class="download">Download PDF</button>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-        <!--Consultations Previous-->
-        <section class="consultations">
-            <div class="heading">
-                <h2>Previous Consultations</h2>
-            </div>
-            <div class="bubble-heading">
-                <p><b>Patient</b></p>
-                <p><b>Reason for Appointment</b></p>
-                <p><b>Date</b></p>
-                <p><b>Time</b></p>
-                <p><b>Results</b></p>
-            </div>
-            <div class="request-bubble bubble-style">
-                <div class="patient">
-                    <img src="\images\doctor-profile\kirk.svg" alt="image of recent patient">
-                    <p><b>Mr. James Kirk</b></p>
-                </div>
-                <div class="reason">
-                    <p>Blood test and physical</p>
-                </div>
-                <div class="date">
-                    <p>6/7/21</p>
-                </div>
-                <div class="time">
-                    <p>11:00am</p>
-                </div>
-                <div class="pdf-btns">
-                    <button class="download">Download pdf</button>
-                </div>
-            </div>
-            <div class="request-bubble bubble-style">
-                <div class="patient">
-                    <img src="\images\doctor-profile\keiko.svg" alt="image of recent patient">
-                    <p><b>Mrs. Keiko O'brien</b></p>
-                </div>
-                <div class="reason">
-                    <p>Pain in left shoulder</p>
-                </div>
-                <div class="date">
-                    <p>8/22/21</p>
-                </div>
-                <div class="time">
-                    <p>12:30pm</p>
-                </div>
-                <div class="pdf-btns">
-                    <button class="download">Download pdf</button>
-                </div>
-            </div>
-            <div class="request-bubble bubble-style">
-                <div class="patient">
-                    <img src="\images\doctor-profile\kira.svg" alt="image of recent patient">
-                    <p><b>Mrs. Kira Nereys</b></p>
-                </div>
-                <div class="reason">
-                    <p>Prostate exam</p>
-                </div>
-                <div class="date">
-                    <p>3/5/21</p>
-                </div>
-                <div class="time">
-                    <p>2:30pm</p>
-                </div>
-                <div class="pdf-btns">
-                    <button class="download">Download pdf</button>
-                </div>
-            </div>
-        </section>
+        </div>
+
 </body>
 
 </html>
