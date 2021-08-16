@@ -60,174 +60,221 @@
                 </li>
             </ul>
         </nav>
-        <!-- Profile -->
-        <section class="profile bubble-style">
-            <div class="profile">
-                <img src="\images\doctor-profile\bostickprofile.svg" alt="image of current user" class="userPic" />
-                <div class="current-user">
-                    <h1>Mr. Michael Bostick</h1>
+        <div class="content-wrapper">
+            <!--Page Title-->
+            <div class="page-title">
+                <div class="back">
+                    <a href="/Doctor/doctor-dash.html">
+                        < Back</a>
                 </div>
-                <div class="info">
-                    <div class="birth">
-                        <h3>Date of Birth</h3>
-                        <p>02/22/1983</p>
+                <h1>Patient Profile</h1>
+            </div>
+
+            <!-- First Row of Info -->
+            <div class="profile-wrapper">
+                <div class="profile-box bubble-style">
+                    <div class="profile-pic">
+                        <img src="/images/doctor-profile/bostickprofile.svg" alt="Image of current patient">
                     </div>
-                    <div class="marital">
-                        <h3>Marital Status</h3>
-                        <p>Single</p>
-                    </div>
-                    <div class="ethnicity">
-                        <h3>Ethnicity</h3>
-                        <p>African American</p>
-                        <p>Japanese</p>
-                        <p>Italian</p>
-                    </div>
-                    <div class="gender">
-                        <h3>Gender</h3>
-                        <p>Male</p>
-                    </div>
-                    <div class="smoker">
-                        <h3>Smoker</h3>
-                        <p>No</p>
-                    </div>
-                    <div class="age">
-                        <h3>Age</h3>
-                        <p>35</p>
+                    <div class="info-box">
+                        <div class="patient-name">Mr. Michael Bostick</div>
+                        <div class="patient-info">
+                            <div class="col1">
+                                <p>Date of Birth <br>2/22/1983</p>
+                                <p>Gender <br>Male</p>
+                            </div>
+                            <div class="col2">
+                                <p>Marital Status <br>Single</p>
+                                <p>Smoker <br>No</p>
+                            </div>
+                            <div class="col3">
+                                <p>Ethnicity <br>African American <br>Japanese <br>Italian</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="action-box bubble-style">
+                    <button class="accept">Accept</button>
+                    <button class="decline">Decline</button>
+                </div>
             </div>
-        </section>
-        <!-- Buttons-->
-        <section class="request-buttons bubble-style">
-            <div class="big-review-btn">
-                <button class="review">Review</button>
-            </div>
-            <div class="big-accept-btn">
-                <button class="accept">Accept</button>
-            </div>
-        </section>
-        <!-- Contact info-->
-        <section class="contact">
-            <div class="heading">
-                <h2>Contact and Locations</h2>
-            </div>
-            <div class="contact-info bubble-style">
-                <h3>Address</h3>
-                <p>2972 Westheimer Rd.</p>
-                <p>Santa Ana. Illinois 85486</p>
-                <h3>Phone</h3>
-                <p>(316)555-0116</p>
-                <h3>Email</h3>
-                <p>jackson.graham@example.com</p>
-            </div>
-        </section>
-        <!-- Emergency Contact-->
-        <section class="e-contact">
-            <div class="heading">
-                <h2>Emergency Contact</h2>
-            </div>
-            <div class="emergency-info bubble-style">
-                <div class="info">
-                    <div class="name">
-                        <h3>Name</h3>
-                        <p>Joshua Graham</p>
+            <!-- end content-wrapper -->
+        </div>
+        <!-- Profile 
+            <section class="profile bubble-style">
+                <div class="profile">
+                    <div class="img-wrapper">
+                        <img src="\images\doctor-profile\bostickprofile.svg" alt="image of current user"
+                            class="userPic" />
                     </div>
-                    <div class="phone">
-                        <h3>Phone</h3>
-                        <p>(090)556-3454</p>
-                    </div>
-                    <div class="relationship">
-                        <h3>Relationship</h3>
-                        <p>Uncle</p>
-                    </div>
-                    <div class="email">
-                        <h3>Email</h3>
-                        <p>email@example.com</p>
-                    </div>
-                    <div class="address">
-                        <h3>Address</h3>
-                        <p>2715 Ash Dr San Jose,</p>
-                        <p>South Dakota 83475</p>
+                    <div class="patient-stats">
+                        <div class="name-wrapper">
+                            <div class="current-user">
+                                <h1>Mr. Michael Bostick</h1>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="birth">
+                                <h3>Date of Birth</h3>
+                                <p>02/22/1983</p>
+                            </div>
+                            <div class="marital">
+                                <h3>Marital Status</h3>
+                                <p>Single</p>
+                            </div>
+                            <div class="ethnicity">
+                                <h3>Ethnicity</h3>
+                                <p>African American</p>
+                                <p>Japanese</p>
+                                <p>Italian</p>
+                            </div>
+                            <div class="gender">
+                                <h3>Gender</h3>
+                                <p>Male</p>
+                            </div>
+                            <div class="smoker">
+                                <h3>Smoker</h3>
+                                <p>No</p>
+                            </div>
+                            <div class="age">
+                                <h3>Age</h3>
+                                <p>35</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-        </section>
-        <!-- Recent visits   -->
-        <section class="visits">
-            <div class="heading">
-                <h2>Recent Visits</h2>
-            </div>
-            <div class="bubble-heading">
-                <p><b>Reason for Appointment</b></p>
-                <p><b>Date</b></p>
-                <p><b>Time</b></p>
-            </div>
-            <div class="visit-bubble bubble-style">
-                <div class="reason">
-                    <p>Blood test and physical</p>
+            </section>
+             Buttons 
+            <section class="request-buttons bubble-style">
+                <div class="big-review-btn">
+                    <button class="review">Review</button>
                 </div>
-                <div class="date">
-                    <p>6/7/21</p>
+                <div class="big-accept-btn">
+                    <button class="accept">Accept</button>
                 </div>
-                <div class="time">
-                    <p>11:00am</p>
+            </section>
+             Contact info
+            <section class="contact">
+                <div class="heading">
+                    <h2>Contact and Locations</h2>
                 </div>
-            </div>
-            <div class="visit-bubble bubble-style">
-                <div class="reason">
-                    <p>CT scan of right shoulder</p>
+                <div class="contact-info bubble-style">
+                    <h3>Address</h3>
+                    <p>2972 Westheimer Rd.</p>
+                    <p>Santa Ana. Illinois 85486</p>
+                    <h3>Phone</h3>
+                    <p>(316)555-0116</p>
+                    <h3>Email</h3>
+                    <p>jackson.graham@example.com</p>
                 </div>
-                <div class="date">
-                    <p>6/7/21</p>
+            </section>
+            <!-- Emergency Contact
+            <section class="e-contact">
+                <div class="heading">
+                    <h2>Emergency Contact</h2>
                 </div>
-                <div class="time">
-                    <p>11:00am</p>
+                <div class="emergency-info bubble-style">
+                    <div class="info">
+                        <div class="name">
+                            <h3>Name</h3>
+                            <p>Joshua Graham</p>
+                        </div>
+                        <div class="phone">
+                            <h3>Phone</h3>
+                            <p>(090)556-3454</p>
+                        </div>
+                        <div class="relationship">
+                            <h3>Relationship</h3>
+                            <p>Uncle</p>
+                        </div>
+                        <div class="email">
+                            <h3>Email</h3>
+                            <p>email@example.com</p>
+                        </div>
+                        <div class="address">
+                            <h3>Address</h3>
+                            <p>2715 Ash Dr San Jose,</p>
+                            <p>South Dakota 83475</p>
+                        </div>
+                    </div>
+            </section>
+            <!-- Recent visits  
+            <section class="visits">
+                <div class="heading">
+                    <h2>Recent Visits</h2>
                 </div>
-            </div>
-            <div class="visit-bubble bubble-style">
-                <div class="reason">
-                    <p>Brain MRI for headaches</p>
+                <div class="bubble-heading">
+                    <p><b>Reason for Appointment</b></p>
+                    <p><b>Date</b></p>
+                    <p><b>Time</b></p>
                 </div>
-                <div class="date">
-                    <p>6/7/21</p>
+                <div class="visit-bubble bubble-style">
+                    <div class="reason">
+                        <p>Blood test and physical</p>
+                    </div>
+                    <div class="date">
+                        <p>6/7/21</p>
+                    </div>
+                    <div class="time">
+                        <p>11:00am</p>
+                    </div>
                 </div>
-                <div class="time">
-                    <p>11:00am</p>
+                <div class="visit-bubble bubble-style">
+                    <div class="reason">
+                        <p>CT scan of right shoulder</p>
+                    </div>
+                    <div class="date">
+                        <p>6/7/21</p>
+                    </div>
+                    <div class="time">
+                        <p>11:00am</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- Medical Records   -->
-        <section class="records">
-            <div class="heading">
-                <h2>Medical Records</h2>
-            </div>
-            <div class="records-bubble bubble-style">
-                <div class="test">
-                    <h3>Blood Test</h3>
-                    <p>6/28/21</p>
+                <div class="visit-bubble bubble-style">
+                    <div class="reason">
+                        <p>Brain MRI for headaches</p>
+                    </div>
+                    <div class="date">
+                        <p>6/7/21</p>
+                    </div>
+                    <div class="time">
+                        <p>11:00am</p>
+                    </div>
                 </div>
-                <div class="results-btn">
-                    <button class="results">Results</button>
+            </section>
+            <!-- Medical Records   
+            <section class="records">
+                <div class="heading">
+                    <h2>Medical Records</h2>
                 </div>
-            </div>
-            <div class="records-bubble bubble-style">
-                <div class="test">
-                    <h3>CT Scan</h3>
-                    <p>6/28/21</p>
+                <div class="records-bubble bubble-style">
+                    <div class="test">
+                        <h3>Blood Test</h3>
+                        <p>6/28/21</p>
+                    </div>
+                    <div class="results-btn">
+                        <button class="results">Results</button>
+                    </div>
                 </div>
-                <div class="results-btn">
-                    <button class="results">Results</button>
+                <div class="records-bubble bubble-style">
+                    <div class="test">
+                        <h3>CT Scan</h3>
+                        <p>6/28/21</p>
+                    </div>
+                    <div class="results-btn">
+                        <button class="results">Results</button>
+                    </div>
                 </div>
-            </div>
-            <div class="records-bubble bubble-style">
-                <div class="test">
-                    <h3>MRI Scan</h3>
-                    <p>6/28/21</p>
+                <div class="records-bubble bubble-style">
+                    <div class="test">
+                        <h3>MRI Scan</h3>
+                        <p>6/28/21</p>
+                    </div>
+                    <div class="results-btn">
+                        <button class="results">Results</button>
+                    </div>
                 </div>
-                <div class="results-btn">
-                    <button class="results">Results</button>
-                </div>
-            </div>
-        </section>
+            </section> -->
 </body>
 
 </html>
