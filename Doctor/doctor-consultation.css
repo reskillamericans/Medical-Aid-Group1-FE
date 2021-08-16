@@ -160,12 +160,6 @@
   padding: 0;
   margin: 0;
 }
-
-.col6 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 a.row-results {
   text-decoration: none;
   color: var(--primaryText);
