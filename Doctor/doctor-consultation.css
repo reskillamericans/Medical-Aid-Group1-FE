@@ -164,15 +164,18 @@
 .col6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
 }
+
 a.row-results {
   text-decoration: none;
   color: var(--primaryText);
 }
-
+.previous {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
 /* Button Colors */
-button.col6 {
+.col6 button{
   border: none;
   border-radius: 4px;
   color: var(--primaryText);
@@ -197,51 +200,21 @@ button.col6 {
   background-color: white;
   border: 2px solid #aceb98;
 }
-  /* Consultations */
-
-  .requests {
-      grid-area: requests;
-  }
-
-  .bubble-heading {
-      display: none;
-  }
-
-  .request-bubble {
-      text-align: center;
-      margin: 30px;
-  }
-
-  .review {
-      border: none;
-      background-color: rgba(254, 201, 222, 0.8);
-      border-radius: 5px;
-      padding: 10px;
-      margin-bottom: 5px;
-  }
-
-  .accept {
-    border: none;
-    background-color: rgba(172, 235, 152, 0.8);
-    ;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 5px;
+.col6 .download{
+  background: var(--secondaryColor);
+  color: var(--primaryText);
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 138px;
+  text-align: center;
 }
-
-
-  .download {
-    background: var(--secondaryColor);
-    color: var(--primaryText);
-    font-size: 13px;
-    font-weight: 700;
-    border: none;
-    border-radius: 5px;
-    padding:10px;
-    /* width: 243px; */
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 5px;
+.download:hover {
+  background-color: #EAEAEA;
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
 }
 
 /************************Styling for Laptops and Small Screens 769px and up*****************************/
