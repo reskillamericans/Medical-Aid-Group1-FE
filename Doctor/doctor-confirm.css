@@ -43,6 +43,7 @@
       border: 1px solid var(--tertiaryText);
       align-items: center;
       padding: 1rem;
+      margin: 1rem;
   }
   /* This controls the layout of the page and stacks everything for mobile view (mobile first)  */
   .wrapper {
@@ -142,7 +143,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
+  margin-left: 1rem;
+  margin-top: 20px;
 }
 .heading h2 {
   width: 60%;
@@ -179,17 +182,14 @@ button.decline, button.accept {
 /**** Patient Basic Info ****/
 .profile-wrapper {
   text-align: center;
-  margin: 1rem;
 }
-.profile-box {
-  margin-bottom: 1rem;
-}
+
 .col2, .col3 {
   display: none;
 }
 /* Profile Pic */
 .profile-pic img {
-  width: 15%;
+  width: 20%;
 }
 
   /* Styling */
