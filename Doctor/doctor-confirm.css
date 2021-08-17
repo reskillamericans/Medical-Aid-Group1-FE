@@ -340,7 +340,10 @@ button.decline, button.accept {
         height: 70px;
       }
       /* row 2 */
-      
+      .row2 {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+      }
   }
 
 
