@@ -179,6 +179,22 @@ button.decline, button.accept {
   background-color: white;
   border: 2px solid #aceb98;
 }
+.results {
+  background: var(--secondaryColor);
+  color: var(--primaryText);
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+}
+.results:hover {
+  background-color: #EAEAEA;
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+}
 /**** Patient Basic Info ****/
 .profile-wrapper {
   text-align: center;
@@ -195,23 +211,10 @@ button.decline, button.accept {
 .recent-row {
   display: none;
 }
-
-  /* Styling */
-
-  .profile {
-      text-align: center;
-      margin: 30px;
-      grid-area: profile;
-  }
-
- 
-
-  .bubble-heading {
-      display: none;
-  }
-
-
-
+.records {
+  display: flex;
+  justify-content: space-between;
+}
   /************************Styling for Laptops and Small Screens 769px and up*****************************/
 @media only screen and (min-width: 769px) {
  
@@ -260,6 +263,29 @@ button.decline, button.accept {
     /***** styling for content headings *****/
     h2 {
         font-size: 22px;
+      }
+      /* Emergency Contact */
+      .emergency-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      /* Recent Visits */
+      .recent-row {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+        margin-top: 2rem;
+      }
+      .recent-col1 {
+        margin-left: 1rem;
+      }
+
+      .recent-info {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
       }
     }
   
