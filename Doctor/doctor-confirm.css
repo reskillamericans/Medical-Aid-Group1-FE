@@ -191,6 +191,10 @@ button.decline, button.accept {
 .profile-pic img {
   width: 20%;
 }
+/* Recent Visits */
+.recent-row {
+  display: none;
+}
 
   /* Styling */
 
