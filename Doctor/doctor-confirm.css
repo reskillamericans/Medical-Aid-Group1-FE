@@ -298,6 +298,7 @@ button.decline, button.accept {
         display: grid;
         grid-template-columns: 3fr 1fr 1fr;
         margin-top: 2rem;
+        font-weight: 700;
       }
       .recent-col1 {
         margin-left: 1rem;
@@ -343,6 +344,20 @@ button.decline, button.accept {
       .row2 {
         display: grid;
         grid-template-columns: 1fr 1.5fr;
+      }
+      /* row 3 */
+      .recent-visits {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+      .records {
+        padding: 5px 1rem;
+      }
+      .recent-row {
+        margin-bottom: -10px;
+      }
+      .recent-info {
+        padding: 1.5rem 0;
       }
   }
 
