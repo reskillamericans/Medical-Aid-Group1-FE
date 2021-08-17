@@ -325,67 +325,22 @@ button.decline, button.accept {
       h2 {
         font-size: 28px;
       }
-      .birth {
-          grid-area: birth;
-      }
-
-      .marital {
-        grid-area: marital;
-     }
-
-      .ethnicity {
-        grid-area: ethnicity;
-     }
-
-      .gender {
-        grid-area: gender;
-     }
-
-      .smoker {
-        grid-area: smoker;
-     }
-     
-     .age {
-        grid-area: age;
-     } 
-
-     
-       
-      .profile {
+      /* profile box */
+      .profile-wrapper {
         display: grid;
-        grid-template-areas:
-        "pic user user user"
-        "pic birth marital ethnicity"
-        "pic gender gender smoker"
-        "pic age age age";
-        text-align: left;
-        padding: .25rem 1rem;
+        grid-template-columns: 2fr .5fr;
+      }
+      .action-box {
+        display: grid;
         justify-content: center;
-        width: 1500px; 
-        
+        align-items: center;
       }
-
- 
-      .profile h1 {
-        padding: 0;
-        margin: 0;
+      button.accept, button.decline {
+        width: 150px;
+        height: 70px;
       }
-      .userPic {
-        grid-area: pic;
-      }
-
-      .current-user {
-          grid-area: user;
-      }
-
-
-
+      /* row 2 */
       
-
-  
-  
-  
-  
   }
 
 
