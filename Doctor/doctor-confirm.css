@@ -264,6 +264,26 @@ button.decline, button.accept {
     h2 {
         font-size: 22px;
       }
+      /* Patient Block */
+      .profile-pic img {
+        width: 80%;
+      }
+      .profile-box {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        grid-gap: 2rem;
+      }
+      .info-box {
+        text-align: left;
+      }
+      .patient-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: flex-start;
+      }
+      .col2, .col3 {
+        display: grid;
+      }
       /* Emergency Contact */
       .emergency-info {
         display: grid;
