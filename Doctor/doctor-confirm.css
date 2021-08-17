@@ -42,7 +42,8 @@
       background-color: var(--background);
       border: 1px solid var(--tertiaryText);
       align-items: center;
-      margin: 1rem 0;
+      padding: 1rem;
+      margin: 1rem;
   }
   /* This controls the layout of the page and stacks everything for mobile view (mobile first)  */
   .wrapper {
@@ -50,13 +51,11 @@
     grid-template-areas: 
         "header"
         "sidebar"
-        "profile"
-        "buttons"
-        "contact"
-        "econtact"
-        "recent"
-        "medical";
-  }
+        "content";
+}
+.content-wrapper {
+    grid-area: content;
+}
   
   /************************************ Section Styling ************************************/
   
@@ -115,79 +114,107 @@
      display: flex;
   }
 
-  /* Styling */
-
-  .profile {
-      text-align: center;
-      margin: 30px;
-      grid-area: profile;
+  /* Patient Stats */
+  .info {
+    display: grid;
+    text-align: left;
   }
-
-  .request-buttons {
-      text-align: center;
-      margin: 30px;
-      grid-area: buttons;
-  }
-
-  .contact {
-    text-align: center;
-    margin: 30px;
-    grid-area: contact;
-  }
-
-  .e-contact {
-    text-align: center;
-    margin: 30px;
-    grid-area: econtact;
-  }
-
-  .visits {
-    text-align: center;
-    margin: 30px;
-    grid-area: recent;
-  }
-
-  .bubble-heading {
-      display: none;
-  }
-
-  .records {
-    text-align: center;
-    margin: 30px;
-    grid-area: medical;
-  }
-
-  .results {
-    background: var(--secondaryColor);
-    color: var(--primaryText);
-    font-size: 13px;
-    font-weight: 700;
-    border: none;
-    border-radius: 5px;
-    padding:10px;
-    /* width: 243px; */
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 5px;
-  }
-
-  .review {
-    border: none;
-    background-color: pink;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
-
-  .accept {
+/***** Title of Page and Back Button *****/
+.page-title {
+  margin-left: 1rem;
+  margin-bottom: 0;
+}
+.page-title h1 {
+  text-align: center;
+}
+.page-title a, .appointments a {
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+.page-title a:hover, .appointments a:hover{
+  color: var(--secondaryColor);
+}
+.page-title img {
+  vertical-align: middle;
+}
+/* Styling for Headings */
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -10px;
+  margin-left: 1rem;
+  margin-top: 20px;
+}
+.heading h2 {
+  width: 60%;
+  margin-bottom: 2rem;
+  margin-left: 1.5rem;
+}
+/* Button Colors */
+button.decline, button.accept {
   border: none;
-  background-color: greenyellow;
+  border-radius: 4px;
+  color: var(--primaryText);
+  height: 38px;
+  width: 70px;
+  font-size: 13px;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+.decline {
+  background-color: #fec9de;
+  font-weight: 700;
+}
+.decline:hover {
+  background-color: white;
+  border: 2px solid #fec9de;
+}
+.accept {
+  background-color: #aceb98;
+  font-weight: 700;
+}
+.accept:hover {
+  background-color: white;
+  border: 2px solid #aceb98;
+}
+.results {
+  background: var(--secondaryColor);
+  color: var(--primaryText);
+  font-size: 13px;
+  font-weight: 700;
+  border: none;
   border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 5px;
-  }
+  height: 40px;
+  width: 100px;
+  text-align: center;
+}
+.results:hover {
+  background-color: #EAEAEA;
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+}
+/**** Patient Basic Info ****/
+.profile-wrapper {
+  text-align: center;
+}
 
+.col2, .col3 {
+  display: none;
+}
+/* Profile Pic */
+.profile-pic img {
+  width: 20%;
+}
+/* Recent Visits */
+.recent-row {
+  display: none;
+}
+.records {
+  display: flex;
+  justify-content: space-between;
+}
   /************************Styling for Laptops and Small Screens 769px and up*****************************/
 @media only screen and (min-width: 769px) {
  
@@ -195,13 +222,8 @@
     .wrapper {
       grid-template-columns: 275px  1fr;
       grid-template-areas: 
-      "header  header"
-      "sidebar profile"
-      "sidebar buttons"
-      "sidebar contact"
-      "sidebar econtact"
-      "sidebar recent"
-      "sidebar medical";
+          "header  header"
+          "sidebar content";
       margin-right: 2rem;
     }
   
@@ -242,87 +264,107 @@
     h2 {
         font-size: 22px;
       }
+      /* Patient Block */
+      .profile-pic img {
+        width: 80%;
+      }
+      .profile-box {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        grid-gap: 2rem;
+      }
+      .info-box {
+        text-align: left;
+      }
+      .patient-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: flex-start;
+      }
+      .col2, .col3 {
+        display: grid;
+      }
+      
+      /* Emergency Contact */
+      .emergency-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      /* Recent Visits */
+      .recent-row {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+        margin-top: 2rem;
+        font-weight: 700;
+        padding: 0 1rem;
+      }
+      .recent-col1 {
+        margin-left: 1rem;
+      }
+
+      .recent-info {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+      }
     }
   
   
   /************************Styling for Desktops and Large Screens 1200px Up*****************************/
   @media (min-width: 1400px) {
-  
-      .wrapper {
-          grid-template-columns: 275px 1fr;
-          grid-template-areas:
+     /* This creates a 3 column view  */
+    .wrapper {
+      grid-template-columns: 275px 1.5fr 1fr;
+      grid-template-areas: 
           "header  header header"
-          "sidebar profile buttons"
-          "sidebar contact econtact"
-          "sidebar recent medical";
-      }
+          "sidebar content content";
+  }
       h1 {
         font-size: 37px;
+        font-weight: 700;
       }
       h2 {
         font-size: 28px;
       }
-      .birth {
-          grid-area: birth;
-      }
-
-      .marital {
-        grid-area: marital;
-     }
-
-      .ethnicity {
-        grid-area: ethnicity;
-     }
-
-      .gender {
-        grid-area: gender;
-     }
-
-      .smoker {
-        grid-area: smoker;
-     }
-     
-     .age {
-        grid-area: age;
-     } 
-
-     
-       
-      .profile {
+      /* profile box */
+      .profile-wrapper {
         display: grid;
-        grid-template-areas:
-        "pic user user user"
-        "pic birth marital ethnicity"
-        "pic gender gender smoker"
-        "pic age age age";
-        text-align: left;
-        padding: .25rem 1rem;
+        grid-template-columns: 2fr .5fr;
+      }
+      .action-box {
+        display: grid;
         justify-content: center;
-        width: 1500px; 
-        
+        align-items: center;
       }
-
- 
-      .profile h1 {
-        padding: 0;
-        margin: 0;
+      button.accept, button.decline {
+        width: 150px;
+        height: 70px;
       }
-      .userPic {
-        grid-area: pic;
+      .patient-name {
+        font-size: 20px;
       }
-
-      .current-user {
-          grid-area: user;
+      /* row 2 */
+      .row2 {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
       }
-
-
-
-      
-
-  
-  
-  
-  
+      /* row 3 */
+      .recent-visits {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+      .records {
+        padding: 5px 1rem;
+      }
+      .recent-row {
+        margin-bottom: -10px;
+      }
+      .recent-info {
+        padding: 1.5rem 0;
+      }
   }
 
 
