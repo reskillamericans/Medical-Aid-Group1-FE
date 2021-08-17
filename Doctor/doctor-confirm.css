@@ -324,6 +324,7 @@ button.decline, button.accept {
   }
       h1 {
         font-size: 37px;
+        font-weight: 700;
       }
       h2 {
         font-size: 28px;
