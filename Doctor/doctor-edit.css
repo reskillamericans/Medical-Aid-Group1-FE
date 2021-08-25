@@ -217,9 +217,9 @@ select:hover {
     border: 1px solid var(--tertiaryText);
     border-radius: 4px;
     margin: 0 20px 20px 0;
-}
+} */
 
- */
+
 
 
 
@@ -375,6 +375,25 @@ nav a:hover,
   main header{
     margin-left: 400px; 
   }
+
+  form {
+    flex-basis: 50%;
+  }
+
+  #name, #gender, #age, #location,
+   #address1, #address2, #phone,
+   #specialty, #languages {
+    width: 90%;
+    padding: 1em,.5em;
+  }
+
+  .container1, .container2 {
+    margin-right: 1em;
+  }
+
+
+
+  
 
   
 
