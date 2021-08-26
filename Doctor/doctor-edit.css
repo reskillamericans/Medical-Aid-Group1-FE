@@ -223,7 +223,7 @@ select:hover {
 #address1, #address2, #phone,
 #specialty, #languages {
  width: 90%;
- padding: .8em ,1em;
+ padding: .8em 1em;
  margin-bottom: 1em;
 }
 
