@@ -198,6 +198,13 @@ input {
   margin-bottom: 1.5em;
 }
 
+input[ type="text"]{
+  width: 90%;
+}
+
+#specialty, #languages, #age, #phone {
+  width: 90%;
+}
 /* input:focus,
 select:focus,
 input:hover,
