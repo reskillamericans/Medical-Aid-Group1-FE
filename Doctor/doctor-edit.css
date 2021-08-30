@@ -200,10 +200,12 @@ input {
 
 input[ type="text"]{
   width: 90%;
+  padding: .8em 1em;
 }
 
 #specialty, #languages, #age, #phone {
   width: 90%;
+  padding: .8em 1em;
 }
 /* input:focus,
 select:focus,
